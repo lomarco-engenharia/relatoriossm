@@ -24,8 +24,9 @@ body { font-family:system-ui,-apple-system,sans-serif; background:var(--bg); col
 .logo-img { height:44px; width:auto; border-radius:6px; }
 .header-info h1 { font-size:17px; font-weight:700; }
 .header-info p  { font-size:12px; opacity:.7; margin-top:2px; }
-.header-right { margin-left:auto; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
-.header-right label { font-size:12px; opacity:.8; }
+.header-right { margin-left:auto; display:flex; align-items:center; gap:28px; flex-wrap:wrap; }
+.date-selector { display:flex; flex-direction:column; gap:3px; }
+.date-selector label { font-size:12px; opacity:.8; }
 #date-select {
   padding:6px 10px; border-radius:6px; border:none;
   font-size:13px; font-weight:600; background:#1e3a5f; color:#fff; cursor:pointer;
@@ -81,7 +82,7 @@ body { font-family:system-ui,-apple-system,sans-serif; background:var(--bg); col
 .delta-nd   { color:var(--muted); }
 
 /* ── Status table (Seção 2) ── */
-.status-wrap { display:grid; grid-template-columns:1fr auto; gap:20px; align-items:start; }
+.status-wrap { display:grid; grid-template-columns:1fr auto; gap:20px; align-items:center; }
 @media(max-width:640px) { .status-wrap { grid-template-columns:1fr; } }
 .donut-wrap { width:180px; }
 @media(max-width:640px) { .donut-wrap { width:100%; max-width:220px; margin:0 auto; } }
@@ -114,6 +115,8 @@ tr:last-child td { border-bottom:none; }
 .expand-row { display:flex; gap:8px; align-items:flex-start; padding:3px 0;
               font-size:12px; border-bottom:1px solid #f1f5f9; }
 .expand-row:last-child { border-bottom:none; }
+.expand-arrow { font-size:10px; color:var(--muted); transition:transform .2s; flex-shrink:0; display:inline-block; }
+.bar-item.open .expand-arrow { transform:rotate(90deg); }
 .expand-main { flex:1; }
 .expand-sub  { color:var(--muted); font-size:11px; }
 .pill { display:inline-block; border-radius:99px; font-size:10px; font-weight:700;
@@ -163,15 +166,13 @@ tr:last-child td { border-bottom:none; }
 <div class="header" id="page-header">
   <div class="header-info">
     <h1 id="header-title">Carregando…</h1>
-    <p id="header-sub"></p>
-    <p class="header-meta" id="header-meta"></p>
   </div>
   <div class="header-right">
-    <div>
+    <div class="date-selector">
       <label>Extração</label>
-      <div><select id="date-select"></select></div>
+      <select id="date-select"></select>
     </div>
-    <a class="btn-back" href="index.html">← Projetos</a>
+    <a class="btn-back" href="index.html">← Voltar ao menu</a>
   </div>
 </div>
 
@@ -230,10 +231,6 @@ async function init() {
 
     // Header
     document.getElementById('header-title').textContent = CONFIG.nome_display;
-    document.getElementById('header-sub').textContent =
-      `Plataforma We Handle · SABESP · ${CONFIG.consorcio}`;
-    document.getElementById('header-meta').textContent =
-      `Contrato ${CONFIG.contrato} · Serviço ${CONFIG.servico}`;
     document.title = CONFIG.nome_display + ' — Conformidade';
 
     // Date selector
@@ -389,7 +386,7 @@ function renderDashboard(d) {
     <div class="bar-item" onclick="toggle(this)">
       <div class="bar-header">
         <span class="bar-title" style="color:${item.color}">${item.label}</span>
-        <span class="bar-count">${item.count}</span>
+        <span style="display:flex;align-items:center;gap:8px"><span class="bar-count">${item.count}</span><span class="expand-arrow">▶</span></span>
       </div>
       <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
       <div class="expand-list">
@@ -424,7 +421,7 @@ function renderDashboard(d) {
     <div class="bar-item" onclick="toggle(this)">
       <div class="bar-header">
         <span class="bar-title"><span class="dot" style="background:${item.color}"></span>${item.name}</span>
-        <span class="bar-count">${item.count}</span>
+        <span style="display:flex;align-items:center;gap:8px"><span class="bar-count">${item.count}</span><span class="expand-arrow">▶</span></span>
       </div>
       <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
       <div class="expand-list">${entries}</div>
@@ -440,21 +437,31 @@ function renderDashboard(d) {
 
   // ── Seção 5 — Ranking Subcontratadas ─────────────────────────────────────
   const subs = d.subs || [];
-  let subsHtml = '<div class="sub-table-wrap"><table><thead><tr>'
-    + '<th>#</th><th>Empresa</th><th class="num">Pendências</th>'
-    + '<th class="num">Total</th><th class="num">% Pend.</th>'
-    + '<th class="num">Críticos</th></tr></thead><tbody>';
+  let subsHtml = '<div class="bar-list">';
   subs.forEach((s, i) => {
-    subsHtml += `<tr>
-      <td>${i+1}</td>
-      <td><strong>${s.nome}</strong></td>
-      <td class="num">${s.focus}</td>
-      <td class="num">${s.total}</td>
-      <td class="num"><span class="pill-tag" style="background:${s.pill_color}22;color:${s.pill_color}">${s.taxa}%</span></td>
-      <td class="num">${s.crit}</td>
-    </tr>`;
+    const entries = (s.entries || []).map(e => {
+      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
+      return `<div class="expand-row">
+        <span class="pill ${pillCls}">${e.st_s}</span>
+        <div class="expand-main"><span class="expand-sub">${e.func} · ${e.doc_s}</span></div>
+      </div>`;
+    }).join('') || '<div class="expand-row"><span style="color:var(--muted);font-size:12px">Sem pendências.</span></div>';
+    const barPct = Math.min(parseFloat(s.taxa)||0, 100);
+    subsHtml += `
+    <div class="bar-item" onclick="toggle(this)">
+      <div class="bar-header">
+        <span class="bar-title"><strong style="color:var(--muted);margin-right:6px">${i+1}.</strong>${s.nome}</span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="pill-tag" style="background:${s.pill_color}22;color:${s.pill_color}">${s.taxa}%</span>
+          <span class="bar-count">${s.focus} pend.</span>
+          <span class="expand-arrow">▶</span>
+        </span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${barPct}%;background:${s.pill_color}"></div></div>
+      <div class="expand-list">${entries}</div>
+    </div>`;
   });
-  subsHtml += '</tbody></table></div>';
+  subsHtml += '</div>';
 
   html += `
   <div class="section">
@@ -648,17 +655,4 @@ function renderEvolucao(hist) {
   };
 
   buildLine('ch-cd',  slice.map(h => h.conf_pct), '#2563a8', 95);
-  buildLine('ch-ad',  slice.map(h => h.ader_pct), '#059669', 99);
-  buildLine('ch-cp',  slice.map(h => h.cp_pct),   '#7c3aed', 95);
-  buildLine('ch-ci',  slice.map(h => h.ci_pct),   '#0891b2', 95);
-  buildLine('ch-tot', slice.map(h => h.total),     '#64748b', null, true);
-}
-
-// ── Helpers ───────────────────────────────────────────────────────────────────
-function toggle(el) { el.classList.toggle('open'); }
-
-// ── Start ─────────────────────────────────────────────────────────────────────
-init();
-</script>
-</body>
-</html>
+  buildLi
