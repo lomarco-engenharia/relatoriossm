@@ -58,17 +58,30 @@ body { font-family:system-ui,-apple-system,sans-serif; background:var(--bg); col
   padding-bottom:10px; border-bottom:1px solid var(--border);
 }
 
+/* ── CL Hero ── */
+.cl-hero {
+  text-align:center; padding:18px 24px;
+  background:linear-gradient(135deg,#f0f4ff,#e8f0fe);
+  border:1px solid #c7d7f8; border-radius:10px; margin-bottom:20px;
+}
+.cl-hero-label { font-size:11px; font-weight:600; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--blue); margin-bottom:6px; }
+.cl-hero-score { font-size:54px; font-weight:900; color:var(--navy); line-height:1; }
+.cl-hero-score.cl-green  { color:var(--c-ok); }
+.cl-hero-score.cl-yellow { color:#ca8a04; }
+.cl-hero-score.cl-red    { color:var(--c-inv); }
+.cl-hero-max { font-size:13px; color:var(--muted); margin-bottom:12px; }
+.cl-hero-formula { font-size:12px; color:var(--muted); line-height:1.8; }
+.cl-hero-formula strong { color:var(--navy); }
+.cl-hero-breakdown { font-size:12px; color:var(--muted); margin-top:2px; }
+
 /* ── KPI Grid 2×3 ── */
 .kpi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
 @media(max-width:640px) { .kpi-grid { grid-template-columns:repeat(2,1fr); } }
-.kpi {
-  border-radius:8px; padding:16px 18px;
-  border:1px solid var(--border);
-}
+.kpi { border-radius:8px; padding:16px 18px; border:1px solid var(--border); }
 .kpi-green  { background:linear-gradient(135deg,#f0fdf4,#dcfce7); border-color:#86efac; }
 .kpi-yellow { background:linear-gradient(135deg,#fefce8,#fef9c3); border-color:#fde047; }
 .kpi-nd     { background:#f8fafc; border-color:var(--border); }
-.kpi-navy   { background:linear-gradient(135deg,#0d2744,#1e3a5f); border-color:#1e3a5f; color:#fff; }
 .kpi-label  { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; opacity:.7; }
 .kpi-value  { font-size:28px; font-weight:800; margin:6px 0 2px; }
 .kpi-sub    { font-size:11px; opacity:.65; }
@@ -93,8 +106,7 @@ tr.na td { background:#fffbeb; }
 tr:last-child td { border-bottom:none; }
 .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; }
 .num,.pct { text-align:right; font-variant-numeric:tabular-nums; }
-.tag { display:inline-block; font-size:10px; font-weight:700; border-radius:4px;
-       padding:1px 5px; }
+.tag { display:inline-block; font-size:10px; font-weight:700; border-radius:4px; padding:1px 5px; }
 .tag-nc { background:#fee2e2; color:#991b1b; }
 .tag-na { background:#fef9c3; color:#854d0e; }
 
@@ -105,54 +117,47 @@ tr:last-child td { border-bottom:none; }
 .bar-item:hover { background:#f1f5f9; }
 .bar-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
 .bar-title  { font-size:13px; font-weight:600; }
-.bar-count  { font-size:13px; font-weight:700; color:var(--blue); }
+.bar-count  { font-size:13px; font-weight:700; color:var(--blue); white-space:nowrap; }
 .bar-track  { background:#e2e8f0; border-radius:99px; height:6px; }
 .bar-fill   { height:6px; border-radius:99px; }
 .expand-list { display:none; margin-top:8px; padding-top:8px; border-top:1px solid var(--border); }
 .bar-item.open .expand-list { display:block; }
-.expand-row { display:flex; gap:8px; align-items:flex-start; padding:3px 0;
-              font-size:12px; border-bottom:1px solid #f1f5f9; }
-.expand-row:last-child { border-bottom:none; }
 .expand-arrow { font-size:10px; color:var(--muted); transition:transform .2s; flex-shrink:0; display:inline-block; }
 .bar-item.open .expand-arrow { transform:rotate(90deg); }
-.expand-main { flex:1; }
-.expand-sub  { color:var(--muted); font-size:11px; }
-.pill { display:inline-block; border-radius:99px; font-size:10px; font-weight:700;
-        padding:2px 7px; }
+.pill { display:inline-block; border-radius:99px; font-size:10px; font-weight:700; padding:2px 7px; }
 .p-pend { background:#fef9c3; color:#854d0e; }
 .p-inv  { background:#fee2e2; color:#991b1b; }
 .p-venc { background:#fde8d0; color:#7c2d12; }
 .p-rep  { background:#ffe4e6; color:#9f1239; }
 
-/* ── Sub table tags ── */
+/* ── Detail table inside expand-list ── */
+.detail-table { width:100%; border-collapse:collapse; font-size:12px; margin-top:2px; }
+.detail-table th { font-size:10px; font-weight:600; color:var(--muted); text-transform:uppercase;
+  letter-spacing:.04em; padding:4px 8px; border-bottom:1px solid var(--border); text-align:left; }
+.detail-table td { padding:5px 8px; border-bottom:1px solid #f1f5f9; vertical-align:middle; }
+.detail-table tr:last-child td { border-bottom:none; }
+
+/* ── Sub ranking tags ── */
 .pill-tag { border-radius:99px; font-size:11px; font-weight:700; padding:3px 9px; display:inline-block; }
 
 /* ── Seção 6 — CPCI ── */
-.s-pend-falta { background:#fff0e0; color:#c2410c; border-radius:6px; padding:2px 7px;
-                font-size:11px; font-weight:700; display:inline-block; }
-.s-pint       { background:#dbeafe; color:#1e40af; border-radius:6px; padding:2px 7px;
-                font-size:11px; font-weight:700; display:inline-block; }
-.s-falta      { background:#fee2e2; color:#991b1b; border-radius:6px; padding:2px 7px;
-                font-size:11px; font-weight:700; display:inline-block; }
-.s-int-venc   { background:#f3e8ff; color:#7e22ce; border-radius:6px; padding:2px 7px;
-                font-size:11px; font-weight:700; display:inline-block; }
-.s-pend-gen   { background:#fef9c3; color:#854d0e; border-radius:6px; padding:2px 7px;
-                font-size:11px; font-weight:700; display:inline-block; }
+.s-pend-falta { background:#fff0e0; color:#c2410c; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
+.s-pint       { background:#dbeafe; color:#1e40af; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
+.s-falta      { background:#fee2e2; color:#991b1b; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
+.s-int-venc   { background:#f3e8ff; color:#7e22ce; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
+.s-pend-gen   { background:#fef9c3; color:#854d0e; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
 .cpci-legend  { font-size:12px; color:var(--muted); margin-bottom:12px; }
 
 /* ── Evolução charts ── */
 .chart-grid  { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 @media(max-width:700px) { .chart-grid { grid-template-columns:1fr; } }
-.chart-wrap  { background:#f8fafc; border:1px solid var(--border); border-radius:8px;
-               padding:14px; }
+.chart-wrap  { background:#f8fafc; border:1px solid var(--border); border-radius:8px; padding:14px; }
 .chart-wrap.full { grid-column: 1/-1; }
 .chart-title { font-size:12px; font-weight:700; color:var(--navy); margin-bottom:10px; }
 
 /* ── Spinner / error ── */
 .spinner { text-align:center; padding:60px; color:var(--muted); }
 .error   { text-align:center; padding:40px; color:var(--c-inv); }
-
-/* ── Var section note ── */
 .var-note { font-size:11px; color:var(--muted); margin-bottom:8px; }
 </style>
 </head>
@@ -167,7 +172,7 @@ tr:last-child td { border-bottom:none; }
       <label>Extração</label>
       <select id="date-select"></select>
     </div>
-    <a class="btn-back" href="index.html">← Voltar ao menu</a>
+    <a class="btn-back" href="index.html">&#8592; Voltar ao menu</a>
   </div>
 </div>
 
@@ -189,11 +194,10 @@ tr:last-child td { border-bottom:none; }
 
 <script>
 // ── Utilitários ──────────────────────────────────────────────────────────────
-const qs   = k => new URLSearchParams(location.search).get(k);
+const qs      = k => new URLSearchParams(location.search).get(k);
 const fmtDate = iso => { if(!iso) return '—'; const [y,m,d]=iso.split('-'); return `${d}/${m}/${y}`; };
 const fmtNum  = n  => (n??0).toLocaleString('pt-BR');
 const fmtPct  = v  => v==null ? 'N/D' : (v.toFixed(1).replace('.',',') + '%');
-const clamp   = v  => Math.max(0, Math.min(100, v));
 
 async function fetchJSON(url) {
   const r = await fetch(url);
@@ -210,13 +214,23 @@ let HISTORICO = null;
 let evolBuilt = false;
 let chartInstances = {};
 
+// ── CL helper ────────────────────────────────────────────────────────────────
+function calcCL(m) {
+  const cd = m.conf_pct != null ? m.conf_pct / 100 : 0;
+  const cp = m.cp_pct  != null ? m.cp_pct  / 100 : 0;
+  const ci = m.ci_pct  != null ? m.ci_pct  / 100 : 0;
+  return (500 * cd) + (400 * cp) + (100 * ci);
+}
+function clClass(val) {
+  return val >= 800 ? 'cl-green' : (val >= 600 ? 'cl-yellow' : 'cl-red');
+}
+
 // ── Inicialização ────────────────────────────────────────────────────────────
 async function init() {
   try {
     CONFIG   = await fetchJSON(`projects/${PROJETO}/config.json`);
     MANIFEST = await fetchJSON(`data/${PROJETO}/manifest.json`);
 
-    // Logo
     const logoEl = document.createElement('img');
     logoEl.className = 'logo-img';
     logoEl.alt = CONFIG.nome_display;
@@ -224,13 +238,11 @@ async function init() {
     logoEl.onerror = () => logoEl.remove();
     document.querySelector('.header').prepend(logoEl);
 
-    // Header
     document.getElementById('header-title').textContent = CONFIG.nome_display;
     document.title = CONFIG.nome_display + ' — Conformidade';
 
-    // Date selector
     const sel = document.getElementById('date-select');
-    const datas = [...MANIFEST.datas].reverse(); // mais recente primeiro
+    const datas = [...MANIFEST.datas].reverse();
     datas.forEach(d => {
       const opt = document.createElement('option');
       opt.value = d;
@@ -268,23 +280,20 @@ function showTab(tab) {
   document.getElementById('tab-content-evolucao').style.display  = tab==='evolucao'  ? '' : 'none';
   document.getElementById('tab-dash').classList.toggle('active', tab==='dashboard');
   document.getElementById('tab-evol').classList.toggle('active', tab==='evolucao');
-  if (tab === 'evolucao' && !evolBuilt) {
-    loadEvolucao();
-  }
+  if (tab === 'evolucao' && !evolBuilt) loadEvolucao();
 }
 
-// ── Dashboard (6 seções) ─────────────────────────────────────────────────────
+// ── Dashboard ────────────────────────────────────────────────────────────────
 function renderDashboard(d) {
-  const m   = d.meta;
-  const v   = d.variacao || {};
-  const el  = document.getElementById('dash-content');
-
+  const m  = d.meta;
+  const v  = d.variacao || {};
+  const el = document.getElementById('dash-content');
   let html = '';
 
-  // ── Seção 1 — KPI Grid ───────────────────────────────────────────────────
+  // ── Seção 1 — Indicadores ───────────────────────────────────────────────
   function deltaHtml(val, neutral=false) {
     if (val == null) return '<span class="delta delta-nd">—</span>';
-    const arrow = val >= 0 ? '▲' : '▼';
+    const arrow = val >= 0 ? '&#9650;' : '&#9660;';
     const cls   = neutral ? 'delta-neu' : (val >= 0 ? 'delta-up' : 'delta-down');
     return `<span class="delta ${cls}">${arrow} ${Math.abs(val).toFixed(1).replace('.',',')}%</span>`;
   }
@@ -292,9 +301,28 @@ function renderDashboard(d) {
     ? `vs. extração de ${fmtDate(v.data_anterior)}`
     : 'Primeira extração — sem comparativo anterior';
 
+  // CL block
+  const clVal  = calcCL(m);
+  const clCls  = clClass(clVal);
+  const cdPts  = m.conf_pct != null ? (500 * m.conf_pct / 100).toFixed(0) : '0';
+  const cpPts  = m.cp_pct  != null ? (400 * m.cp_pct  / 100).toFixed(0) : '0';
+  const ciPts  = m.ci_pct  != null ? (100 * m.ci_pct  / 100).toFixed(0) : '0';
+  const cdStr  = m.conf_fmt || 'N/D';
+  const cpStr  = m.cp_fmt  || 'N/D';
+  const ciStr  = m.ci_fmt  || 'N/D';
+
   html += `
   <div class="section">
     <div class="section-title">Seção 1 — Indicadores de Conformidade</div>
+    <div class="cl-hero">
+      <div class="cl-hero-label">Conformidade Legal (CL) — Programa de Excelência SABESP</div>
+      <div class="cl-hero-score ${clCls}">${clVal.toFixed(0)}</div>
+      <div class="cl-hero-max">de 1.000 pts</div>
+      <div class="cl-hero-formula">
+        <strong>CL</strong> = (500 × <strong>${cdStr}</strong>) + (400 × <strong>${cpStr}</strong>) + (100 × <strong>${ciStr}</strong>)
+      </div>
+      <div class="cl-hero-breakdown">${cdPts} + ${cpPts} + ${ciPts} = ${clVal.toFixed(0)} pts</div>
+    </div>
     <div class="var-note">${varNote}</div>
     <div class="kpi-grid">
       <div class="kpi ${m.conf_class||'kpi-nd'}">
@@ -340,7 +368,6 @@ function renderDashboard(d) {
   const donut = d.donut || {};
   const statusRows = d.status_rows || [];
   const total = m.total || 1;
-
   let statusTbody = '';
   statusRows.forEach(r => {
     const rowCls = r.is_na ? ' class="na"' : (r.is_nc ? ' class="nc"' : '');
@@ -377,18 +404,24 @@ function renderDashboard(d) {
   const ncStatus = d.nc_status || [];
   let ncHtml = '<div class="bar-list">';
   ncStatus.forEach(item => {
+    const rows = item.entries.map(e =>
+      `<tr><td>${e.empresa}</td><td>${e.func}</td><td>${e.doc_s}</td></tr>`
+    ).join('');
     ncHtml += `
     <div class="bar-item" onclick="toggle(this)">
       <div class="bar-header">
-        <span class="bar-title" style="color:${item.color}">${item.label}</span>
-        <span style="display:flex;align-items:center;gap:8px"><span class="bar-count">${item.count}</span><span class="expand-arrow">&#9654;</span></span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="expand-arrow">&#9654;</span>
+          <span class="bar-title" style="color:${item.color}">${item.label}</span>
+        </span>
+        <span class="bar-count">${item.count}</span>
       </div>
       <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
       <div class="expand-list">
-        ${item.entries.map(e=>`<div class="expand-row">
-          <div class="expand-main"><strong>${e.empresa}</strong><br>
-          <span class="expand-sub">${e.func} · ${e.doc_s}</span></div>
-        </div>`).join('')}
+        <table class="detail-table">
+          <thead><tr><th>Empresa</th><th>Funcionário</th><th>Documento</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
       </div>
     </div>`;
   });
@@ -404,22 +437,26 @@ function renderDashboard(d) {
   const docs = d.docs || [];
   let docsHtml = '<div class="bar-list">';
   docs.forEach(item => {
-    const entries = item.entries.map(e => {
+    const rows = item.entries.map(e => {
       const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
-      return `<div class="expand-row">
-        <span class="pill ${pillCls}">${e.st_s}</span>
-        <div class="expand-main"><strong>${e.empresa}</strong>
-        <span class="expand-sub"> · ${e.func}</span></div>
-      </div>`;
+      return `<tr><td>${e.empresa}</td><td>${e.func}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
     }).join('');
     docsHtml += `
     <div class="bar-item" onclick="toggle(this)">
       <div class="bar-header">
-        <span class="bar-title"><span class="dot" style="background:${item.color}"></span>${item.name}</span>
-        <span style="display:flex;align-items:center;gap:8px"><span class="bar-count">${item.count}</span><span class="expand-arrow">&#9654;</span></span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="expand-arrow">&#9654;</span>
+          <span class="bar-title"><span class="dot" style="background:${item.color}"></span>${item.name}</span>
+        </span>
+        <span class="bar-count">${item.count}</span>
       </div>
       <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
-      <div class="expand-list">${entries}</div>
+      <div class="expand-list">
+        <table class="detail-table">
+          <thead><tr><th>Empresa</th><th>Funcionário</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
     </div>`;
   });
   docsHtml += '</div>';
@@ -434,26 +471,30 @@ function renderDashboard(d) {
   const subs = d.subs || [];
   let subsHtml = '<div class="bar-list">';
   subs.forEach((s, i) => {
-    const entries = (s.entries || []).map(e => {
+    const rows = (s.entries || []).map(e => {
       const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
-      return `<div class="expand-row">
-        <span class="pill ${pillCls}">${e.st_s}</span>
-        <div class="expand-main"><span class="expand-sub">${e.func} · ${e.doc_s}</span></div>
-      </div>`;
-    }).join('') || '<div class="expand-row"><span style="color:var(--muted);font-size:12px">Sem pendências.</span></div>';
+      return `<tr><td>${e.func}</td><td>${e.doc_s}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
+    }).join('') || `<tr><td colspan="3" style="color:var(--muted);font-size:12px">Sem pendências.</td></tr>`;
     const barPct = Math.min(parseFloat(s.taxa)||0, 100);
     subsHtml += `
     <div class="bar-item" onclick="toggle(this)">
       <div class="bar-header">
-        <span class="bar-title"><strong style="color:var(--muted);margin-right:6px">${i+1}.</strong>${s.nome}</span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="expand-arrow">&#9654;</span>
+          <span class="bar-title"><strong style="color:var(--muted);margin-right:4px">${i+1}.</strong>${s.nome}</span>
+        </span>
         <span style="display:flex;align-items:center;gap:8px">
           <span class="pill-tag" style="background:${s.pill_color}22;color:${s.pill_color}">${s.taxa}%</span>
           <span class="bar-count">${s.focus} pend.</span>
-          <span class="expand-arrow">&#9654;</span>
         </span>
       </div>
       <div class="bar-track"><div class="bar-fill" style="width:${barPct}%;background:${s.pill_color}"></div></div>
-      <div class="expand-list">${entries}</div>
+      <div class="expand-list">
+        <table class="detail-table">
+          <thead><tr><th>Funcionário</th><th>Documento</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
     </div>`;
   });
   subsHtml += '</div>';
@@ -479,7 +520,6 @@ function renderDashboard(d) {
       if (st==='Integração Vencida')            return `<span class="s-int-venc">${st}</span>`;
       return `<span class="s-pend-gen">${st}</span>`;
     };
-
     const cp_rows = cpci.filter(r => r.status !== 'Pendências porém Integrado');
     const ci_rows = cpci.filter(r => r.status === 'Pendências porém Integrado');
 
@@ -491,8 +531,7 @@ function renderDashboard(d) {
     </div>`;
 
     if (cp_rows.length) {
-      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">
-        Não conformes para CP e CI (${cp_rows.length})</p>`;
+      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">Não conformes para CP e CI (${cp_rows.length})</p>`;
       cpciHtml += '<table style="margin-bottom:16px"><thead><tr>'
         + '<th>Empresa</th><th>Funcionário</th><th>Status de Integração</th>'
         + '</tr></thead><tbody>';
@@ -501,10 +540,8 @@ function renderDashboard(d) {
       });
       cpciHtml += '</tbody></table>';
     }
-
     if (ci_rows.length) {
-      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">
-        Integrados com pendências — OK para CI (${ci_rows.length})</p>`;
+      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">Integrados com pendências — OK para CI (${ci_rows.length})</p>`;
       cpciHtml += '<table><thead><tr>'
         + '<th>Empresa</th><th>Funcionário</th><th>Status de Integração</th>'
         + '</tr></thead><tbody>';
@@ -524,7 +561,6 @@ function renderDashboard(d) {
   // ── Render ────────────────────────────────────────────────────────────────
   el.innerHTML = html;
 
-  // Donut chart
   if (donut.labels && donut.labels.length) {
     const ctx = document.getElementById('donut-chart').getContext('2d');
     if (chartInstances['donut']) chartInstances['donut'].destroy();
@@ -532,11 +568,7 @@ function renderDashboard(d) {
       type: 'doughnut',
       data: {
         labels: donut.labels,
-        datasets: [{
-          data: donut.data,
-          backgroundColor: donut.colors,
-          borderWidth: 1,
-        }]
+        datasets: [{ data: donut.data, backgroundColor: donut.colors, borderWidth: 1 }]
       },
       options: {
         plugins: {
@@ -574,8 +606,8 @@ function renderEvolucao(hist) {
   const n = (CONFIG && CONFIG.evolucao_n) ? CONFIG.evolucao_n : 12;
   const slice = hist.slice(-n);
   const labels = slice.map(h => fmtDate(h.data));
-
   const content = document.getElementById('evol-content');
+
   content.innerHTML = `
   <div class="section">
     <div class="section-title">Aba Evolução — Últimas ${slice.length} extrações</div>
@@ -591,31 +623,19 @@ function renderEvolucao(hist) {
   const buildLine = (id, data, color, meta_line, isTotal=false) => {
     const ctx = document.getElementById(id).getContext('2d');
     if (chartInstances[id]) chartInstances[id].destroy();
-
     const datasets = [{
       label: id.replace('ch-','').toUpperCase(),
-      data: data,
-      borderColor: color,
-      backgroundColor: color + '22',
-      fill: true,
-      tension: 0.3,
-      spanGaps: true,
-      pointRadius: 4,
-      pointHoverRadius: 6,
+      data, borderColor: color, backgroundColor: color + '22',
+      fill: true, tension: 0.3, spanGaps: true, pointRadius: 4, pointHoverRadius: 6,
     }];
-
     if (meta_line != null && !isTotal) {
       datasets.push({
         label: `Meta (${meta_line}%)`,
         data: slice.map(() => meta_line),
-        borderColor: '#dc2626',
-        borderDash: [6,4],
-        borderWidth: 1.5,
-        pointRadius: 0,
-        fill: false,
+        borderColor: '#dc2626', borderDash: [6,4], borderWidth: 1.5,
+        pointRadius: 0, fill: false,
       });
     }
-
     chartInstances[id] = new Chart(ctx, {
       type: 'line',
       data: { labels, datasets },
@@ -637,10 +657,7 @@ function renderEvolucao(hist) {
           y: {
             min: isTotal ? undefined : 0,
             max: isTotal ? undefined : 100,
-            ticks: {
-              font: { size: 11 },
-              callback: v => isTotal ? fmtNum(v) : v + '%'
-            },
+            ticks: { font: { size: 11 }, callback: v => isTotal ? fmtNum(v) : v + '%' },
           },
           x: { ticks: { font: { size: 11 } } }
         }

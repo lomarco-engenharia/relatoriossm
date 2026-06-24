@@ -57,6 +57,18 @@ h2:first-child { margin-top: 0; }
 .badge-enc { display:inline-block; font-size:11px; font-weight:600; background:#fee2e2;
   color:#991b1b; border-radius:99px; padding:2px 8px; margin-top:6px; }
 
+/* CL card */
+.cl-card { text-align:center; padding:12px 16px;
+  background:linear-gradient(135deg,#f0f4ff,#e8f0fe);
+  border:1px solid #c7d7f8; border-radius:8px; margin-bottom:12px; }
+.cl-card-label { font-size:10px; font-weight:600; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--blue); margin-bottom:4px; }
+.cl-card-score { font-size:30px; font-weight:900; }
+.cl-green  { color:var(--c-ok); }
+.cl-yellow { color:#ca8a04; }
+.cl-red    { color:var(--c-inv); }
+.cl-card-max { font-size:11px; color:var(--muted); }
+
 .kpi-row { display: flex; gap: 12px; flex-wrap: wrap; }
 .kpi-mini { flex: 1; min-width: 80px; }
 .kpi-mini-label { font-size: 11px; color: var(--muted); font-weight: 500; }
@@ -90,17 +102,18 @@ h2:first-child { margin-top: 0; }
 const fmtDate = iso => {
   if (!iso) return '—';
   const [y, m, d] = iso.split('-');
-  return `${d}/${m}/${y}`;
+  return d + '/' + m + '/' + y;
 };
 const kpiColor = cls => {
   if (cls === 'kpi-green') return 'kv-green';
   if (cls === 'kpi-yellow') return 'kv-yellow';
   return 'kv-nd';
 };
+const clColorClass = val => val >= 800 ? 'cl-green' : (val >= 600 ? 'cl-yellow' : 'cl-red');
 
 async function fetchJSON(url) {
   const r = await fetch(url);
-  if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
+  if (!r.ok) throw new Error('HTTP ' + r.status + ': ' + url);
   return r.json();
 }
 
@@ -110,81 +123,93 @@ async function buildCard(proj) {
   const desc  = proj.descricao;
   const enc   = proj.status === 'encerrado';
 
-  // Tentar carregar manifest + última extração
   let ultima = null, meta = null;
   try {
-    const manifest = await fetchJSON(`data/${id}/manifest.json`);
+    const manifest = await fetchJSON('data/' + id + '/manifest.json');
     ultima = manifest.ultima;
     if (ultima) {
-      const data = await fetchJSON(`data/${id}/${ultima}.json`);
+      const data = await fetchJSON('data/' + id + '/' + ultima + '.json');
       meta = data.meta;
     }
   } catch(e) { /* sem dados ainda */ }
 
-  // Logo
   let logoHtml;
   try {
-    const cfg = await fetchJSON(`projects/${id}/config.json`);
-    logoHtml = `<img class="card-logo" src="projects/${id}/${cfg.logo_file}" alt="${nome}" onerror="this.style.display='none'">`;
+    const cfg = await fetchJSON('projects/' + id + '/config.json');
+    logoHtml = '<img class="card-logo" src="projects/' + id + '/' + cfg.logo_file + '" alt="' + nome + '" onerror="this.style.display=\'none\'">';
   } catch(e) {
     const initials = id.toUpperCase().slice(0,3);
-    logoHtml = `<div class="card-logo-placeholder">${initials}</div>`;
+    logoHtml = '<div class="card-logo-placeholder">' + initials + '</div>';
   }
 
   const encBadge = enc ? '<span class="badge-enc">Encerrado</span>' : '';
 
+  let clHtml = '';
   let kpiHtml = '';
+
   if (meta) {
     const cdCls  = kpiColor(meta.conf_class);
     const cpCls  = kpiColor(meta.cp_class  || 'kpi-nd');
     const ciCls  = kpiColor(meta.ci_class  || 'kpi-nd');
     const adCls  = kpiColor(meta.ader_class);
-    kpiHtml = `
-      <div class="kpi-row" style="margin-top:14px">
-        <div class="kpi-mini">
-          <div class="kpi-mini-label">CD</div>
-          <div class="kpi-mini-value ${cdCls}">${meta.conf_fmt}</div>
-          <div class="kpi-mini-sub">Conf. Documental</div>
-        </div>
-        <div class="kpi-mini">
-          <div class="kpi-mini-label">CP</div>
-          <div class="kpi-mini-value ${cpCls}">${meta.cp_fmt || 'N/D'}</div>
-          <div class="kpi-mini-sub">Conf. Pessoal</div>
-        </div>
-        <div class="kpi-mini">
-          <div class="kpi-mini-label">CI</div>
-          <div class="kpi-mini-value ${ciCls}">${meta.ci_fmt || 'N/D'}</div>
-          <div class="kpi-mini-sub">Conf. Integração</div>
-        </div>
-        <div class="kpi-mini">
-          <div class="kpi-mini-label">Aderência</div>
-          <div class="kpi-mini-value ${adCls}">${meta.ader_fmt}</div>
-          <div class="kpi-mini-sub">Docs. Aderentes</div>
-        </div>
-      </div>`;
+
+    // CL = (500 x %CD) + (400 x %CP) + (100 x %CI)
+    const clVal = (meta.conf_pct != null ? 500 * meta.conf_pct / 100 : 0)
+                + (meta.cp_pct   != null ? 400 * meta.cp_pct   / 100 : 0)
+                + (meta.ci_pct   != null ? 100 * meta.ci_pct   / 100 : 0);
+    const clCls = clColorClass(clVal);
+
+    clHtml = '<div class="cl-card">'
+      + '<div class="cl-card-label">Conformidade Legal (CL)</div>'
+      + '<div class="cl-card-score ' + clCls + '">' + clVal.toFixed(0) + '</div>'
+      + '<div class="cl-card-max">de 1.000 pts</div>'
+      + '</div>';
+
+    kpiHtml = '<div class="kpi-row" style="margin-top:4px">'
+      + '<div class="kpi-mini">'
+      +   '<div class="kpi-mini-label">CD</div>'
+      +   '<div class="kpi-mini-value ' + cdCls + '">' + meta.conf_fmt + '</div>'
+      +   '<div class="kpi-mini-sub">Conf. Documental</div>'
+      + '</div>'
+      + '<div class="kpi-mini">'
+      +   '<div class="kpi-mini-label">CP</div>'
+      +   '<div class="kpi-mini-value ' + cpCls + '">' + (meta.cp_fmt || 'N/D') + '</div>'
+      +   '<div class="kpi-mini-sub">Conf. Pessoal</div>'
+      + '</div>'
+      + '<div class="kpi-mini">'
+      +   '<div class="kpi-mini-label">CI</div>'
+      +   '<div class="kpi-mini-value ' + ciCls + '">' + (meta.ci_fmt || 'N/D') + '</div>'
+      +   '<div class="kpi-mini-sub">Conf. Integração</div>'
+      + '</div>'
+      + '<div class="kpi-mini">'
+      +   '<div class="kpi-mini-label">Aderência</div>'
+      +   '<div class="kpi-mini-value ' + adCls + '">' + meta.ader_fmt + '</div>'
+      +   '<div class="kpi-mini-sub">Docs. Aderentes</div>'
+      + '</div>'
+      + '</div>';
   } else {
-    kpiHtml = `<div style="font-size:12px;color:var(--muted);margin-top:12px">Nenhuma extração disponível ainda.</div>`;
+    kpiHtml = '<div style="font-size:12px;color:var(--muted);margin-top:12px">Nenhuma extração disponível ainda.</div>';
   }
 
-  const footerLeft  = ultima ? `Última extração: ${fmtDate(ultima)}` : 'Sem extrações';
-  const footerRight = meta   ? `${(meta.total||0).toLocaleString('pt-BR')} documentos` : '';
+  const footerLeft  = ultima ? 'Última extração: ' + fmtDate(ultima) : 'Sem extrações';
+  const footerRight = meta   ? (meta.total||0).toLocaleString('pt-BR') + ' documentos' : '';
 
-  return `
-    <a class="card${enc?' encerrado':''}" href="dashboard.html?projeto=${id}">
-      <div class="card-header">
-        ${logoHtml}
-        <div>
-          <div class="card-title">${nome}</div>
-          <div class="card-desc">${desc}</div>
-          ${encBadge}
-        </div>
-      </div>
-      ${kpiHtml}
-      <div class="card-footer">
-        <span>${footerLeft}</span>
-        <span>${footerRight}</span>
-      </div>
-    </a>`;
+  return '<a class="card' + (enc ? ' encerrado' : '') + '" href="dashboard.html?projeto=' + id + '">'
+    + '<div class="card-header">'
+    +   logoHtml
+    +   '<div>'
+    +     '<div class="card-title">' + nome + '</div>'
+    +     '<div class="card-desc">' + desc + '</div>'
+    +     encBadge
+    +   '</div>'
+    + '</div>'
+    + clHtml
+    + kpiHtml
+    + '<div class="card-footer">'
+    +   '<span>' + footerLeft + '</span>'
+    +   '<span>' + footerRight + '</span>'
+    + '</div>'
+    + '</a>';
 }
 
 async function main() {
@@ -214,7 +239,7 @@ async function main() {
 
     root.innerHTML = html;
   } catch(e) {
-    root.innerHTML = `<div class="error">Erro ao carregar projetos: ${e.message}</div>`;
+    root.innerHTML = '<div class="error">Erro ao carregar projetos: ' + e.message + '</div>';
   }
 }
 
