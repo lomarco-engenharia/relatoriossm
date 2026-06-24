@@ -655,7 +655,7 @@ function renderEvolucao(hist) {
         },
         scales: {
           y: {
-            min: isTotal ? undefined : 0,
+            min: isTotal ? undefined : Math.max(0, Math.floor(Math.min(...data.filter(v => v != null)) - 5)),
             max: isTotal ? undefined : 100,
             ticks: { font: { size: 11 }, callback: v => isTotal ? fmtNum(v) : v + '%' },
           },
