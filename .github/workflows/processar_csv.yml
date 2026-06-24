@@ -1,0 +1,63 @@
+name: Processar CSV
+
+on:
+  push:
+    paths:
+      - 'entrada_csv/**/*.csv'
+
+jobs:
+  processar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Identificar projeto e CSVs
+        run: |
+          ALL_CSV=$(git diff --name-only HEAD~1 HEAD | grep 'entrada_csv/.*\.csv' || true)
+          if [ -z "$ALL_CSV" ]; then
+            echo "Nenhum CSV novo encontrado no push."
+            exit 0
+          fi
+          PROJETO=$(echo "$ALL_CSV" | head -1 | cut -d'/' -f2)
+          CSV_DOC=$(echo "$ALL_CSV" | grep 'relatorio_de_documentos' || true)
+          CSV_INT=$(echo "$ALL_CSV" | grep 'status_integracao' || true)
+          echo "PROJETO=$PROJETO"   >> $GITHUB_ENV
+          echo "CSV_DOC=$CSV_DOC"   >> $GITHUB_ENV
+          echo "CSV_INT=$CSV_INT"   >> $GITHUB_ENV
+          echo "Projeto: $PROJETO"
+          echo "CSV docs: $CSV_DOC"
+          echo "CSV integração: $CSV_INT"
+
+      - name: Rodar ETL
+        run: |
+          if [ -z "$CSV_DOC" ]; then
+            echo "CSV de documentos não encontrado no push. Abortando."
+            exit 1
+          fi
+          INT_ARG=""
+          if [ -n "$CSV_INT" ]; then
+            INT_ARG="--csv-int $CSV_INT"
+          fi
+          python etl.py --projeto $PROJETO --csv $CSV_DOC $INT_ARG
+
+      - name: Commit dos dados gerados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/$PROJETO/
+          git diff --cached --quiet || git commit -m "ETL: atualiza $PROJETO ($CSV_DOC)"
+          git push

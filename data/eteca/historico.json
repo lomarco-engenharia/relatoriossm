@@ -1,0 +1,20 @@
+[
+  {
+    "data": "2026-06-19",
+    "conf_pct": 87.25917,
+    "ader_pct": 94.46861,
+    "total": 3218,
+    "n_subs": 27,
+    "cp_pct": null,
+    "ci_pct": null
+  },
+  {
+    "data": "2026-06-22",
+    "conf_pct": 91.56627,
+    "ader_pct": 95.61322,
+    "total": 3237,
+    "n_subs": 27,
+    "cp_pct": null,
+    "ci_pct": null
+  }
+]

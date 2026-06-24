@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Conformidade</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --navy:#0d2744; --blue:#2563a8; --border:#d1d9e6;
+  --c-ok:#16a34a; --c-inv:#dc2626; --c-warn:#d97706;
+  --muted:#64748b; --bg:#f1f5f9; --card:#fff;
+  --radius:10px;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:system-ui,-apple-system,sans-serif; background:var(--bg); color:#1e293b; }
+
+/* ── Header ── */
+.header {
+  background:var(--navy); color:#fff;
+  padding:14px 28px; display:flex; align-items:center; gap:16px;
+  flex-wrap:wrap;
+}
+.logo-img { height:44px; width:auto; border-radius:6px; }
+.header-info h1 { font-size:17px; font-weight:700; }
+.header-info p  { font-size:12px; opacity:.7; margin-top:2px; }
+.header-right { margin-left:auto; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.header-right label { font-size:12px; opacity:.8; }
+#date-select {
+  padding:6px 10px; border-radius:6px; border:none;
+  font-size:13px; font-weight:600; background:#1e3a5f; color:#fff; cursor:pointer;
+}
+.btn-back {
+  padding:6px 12px; border-radius:6px; border:1px solid rgba(255,255,255,.3);
+  font-size:12px; color:#fff; background:transparent; cursor:pointer; text-decoration:none;
+}
+.btn-back:hover { background:rgba(255,255,255,.1); }
+.header-meta { font-size:11px; opacity:.55; margin-top:3px; }
+
+/* ── Tabs ── */
+.tabs { background:var(--card); border-bottom:1px solid var(--border); padding:0 28px; display:flex; gap:4px; }
+.tab-btn {
+  padding:12px 18px; border:none; background:none; cursor:pointer;
+  font-size:13px; font-weight:600; color:var(--muted); border-bottom:3px solid transparent;
+  margin-bottom:-1px;
+}
+.tab-btn.active { color:var(--blue); border-bottom-color:var(--blue); }
+
+/* ── Container ── */
+.main { max-width:1100px; margin:0 auto; padding:24px 20px 40px; }
+
+/* ── Section card ── */
+.section {
+  background:var(--card); border:1px solid var(--border);
+  border-radius:var(--radius); padding:22px 24px; margin-bottom:22px;
+}
+.section-title {
+  font-size:14px; font-weight:700; color:var(--navy); margin-bottom:16px;
+  padding-bottom:10px; border-bottom:1px solid var(--border);
+}
+
+/* ── KPI Grid 2×3 ── */
+.kpi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+@media(max-width:640px) { .kpi-grid { grid-template-columns:repeat(2,1fr); } }
+.kpi {
+  border-radius:8px; padding:16px 18px;
+  border:1px solid var(--border);
+}
+.kpi-green  { background:linear-gradient(135deg,#f0fdf4,#dcfce7); border-color:#86efac; }
+.kpi-yellow { background:linear-gradient(135deg,#fefce8,#fef9c3); border-color:#fde047; }
+.kpi-nd     { background:#f8fafc; border-color:var(--border); }
+.kpi-navy   { background:linear-gradient(135deg,#0d2744,#1e3a5f); border-color:#1e3a5f; color:#fff; }
+.kpi-label  { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; opacity:.7; }
+.kpi-value  { font-size:28px; font-weight:800; margin:6px 0 2px; }
+.kpi-sub    { font-size:11px; opacity:.65; }
+.kpi-nd .kpi-value  { color:var(--muted); }
+.delta { font-size:13px; font-weight:700; margin-top:4px; }
+.delta-up   { color:var(--c-ok); }
+.delta-down { color:var(--c-inv); }
+.delta-neu  { color:var(--blue); }
+.delta-nd   { color:var(--muted); }
+
+/* ── Status table (Seção 2) ── */
+.status-wrap { display:grid; grid-template-columns:1fr auto; gap:20px; align-items:start; }
+@media(max-width:640px) { .status-wrap { grid-template-columns:1fr; } }
+.donut-wrap { width:180px; }
+@media(max-width:640px) { .donut-wrap { width:100%; max-width:220px; margin:0 auto; } }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; font-size:11px; font-weight:600; color:var(--muted);
+     text-transform:uppercase; letter-spacing:.04em; padding:5px 8px; border-bottom:2px solid var(--border); }
+td { padding:6px 8px; border-bottom:1px solid #f1f5f9; vertical-align:middle; }
+tr.nc td { background:#fff8f8; }
+tr.na td { background:#fffbeb; }
+tr:last-child td { border-bottom:none; }
+.dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; }
+.num,.pct { text-align:right; font-variant-numeric:tabular-nums; }
+.tag { display:inline-block; font-size:10px; font-weight:700; border-radius:4px;
+       padding:1px 5px; }
+.tag-nc { background:#fee2e2; color:#991b1b; }
+.tag-na { background:#fef9c3; color:#854d0e; }
+
+/* ── Bar sections (3,4,5) ── */
+.bar-list { display:flex; flex-direction:column; gap:10px; }
+.bar-item  { background:#f8fafc; border:1px solid var(--border); border-radius:8px;
+             padding:10px 14px; cursor:pointer; }
+.bar-item:hover { background:#f1f5f9; }
+.bar-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.bar-title  { font-size:13px; font-weight:600; }
+.bar-count  { font-size:13px; font-weight:700; color:var(--blue); }
+.bar-track  { background:#e2e8f0; border-radius:99px; height:6px; }
+.bar-fill   { height:6px; border-radius:99px; }
+.expand-list { display:none; margin-top:8px; padding-top:8px; border-top:1px solid var(--border); }
+.bar-item.open .expand-list { display:block; }
+.expand-row { display:flex; gap:8px; align-items:flex-start; padding:3px 0;
+              font-size:12px; border-bottom:1px solid #f1f5f9; }
+.expand-row:last-child { border-bottom:none; }
+.expand-main { flex:1; }
+.expand-sub  { color:var(--muted); font-size:11px; }
+.pill { display:inline-block; border-radius:99px; font-size:10px; font-weight:700;
+        padding:2px 7px; }
+.p-pend { background:#fef9c3; color:#854d0e; }
+.p-inv  { background:#fee2e2; color:#991b1b; }
+.p-venc { background:#fde8d0; color:#7c2d12; }
+.p-rep  { background:#ffe4e6; color:#9f1239; }
+
+/* ── Sub table tags ── */
+.pill-tag { border-radius:99px; font-size:11px; font-weight:700; padding:3px 9px; display:inline-block; }
+
+/* ── Seção 5 sub table ── */
+.sub-table-wrap { overflow-x:auto; }
+
+/* ── Seção 6 — CPCI ── */
+.s-pend-falta { background:#fff0e0; color:#c2410c; border-radius:6px; padding:2px 7px;
+                font-size:11px; font-weight:700; display:inline-block; }
+.s-pint       { background:#dbeafe; color:#1e40af; border-radius:6px; padding:2px 7px;
+                font-size:11px; font-weight:700; display:inline-block; }
+.s-falta      { background:#fee2e2; color:#991b1b; border-radius:6px; padding:2px 7px;
+                font-size:11px; font-weight:700; display:inline-block; }
+.s-int-venc   { background:#f3e8ff; color:#7e22ce; border-radius:6px; padding:2px 7px;
+                font-size:11px; font-weight:700; display:inline-block; }
+.s-pend-gen   { background:#fef9c3; color:#854d0e; border-radius:6px; padding:2px 7px;
+                font-size:11px; font-weight:700; display:inline-block; }
+.cpci-legend  { font-size:12px; color:var(--muted); margin-bottom:12px; }
+
+/* ── Evolução charts ── */
+.chart-grid  { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+@media(max-width:700px) { .chart-grid { grid-template-columns:1fr; } }
+.chart-wrap  { background:#f8fafc; border:1px solid var(--border); border-radius:8px;
+               padding:14px; }
+.chart-wrap.full { grid-column: 1/-1; }
+.chart-title { font-size:12px; font-weight:700; color:var(--navy); margin-bottom:10px; }
+
+/* ── Spinner / error ── */
+.spinner { text-align:center; padding:60px; color:var(--muted); }
+.error   { text-align:center; padding:40px; color:var(--c-inv); }
+
+/* ── Var section note ── */
+.var-note { font-size:11px; color:var(--muted); margin-bottom:8px; }
+</style>
+</head>
+<body>
+
+<div class="header" id="page-header">
+  <div class="header-info">
+    <h1 id="header-title">Carregando…</h1>
+    <p id="header-sub"></p>
+    <p class="header-meta" id="header-meta"></p>
+  </div>
+  <div class="header-right">
+    <div>
+      <label>Extração</label>
+      <div><select id="date-select"></select></div>
+    </div>
+    <a class="btn-back" href="index.html">← Projetos</a>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" id="tab-dash" onclick="showTab('dashboard')">Dashboard</button>
+  <button class="tab-btn" id="tab-evol" onclick="showTab('evolucao')">Evolução</button>
+</div>
+
+<div class="main">
+  <div id="tab-content-dashboard">
+    <div class="spinner" id="dash-spinner">Carregando dados…</div>
+    <div id="dash-content" style="display:none"></div>
+  </div>
+  <div id="tab-content-evolucao" style="display:none">
+    <div class="spinner" id="evol-spinner">Carregando histórico…</div>
+    <div id="evol-content" style="display:none"></div>
+  </div>
+</div>
+
+<script>
+// ── Utilitários ──────────────────────────────────────────────────────────────
+const qs   = k => new URLSearchParams(location.search).get(k);
+const fmtDate = iso => { if(!iso) return '—'; const [y,m,d]=iso.split('-'); return `${d}/${m}/${y}`; };
+const fmtNum  = n  => (n??0).toLocaleString('pt-BR');
+const fmtPct  = v  => v==null ? 'N/D' : (v.toFixed(1).replace('.',',') + '%');
+const clamp   = v  => Math.max(0, Math.min(100, v));
+
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
+  return r.json();
+}
+
+// ── Estado global ────────────────────────────────────────────────────────────
+let PROJETO = qs('projeto') || 'eteca';
+let CONFIG  = null;
+let MANIFEST = null;
+let CURRENT_DATA = null;
+let HISTORICO = null;
+let evolBuilt = false;
+let chartInstances = {};
+
+// ── Inicialização ────────────────────────────────────────────────────────────
+async function init() {
+  try {
+    CONFIG   = await fetchJSON(`projects/${PROJETO}/config.json`);
+    MANIFEST = await fetchJSON(`data/${PROJETO}/manifest.json`);
+
+    // Logo
+    const logoEl = document.createElement('img');
+    logoEl.className = 'logo-img';
+    logoEl.alt = CONFIG.nome_display;
+    logoEl.src = `projects/${PROJETO}/${CONFIG.logo_file}`;
+    logoEl.onerror = () => logoEl.remove();
+    document.querySelector('.header').prepend(logoEl);
+
+    // Header
+    document.getElementById('header-title').textContent = CONFIG.nome_display;
+    document.getElementById('header-sub').textContent =
+      `Plataforma We Handle · SABESP · ${CONFIG.consorcio}`;
+    document.getElementById('header-meta').textContent =
+      `Contrato ${CONFIG.contrato} · Serviço ${CONFIG.servico}`;
+    document.title = CONFIG.nome_display + ' — Conformidade';
+
+    // Date selector
+    const sel = document.getElementById('date-select');
+    const datas = [...MANIFEST.datas].reverse(); // mais recente primeiro
+    datas.forEach(d => {
+      const opt = document.createElement('option');
+      opt.value = d;
+      opt.textContent = fmtDate(d);
+      sel.appendChild(opt);
+    });
+    sel.value = MANIFEST.ultima;
+    sel.addEventListener('change', () => loadDate(sel.value));
+
+    await loadDate(MANIFEST.ultima);
+  } catch(e) {
+    document.getElementById('dash-spinner').innerHTML =
+      `<div class="error">Erro ao carregar projeto: ${e.message}</div>`;
+  }
+}
+
+async function loadDate(date) {
+  document.getElementById('dash-spinner').style.display = '';
+  document.getElementById('dash-content').style.display = 'none';
+  evolBuilt = false;
+  try {
+    CURRENT_DATA = await fetchJSON(`data/${PROJETO}/${date}.json`);
+    renderDashboard(CURRENT_DATA);
+    document.getElementById('dash-spinner').style.display = 'none';
+    document.getElementById('dash-content').style.display = '';
+  } catch(e) {
+    document.getElementById('dash-spinner').innerHTML =
+      `<div class="error">Erro ao carregar extração ${date}: ${e.message}</div>`;
+  }
+}
+
+// ── Tabs ─────────────────────────────────────────────────────────────────────
+function showTab(tab) {
+  document.getElementById('tab-content-dashboard').style.display = tab==='dashboard' ? '' : 'none';
+  document.getElementById('tab-content-evolucao').style.display  = tab==='evolucao'  ? '' : 'none';
+  document.getElementById('tab-dash').classList.toggle('active', tab==='dashboard');
+  document.getElementById('tab-evol').classList.toggle('active', tab==='evolucao');
+  if (tab === 'evolucao' && !evolBuilt) {
+    loadEvolucao();
+  }
+}
+
+// ── Dashboard (6 seções) ─────────────────────────────────────────────────────
+function renderDashboard(d) {
+  const m   = d.meta;
+  const v   = d.variacao || {};
+  const el  = document.getElementById('dash-content');
+
+  let html = '';
+
+  // ── Seção 1 — KPI Grid 2×3 ───────────────────────────────────────────────
+  function deltaHtml(val, neutral=false) {
+    if (val == null) return '<span class="delta delta-nd">—</span>';
+    const arrow = val >= 0 ? '▲' : '▼';
+    const cls   = neutral ? 'delta-neu' : (val >= 0 ? 'delta-up' : 'delta-down');
+    return `<span class="delta ${cls}">${arrow} ${Math.abs(val).toFixed(1).replace('.',',')}%</span>`;
+  }
+  const varNote = v.data_anterior
+    ? `vs. extração de ${fmtDate(v.data_anterior)}`
+    : 'Primeira extração — sem comparativo anterior';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 1 — Indicadores de Conformidade</div>
+    <div class="var-note">${varNote}</div>
+    <div class="kpi-grid">
+      <div class="kpi ${m.conf_class||'kpi-nd'}">
+        <div class="kpi-label">CD — Conf. Documental</div>
+        <div class="kpi-value">${m.conf_fmt}</div>
+        <div class="kpi-sub">${fmtNum(m.total-m.nc)} conformes de ${fmtNum(m.total)}</div>
+        ${deltaHtml(v.d_conf)}
+      </div>
+      <div class="kpi ${m.cp_class||'kpi-nd'}">
+        <div class="kpi-label">CP — Conf. Pessoal</div>
+        <div class="kpi-value">${m.cp_fmt||'N/D'}</div>
+        <div class="kpi-sub">Todos docs conformes / Total</div>
+        ${deltaHtml(v.d_cp)}
+      </div>
+      <div class="kpi ${m.ci_class||'kpi-nd'}">
+        <div class="kpi-label">CI — Conf. Integração</div>
+        <div class="kpi-value">${m.ci_fmt||'N/D'}</div>
+        <div class="kpi-sub">(Acesso Liberado + Pend. porém Integrado) / Total</div>
+        ${deltaHtml(v.d_ci)}
+      </div>
+      <div class="kpi ${m.ader_class||'kpi-nd'}">
+        <div class="kpi-label">Aderência</div>
+        <div class="kpi-value">${m.ader_fmt}</div>
+        <div class="kpi-sub">${fmtNum(m.total-m.na)} aderentes de ${fmtNum(m.total)}</div>
+        ${deltaHtml(v.d_ader)}
+      </div>
+      <div class="kpi kpi-nd">
+        <div class="kpi-label">Total de Documentos</div>
+        <div class="kpi-value" style="color:var(--navy)">${fmtNum(m.total)}</div>
+        <div class="kpi-sub">registros ativos no contrato</div>
+        ${deltaHtml(v.d_total, true)}
+      </div>
+      <div class="kpi kpi-nd">
+        <div class="kpi-label">Subcontratadas</div>
+        <div class="kpi-value" style="color:var(--navy)">${m.n_subs}</div>
+        <div class="kpi-sub">empresas com documentos no contrato</div>
+        ${deltaHtml(v.d_subs, true)}
+      </div>
+    </div>
+  </div>`;
+
+  // ── Seção 2 — Status dos Documentos ─────────────────────────────────────
+  const donut = d.donut || {};
+  const statusRows = d.status_rows || [];
+  const total = m.total || 1;
+
+  let statusTbody = '';
+  statusRows.forEach(r => {
+    const rowCls = r.is_na ? ' class="na"' : (r.is_nc ? ' class="nc"' : '');
+    const ncTag  = r.is_nc ? '<span class="tag tag-nc">NC</span>' : '—';
+    const naTag  = r.is_na ? '<span class="tag tag-na">NA</span>' : '—';
+    statusTbody += `<tr${rowCls}>
+      <td><span class="dot" style="background:${r.color}"></span></td>
+      <td>${r.label}</td>
+      <td class="num">${fmtNum(r.qty)}</td>
+      <td class="pct">${r.pct.toFixed(1).replace('.',',')}%</td>
+      <td>${ncTag}</td><td>${naTag}</td></tr>`;
+  });
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 2 — Status dos Documentos</div>
+    <div class="status-wrap">
+      <div>
+        <table>
+          <thead><tr>
+            <th></th><th>Status</th><th class="num">Qtd.</th>
+            <th class="pct">%</th><th>NC</th><th>NA</th>
+          </tr></thead>
+          <tbody>${statusTbody}</tbody>
+        </table>
+      </div>
+      <div class="donut-wrap">
+        <canvas id="donut-chart" width="180" height="180"></canvas>
+      </div>
+    </div>
+  </div>`;
+
+  // ── Seção 3 — NC por Tipo ─────────────────────────────────────────────────
+  const ncStatus = d.nc_status || [];
+  let ncHtml = '<div class="bar-list">';
+  ncStatus.forEach(item => {
+    ncHtml += `
+    <div class="bar-item" onclick="toggle(this)">
+      <div class="bar-header">
+        <span class="bar-title" style="color:${item.color}">${item.label}</span>
+        <span class="bar-count">${item.count}</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
+      <div class="expand-list">
+        ${item.entries.map(e=>`<div class="expand-row">
+          <div class="expand-main"><strong>${e.empresa}</strong><br>
+          <span class="expand-sub">${e.func} · ${e.doc_s}</span></div>
+        </div>`).join('')}
+      </div>
+    </div>`;
+  });
+  ncHtml += '</div>';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 3 — NC por Tipo de Problema</div>
+    ${ncHtml}
+  </div>`;
+
+  // ── Seção 4 — Pendências por Documento ──────────────────────────────────
+  const docs = d.docs || [];
+  let docsHtml = '<div class="bar-list">';
+  docs.forEach(item => {
+    const entries = item.entries.map(e => {
+      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
+      return `<div class="expand-row">
+        <span class="pill ${pillCls}">${e.st_s}</span>
+        <div class="expand-main"><strong>${e.empresa}</strong>
+        <span class="expand-sub"> · ${e.func}</span></div>
+      </div>`;
+    }).join('');
+    docsHtml += `
+    <div class="bar-item" onclick="toggle(this)">
+      <div class="bar-header">
+        <span class="bar-title"><span class="dot" style="background:${item.color}"></span>${item.name}</span>
+        <span class="bar-count">${item.count}</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
+      <div class="expand-list">${entries}</div>
+    </div>`;
+  });
+  docsHtml += '</div>';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 4 — Pendências por Tipo de Documento</div>
+    ${docsHtml}
+  </div>`;
+
+  // ── Seção 5 — Ranking Subcontratadas ─────────────────────────────────────
+  const subs = d.subs || [];
+  let subsHtml = '<div class="sub-table-wrap"><table><thead><tr>'
+    + '<th>#</th><th>Empresa</th><th class="num">Pendências</th>'
+    + '<th class="num">Total</th><th class="num">% Pend.</th>'
+    + '<th class="num">Críticos</th></tr></thead><tbody>';
+  subs.forEach((s, i) => {
+    subsHtml += `<tr>
+      <td>${i+1}</td>
+      <td><strong>${s.nome}</strong></td>
+      <td class="num">${s.focus}</td>
+      <td class="num">${s.total}</td>
+      <td class="num"><span class="pill-tag" style="background:${s.pill_color}22;color:${s.pill_color}">${s.taxa}%</span></td>
+      <td class="num">${s.crit}</td>
+    </tr>`;
+  });
+  subsHtml += '</tbody></table></div>';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 5 — Ranking de Subcontratadas</div>
+    ${subsHtml}
+  </div>`;
+
+  // ── Seção 6 — CP & CI ────────────────────────────────────────────────────
+  const cpci = d.cpci || [];
+  let cpciHtml = '';
+  if (!m.cp_pct && m.cp_pct !== 0) {
+    cpciHtml = '<div style="font-size:13px;color:var(--muted)">CSV de integração não disponível para esta extração.</div>';
+  } else if (cpci.length === 0) {
+    cpciHtml = '<div style="font-size:13px;color:var(--c-ok)">Todos os trabalhadores com Acesso Liberado.</div>';
+  } else {
+    const stBadge = st => {
+      if (st==='Pendências e Falta Integração') return `<span class="s-pend-falta">${st}</span>`;
+      if (st==='Pendências porém Integrado')    return `<span class="s-pint">${st}</span>`;
+      if (st==='Falta Integração')              return `<span class="s-falta">${st}</span>`;
+      if (st==='Integração Vencida')            return `<span class="s-int-venc">${st}</span>`;
+      return `<span class="s-pend-gen">${st}</span>`;
+    };
+
+    // Separar CP (status != Acesso Liberado e != Pendências porém Integrado) de CI-only
+    const cp_rows = cpci.filter(r => r.status !== 'Pendências porém Integrado');
+    const ci_rows = cpci.filter(r => r.status === 'Pendências porém Integrado');
+
+    cpciHtml = `
+    <div class="cpci-legend">
+      <strong>CP</strong> = Todos documentos conformes / Total &nbsp;|&nbsp;
+      <strong>CI</strong> = (Acesso Liberado + Pend. porém Integrado) / Total
+      &nbsp;· ${m.total_workers} trabalhadores únicos
+    </div>`;
+
+    if (cp_rows.length) {
+      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">
+        Não conformes para CP e CI (${cp_rows.length})</p>`;
+      cpciHtml += '<table style="margin-bottom:16px"><thead><tr>'
+        + '<th>Empresa</th><th>Funcionário</th><th>Status de Integração</th>'
+        + '</tr></thead><tbody>';
+      cp_rows.forEach(r => {
+        cpciHtml += `<tr><td>${r.fornecedor}</td><td>${r.funcionario}</td><td>${stBadge(r.status)}</td></tr>`;
+      });
+      cpciHtml += '</tbody></table>';
+    }
+
+    if (ci_rows.length) {
+      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">
+        Integrados com pendências — OK para CI (${ci_rows.length})</p>`;
+      cpciHtml += '<table><thead><tr>'
+        + '<th>Empresa</th><th>Funcionário</th><th>Status de Integração</th>'
+        + '</tr></thead><tbody>';
+      ci_rows.forEach(r => {
+        cpciHtml += `<tr><td>${r.fornecedor}</td><td>${r.funcionario}</td><td>${stBadge(r.status)}</td></tr>`;
+      });
+      cpciHtml += '</tbody></table>';
+    }
+  }
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 6 — Conformidade Pessoal (CP) e Conformidade de Integração (CI)</div>
+    ${cpciHtml}
+  </div>`;
+
+  // ── Render ────────────────────────────────────────────────────────────────
+  el.innerHTML = html;
+
+  // Donut chart
+  if (donut.labels && donut.labels.length) {
+    const ctx = document.getElementById('donut-chart').getContext('2d');
+    if (chartInstances['donut']) chartInstances['donut'].destroy();
+    chartInstances['donut'] = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: donut.labels,
+        datasets: [{
+          data: donut.data,
+          backgroundColor: donut.colors,
+          borderWidth: 1,
+        }]
+      },
+      options: {
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => ` ${ctx.label}: ${fmtNum(ctx.parsed)} (${(ctx.parsed/total*100).toFixed(1).replace('.',',')}%)`
+            }
+          }
+        },
+        cutout: '60%',
+      }
+    });
+  }
+}
+
+// ── Evolução ─────────────────────────────────────────────────────────────────
+async function loadEvolucao() {
+  const spinner = document.getElementById('evol-spinner');
+  const content = document.getElementById('evol-content');
+  spinner.style.display = '';
+  content.style.display = 'none';
+  try {
+    HISTORICO = await fetchJSON(`data/${PROJETO}/historico.json`);
+    renderEvolucao(HISTORICO);
+    spinner.style.display = 'none';
+    content.style.display = '';
+    evolBuilt = true;
+  } catch(e) {
+    spinner.innerHTML = `<div class="error">Erro ao carregar histórico: ${e.message}</div>`;
+  }
+}
+
+function renderEvolucao(hist) {
+  const n = (CONFIG && CONFIG.evolucao_n) ? CONFIG.evolucao_n : 12;
+  const slice = hist.slice(-n);
+  const labels = slice.map(h => fmtDate(h.data));
+
+  const content = document.getElementById('evol-content');
+  content.innerHTML = `
+  <div class="section">
+    <div class="section-title">Aba Evolução — Últimas ${slice.length} extrações</div>
+    <div class="chart-grid">
+      <div class="chart-wrap"><div class="chart-title">CD — Conformidade Documental (%)</div><canvas id="ch-cd"></canvas></div>
+      <div class="chart-wrap"><div class="chart-title">Aderência (%)</div><canvas id="ch-ad"></canvas></div>
+      <div class="chart-wrap"><div class="chart-title">CP — Conformidade Pessoal (%)</div><canvas id="ch-cp"></canvas></div>
+      <div class="chart-wrap"><div class="chart-title">CI — Conformidade de Integração (%)</div><canvas id="ch-ci"></canvas></div>
+      <div class="chart-wrap full"><div class="chart-title">Total de Documentos</div><canvas id="ch-tot"></canvas></div>
+    </div>
+  </div>`;
+
+  const buildLine = (id, data, color, meta_line, isTotal=false) => {
+    const ctx = document.getElementById(id).getContext('2d');
+    if (chartInstances[id]) chartInstances[id].destroy();
+
+    const datasets = [{
+      label: id.replace('ch-','').toUpperCase(),
+      data: data,
+      borderColor: color,
+      backgroundColor: color + '22',
+      fill: true,
+      tension: 0.3,
+      spanGaps: true,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+    }];
+
+    if (meta_line != null && !isTotal) {
+      datasets.push({
+        label: `Meta (${meta_line}%)`,
+        data: slice.map(() => meta_line),
+        borderColor: '#dc2626',
+        borderDash: [6,4],
+        borderWidth: 1.5,
+        pointRadius: 0,
+        fill: false,
+      });
+    }
+
+    chartInstances[id] = new Chart(ctx, {
+      type: 'line',
+      data: { labels, datasets },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: datasets.length > 1, labels: { font: { size: 11 } } },
+          tooltip: {
+            callbacks: {
+              label: c => {
+                const v = c.parsed.y;
+                if (v == null) return ' N/D';
+                return isTotal ? ` ${fmtNum(Math.round(v))}` : ` ${v.toFixed(1).replace('.',',')}%`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            min: isTotal ? undefined : 0,
+            max: isTotal ? undefined : 100,
+            ticks: {
+              font: { size: 11 },
+              callback: v => isTotal ? fmtNum(v) : v + '%'
+            },
+          },
+          x: { ticks: { font: { size: 11 } } }
+        }
+      }
+    });
+  };
+
+  buildLine('ch-cd',  slice.map(h => h.conf_pct), '#2563a8', 95);
+  buildLine('ch-ad',  slice.map(h => h.ader_pct), '#059669', 99);
+  buildLine('ch-cp',  slice.map(h => h.cp_pct),   '#7c3aed', 95);
+  buildLine('ch-ci',  slice.map(h => h.ci_pct),   '#0891b2', 95);
+  buildLine('ch-tot', slice.map(h => h.total),     '#64748b', null, true);
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function toggle(el) { el.classList.toggle('open'); }
+
+// ── Start ─────────────────────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conformidade We Handle — SABESP</title>
+<style>
+:root {
+  --navy:#0d2744; --blue:#2563a8; --border:#d1d9e6;
+  --c-ok:#16a34a; --c-inv:#dc2626; --c-warn:#d97706;
+  --muted:#64748b; --bg:#f1f5f9; --card:#fff;
+  --radius:10px;
+}
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: system-ui, -apple-system, sans-serif; background:var(--bg); color:#1e293b; min-height:100vh; }
+
+header {
+  background: var(--navy);
+  color: #fff;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header h1 { font-size: 20px; font-weight: 700; }
+header p  { font-size: 13px; opacity: .75; margin-top: 2px; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+
+h2 { font-size: 15px; font-weight: 600; color: var(--muted); text-transform: uppercase;
+     letter-spacing:.05em; margin-bottom: 14px; margin-top: 28px; }
+h2:first-child { margin-top: 0; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  cursor: pointer;
+  transition: box-shadow .15s, transform .15s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.1); transform: translateY(-2px); }
+.card.encerrado { opacity: .7; }
+
+.card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.card-logo { width: 44px; height: 44px; object-fit: contain; border-radius: 6px; background: #f8fafc; }
+.card-logo-placeholder { width: 44px; height: 44px; border-radius: 6px; background: var(--navy);
+  display:flex; align-items:center; justify-content:center; color:#fff; font-size:14px; font-weight:700; }
+.card-title { font-size: 15px; font-weight: 700; }
+.card-desc  { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+.badge-enc { display:inline-block; font-size:11px; font-weight:600; background:#fee2e2;
+  color:#991b1b; border-radius:99px; padding:2px 8px; margin-top:6px; }
+
+.kpi-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.kpi-mini { flex: 1; min-width: 80px; }
+.kpi-mini-label { font-size: 11px; color: var(--muted); font-weight: 500; }
+.kpi-mini-value { font-size: 20px; font-weight: 800; margin-top: 2px; }
+.kv-green { color: var(--c-ok); }
+.kv-yellow { color: #ca8a04; }
+.kv-nd { color: var(--muted); }
+.kpi-mini-sub { font-size: 10px; color: var(--muted); }
+
+.card-footer { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
+
+.spinner { text-align:center; padding:60px; color:var(--muted); }
+.error   { text-align:center; padding:40px; color:var(--c-inv); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Conformidade We Handle</h1>
+    <p>SABESP · Gestão de Terceiros · Lomarco Engenharia</p>
+  </div>
+</header>
+
+<div class="container">
+  <div id="root"><div class="spinner">Carregando projetos…</div></div>
+</div>
+
+<script>
+const fmtDate = iso => {
+  if (!iso) return '—';
+  const [y, m, d] = iso.split('-');
+  return `${d}/${m}/${y}`;
+};
+const kpiColor = cls => {
+  if (cls === 'kpi-green') return 'kv-green';
+  if (cls === 'kpi-yellow') return 'kv-yellow';
+  return 'kv-nd';
+};
+
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
+  return r.json();
+}
+
+async function buildCard(proj) {
+  const id    = proj.id;
+  const nome  = proj.nome;
+  const desc  = proj.descricao;
+  const enc   = proj.status === 'encerrado';
+
+  // Tentar carregar manifest + última extração
+  let ultima = null, meta = null;
+  try {
+    const manifest = await fetchJSON(`data/${id}/manifest.json`);
+    ultima = manifest.ultima;
+    if (ultima) {
+      const data = await fetchJSON(`data/${id}/${ultima}.json`);
+      meta = data.meta;
+    }
+  } catch(e) { /* sem dados ainda */ }
+
+  // Logo
+  let logoHtml;
+  try {
+    const cfg = await fetchJSON(`projects/${id}/config.json`);
+    logoHtml = `<img class="card-logo" src="projects/${id}/${cfg.logo_file}" alt="${nome}" onerror="this.style.display='none'">`;
+  } catch(e) {
+    const initials = id.toUpperCase().slice(0,3);
+    logoHtml = `<div class="card-logo-placeholder">${initials}</div>`;
+  }
+
+  const encBadge = enc ? '<span class="badge-enc">Encerrado</span>' : '';
+
+  let kpiHtml = '';
+  if (meta) {
+    const cdCls  = kpiColor(meta.conf_class);
+    const cpCls  = kpiColor(meta.cp_class  || 'kpi-nd');
+    const ciCls  = kpiColor(meta.ci_class  || 'kpi-nd');
+    const adCls  = kpiColor(meta.ader_class);
+    kpiHtml = `
+      <div class="kpi-row" style="margin-top:14px">
+        <div class="kpi-mini">
+          <div class="kpi-mini-label">CD</div>
+          <div class="kpi-mini-value ${cdCls}">${meta.conf_fmt}</div>
+          <div class="kpi-mini-sub">Conf. Documental</div>
+        </div>
+        <div class="kpi-mini">
+          <div class="kpi-mini-label">CP</div>
+          <div class="kpi-mini-value ${cpCls}">${meta.cp_fmt || 'N/D'}</div>
+          <div class="kpi-mini-sub">Conf. Pessoal</div>
+        </div>
+        <div class="kpi-mini">
+          <div class="kpi-mini-label">CI</div>
+          <div class="kpi-mini-value ${ciCls}">${meta.ci_fmt || 'N/D'}</div>
+          <div class="kpi-mini-sub">Conf. Integração</div>
+        </div>
+        <div class="kpi-mini">
+          <div class="kpi-mini-label">Aderência</div>
+          <div class="kpi-mini-value ${adCls}">${meta.ader_fmt}</div>
+          <div class="kpi-mini-sub">Docs. Aderentes</div>
+        </div>
+      </div>`;
+  } else {
+    kpiHtml = `<div style="font-size:12px;color:var(--muted);margin-top:12px">Nenhuma extração disponível ainda.</div>`;
+  }
+
+  const footerLeft  = ultima ? `Última extração: ${fmtDate(ultima)}` : 'Sem extrações';
+  const footerRight = meta   ? `${(meta.total||0).toLocaleString('pt-BR')} documentos` : '';
+
+  return `
+    <a class="card${enc?' encerrado':''}" href="dashboard.html?projeto=${id}">
+      <div class="card-header">
+        ${logoHtml}
+        <div>
+          <div class="card-title">${nome}</div>
+          <div class="card-desc">${desc}</div>
+          ${encBadge}
+        </div>
+      </div>
+      ${kpiHtml}
+      <div class="card-footer">
+        <span>${footerLeft}</span>
+        <span>${footerRight}</span>
+      </div>
+    </a>`;
+}
+
+async function main() {
+  const root = document.getElementById('root');
+  try {
+    const projects = await fetchJSON('projects.json');
+    const ativos    = projects.filter(p => p.status === 'ativo');
+    const outros    = projects.filter(p => p.status !== 'ativo');
+
+    let html = '';
+
+    if (ativos.length) {
+      html += '<h2>Projetos ativos</h2><div class="grid">';
+      const cards = await Promise.all(ativos.map(buildCard));
+      html += cards.join('') + '</div>';
+    }
+
+    if (outros.length) {
+      html += '<h2>Projetos encerrados / histórico</h2><div class="grid">';
+      const cards = await Promise.all(outros.map(buildCard));
+      html += cards.join('') + '</div>';
+    }
+
+    if (!ativos.length && !outros.length) {
+      html = '<div class="error">Nenhum projeto configurado em projects.json.</div>';
+    }
+
+    root.innerHTML = html;
+  } catch(e) {
+    root.innerHTML = `<div class="error">Erro ao carregar projetos: ${e.message}</div>`;
+  }
+}
+
+main();
+</script>
+</body>
+</html>

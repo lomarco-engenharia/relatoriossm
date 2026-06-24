@@ -1,0 +1,14 @@
+[
+  {
+    "id": "eteca",
+    "nome": "ETECA — ETE Caieiras",
+    "descricao": "Consórcio ETE Caieiras (1ª Etapa) · Serviço 177764",
+    "status": "ativo"
+  },
+  {
+    "id": "etemp",
+    "nome": "ETEMP — KTL Mairiporã",
+    "descricao": "Consórcio KTL Mairiporã · Serviço 176856",
+    "status": "ativo"
+  }
+]

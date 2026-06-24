@@ -1,0 +1,29 @@
+[
+  {
+    "data": "2026-06-19",
+    "conf_pct": 92.41906,
+    "ader_pct": 98.81548,
+    "total": 3799,
+    "n_subs": 28,
+    "cp_pct": null,
+    "ci_pct": null
+  },
+  {
+    "data": "2026-06-22",
+    "conf_pct": 92.87592,
+    "ader_pct": 98.58044,
+    "total": 3804,
+    "n_subs": 28,
+    "cp_pct": null,
+    "ci_pct": null
+  },
+  {
+    "data": "2026-06-23",
+    "conf_pct": 93.36132,
+    "ader_pct": 99.68512,
+    "total": 3811,
+    "n_subs": 28,
+    "cp_pct": 74.13793,
+    "ci_pct": 96.55172
+  }
+]

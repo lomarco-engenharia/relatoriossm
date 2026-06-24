@@ -1,0 +1,27 @@
+{
+  "id": "eteca",
+  "nome_display": "ETECA — Consórcio ETE Caieiras",
+  "consorcio": "Consórcio ETE Caieiras (1ª Etapa)",
+  "proprio_label": "Consórcio ETE Caieiras (próprio)",
+  "contrato": "4600055709",
+  "servico": "177764",
+  "logo_file": "logo.jpg",
+  "logo_mime": "image/jpeg",
+  "status": "ativo",
+  "evolucao_n": 12,
+  "sub_names": {
+    "LOMARCO ENGENHARIA LTDA": "Lomarco Engenharia",
+    "RYFAL CONSTRUCOES E REFORMAS LTDA": "Ryfal Construções e Reformas",
+    "FLUITER ENGENHARIA E SOLUCOES INTEGRADAS LTDA": "Fluiter Engenharia e Soluções",
+    "REAL ENG PINTURAS EM GERAL LTDA": "Real Eng Pinturas em Geral",
+    "POTENCIA TERRAPLENAGEM E LOCACAO DE MAQUINAS SOCIEDADE UNIPESSOAL LTDA": "Potência Terraplenagem e Locação",
+    "EFA PAVIMENTAO LTDA": "EFA Pavimentação",
+    "GABRIELA CIDRINE DE SENA": "Gabriela Cidrine de Sena",
+    "BRUNO LUIZ FONSECA PIMENTA LTDA": "Bruno Luiz Fonseca Pimenta",
+    "WERT ENGENHARIA E SOLUCOES LTDA": "Wert Engenharia e Soluções",
+    "RUAN DA CRUZ CELESTINO LTDA": "Ruan da Cruz Celestino",
+    "PEDRO HENRIQUE VERCOSA GERALDES 35304845803": "Pedro H. Vercosa Geraldes",
+    "29.908.599 JOAO NESTARDO NETO": "João Nestardo Neto",
+    "SEITECH SERVICOS INSTALACAO E AUTOMACAO INDUSTRIAL LTDA": "Seitech Serv. Instalação e Automação"
+  }
+}

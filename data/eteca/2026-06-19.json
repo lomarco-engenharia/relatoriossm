@@ -1,0 +1,3910 @@
+{
+  "meta": {
+    "projeto": "eteca",
+    "data": "2026-06-19",
+    "total": 3218,
+    "nc": 410,
+    "na": 178,
+    "conf_pct": 87.25917,
+    "ader_pct": 94.46861,
+    "n_subs": 27,
+    "conf_fmt": "87,3%",
+    "ader_fmt": "94,5%",
+    "conf_class": "kpi-yellow",
+    "ader_class": "kpi-yellow",
+    "total_workers": null,
+    "cp_ok": null,
+    "cp_nc": null,
+    "cp_pct": null,
+    "cp_fmt": "N/D",
+    "cp_class": "kpi-nd",
+    "ci_ok": null,
+    "ci_nc": null,
+    "ci_pct": null,
+    "ci_fmt": "N/D",
+    "ci_class": "kpi-nd",
+    "ci_acesso": null,
+    "ci_pend_int": null,
+    "ci_falta": null
+  },
+  "variacao": {
+    "data_anterior": "2026-06-22",
+    "d_conf": -4.704,
+    "d_ader": -1.197,
+    "d_total": -0.587,
+    "d_subs": 0.0,
+    "d_cp": null,
+    "d_ci": null
+  },
+  "status_rows": [
+    {
+      "label": "Isento",
+      "qty": 1680,
+      "color": "#059669",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 52.2
+    },
+    {
+      "label": "OK",
+      "qty": 919,
+      "color": "#16a34a",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 28.6
+    },
+    {
+      "label": "Pend. — Isenção Ag. Aprovação",
+      "qty": 207,
+      "color": "#d97706",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 6.4
+    },
+    {
+      "label": "Pendente",
+      "qty": 178,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
+      "pct": 5.5
+    },
+    {
+      "label": "Liberado com Ressalvas",
+      "qty": 144,
+      "color": "#0891b2",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 4.5
+    },
+    {
+      "label": "Aprovado pelo Cliente",
+      "qty": 39,
+      "color": "#7c3aed",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 1.2
+    },
+    {
+      "label": "Perto do Vencimento",
+      "qty": 26,
+      "color": "#f97316",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 0.8
+    },
+    {
+      "label": "Em Validação",
+      "qty": 9,
+      "color": "#2563a8",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.3
+    },
+    {
+      "label": "Reprovado/Vencido",
+      "qty": 7,
+      "color": "#9f1239",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 5,
+      "color": "#be123c",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Inválido",
+      "qty": 4,
+      "color": "#dc2626",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.1
+    }
+  ],
+  "donut": {
+    "labels": [
+      "Isento",
+      "OK",
+      "Pend. — Isenção Ag. Aprovação",
+      "Pendente",
+      "Liberado com Ressalvas",
+      "Aprovado pelo Cliente",
+      "Perto do Vencimento",
+      "Em Validação",
+      "Reprovado/Vencido",
+      "Pend. — Isenção Reprovada",
+      "Inválido"
+    ],
+    "data": [
+      1680,
+      919,
+      207,
+      178,
+      144,
+      39,
+      26,
+      9,
+      7,
+      5,
+      4
+    ],
+    "colors": [
+      "#059669",
+      "#16a34a",
+      "#d97706",
+      "#ca8a04",
+      "#0891b2",
+      "#7c3aed",
+      "#f97316",
+      "#2563a8",
+      "#9f1239",
+      "#be123c",
+      "#dc2626"
+    ]
+  },
+  "nc_status": [
+    {
+      "id": "ns1",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 178,
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Lomarco Engenharia",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "Jose Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "Josoel Nunes",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "Gabriela Cidrine De Sena",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg."
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Campanha SST"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Allyson Rodrigo Da Silva De Araujo",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Diego De Andrade Ferreira",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Edson Oliveira De Almeida",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Jonathan Ferreia De Lima",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Marcelo Bacelar Benedito Junior",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Natalino Dutra De Paulo",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Welberti Alves David De Souza",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Carlito Gregório",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Diogo Do Nascimento Araujo",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Diogo Timoteo Lopes",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Ediniz De Oliveira Santos",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Evaldo Perycles Nunes Lopes",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Israel Ricardo Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Aguirre De Souza Lucio",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Luis Antonio Ribeiro Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Luis Aprígio Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Luis Paulo Ferreira Dos Santos",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Marcos Viniciusde Oliveira Silva",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Matheus Marinho Mendes",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Pedro Antonio Paulino",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Renato Batista De Oliveira",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Wender Pacheco Conceição",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "Pedro Henrique Verçosa Geraldes",
+          "doc_s": "NR 13 — Vasos de Pressão"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Severino Fernandes Da Silva",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND Federal"
+        }
+      ]
+    },
+    {
+      "id": "ns2",
+      "label": "Reprovado/Vencido",
+      "color": "#9f1239",
+      "count": 7,
+      "pct": 4,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Plano Resgate Altura"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Convenção Coletiva"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        }
+      ]
+    },
+    {
+      "id": "ns3",
+      "label": "Pend. — Isenção Reprovada",
+      "color": "#be123c",
+      "count": 5,
+      "pct": 3,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Marcos Viniciusde Oliveira Silva",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Cicero Lucas Da Silva",
+          "doc_s": "NR35 Altura — Cordas"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Severino Fernandes Da Silva",
+          "doc_s": "ASO"
+        }
+      ]
+    },
+    {
+      "id": "ns4",
+      "label": "Inválido",
+      "color": "#dc2626",
+      "count": 4,
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Edson Oliveira De Almeida",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Israel Ricardo Da Silva",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Gilmar Santos Oliveira",
+          "func": "Gilmar Santos Oliveira",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "doc_s": "LTCAT"
+        }
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "id": "d1",
+      "name": "Evidências Prog. Saúde Mental",
+      "count": 116,
+      "color": "#64748b",
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "NR 13 — Vasos de Pressão",
+      "count": 29,
+      "color": "#d97706",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "Jose Da Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "Josoel Nunes",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Allyson Rodrigo Da Silva De Araujo",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Diego De Andrade Ferreira",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Edson Oliveira De Almeida",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Jonathan Ferreia De Lima",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Marcelo Bacelar Benedito Junior",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Natalino Dutra De Paulo",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Welberti Alves David De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Carlito Gregório",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Diogo Do Nascimento Araujo",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Diogo Timoteo Lopes",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Ediniz De Oliveira Santos",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Evaldo Perycles Nunes Lopes",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Israel Ricardo Da Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Aguirre De Souza Lucio",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Luis Antonio Ribeiro Da Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Luis Aprígio Da Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Luis Paulo Ferreira Dos Santos",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Marcos Viniciusde Oliveira Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Matheus Marinho Mendes",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Pedro Antonio Paulino",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Renato Batista De Oliveira",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Wender Pacheco Conceição",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "Pedro Henrique Verçosa Geraldes",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "Programa de Saúde Mental",
+      "count": 11,
+      "color": "#64748b",
+      "pct": 9,
+      "entries": [
+        {
+          "empresa": "Lomarco Engenharia",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Wert Engenharia e Soluções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "name": "CND Federal",
+      "count": 3,
+      "color": "#0891b2",
+      "pct": 3,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "Ficha de EPI",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 3,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Israel Ricardo Da Silva",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Gilmar Santos Oliveira",
+          "func": "Gilmar Santos Oliveira",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "APR — Análise Preliminar de Risco",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 3,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "GFD — Guia FGTS Digital",
+      "count": 2,
+      "color": "#7c3aed",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "name": "Folha de Ponto",
+      "count": 2,
+      "color": "#059669",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "Gabriela Cidrine De Sena",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Severino Fernandes Da Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "name": "CNDT",
+      "count": 2,
+      "color": "#0891b2",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "name": "CND FGTS — CRF",
+      "count": 2,
+      "color": "#0891b2",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "name": "CND Municipal",
+      "count": 2,
+      "color": "#0891b2",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "Contrato Social / Reg. MEI",
+      "count": 2,
+      "color": "#6366f1",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "OS Segurança",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 2,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "Marcos Viniciusde Oliveira Silva",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "name": "DDS — Diálogo Diário de Seg.",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d17",
+      "name": "Campanha SST",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d18",
+      "name": "PGR",
+      "count": 1,
+      "color": "#be123c",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "name": "PCMSO",
+      "count": 1,
+      "color": "#be123c",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d20",
+      "name": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+      "count": 1,
+      "color": "#9f1239",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Edson Oliveira De Almeida",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d21",
+      "name": "Plano de Rigging (Içamento)",
+      "count": 1,
+      "color": "#2563a8",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d22",
+      "name": "Plano Resgate Altura",
+      "count": 1,
+      "color": "#2563a8",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d23",
+      "name": "Convenção Coletiva",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    },
+    {
+      "id": "d24",
+      "name": "NR35 Altura — Cordas",
+      "count": 1,
+      "color": "#d97706",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Cicero Lucas Da Silva",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d25",
+      "name": "ASO",
+      "count": 1,
+      "color": "#dc2626",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Severino Fernandes Da Silva",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d26",
+      "name": "LTCAT",
+      "count": 1,
+      "color": "#be123c",
+      "pct": 1,
+      "entries": [
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    }
+  ],
+  "subs": [
+    {
+      "id": "s1",
+      "nome": "Ryfal Construções e Reformas",
+      "focus": 35,
+      "total": 431,
+      "taxa": 8,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Carlito Gregório",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Diogo Do Nascimento Araujo",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Diogo Timoteo Lopes",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Ediniz De Oliveira Santos",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Evaldo Perycles Nunes Lopes",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Israel Ricardo Da Silva",
+          "doc_s": "Ficha de EPI",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Israel Ricardo Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Leandro Aguirre De Souza Lucio",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "doc_s": "OS Segurança",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Leandro Ricardo Mota Da Conceição Junior",
+          "doc_s": "Ficha de EPI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Luis Antonio Ribeiro Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Luis Aprígio Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Luis Paulo Ferreira Dos Santos",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Marcos Viniciusde Oliveira Silva",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Marcos Viniciusde Oliveira Silva",
+          "doc_s": "OS Segurança",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Matheus Marinho Mendes",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Pedro Antonio Paulino",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Renato Batista De Oliveira",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Wender Pacheco Conceição",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nome": "Fluiter Engenharia e Soluções",
+      "focus": 25,
+      "total": 140,
+      "taxa": 18,
+      "crit": 1,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Allyson Rodrigo Da Silva De Araujo",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Diego De Andrade Ferreira",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Edson Oliveira De Almeida",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Edson Oliveira De Almeida",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Jonathan Ferreia De Lima",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Marcelo Bacelar Benedito Junior",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Natalino Dutra De Paulo",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Welberti Alves David De Souza",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "William Vieira Dos Santos",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "nome": "Potência Terraplenagem e Locação",
+      "focus": 23,
+      "total": 82,
+      "taxa": 28,
+      "crit": 0,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg.",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Campanha SST",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "nome": "Real Eng Pinturas em Geral",
+      "focus": 19,
+      "total": 140,
+      "taxa": 14,
+      "crit": 0,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Jose Da Silva",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Josoel Nunes",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "nome": "Pedro H. Vercosa Geraldes",
+      "focus": 15,
+      "total": 28,
+      "taxa": 54,
+      "crit": 0,
+      "pill_color": "#dc2626",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Pedro Henrique Verçosa Geraldes",
+          "doc_s": "NR 13 — Vasos de Pressão",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "nome": "Alexssandro Jannini Izidoro",
+      "focus": 15,
+      "total": 24,
+      "taxa": 62,
+      "crit": 0,
+      "pill_color": "#dc2626",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "nome": "Ronaldo Barbosa De Souza",
+      "focus": 14,
+      "total": 106,
+      "taxa": 13,
+      "crit": 0,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "nome": "Wesley Felipe Pancieri Ambrosio",
+      "focus": 14,
+      "total": 33,
+      "taxa": 42,
+      "crit": 0,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "nome": "Wert Engenharia e Soluções",
+      "focus": 14,
+      "total": 29,
+      "taxa": 48,
+      "crit": 0,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "nome": "Consórcio ETE Caieiras (próprio)",
+      "focus": 10,
+      "total": 1331,
+      "taxa": 1,
+      "crit": 7,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "Plano Resgate Altura",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "Convenção Coletiva",
+          "badge": "venc",
+          "st_s": "Vencido"
+        },
+        {
+          "func": "Cicero Lucas Da Silva",
+          "doc_s": "NR35 Altura — Cordas",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Severino Fernandes Da Silva",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Severino Fernandes Da Silva",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "nome": "Lais Silvestre Gardin",
+      "focus": 4,
+      "total": 7,
+      "taxa": 57,
+      "crit": 0,
+      "pill_color": "#dc2626",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "nome": "Seitech Serv. Instalação e Automação",
+      "focus": 3,
+      "total": 81,
+      "taxa": 4,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "LTCAT",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "nome": "Lomarco Engenharia",
+      "focus": 1,
+      "total": 28,
+      "taxa": 4,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "nome": "Gabriela Cidrine de Sena",
+      "focus": 1,
+      "total": 80,
+      "taxa": 1,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "Gabriela Cidrine De Sena",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "nome": "Gilmar Santos Oliveira",
+      "focus": 1,
+      "total": 33,
+      "taxa": 3,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "Gilmar Santos Oliveira",
+          "doc_s": "Ficha de EPI",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    }
+  ],
+  "cpci": []
+}

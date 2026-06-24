@@ -1,0 +1,1801 @@
+{
+  "meta": {
+    "projeto": "etemp",
+    "data": "2026-06-22",
+    "total": 3804,
+    "nc": 271,
+    "na": 54,
+    "conf_pct": 92.87592,
+    "ader_pct": 98.58044,
+    "n_subs": 28,
+    "conf_fmt": "92,9%",
+    "ader_fmt": "98,6%",
+    "conf_class": "kpi-yellow",
+    "ader_class": "kpi-yellow",
+    "total_workers": null,
+    "cp_ok": null,
+    "cp_nc": null,
+    "cp_pct": null,
+    "cp_fmt": "N/D",
+    "cp_class": "kpi-nd",
+    "ci_ok": null,
+    "ci_nc": null,
+    "ci_pct": null,
+    "ci_fmt": "N/D",
+    "ci_class": "kpi-nd",
+    "ci_acesso": null,
+    "ci_pend_int": null,
+    "ci_falta": null
+  },
+  "variacao": {
+    "data_anterior": "2026-06-19",
+    "d_conf": 6.437,
+    "d_ader": 4.353,
+    "d_total": 18.21,
+    "d_subs": 3.704,
+    "d_cp": null,
+    "d_ci": null
+  },
+  "status_rows": [
+    {
+      "label": "Isento",
+      "qty": 2455,
+      "color": "#059669",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 64.5
+    },
+    {
+      "label": "OK",
+      "qty": 937,
+      "color": "#16a34a",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 24.6
+    },
+    {
+      "label": "Pend. — Isenção Ag. Aprovação",
+      "qty": 194,
+      "color": "#d97706",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 5.1
+    },
+    {
+      "label": "Liberado com Ressalvas",
+      "qty": 74,
+      "color": "#0891b2",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 1.9
+    },
+    {
+      "label": "Aprovado pelo Cliente",
+      "qty": 58,
+      "color": "#7c3aed",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 1.5
+    },
+    {
+      "label": "Pendente",
+      "qty": 54,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
+      "pct": 1.4
+    },
+    {
+      "label": "Perto do Vencimento",
+      "qty": 9,
+      "color": "#f97316",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Reprovado/Vencido",
+      "qty": 9,
+      "color": "#9f1239",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Em Validação",
+      "qty": 7,
+      "color": "#2563a8",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Inválido",
+      "qty": 7,
+      "color": "#dc2626",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 0,
+      "color": "#be123c",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.0
+    }
+  ],
+  "donut": {
+    "labels": [
+      "Isento",
+      "OK",
+      "Pend. — Isenção Ag. Aprovação",
+      "Liberado com Ressalvas",
+      "Aprovado pelo Cliente",
+      "Pendente",
+      "Perto do Vencimento",
+      "Reprovado/Vencido",
+      "Em Validação",
+      "Inválido",
+      "Pend. — Isenção Reprovada"
+    ],
+    "data": [
+      2455,
+      937,
+      194,
+      74,
+      58,
+      54,
+      9,
+      9,
+      7,
+      7,
+      0
+    ],
+    "colors": [
+      "#059669",
+      "#16a34a",
+      "#d97706",
+      "#0891b2",
+      "#7c3aed",
+      "#ca8a04",
+      "#f97316",
+      "#9f1239",
+      "#2563a8",
+      "#dc2626",
+      "#be123c"
+    ]
+  },
+  "nc_status": [
+    {
+      "id": "ns1",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 54,
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "Francisco Helio Carneiro Dos Santos",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "Leandro Dos Santos Rodrigues",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "Vitor Almeida Da Silva",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Registro de SESMT"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jaubânice Maria De Souza",
+          "doc_s": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jaubânice Maria De Souza",
+          "doc_s": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jaubânice Maria De Souza",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        }
+      ]
+    },
+    {
+      "id": "ns2",
+      "label": "Reprovado/Vencido",
+      "color": "#9f1239",
+      "count": 9,
+      "pct": 17,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Inventário de Máquinas"
+        },
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Laudo Conf. Instal. Elétricas"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        }
+      ]
+    },
+    {
+      "id": "ns3",
+      "label": "Inválido",
+      "color": "#dc2626",
+      "count": 7,
+      "pct": 13,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Cedro Engenharia",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        }
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "id": "d1",
+      "name": "Evidências Prog. Saúde Mental",
+      "count": 13,
+      "color": "#64748b",
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 8,
+      "color": "#64748b",
+      "pct": 62,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+      "count": 7,
+      "color": "#7c3aed",
+      "pct": 54,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "name": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+      "count": 5,
+      "color": "#64748b",
+      "pct": 38,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "CND Federal",
+      "count": 4,
+      "color": "#0891b2",
+      "pct": 31,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "Contrato de Prestação de Serviço",
+      "count": 4,
+      "color": "#6366f1",
+      "pct": 31,
+      "entries": [
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Joclamar",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "GFD — Guia FGTS Digital",
+      "count": 3,
+      "color": "#7c3aed",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "Folha de Ponto",
+      "count": 3,
+      "color": "#059669",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "Francisco Helio Carneiro Dos Santos",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "Leandro Dos Santos Rodrigues",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "Vitor Almeida Da Silva",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "name": "APR — Análise Preliminar de Risco",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "name": "Apólice Seguro Garantia",
+      "count": 3,
+      "color": "#0f766e",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "name": "CND Municipal",
+      "count": 2,
+      "color": "#0891b2",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "name": "Folha de Pagamento",
+      "count": 2,
+      "color": "#059669",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Cedro Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "Programa de Saúde Mental",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "Inventário de Máquinas",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "name": "CNDT",
+      "count": 1,
+      "color": "#0891b2",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d17",
+      "name": "CND FGTS — CRF",
+      "count": 1,
+      "color": "#0891b2",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d18",
+      "name": "Registro de SESMT",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "name": "Laudo Conf. Instal. Elétricas",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d20",
+      "name": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jaubânice Maria De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d21",
+      "name": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+      "count": 1,
+      "color": "#7c3aed",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jaubânice Maria De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d22",
+      "name": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+      "count": 1,
+      "color": "#9f1239",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jaubânice Maria De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    }
+  ],
+  "subs": [
+    {
+      "id": "s1",
+      "nome": "Marina Costa Lani Leal",
+      "focus": 14,
+      "total": 21,
+      "taxa": 67,
+      "crit": 0,
+      "pill_color": "#dc2626",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nome": "Consórcio KTL Mairiporã (próprio)",
+      "focus": 11,
+      "total": 988,
+      "taxa": 1,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Registro de SESMT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Laudo Conf. Instal. Elétricas",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "Jaubânice Maria De Souza",
+          "doc_s": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Jaubânice Maria De Souza",
+          "doc_s": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Jaubânice Maria De Souza",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "nome": "Joel Leite Filho",
+      "focus": 8,
+      "total": 98,
+      "taxa": 8,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "nome": "Pejota Construções",
+      "focus": 6,
+      "total": 710,
+      "taxa": 1,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "nome": "Tuca Pisos Construções",
+      "focus": 5,
+      "total": 135,
+      "taxa": 4,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "GFD — Guia FGTS Digital",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Francisco Helio Carneiro Dos Santos",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Leandro Dos Santos Rodrigues",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Vitor Almeida Da Silva",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "nome": "Murilo Pinheiro de Carvalho Camilo",
+      "focus": 4,
+      "total": 107,
+      "taxa": 4,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "nome": "Joclamar",
+      "focus": 4,
+      "total": 105,
+      "taxa": 4,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "nome": "LL Nogueira Tecnologia",
+      "focus": 3,
+      "total": 124,
+      "taxa": 2,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "APR — Análise Preliminar de Risco",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "nome": "CEC Transportes e Locação",
+      "focus": 3,
+      "total": 92,
+      "taxa": 3,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "nome": "João Nestardo Neto",
+      "focus": 2,
+      "total": 36,
+      "taxa": 6,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "nome": "Isabelly Duarte De Souza",
+      "focus": 2,
+      "total": 37,
+      "taxa": 5,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "nome": "Valdir Rodrigues Topógrafo",
+      "focus": 1,
+      "total": 82,
+      "taxa": 1,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "nome": "Gabriela Cidrine de Sena",
+      "focus": 1,
+      "total": 90,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "nome": "Cedro Engenharia",
+      "focus": 1,
+      "total": 7,
+      "taxa": 14,
+      "crit": 1,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "nome": "Souza Soares — Locações e Serviços",
+      "focus": 1,
+      "total": 233,
+      "taxa": 0,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Inventário de Máquinas",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "nome": "Ronieli Mendes Bastos",
+      "focus": 1,
+      "total": 92,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "nome": "Diego Rodrigues De Castro",
+      "focus": 1,
+      "total": 89,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "nome": "Shalom Terraplenagem Locações",
+      "focus": 1,
+      "total": 150,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "nome": "Almir Godofredo Flores Cardoso",
+      "focus": 1,
+      "total": 83,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    }
+  ],
+  "cpci": []
+}
