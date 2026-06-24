@@ -655,4 +655,17 @@ function renderEvolucao(hist) {
   };
 
   buildLine('ch-cd',  slice.map(h => h.conf_pct), '#2563a8', 95);
-  buildLi
+  buildLine('ch-ad',  slice.map(h => h.ader_pct), '#059669', 99);
+  buildLine('ch-cp',  slice.map(h => h.cp_pct),   '#7c3aed', 95);
+  buildLine('ch-ci',  slice.map(h => h.ci_pct),   '#0891b2', 95);
+  buildLine('ch-tot', slice.map(h => h.total),     '#64748b', null, true);
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function toggle(el) { el.classList.toggle('open'); }
+
+// ── Start ─────────────────────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
