@@ -109,7 +109,7 @@ const kpiColor = cls => {
   if (cls === 'kpi-yellow') return 'kv-yellow';
   return 'kv-nd';
 };
-const clColorClass = val => val >= 800 ? 'cl-green' : (val >= 600 ? 'cl-yellow' : 'cl-red');
+const clColorClass = val => val >= 900 ? 'cl-green' : (val >= 700 ? 'cl-yellow' : 'cl-red');
 
 async function fetchJSON(url) {
   const r = await fetch(url);
