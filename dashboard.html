@@ -540,25 +540,51 @@ function renderDashboard(d) {
       &nbsp;· ${m.total_workers} trabalhadores únicos
     </div>`;
 
-    if (cp_rows.length) {
-      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">Não conformes para CP e CI (${cp_rows.length})</p>`;
-      cpciHtml += '<table style="margin-bottom:16px"><thead><tr>'
-        + '<th>Empresa</th><th>Funcionário</th><th>Status de Integração</th>'
-        + '</tr></thead><tbody>';
-      cp_rows.forEach(r => {
-        cpciHtml += `<tr><td>${r.fornecedor}</td><td>${r.funcionario}</td><td>${stBadge(r.status)}</td></tr>`;
+    // Mapa funcionário → documentos NC (cross-ref com nc_status)
+    const workerDocMap = {};
+    (d.nc_status || []).forEach(nc => {
+      (nc.entries || []).forEach(e => {
+        if (!workerDocMap[e.func]) workerDocMap[e.func] = [];
+        workerDocMap[e.func].push({ tipo: nc.label, doc: e.doc_s });
       });
-      cpciHtml += '</tbody></table>';
+    });
+
+    const barItem = r => {
+      const wdocs = workerDocMap[r.funcionario] || [];
+      const docRows = wdocs.length
+        ? wdocs.map(wd => '<tr><td>' + wd.tipo + '</td><td>' + wd.doc + '</td></tr>').join('')
+        : '<tr><td colspan="2" style="color:var(--muted);font-size:12px">Sem documentos NC identificados (pendência de integração).</td></tr>';
+      return '<div class="bar-item" onclick="toggle(this)">'
+        + '<div class="bar-header">'
+        +   '<span style="display:flex;align-items:center;gap:8px">'
+        +     '<span class="expand-arrow">&#9654;</span>'
+        +     '<span class="bar-title">' + r.funcionario + '</span>'
+        +   '</span>'
+        +   '<span style="display:flex;align-items:center;gap:8px">'
+        +     '<span style="font-size:11px;color:var(--muted)">' + r.fornecedor + '</span>'
+        +     stBadge(r.status)
+        +   '</span>'
+        + '</div>'
+        + '<div class="expand-list">'
+        +   '<table class="detail-table">'
+        +     '<thead><tr><th>Tipo de NC</th><th>Documento</th></tr></thead>'
+        +     '<tbody>' + docRows + '</tbody>'
+        +   '</table>'
+        + '</div>'
+        + '</div>';
+    };
+
+    if (cp_rows.length) {
+      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">Não conformes para CP e CI (' + cp_rows.length + ')</p>';
+      cpciHtml += '<div class="bar-list" style="margin-bottom:16px">';
+      cp_rows.forEach(r => { cpciHtml += barItem(r); });
+      cpciHtml += '</div>';
     }
     if (ci_rows.length) {
-      cpciHtml += `<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">Integrados com pendências — OK para CI (${ci_rows.length})</p>`;
-      cpciHtml += '<table><thead><tr>'
-        + '<th>Empresa</th><th>Funcionário</th><th>Status de Integração</th>'
-        + '</tr></thead><tbody>';
-      ci_rows.forEach(r => {
-        cpciHtml += `<tr><td>${r.fornecedor}</td><td>${r.funcionario}</td><td>${stBadge(r.status)}</td></tr>`;
-      });
-      cpciHtml += '</tbody></table>';
+      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">Integrados com pendências — OK para CI (' + ci_rows.length + ')</p>';
+      cpciHtml += '<div class="bar-list">';
+      ci_rows.forEach(r => { cpciHtml += barItem(r); });
+      cpciHtml += '</div>';
     }
   }
 
