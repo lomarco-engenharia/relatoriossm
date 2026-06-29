@@ -1813,6 +1813,210 @@
       ]
     }
   ],
+  "worker_docs": {
+    "Darlam Gregório De Souza": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR35 Altura — Cordas",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Sidney Santiago Freitas": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "RG",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Gabriela Cidrine De Sena": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      }
+    ],
+    "Diego De Andrade Ferreira": [
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Edson Oliveira De Almeida": [
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Felipe Santos Vieira Da Cruz": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Vinicius Santos Vieira Da Cruz": [
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      }
+    ],
+    "William Vieira Dos Santos": [
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      }
+    ],
+    "Israel Ricardo Da Silva": [
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Júlio Sebastião De Oliveira": [
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "CNH",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira Profissional",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira do Conselho Regional - Registro de Classe",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "ASO",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Severino Fernandes Da Silva": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Cleiton Lima": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Wesley Felipe Pancieri Ambrosio": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Antoni Ferreira De Abreu Abreu": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Joao Santos De Almeida": [
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ]
+  },
   "cpci": [
     {
       "fornecedor": "Ademilson Donizeti De Andrade",
