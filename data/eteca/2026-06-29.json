@@ -2,100 +2,100 @@
   "meta": {
     "projeto": "eteca",
     "data": "2026-06-29",
-    "total": 3250,
-    "nc": 271,
-    "na": 96,
-    "conf_pct": 91.66154,
-    "ader_pct": 97.04615,
-    "n_subs": 27,
-    "conf_fmt": "91,7%",
-    "ader_fmt": "97,0%",
+    "total": 3376,
+    "nc": 272,
+    "na": 55,
+    "conf_pct": 91.94313,
+    "ader_pct": 98.37085,
+    "n_subs": 28,
+    "conf_fmt": "91,9%",
+    "ader_fmt": "98,4%",
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-yellow",
-    "total_workers": 51,
-    "cp_ok": 38,
-    "cp_nc": 13,
-    "cp_pct": 74.5098,
-    "cp_fmt": "74,5%",
+    "total_workers": 52,
+    "cp_ok": 42,
+    "cp_nc": 10,
+    "cp_pct": 80.76923,
+    "cp_fmt": "80,8%",
     "cp_class": "kpi-yellow",
-    "ci_ok": 47,
-    "ci_nc": 4,
-    "ci_pct": 92.15686,
-    "ci_fmt": "92,2%",
+    "ci_ok": 49,
+    "ci_nc": 3,
+    "ci_pct": 94.23077,
+    "ci_fmt": "94,2%",
     "ci_class": "kpi-yellow",
-    "ci_acesso": 38,
-    "ci_pend_int": 9,
-    "ci_falta": 2
+    "ci_acesso": 42,
+    "ci_pend_int": 7,
+    "ci_falta": 1
   },
   "variacao": {
     "data_anterior": "2026-06-26",
-    "d_conf": 0.557,
-    "d_ader": -0.056,
-    "d_total": -3.846,
-    "d_subs": -3.571,
-    "d_cp": 3.922,
-    "d_ci": 3.922
+    "d_conf": 0.866,
+    "d_ader": 1.308,
+    "d_total": -0.118,
+    "d_subs": 0.0,
+    "d_cp": 12.652,
+    "d_ci": 6.26
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 1842,
+      "qty": 1949,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
-      "pct": 56.7
+      "pct": 57.7
     },
     {
       "label": "OK",
-      "qty": 921,
+      "qty": 927,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
-      "pct": 28.3
+      "pct": 27.5
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
-      "qty": 152,
+      "qty": 191,
       "color": "#d97706",
       "is_nc": true,
       "is_na": false,
-      "pct": 4.7
+      "pct": 5.7
     },
     {
       "label": "Liberado com Ressalvas",
-      "qty": 144,
+      "qty": 145,
       "color": "#0891b2",
       "is_nc": false,
       "is_na": false,
-      "pct": 4.4
+      "pct": 4.3
     },
     {
       "label": "Pendente",
-      "qty": 96,
+      "qty": 55,
       "color": "#ca8a04",
       "is_nc": true,
       "is_na": true,
-      "pct": 3.0
+      "pct": 1.6
     },
     {
       "label": "Aprovado pelo Cliente",
-      "qty": 41,
+      "qty": 47,
       "color": "#7c3aed",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.3
+      "pct": 1.4
     },
     {
       "label": "Perto do Vencimento",
-      "qty": 31,
+      "qty": 36,
       "color": "#f97316",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.0
+      "pct": 1.1
     },
     {
       "label": "Em Validação",
-      "qty": 10,
+      "qty": 9,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
@@ -111,15 +111,15 @@
     },
     {
       "label": "Inválido",
-      "qty": 4,
+      "qty": 6,
       "color": "#dc2626",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.1
+      "pct": 0.2
     },
     {
       "label": "Pend. — Isenção Reprovada",
-      "qty": 2,
+      "qty": 4,
       "color": "#be123c",
       "is_nc": true,
       "is_na": false,
@@ -141,17 +141,17 @@
       "Pend. — Isenção Reprovada"
     ],
     "data": [
-      1842,
-      921,
-      152,
-      144,
-      96,
-      41,
-      31,
-      10,
+      1949,
+      927,
+      191,
+      145,
+      55,
+      47,
+      36,
+      9,
       7,
-      4,
-      2
+      6,
+      4
     ],
     "colors": [
       "#059669",
@@ -172,9 +172,114 @@
       "id": "ns1",
       "label": "Pendente",
       "color": "#ca8a04",
-      "count": 96,
+      "count": 55,
       "pct": 100,
       "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "LTCAT"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 Altura — Cordas"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Curso Básico de Segurança para Trabalhos a Quente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "RG"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 18 — Admissional"
+        },
         {
           "empresa": "Gabriela Cidrine de Sena",
           "func": "Gabriela Cidrine De Sena",
@@ -243,7 +348,7 @@
         {
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
+          "doc_s": "DDS — Diálogo Diário de Seg."
         },
         {
           "empresa": "Potência Terraplenagem e Locação",
@@ -253,22 +358,7 @@
         {
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg."
-        },
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        },
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "doc_s": "CNDT"
-        },
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
+          "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
           "empresa": "Potência Terraplenagem e Locação",
@@ -278,12 +368,17 @@
         {
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
-          "doc_s": "Programa de Saúde Mental"
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
           "doc_s": "PGR"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "CNDT"
         },
         {
           "empresa": "Potência Terraplenagem e Locação",
@@ -296,74 +391,14 @@
           "doc_s": "PCMSO"
         },
         {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
+          "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
           "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -383,11 +418,6 @@
         {
           "empresa": "Fluiter Engenharia e Soluções",
           "func": "Vinicius Santos Vieira Da Cruz",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "Vinicius Santos Vieira Da Cruz",
           "doc_s": "ASO Demissional"
         },
         {
@@ -399,246 +429,11 @@
           "empresa": "Fluiter Engenharia e Soluções",
           "func": "William Vieira Dos Santos",
           "doc_s": "ASO Demissional"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "William Vieira Dos Santos",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Curso Básico de Segurança para Trabalhos a Quente"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Carteira Profissional"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR35 Altura — Cordas"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 6 — EPI"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento de escoramento de valas, conforme NR-18 - Carga horária 8 Horas"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 18 - Treinamento para usuário de Cadeira Suspensa (8Hrs Teórica +8Hrs Prática)"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento para içamento de cargas"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento em trabalho de solda"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR33 Trabalho em Espaços Confinados 40Hrs - Supervisor"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 33 - Emergência e Salvamento em espaços confinados 24h"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 18 - Treinamento para operadores de plataforma elevatória (PEMT) (4 Hrs)"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR33 Trabalho em Espaços Confinados 16 Hrs Trabalhador autorizado"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 18 — Admissional"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento  das brigadas de emergência"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "OS Segurança"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "RG"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "CNH"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Carteira do Conselho Regional - Registro de Classe"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "ASO"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Ficha de EPI"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR-18 - Treinamento para uso/montagem de andaime"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR26 - Treinamento em utilização de produtos químicos – admissional"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Severino Fernandes Da Silva",
-          "doc_s": "Folha de Ponto"
-        },
-        {
-          "empresa": "Wesley Felipe Pancieri Ambrosio",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Wesley Felipe Pancieri Ambrosio",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
         },
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "doc_s": "CNDT"
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "Lais Silvestre Gardin",
@@ -648,12 +443,12 @@
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "doc_s": "CND FGTS — CRF"
+          "doc_s": "CNDT"
         },
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "doc_s": "CND Federal"
+          "doc_s": "CND FGTS — CRF"
         }
       ]
     },
@@ -662,7 +457,7 @@
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
       "count": 7,
-      "pct": 7,
+      "pct": 13,
       "entries": [
         {
           "empresa": "Real Eng Pinturas em Geral",
@@ -705,28 +500,38 @@
       "id": "ns3",
       "label": "Inválido",
       "color": "#dc2626",
-      "count": 4,
-      "pct": 4,
+      "count": 6,
+      "pct": 11,
       "entries": [
         {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "Edson Oliveira De Almeida",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "ASO"
         },
         {
-          "empresa": "Ryfal Construções e Reformas",
-          "func": "Marcos Viniciusde Oliveira Silva",
-          "doc_s": "OS Segurança"
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "ASO"
         },
         {
-          "empresa": "Gilmar Santos Oliveira",
-          "func": "Gilmar Santos Oliveira",
-          "doc_s": "Ficha de EPI"
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia"
         },
         {
           "empresa": "Seitech Serv. Instalação e Automação",
           "func": "—",
           "doc_s": "LTCAT"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
         }
       ]
     },
@@ -734,17 +539,27 @@
       "id": "ns4",
       "label": "Pend. — Isenção Reprovada",
       "color": "#be123c",
-      "count": 2,
-      "pct": 2,
+      "count": 4,
+      "pct": 7,
       "entries": [
         {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Cicero Lucas Da Silva",
-          "doc_s": "NR35 Altura — Cordas"
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Diego De Andrade Ferreira",
+          "doc_s": "ASO Demissional"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Severino Fernandes Da Silva",
+          "func": "Júlio Sebastião De Oliveira",
           "doc_s": "ASO"
         }
       ]
@@ -754,7 +569,7 @@
     {
       "id": "d1",
       "name": "Evidências Prog. Saúde Mental",
-      "count": 40,
+      "count": 13,
       "color": "#64748b",
       "pct": 100,
       "entries": [
@@ -835,177 +650,15 @@
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
     {
       "id": "d2",
       "name": "Folha de Ponto",
-      "count": 5,
+      "count": 4,
       "color": "#059669",
-      "pct": 12,
+      "pct": 31,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -1030,27 +683,54 @@
           "func": "William Vieira Dos Santos",
           "badge": "pend",
           "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "ASO Demissional",
+      "count": 4,
+      "color": "#dc2626",
+      "pct": 31,
+      "entries": [
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Diego De Andrade Ferreira",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
         },
         {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Severino Fernandes Da Silva",
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
           "badge": "pend",
           "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "d3",
-      "name": "Programa de Saúde Mental",
-      "count": 4,
-      "color": "#64748b",
-      "pct": 10,
+      "id": "d4",
+      "name": "CND FGTS — CRF",
+      "count": 3,
+      "color": "#0891b2",
+      "pct": 23,
       "entries": [
         {
-          "empresa": "Real Eng Pinturas em Geral",
+          "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
-          "badge": "rep",
-          "st_s": "Reprovado"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "empresa": "Potência Terraplenagem e Locação",
@@ -1059,13 +739,7 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
+          "empresa": "Lais Silvestre Gardin",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -1073,11 +747,146 @@
       ]
     },
     {
-      "id": "d4",
+      "id": "d5",
+      "name": "CND Municipal",
+      "count": 3,
+      "color": "#0891b2",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "CNDT",
+      "count": 3,
+      "color": "#0891b2",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "CND Federal",
+      "count": 3,
+      "color": "#0891b2",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "Contrato Social / Reg. MEI",
+      "count": 3,
+      "color": "#6366f1",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "ASO",
+      "count": 3,
+      "color": "#dc2626",
+      "pct": 23,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Júlio Sebastião De Oliveira",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d10",
       "name": "Plano de Rigging (Içamento)",
       "count": 3,
       "color": "#2563a8",
-      "pct": 8,
+      "pct": 23,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -1100,158 +909,35 @@
       ]
     },
     {
-      "id": "d5",
-      "name": "CND Federal",
-      "count": 3,
-      "color": "#0891b2",
-      "pct": 8,
-      "entries": [
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Alexssandro Jannini Izidoro",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d6",
-      "name": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
-      "count": 3,
-      "color": "#9f1239",
-      "pct": 8,
-      "entries": [
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "Edson Oliveira De Almeida",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "Vinicius Santos Vieira Da Cruz",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "William Vieira Dos Santos",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d7",
-      "name": "ASO Demissional",
-      "count": 3,
-      "color": "#dc2626",
-      "pct": 8,
-      "entries": [
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "Felipe Santos Vieira Da Cruz",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "Vinicius Santos Vieira Da Cruz",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "William Vieira Dos Santos",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d8",
-      "name": "Contrato Social / Reg. MEI",
-      "count": 2,
-      "color": "#6366f1",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d9",
-      "name": "CNDT",
-      "count": 2,
-      "color": "#0891b2",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d10",
-      "name": "CND FGTS — CRF",
-      "count": 2,
-      "color": "#0891b2",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
       "id": "d11",
-      "name": "CND Municipal",
+      "name": "PGR",
       "count": 2,
-      "color": "#0891b2",
-      "pct": 5,
+      "color": "#be123c",
+      "pct": 15,
       "entries": [
         {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
           "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "name": "LTCAT",
+      "count": 2,
+      "color": "#be123c",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -1259,144 +945,24 @@
         {
           "empresa": "Seitech Serv. Instalação e Automação",
           "func": "—",
-          "badge": "venc",
-          "st_s": "Vencido"
-        }
-      ]
-    },
-    {
-      "id": "d12",
-      "name": "OS Segurança",
-      "count": 2,
-      "color": "#64748b",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Ryfal Construções e Reformas",
-          "func": "Marcos Viniciusde Oliveira Silva",
           "badge": "inv",
           "st_s": "Inválido"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
     {
       "id": "d13",
-      "name": "Ficha de EPI",
+      "name": "PCMSO",
       "count": 2,
-      "color": "#64748b",
-      "pct": 5,
+      "color": "#be123c",
+      "pct": 15,
       "entries": [
         {
-          "empresa": "Gilmar Santos Oliveira",
-          "func": "Gilmar Santos Oliveira",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d14",
-      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-      "count": 2,
-      "color": "#7c3aed",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
         },
-        {
-          "empresa": "Wesley Felipe Pancieri Ambrosio",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d15",
-      "name": "Comp. de Pagamento GPS/DARF",
-      "count": 2,
-      "color": "#64748b",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Wesley Felipe Pancieri Ambrosio",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d16",
-      "name": "NR35 Altura — Cordas",
-      "count": 2,
-      "color": "#d97706",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Cicero Lucas Da Silva",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d17",
-      "name": "ASO",
-      "count": 2,
-      "color": "#dc2626",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Severino Fernandes Da Silva",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d18",
-      "name": "Campanha SST",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
         {
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
@@ -1406,12 +972,123 @@
       ]
     },
     {
-      "id": "d19",
-      "name": "DDS — Diálogo Diário de Seg.",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
+      "id": "d14",
+      "name": "NR 18 — Admissional",
+      "count": 2,
+      "color": "#d97706",
+      "pct": 15,
       "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "Ficha de EPI",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "name": "OS Segurança",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d17",
+      "name": "NR 6 — EPI",
+      "count": 2,
+      "color": "#d97706",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d18",
+      "name": "NR35 - Trabalho em Altura",
+      "count": 2,
+      "color": "#d97706",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "name": "Programa de Saúde Mental",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 15,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
         {
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
@@ -1422,29 +1099,35 @@
     },
     {
       "id": "d20",
-      "name": "PGR",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 2,
+      "name": "Folha de Pagamento",
+      "count": 2,
+      "color": "#059669",
+      "pct": 15,
       "entries": [
         {
-          "empresa": "Potência Terraplenagem e Locação",
+          "empresa": "Ryfal Construções e Reformas",
           "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
       "id": "d21",
-      "name": "PCMSO",
+      "name": "NR35 Altura — Cordas",
       "count": 1,
-      "color": "#be123c",
-      "pct": 2,
+      "color": "#d97706",
+      "pct": 8,
       "entries": [
         {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
           "badge": "pend",
           "st_s": "Pendente"
         }
@@ -1452,10 +1135,85 @@
     },
     {
       "id": "d22",
+      "name": "Curso Básico de Segurança para Trabalhos a Quente",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d23",
+      "name": "RG",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d24",
+      "name": "DDS — Diálogo Diário de Seg.",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d25",
+      "name": "Campanha SST",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d26",
+      "name": "Apólice Seguro Garantia",
+      "count": 1,
+      "color": "#0f766e",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d27",
       "name": "Plano Resgate Altura",
       "count": 1,
       "color": "#2563a8",
-      "pct": 2,
+      "pct": 8,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -1466,11 +1224,11 @@
       ]
     },
     {
-      "id": "d23",
+      "id": "d28",
       "name": "Convenção Coletiva",
       "count": 1,
       "color": "#64748b",
-      "pct": 2,
+      "pct": 8,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -1481,329 +1239,29 @@
       ]
     },
     {
-      "id": "d24",
-      "name": "Curso Básico de Segurança para Trabalhos a Quente",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d25",
-      "name": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d26",
-      "name": "Carteira Profissional",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d27",
-      "name": "NR 6 — EPI",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d28",
-      "name": "Treinamento de escoramento de valas, conforme NR-18 - Carga horária 8 Horas",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
       "id": "d29",
-      "name": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
       "count": 1,
-      "color": "#64748b",
-      "pct": 2,
+      "color": "#7c3aed",
+      "pct": 8,
       "entries": [
         {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
         }
       ]
     },
     {
       "id": "d30",
-      "name": "NR 18 - Treinamento para usuário de Cadeira Suspensa (8Hrs Teórica +8Hrs Prática)",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d31",
-      "name": "Treinamento para içamento de cargas",
+      "name": "Comp. de Pagamento GPS/DARF",
       "count": 1,
       "color": "#64748b",
-      "pct": 2,
+      "pct": 8,
       "entries": [
         {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d32",
-      "name": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d33",
-      "name": "Treinamento em trabalho de solda",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d34",
-      "name": "NR33 Trabalho em Espaços Confinados 40Hrs - Supervisor",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d35",
-      "name": "NR 33 - Emergência e Salvamento em espaços confinados 24h",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d36",
-      "name": "NR 18 - Treinamento para operadores de plataforma elevatória (PEMT) (4 Hrs)",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d37",
-      "name": "NR33 Trabalho em Espaços Confinados 16 Hrs Trabalhador autorizado",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d38",
-      "name": "NR 18 — Admissional",
-      "count": 1,
-      "color": "#d97706",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d39",
-      "name": "Treinamento  das brigadas de emergência",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d40",
-      "name": "RG",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d41",
-      "name": "CNH",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d42",
-      "name": "Carteira do Conselho Regional - Registro de Classe",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d43",
-      "name": "NR-18 - Treinamento para uso/montagem de andaime",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d44",
-      "name": "NR26 - Treinamento em utilização de produtos químicos – admissional",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Júlio Sebastião De Oliveira",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d45",
-      "name": "LTCAT",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 2,
-      "entries": [
-        {
-          "empresa": "Seitech Serv. Instalação e Automação",
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
           "func": "—",
           "badge": "inv",
           "st_s": "Inválido"
@@ -1814,22 +1272,165 @@
   "subs": [
     {
       "id": "s1",
-      "nome": "Consórcio ETE Caieiras (próprio)",
-      "focus": 35,
-      "total": 1356,
-      "taxa": 3,
-      "crit": 6,
-      "pill_color": "#16a34a",
+      "nome": "Alufer Engenharia Ltda.",
+      "focus": 23,
+      "total": 129,
+      "taxa": 18,
+      "crit": 2,
+      "pill_color": "#ca8a04",
       "entries": [
         {
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "doc_s": "CND FGTS — CRF",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "LTCAT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 Altura — Cordas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Ficha de EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Curso Básico de Segurança para Trabalhos a Quente",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "RG",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "Ficha de EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nome": "Potência Terraplenagem e Locação",
+      "focus": 23,
+      "total": 80,
+      "taxa": 29,
+      "crit": 0,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1838,6 +1439,202 @@
           "doc_s": "Evidências Prog. Saúde Mental",
           "badge": "pend",
           "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg.",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Campanha SST",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "nome": "Fluiter Engenharia e Soluções",
+      "focus": 7,
+      "total": 149,
+      "taxa": 5,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "Diego De Andrade Ferreira",
+          "doc_s": "ASO Demissional",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "ASO Demissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "ASO Demissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "William Vieira Dos Santos",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "William Vieira Dos Santos",
+          "doc_s": "ASO Demissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "nome": "Consórcio ETE Caieiras (próprio)",
+      "focus": 6,
+      "total": 1366,
+      "taxa": 0,
+      "crit": 6,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia",
+          "badge": "inv",
+          "st_s": "Inválido"
         },
         {
           "func": "—",
@@ -1864,571 +1661,10 @@
           "st_s": "Vencido"
         },
         {
-          "func": "Cicero Lucas Da Silva",
-          "doc_s": "NR35 Altura — Cordas",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
           "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Curso Básico de Segurança para Trabalhos a Quente",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Carteira Profissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR35 Altura — Cordas",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 6 — EPI",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento de escoramento de valas, conforme NR-18 - Carga horária 8 Horas",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 18 - Treinamento para usuário de Cadeira Suspensa (8Hrs Teórica +8Hrs Prática)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento para içamento de cargas",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento em trabalho de solda",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR33 Trabalho em Espaços Confinados 40Hrs - Supervisor",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 33 - Emergência e Salvamento em espaços confinados 24h",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 18 - Treinamento para operadores de plataforma elevatória (PEMT) (4 Hrs)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR33 Trabalho em Espaços Confinados 16 Hrs Trabalhador autorizado",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR 18 — Admissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Treinamento  das brigadas de emergência",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "OS Segurança",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "RG",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "CNH",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Carteira do Conselho Regional - Registro de Classe",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "ASO",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "Ficha de EPI",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR-18 - Treinamento para uso/montagem de andaime",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "NR26 - Treinamento em utilização de produtos químicos – admissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Severino Fernandes Da Silva",
-          "doc_s": "Folha de Ponto",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Severino Fernandes Da Silva",
           "doc_s": "ASO",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s2",
-      "nome": "Potência Terraplenagem e Locação",
-      "focus": 23,
-      "total": 81,
-      "taxa": 28,
-      "crit": 0,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Campanha SST",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CNDT",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "nome": "Fluiter Engenharia e Soluções",
-      "focus": 23,
-      "total": 149,
-      "taxa": 15,
-      "crit": 1,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Edson Oliveira De Almeida",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "Felipe Santos Vieira Da Cruz",
-          "doc_s": "Folha de Ponto",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Felipe Santos Vieira Da Cruz",
-          "doc_s": "ASO Demissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Vinicius Santos Vieira Da Cruz",
-          "doc_s": "Folha de Ponto",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Vinicius Santos Vieira Da Cruz",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Vinicius Santos Vieira Da Cruz",
-          "doc_s": "ASO Demissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "William Vieira Dos Santos",
-          "doc_s": "Folha de Ponto",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "William Vieira Dos Santos",
-          "doc_s": "ASO Demissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "William Vieira Dos Santos",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "s4",
-      "nome": "Alexssandro Jannini Izidoro",
-      "focus": 15,
-      "total": 24,
-      "taxa": 62,
-      "crit": 0,
-      "pill_color": "#dc2626",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
@@ -2443,7 +1679,7 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CNDT",
+          "doc_s": "CND Federal",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -2455,13 +1691,13 @@
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "CNDT",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "CND Federal",
+          "doc_s": "CND FGTS — CRF",
           "badge": "pend",
           "st_s": "Pendente"
         }
@@ -2471,7 +1707,7 @@
       "id": "s6",
       "nome": "Gabriela Cidrine de Sena",
       "focus": 2,
-      "total": 79,
+      "total": 78,
       "taxa": 3,
       "crit": 1,
       "pill_color": "#16a34a",
@@ -2492,10 +1728,33 @@
     },
     {
       "id": "s7",
+      "nome": "Ryfal Construções e Reformas",
+      "focus": 2,
+      "total": 433,
+      "taxa": 0,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s8",
       "nome": "Seitech Serv. Instalação e Automação",
       "focus": 2,
-      "total": 80,
-      "taxa": 2,
+      "total": 79,
+      "taxa": 3,
       "crit": 2,
       "pill_color": "#16a34a",
       "entries": [
@@ -2514,30 +1773,30 @@
       ]
     },
     {
-      "id": "s8",
+      "id": "s9",
       "nome": "Wesley Felipe Pancieri Ambrosio",
       "focus": 2,
       "total": 35,
       "taxa": 6,
-      "crit": 0,
+      "crit": 2,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "badge": "inv",
+          "st_s": "Inválido"
         },
         {
           "func": "—",
           "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "badge": "inv",
+          "st_s": "Inválido"
         }
       ]
     },
     {
-      "id": "s9",
+      "id": "s10",
       "nome": "Real Eng Pinturas em Geral",
       "focus": 1,
       "total": 142,
@@ -2552,43 +1811,81 @@
           "st_s": "Reprovado"
         }
       ]
-    },
-    {
-      "id": "s10",
-      "nome": "Ryfal Construções e Reformas",
-      "focus": 1,
-      "total": 433,
-      "taxa": 0,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "Marcos Viniciusde Oliveira Silva",
-          "doc_s": "OS Segurança",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s11",
-      "nome": "Gilmar Santos Oliveira",
-      "focus": 1,
-      "total": 33,
-      "taxa": 3,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "Gilmar Santos Oliveira",
-          "doc_s": "Ficha de EPI",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
     }
   ],
   "worker_docs": {
+    "Darlam Gregório De Souza": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR35 Altura — Cordas",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Sidney Santiago Freitas": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "RG",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
     "Gabriela Cidrine De Sena": [
       {
         "doc": "Folha de Ponto",
@@ -2598,13 +1895,13 @@
     "Diego De Andrade Ferreira": [
       {
         "doc": "ASO Demissional",
-        "st_s": "Isenção Ag. Aprovação"
+        "st_s": "Isen. Reprovada"
       }
     ],
     "Edson Oliveira De Almeida": [
       {
         "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
-        "st_s": "Inválido"
+        "st_s": "Em Validação"
       }
     ],
     "Felipe Santos Vieira Da Cruz": [
@@ -2623,11 +1920,11 @@
     ],
     "Vinicius Santos Vieira Da Cruz": [
       {
-        "doc": "Folha de Ponto",
-        "st_s": "Pendente"
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Em Validação"
       },
       {
-        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "doc": "Folha de Ponto",
         "st_s": "Pendente"
       },
       {
@@ -2637,15 +1934,15 @@
     ],
     "William Vieira Dos Santos": [
       {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Em Validação"
+      },
+      {
         "doc": "Folha de Ponto",
         "st_s": "Pendente"
       },
       {
         "doc": "ASO Demissional",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
         "st_s": "Pendente"
       }
     ],
@@ -2655,140 +1952,44 @@
         "st_s": "Isenção Ag. Aprovação"
       }
     ],
-    "Leandro Ricardo Mota Da Conceição Junior": [
-      {
-        "doc": "OS Segurança",
-        "st_s": "Em Validação"
-      }
-    ],
-    "Marcos Viniciusde Oliveira Silva": [
-      {
-        "doc": "OS Segurança",
-        "st_s": "Inválido"
-      }
-    ],
-    "Gilmar Santos Oliveira": [
-      {
-        "doc": "Ficha de EPI",
-        "st_s": "Inválido"
-      }
-    ],
-    "Cicero Lucas Da Silva": [
-      {
-        "doc": "NR35 Altura — Cordas",
-        "st_s": "Isen. Reprovada"
-      }
-    ],
     "Júlio Sebastião De Oliveira": [
       {
-        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "Carteira Profissional",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR35 Altura — Cordas",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 6 — EPI",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "Treinamento de escoramento de valas, conforme NR-18 - Carga horária 8 Horas",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 18 - Treinamento para usuário de Cadeira Suspensa (8Hrs Teórica +8Hrs Prática)",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "Treinamento para içamento de cargas",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "Treinamento em trabalho de solda",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR33 Trabalho em Espaços Confinados 40Hrs - Supervisor",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 33 - Emergência e Salvamento em espaços confinados 24h",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 18 - Treinamento para operadores de plataforma elevatória (PEMT) (4 Hrs)",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR33 Trabalho em Espaços Confinados 16 Hrs Trabalhador autorizado",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 18 — Admissional",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "Treinamento  das brigadas de emergência",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "OS Segurança",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "RG",
-        "st_s": "Pendente"
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Isenção Ag. Aprovação"
       },
       {
         "doc": "CNH",
-        "st_s": "Pendente"
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira Profissional",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+        "st_s": "Isenção Ag. Aprovação"
       },
       {
         "doc": "Carteira do Conselho Regional - Registro de Classe",
-        "st_s": "Pendente"
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Isenção Ag. Aprovação"
       },
       {
         "doc": "ASO",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "Ficha de EPI",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR-18 - Treinamento para uso/montagem de andaime",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
-        "st_s": "Pendente"
+        "st_s": "Isen. Reprovada"
       }
     ],
     "Severino Fernandes Da Silva": [
       {
-        "doc": "Folha de Ponto",
-        "st_s": "Pendente"
-      },
-      {
         "doc": "ASO",
-        "st_s": "Isen. Reprovada"
+        "st_s": "Em Validação"
       }
     ],
     "Cleiton Lima": [
@@ -2823,6 +2024,16 @@
       "status": "Pendências porém Integrado"
     },
     {
+      "fornecedor": "Alufer Engenharia Ltda.",
+      "funcionario": "Darlam Gregório De Souza",
+      "status": "Pendências e Falta Integração"
+    },
+    {
+      "fornecedor": "Alufer Engenharia Ltda.",
+      "funcionario": "Sidney Santiago Freitas",
+      "status": "Pendências e Falta Integração"
+    },
+    {
       "fornecedor": "Antoni Ferreira De Abreu",
       "funcionario": "Antoni Ferreira De Abreu Abreu",
       "status": "Pendências porém Integrado"
@@ -2833,16 +2044,6 @@
       "status": "Pendências porém Integrado"
     },
     {
-      "fornecedor": "Consorcio Ete Caieiras - 1 Etapa",
-      "funcionario": "Cicero Lucas Da Silva",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consorcio Ete Caieiras - 1 Etapa",
-      "funcionario": "Júlio Sebastião De Oliveira",
-      "status": "Pendências e Falta Integração"
-    },
-    {
       "fornecedor": "Diego Rodrigues De Castro",
       "funcionario": "Diego Rodrigues",
       "status": "Pendências porém Integrado"
@@ -2851,11 +2052,6 @@
       "fornecedor": "Fluiter Engenharia e Soluções",
       "funcionario": "Jonathan Ferreia De Lima",
       "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Gilmar Santos Oliveira",
-      "funcionario": "Gilmar Santos Oliveira",
-      "status": "Pendências e Falta Integração"
     },
     {
       "fornecedor": "Real Eng Pinturas em Geral",
@@ -2870,16 +2066,6 @@
     {
       "fornecedor": "Ronieli Mendes Bastos",
       "funcionario": "Ronieli Bastos",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Ryfal Construções e Reformas",
-      "funcionario": "Israel Ricardo Da Silva",
-      "status": "Falta Integração"
-    },
-    {
-      "fornecedor": "Ryfal Construções e Reformas",
-      "funcionario": "Marcos Viniciusde Oliveira Silva",
       "status": "Pendências porém Integrado"
     }
   ]
