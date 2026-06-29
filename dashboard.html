@@ -540,7 +540,7 @@ function renderDashboard(d) {
       &nbsp;· ${m.total_workers} trabalhadores únicos
     </div>`;
 
-    // Mapa funcionário → documentos NC (cross-ref com nc_status)
+    // Mapa funcionário → documentos NC + pendentes (cross-ref nc_status e docs)
     const workerDocMap = {};
     (d.nc_status || []).forEach(nc => {
       (nc.entries || []).forEach(e => {
@@ -548,26 +548,39 @@ function renderDashboard(d) {
         workerDocMap[e.func].push({ tipo: nc.label, doc: e.doc_s });
       });
     });
+    const pendSts = ['Pend. — Isenção Ag. Aprovação', 'Em Validação'];
+    (d.docs || []).forEach(item => {
+      (item.entries || []).filter(e => pendSts.includes(e.st_s)).forEach(e => {
+        if (!workerDocMap[e.func]) workerDocMap[e.func] = [];
+        workerDocMap[e.func].push({ tipo: e.st_s, doc: item.name });
+      });
+    });
 
+    const pillFor = tipo => {
+      if (tipo === 'Em Validação' || tipo.indexOf('Isenção') >= 0) return 'p-pend';
+      if (tipo.indexOf('Vencido') >= 0 || tipo.indexOf('venc') >= 0) return 'p-venc';
+      if (tipo.indexOf('Reprovado') >= 0) return 'p-rep';
+      return 'p-inv';
+    };
     const barItem = r => {
       const wdocs = workerDocMap[r.funcionario] || [];
       const docRows = wdocs.length
-        ? wdocs.map(wd => '<tr><td>' + wd.tipo + '</td><td>' + wd.doc + '</td></tr>').join('')
+        ? wdocs.map(wd =>
+            '<tr><td><span class="pill ' + pillFor(wd.tipo) + '">' + wd.tipo + '</span></td><td>' + wd.doc + '</td></tr>'
+          ).join('')
         : '<tr><td colspan="2" style="color:var(--muted);font-size:12px">Sem documentos NC identificados (pendência de integração).</td></tr>';
       return '<div class="bar-item" onclick="toggle(this)">'
         + '<div class="bar-header">'
         +   '<span style="display:flex;align-items:center;gap:8px">'
         +     '<span class="expand-arrow">&#9654;</span>'
         +     '<span class="bar-title">' + r.funcionario + '</span>'
+        +     '<span style="font-size:12px;color:#334155;font-weight:400">' + r.fornecedor + '</span>'
         +   '</span>'
-        +   '<span style="display:flex;align-items:center;gap:8px">'
-        +     '<span style="font-size:11px;color:var(--muted)">' + r.fornecedor + '</span>'
-        +     stBadge(r.status)
-        +   '</span>'
+        +   '<span>' + stBadge(r.status) + '</span>'
         + '</div>'
         + '<div class="expand-list">'
         +   '<table class="detail-table">'
-        +     '<thead><tr><th>Tipo de NC</th><th>Documento</th></tr></thead>'
+        +     '<thead><tr><th>Situação</th><th>Documento</th></tr></thead>'
         +     '<tbody>' + docRows + '</tbody>'
         +   '</table>'
         + '</div>'
