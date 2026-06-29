@@ -2,52 +2,52 @@
   "meta": {
     "projeto": "etemp",
     "data": "2026-06-29",
-    "total": 3787,
-    "nc": 243,
-    "na": 7,
-    "conf_pct": 93.58331,
-    "ader_pct": 99.81516,
+    "total": 3760,
+    "nc": 239,
+    "na": 5,
+    "conf_pct": 93.64362,
+    "ader_pct": 99.86702,
     "n_subs": 28,
     "conf_fmt": "93,6%",
-    "ader_fmt": "99,8%",
+    "ader_fmt": "99,9%",
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-green",
-    "total_workers": 58,
-    "cp_ok": 44,
+    "total_workers": 56,
+    "cp_ok": 42,
     "cp_nc": 14,
-    "cp_pct": 75.86207,
-    "cp_fmt": "75,9%",
+    "cp_pct": 75.0,
+    "cp_fmt": "75,0%",
     "cp_class": "kpi-yellow",
-    "ci_ok": 56,
+    "ci_ok": 54,
     "ci_nc": 2,
-    "ci_pct": 96.55172,
-    "ci_fmt": "96,6%",
+    "ci_pct": 96.42857,
+    "ci_fmt": "96,4%",
     "ci_class": "kpi-green",
-    "ci_acesso": 44,
+    "ci_acesso": 42,
     "ci_pend_int": 12,
     "ci_falta": 2
   },
   "variacao": {
     "data_anterior": "2026-06-26",
-    "d_conf": 0.078,
-    "d_ader": -0.05,
-    "d_total": 2.407,
+    "d_conf": 0.143,
+    "d_ader": 0.002,
+    "d_total": 1.677,
     "d_subs": 0.0,
-    "d_cp": -3.448,
-    "d_ci": -3.448
+    "d_cp": -4.545,
+    "d_ci": -3.571
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2467,
+      "qty": 2450,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
-      "pct": 65.1
+      "pct": 65.2
     },
     {
       "label": "OK",
-      "qty": 941,
+      "qty": 933,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
@@ -63,51 +63,51 @@
     },
     {
       "label": "Liberado com Ressalvas",
-      "qty": 74,
+      "qty": 73,
       "color": "#0891b2",
       "is_nc": false,
       "is_na": false,
-      "pct": 2.0
+      "pct": 1.9
     },
     {
       "label": "Aprovado pelo Cliente",
-      "qty": 54,
+      "qty": 55,
       "color": "#7c3aed",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.4
+      "pct": 1.5
     },
     {
       "label": "Em Validação",
-      "qty": 16,
+      "qty": 11,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.4
-    },
-    {
-      "label": "Perto do Vencimento",
-      "qty": 8,
-      "color": "#f97316",
-      "is_nc": false,
-      "is_na": false,
-      "pct": 0.2
-    },
-    {
-      "label": "Pendente",
-      "qty": 7,
-      "color": "#ca8a04",
-      "is_nc": true,
-      "is_na": true,
-      "pct": 0.2
+      "pct": 0.3
     },
     {
       "label": "Inválido",
-      "qty": 7,
+      "qty": 10,
       "color": "#dc2626",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.2
+      "pct": 0.3
+    },
+    {
+      "label": "Perto do Vencimento",
+      "qty": 10,
+      "color": "#f97316",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 0.3
+    },
+    {
+      "label": "Pendente",
+      "qty": 5,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
+      "pct": 0.1
     },
     {
       "label": "Reprovado/Vencido",
@@ -134,22 +134,22 @@
       "Liberado com Ressalvas",
       "Aprovado pelo Cliente",
       "Em Validação",
+      "Inválido",
       "Perto do Vencimento",
       "Pendente",
-      "Inválido",
       "Reprovado/Vencido",
       "Pend. — Isenção Reprovada"
     ],
     "data": [
-      2467,
-      941,
+      2450,
+      933,
       208,
-      74,
-      54,
-      16,
-      8,
-      7,
-      7,
+      73,
+      55,
+      11,
+      10,
+      10,
+      5,
       5,
       0
     ],
@@ -160,9 +160,9 @@
       "#0891b2",
       "#7c3aed",
       "#2563a8",
+      "#dc2626",
       "#f97316",
       "#ca8a04",
-      "#dc2626",
       "#9f1239",
       "#be123c"
     ]
@@ -170,53 +170,9 @@
   "nc_status": [
     {
       "id": "ns1",
-      "label": "Pendente",
-      "color": "#ca8a04",
-      "count": 7,
-      "pct": 100,
-      "entries": [
-        {
-          "empresa": "Valdir Rodrigues Topógrafo",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "CNDT"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "doc_s": "Registro de SESMT"
-        }
-      ]
-    },
-    {
-      "id": "ns2",
       "label": "Inválido",
       "color": "#dc2626",
-      "count": 7,
+      "count": 10,
       "pct": 100,
       "entries": [
         {
@@ -228,6 +184,21 @@
           "empresa": "Gabriela Cidrine de Sena",
           "func": "Jose Nilton Alvesda  Silva",
           "doc_s": "ASO"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
         },
         {
           "empresa": "Pejota Construções",
@@ -257,11 +228,45 @@
       ]
     },
     {
+      "id": "ns2",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 5,
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Registro de SESMT"
+        }
+      ]
+    },
+    {
       "id": "ns3",
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
       "count": 5,
-      "pct": 71,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -396,10 +401,10 @@
       "pct": 67,
       "entries": [
         {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "empresa": "Pejota Construções",
           "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "badge": "inv",
+          "st_s": "Inválido"
         },
         {
           "empresa": "CEC Transportes e Locação",
@@ -426,21 +431,6 @@
     },
     {
       "id": "d7",
-      "name": "CNDT",
-      "count": 1,
-      "color": "#0891b2",
-      "pct": 33,
-      "entries": [
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d8",
       "name": "CND FGTS — CRF",
       "count": 1,
       "color": "#0891b2",
@@ -455,7 +445,37 @@
       ]
     },
     {
+      "id": "d8",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 33,
+      "entries": [
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
       "id": "d9",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+      "count": 1,
+      "color": "#7c3aed",
+      "pct": 33,
+      "entries": [
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d10",
       "name": "OS Segurança",
       "count": 1,
       "color": "#64748b",
@@ -470,7 +490,7 @@
       ]
     },
     {
-      "id": "d10",
+      "id": "d11",
       "name": "Apólice Seguro Garantia",
       "count": 1,
       "color": "#0f766e",
@@ -485,7 +505,7 @@
       ]
     },
     {
-      "id": "d11",
+      "id": "d12",
       "name": "Registro de SESMT",
       "count": 1,
       "color": "#64748b",
@@ -500,7 +520,7 @@
       ]
     },
     {
-      "id": "d12",
+      "id": "d13",
       "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
@@ -519,7 +539,7 @@
     {
       "id": "s1",
       "nome": "Consórcio KTL Mairiporã (próprio)",
-      "focus": 6,
+      "focus": 5,
       "total": 984,
       "taxa": 1,
       "crit": 4,
@@ -530,12 +550,6 @@
           "doc_s": "Apólice Seguro Garantia",
           "badge": "inv",
           "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "pend",
-          "st_s": "Pendente"
         },
         {
           "func": "—",
@@ -565,16 +579,51 @@
     },
     {
       "id": "s2",
-      "nome": "Murilo Pinheiro de Carvalho Camilo",
+      "nome": "Pejota Construções",
       "focus": 4,
+      "total": 682,
+      "taxa": 1,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Joel Oliveira",
+          "doc_s": "OS Segurança",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "nome": "Murilo Pinheiro de Carvalho Camilo",
+      "focus": 3,
       "total": 106,
-      "taxa": 4,
+      "taxa": 3,
       "crit": 0,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "CNDT",
+          "doc_s": "CND Federal",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -589,17 +638,11 @@
           "doc_s": "CND Municipal",
           "badge": "pend",
           "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "s3",
+      "id": "s4",
       "nome": "Gabriela Cidrine de Sena",
       "focus": 2,
       "total": 89,
@@ -622,7 +665,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s5",
       "nome": "Valdir Rodrigues Topógrafo",
       "focus": 1,
       "total": 81,
@@ -639,7 +682,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s6",
       "nome": "Souza Soares — Locações e Serviços",
       "focus": 1,
       "total": 232,
@@ -656,7 +699,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s7",
       "nome": "Ronieli Mendes Bastos",
       "focus": 1,
       "total": 91,
@@ -669,23 +712,6 @@
           "doc_s": "Contrato de Prestação de Serviço",
           "badge": "rep",
           "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "nome": "Pejota Construções",
-      "focus": 1,
-      "total": 709,
-      "taxa": 0,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "Joel Oliveira",
-          "doc_s": "OS Segurança",
-          "badge": "inv",
-          "st_s": "Inválido"
         }
       ]
     },
