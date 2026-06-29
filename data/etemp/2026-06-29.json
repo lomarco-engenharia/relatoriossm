@@ -2,68 +2,68 @@
   "meta": {
     "projeto": "etemp",
     "data": "2026-06-29",
-    "total": 3722,
-    "nc": 273,
-    "na": 45,
-    "conf_pct": 92.66523,
-    "ader_pct": 98.79097,
-    "n_subs": 29,
-    "conf_fmt": "92,7%",
-    "ader_fmt": "98,8%",
+    "total": 3787,
+    "nc": 243,
+    "na": 7,
+    "conf_pct": 93.58331,
+    "ader_pct": 99.81516,
+    "n_subs": 28,
+    "conf_fmt": "93,6%",
+    "ader_fmt": "99,8%",
     "conf_class": "kpi-yellow",
-    "ader_class": "kpi-yellow",
-    "total_workers": 56,
+    "ader_class": "kpi-green",
+    "total_workers": 58,
     "cp_ok": 44,
-    "cp_nc": 12,
-    "cp_pct": 78.57143,
-    "cp_fmt": "78,6%",
+    "cp_nc": 14,
+    "cp_pct": 75.86207,
+    "cp_fmt": "75,9%",
     "cp_class": "kpi-yellow",
     "ci_ok": 56,
-    "ci_nc": 0,
-    "ci_pct": 100.0,
-    "ci_fmt": "100,0%",
+    "ci_nc": 2,
+    "ci_pct": 96.55172,
+    "ci_fmt": "96,6%",
     "ci_class": "kpi-green",
     "ci_acesso": 44,
     "ci_pend_int": 12,
-    "ci_falta": 0
+    "ci_falta": 2
   },
   "variacao": {
     "data_anterior": "2026-06-26",
-    "d_conf": -0.903,
-    "d_ader": -1.075,
-    "d_total": 0.649,
-    "d_subs": 3.571,
-    "d_cp": 0.0,
-    "d_ci": 0.0
+    "d_conf": 0.078,
+    "d_ader": -0.05,
+    "d_total": 2.407,
+    "d_subs": 0.0,
+    "d_cp": -3.448,
+    "d_ci": -3.448
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2406,
+      "qty": 2467,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
-      "pct": 64.6
+      "pct": 65.1
     },
     {
       "label": "OK",
-      "qty": 903,
+      "qty": 941,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
-      "pct": 24.3
+      "pct": 24.8
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
-      "qty": 193,
+      "qty": 208,
       "color": "#d97706",
       "is_nc": true,
       "is_na": false,
-      "pct": 5.2
+      "pct": 5.5
     },
     {
       "label": "Liberado com Ressalvas",
-      "qty": 73,
+      "qty": 74,
       "color": "#0891b2",
       "is_nc": false,
       "is_na": false,
@@ -75,38 +75,30 @@
       "color": "#7c3aed",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.5
+      "pct": 1.4
     },
     {
-      "label": "Pendente",
-      "qty": 45,
-      "color": "#ca8a04",
-      "is_nc": true,
-      "is_na": true,
-      "pct": 1.2
-    },
-    {
-      "label": "Pend. — Isenção Reprovada",
-      "qty": 15,
-      "color": "#be123c",
+      "label": "Em Validação",
+      "qty": 16,
+      "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
       "pct": 0.4
     },
     {
       "label": "Perto do Vencimento",
-      "qty": 13,
+      "qty": 8,
       "color": "#f97316",
       "is_nc": false,
       "is_na": false,
-      "pct": 0.3
+      "pct": 0.2
     },
     {
-      "label": "Em Validação",
-      "qty": 8,
-      "color": "#2563a8",
+      "label": "Pendente",
+      "qty": 7,
+      "color": "#ca8a04",
       "is_nc": true,
-      "is_na": false,
+      "is_na": true,
       "pct": 0.2
     },
     {
@@ -124,6 +116,14 @@
       "is_nc": true,
       "is_na": false,
       "pct": 0.1
+    },
+    {
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 0,
+      "color": "#be123c",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.0
     }
   ],
   "donut": {
@@ -133,25 +133,25 @@
       "Pend. — Isenção Ag. Aprovação",
       "Liberado com Ressalvas",
       "Aprovado pelo Cliente",
-      "Pendente",
-      "Pend. — Isenção Reprovada",
-      "Perto do Vencimento",
       "Em Validação",
+      "Perto do Vencimento",
+      "Pendente",
       "Inválido",
-      "Reprovado/Vencido"
+      "Reprovado/Vencido",
+      "Pend. — Isenção Reprovada"
     ],
     "data": [
-      2406,
-      903,
-      193,
-      73,
+      2467,
+      941,
+      208,
+      74,
       54,
-      45,
-      15,
-      13,
+      16,
       8,
       7,
-      5
+      7,
+      5,
+      0
     ],
     "colors": [
       "#059669",
@@ -159,12 +159,12 @@
       "#d97706",
       "#0891b2",
       "#7c3aed",
-      "#ca8a04",
-      "#be123c",
-      "#f97316",
       "#2563a8",
+      "#f97316",
+      "#ca8a04",
       "#dc2626",
-      "#9f1239"
+      "#9f1239",
+      "#be123c"
     ]
   },
   "nc_status": [
@@ -172,7 +172,7 @@
       "id": "ns1",
       "label": "Pendente",
       "color": "#ca8a04",
-      "count": 45,
+      "count": 7,
       "pct": 100,
       "entries": [
         {
@@ -181,204 +181,9 @@
           "doc_s": "CND Municipal"
         },
         {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Projeto de Trabalho em Altura (Específico por Serviço)"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Laudo Conf. Instal. Elétricas"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano de Rigging (Içamento)"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Alvará do bombeiro (AVCB) - Especifico por Serviço"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Registro de SESMT"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "LTCAT"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Rel. Alojamentos"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Rel. Endereços Almoxarifados"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Proj. Escavação de Vala"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Periculosidade específico do serviço"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano de demolição, conforme NR-18"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano de atendimento a emergência (PAE) - Especifico por Serviço"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Insalubridade específico do serviço"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Constituição da CIPA"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano de ventilação dos espaços confinados"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Proj. Escoramento de Vala"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano Resgate Altura"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano Resgate Esp. Confinado"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Inventário de Máquinas"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Termo de Constituição do Consórcio"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "FISPQ, Ficha com Dados de Segurança – FDS"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "PPR"
-        },
-        {
-          "empresa": "J F Lucena",
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
           "doc_s": "CNDT"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano Trabalho em Altura"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "PCA"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "ART (especifico por serviço)"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Apólice Seguro Garantia"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Convenção Coletiva"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Plano de Segurança para atividades com escavações"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -398,100 +203,21 @@
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
           "doc_s": "Registro de SESMT"
         }
       ]
     },
     {
       "id": "ns2",
-      "label": "Pend. — Isenção Reprovada",
-      "color": "#be123c",
-      "count": 15,
-      "pct": 33,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "13º Folha de Pagamento - Residual Dezembro"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        }
-      ]
-    },
-    {
-      "id": "ns3",
       "label": "Inválido",
       "color": "#dc2626",
       "count": 7,
-      "pct": 16,
+      "pct": 100,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -502,11 +228,6 @@
           "empresa": "Gabriela Cidrine de Sena",
           "func": "Jose Nilton Alvesda  Silva",
           "doc_s": "ASO"
-        },
-        {
-          "empresa": "Pejota Construções",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
         },
         {
           "empresa": "Pejota Construções",
@@ -527,15 +248,20 @@
           "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "Patricia De Almeida Dos Santos",
           "doc_s": "ASO"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
         }
       ]
     },
     {
-      "id": "ns4",
+      "id": "ns3",
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
       "count": 5,
-      "pct": 11,
+      "pct": 71,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -568,157 +294,10 @@
   "docs": [
     {
       "id": "d1",
-      "name": "Folha de Pagamento",
-      "count": 14,
-      "color": "#059669",
-      "pct": 100,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d2",
-      "name": "CND Municipal",
-      "count": 3,
-      "color": "#0891b2",
-      "pct": 21,
-      "entries": [
-        {
-          "empresa": "Valdir Rodrigues Topógrafo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d3",
-      "name": "CND Federal",
-      "count": 3,
-      "color": "#0891b2",
-      "pct": 21,
-      "entries": [
-        {
-          "empresa": "Gabriela Cidrine de Sena",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d4",
       "name": "ASO",
       "count": 3,
       "color": "#dc2626",
-      "pct": 21,
+      "pct": 100,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -741,11 +320,11 @@
       ]
     },
     {
-      "id": "d5",
+      "id": "d2",
       "name": "Contrato de Prestação de Serviço",
       "count": 3,
       "color": "#6366f1",
-      "pct": 21,
+      "pct": 100,
       "entries": [
         {
           "empresa": "Ronieli Mendes Bastos",
@@ -768,77 +347,14 @@
       ]
     },
     {
-      "id": "d6",
-      "name": "Programa de Saúde Mental",
-      "count": 2,
-      "color": "#64748b",
-      "pct": 14,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "d7",
-      "name": "Registro de SESMT",
-      "count": 2,
-      "color": "#64748b",
-      "pct": 14,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d8",
-      "name": "Inventário de Máquinas",
-      "count": 2,
-      "color": "#64748b",
-      "pct": 14,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "d9",
-      "name": "CND FGTS — CRF",
+      "id": "d3",
+      "name": "CND Municipal",
       "count": 2,
       "color": "#0891b2",
-      "pct": 14,
+      "pct": 67,
       "entries": [
         {
-          "empresa": "J F Lucena",
+          "empresa": "Valdir Rodrigues Topógrafo",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -852,18 +368,114 @@
       ]
     },
     {
-      "id": "d10",
-      "name": "Apólice Seguro Garantia",
+      "id": "d4",
+      "name": "CND Federal",
       "count": 2,
-      "color": "#0f766e",
-      "pct": 14,
+      "color": "#0891b2",
+      "pct": 67,
       "entries": [
         {
-          "empresa": "J F Lucena",
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 67,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
         },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "Inventário de Máquinas",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 33,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "CNDT",
+      "count": 1,
+      "color": "#0891b2",
+      "pct": 33,
+      "entries": [
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "CND FGTS — CRF",
+      "count": 1,
+      "color": "#0891b2",
+      "pct": 33,
+      "entries": [
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "OS Segurança",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 33,
+      "entries": [
+        {
+          "empresa": "Pejota Construções",
+          "func": "Joel Oliveira",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "name": "Apólice Seguro Garantia",
+      "count": 1,
+      "color": "#0f766e",
+      "pct": 33,
+      "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
@@ -874,13 +486,13 @@
     },
     {
       "id": "d11",
-      "name": "Projeto de Trabalho em Altura (Específico por Serviço)",
+      "name": "Registro de SESMT",
       "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
+      "color": "#64748b",
+      "pct": 33,
       "entries": [
         {
-          "empresa": "J F Lucena",
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -889,526 +501,16 @@
     },
     {
       "id": "d12",
-      "name": "Laudo Conf. Instal. Elétricas",
+      "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
-      "pct": 7,
+      "pct": 33,
       "entries": [
         {
-          "empresa": "J F Lucena",
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d13",
-      "name": "Plano de Rigging (Içamento)",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d14",
-      "name": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d15",
-      "name": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d16",
-      "name": "LTCAT",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d17",
-      "name": "Rel. Alojamentos",
-      "count": 1,
-      "color": "#475569",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d18",
-      "name": "Rel. Endereços Almoxarifados",
-      "count": 1,
-      "color": "#475569",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d19",
-      "name": "Proj. Escavação de Vala",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d20",
-      "name": "Periculosidade específico do serviço",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d21",
-      "name": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
-      "count": 1,
-      "color": "#475569",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d22",
-      "name": "Plano de demolição, conforme NR-18",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d23",
-      "name": "PGR",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d24",
-      "name": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d25",
-      "name": "Insalubridade específico do serviço",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d26",
-      "name": "Constituição da CIPA",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d27",
-      "name": "Plano de ventilação dos espaços confinados",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d28",
-      "name": "Proj. Escoramento de Vala",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d29",
-      "name": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d30",
-      "name": "Plano Resgate Altura",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d31",
-      "name": "Plano Resgate Esp. Confinado",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d32",
-      "name": "PCMSO",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d33",
-      "name": "Termo de Constituição do Consórcio",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d34",
-      "name": "FISPQ, Ficha com Dados de Segurança – FDS",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d35",
-      "name": "PPR",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d36",
-      "name": "CNDT",
-      "count": 1,
-      "color": "#0891b2",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d37",
-      "name": "Autorização de Subcontratação",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d38",
-      "name": "Plano Trabalho em Altura",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d39",
-      "name": "PCA",
-      "count": 1,
-      "color": "#be123c",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d40",
-      "name": "ART (especifico por serviço)",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d41",
-      "name": "Convenção Coletiva",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d42",
-      "name": "Plano de Segurança para atividades com escavações",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d43",
-      "name": "Contrato Social / Reg. MEI",
-      "count": 1,
-      "color": "#6366f1",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d44",
-      "name": "13º Folha de Pagamento - Residual Dezembro",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d45",
-      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "Pejota Construções",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "d46",
-      "name": "OS Segurança",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 7,
-      "entries": [
-        {
-          "empresa": "Pejota Construções",
-          "func": "Joel Oliveira",
-          "badge": "inv",
-          "st_s": "Inválido"
+          "badge": "rep",
+          "st_s": "Reprovado"
         }
       ]
     }
@@ -1416,318 +518,8 @@
   "subs": [
     {
       "id": "s1",
-      "nome": "J F Lucena",
-      "focus": 40,
-      "total": 41,
-      "taxa": 98,
-      "crit": 0,
-      "pill_color": "#dc2626",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Projeto de Trabalho em Altura (Específico por Serviço)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Laudo Conf. Instal. Elétricas",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano de Rigging (Içamento)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Registro de SESMT",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "LTCAT",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Rel. Alojamentos",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Rel. Endereços Almoxarifados",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Proj. Escavação de Vala",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Periculosidade específico do serviço",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano de demolição, conforme NR-18",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Insalubridade específico do serviço",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Constituição da CIPA",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano de ventilação dos espaços confinados",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Proj. Escoramento de Vala",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano Resgate Altura",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano Resgate Esp. Confinado",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Inventário de Máquinas",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Termo de Constituição do Consórcio",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "FISPQ, Ficha com Dados de Segurança – FDS",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PPR",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CNDT",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano Trabalho em Altura",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCA",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "ART (especifico por serviço)",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Apólice Seguro Garantia",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Convenção Coletiva",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano de Segurança para atividades com escavações",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "s2",
-      "nome": "Murilo Pinheiro de Carvalho Camilo",
-      "focus": 8,
-      "total": 106,
-      "taxa": 8,
-      "crit": 5,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "13º Folha de Pagamento - Residual Dezembro",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s3",
       "nome": "Consórcio KTL Mairiporã (próprio)",
-      "focus": 5,
+      "focus": 6,
       "total": 984,
       "taxa": 1,
       "crit": 4,
@@ -1738,6 +530,12 @@
           "doc_s": "Apólice Seguro Garantia",
           "badge": "inv",
           "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
@@ -1766,39 +564,45 @@
       ]
     },
     {
-      "id": "s4",
-      "nome": "Souza Soares — Locações e Serviços",
-      "focus": 3,
-      "total": 232,
-      "taxa": 1,
-      "crit": 3,
+      "id": "s2",
+      "nome": "Murilo Pinheiro de Carvalho Camilo",
+      "focus": 4,
+      "total": 106,
+      "taxa": 4,
+      "crit": 0,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "Inventário de Máquinas",
-          "badge": "rep",
-          "st_s": "Reprovado"
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "s5",
+      "id": "s3",
       "nome": "Gabriela Cidrine de Sena",
       "focus": 2,
-      "total": 88,
+      "total": 89,
       "taxa": 2,
       "crit": 2,
       "pill_color": "#16a34a",
@@ -1818,125 +622,10 @@
       ]
     },
     {
-      "id": "s6",
-      "nome": "Joel Leite Filho",
-      "focus": 2,
-      "total": 96,
-      "taxa": 2,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "nome": "Cedro Engenharia",
-      "focus": 2,
-      "total": 7,
-      "taxa": 29,
-      "crit": 2,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s8",
-      "nome": "João Nestardo Neto",
-      "focus": 2,
-      "total": 36,
-      "taxa": 6,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s9",
-      "nome": "Pejota Construções",
-      "focus": 2,
-      "total": 615,
-      "taxa": 0,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "Joel Oliveira",
-          "doc_s": "OS Segurança",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s10",
-      "nome": "Shalom Terraplenagem Locações",
-      "focus": 2,
-      "total": 148,
-      "taxa": 1,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "s11",
+      "id": "s4",
       "nome": "Valdir Rodrigues Topógrafo",
       "focus": 1,
-      "total": 80,
+      "total": 81,
       "taxa": 1,
       "crit": 0,
       "pill_color": "#16a34a",
@@ -1950,10 +639,27 @@
       ]
     },
     {
-      "id": "s12",
+      "id": "s5",
+      "nome": "Souza Soares — Locações e Serviços",
+      "focus": 1,
+      "total": 232,
+      "taxa": 0,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Inventário de Máquinas",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s6",
       "nome": "Ronieli Mendes Bastos",
       "focus": 1,
-      "total": 90,
+      "total": 91,
       "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
@@ -1967,10 +673,27 @@
       ]
     },
     {
-      "id": "s13",
+      "id": "s7",
+      "nome": "Pejota Construções",
+      "focus": 1,
+      "total": 709,
+      "taxa": 0,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "Joel Oliveira",
+          "doc_s": "OS Segurança",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s8",
       "nome": "Diego Rodrigues De Castro",
       "focus": 1,
-      "total": 87,
+      "total": 88,
       "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
@@ -1984,23 +707,82 @@
       ]
     },
     {
-      "id": "s14",
-      "nome": "CEC Transportes e Locação",
+      "id": "s9",
+      "nome": "Shalom Terraplenagem Locações",
       "focus": 1,
-      "total": 96,
+      "total": 149,
       "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "Folha de Pagamento",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "nome": "CEC Transportes e Locação",
+      "focus": 1,
+      "total": 94,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         }
       ]
     }
   ],
+  "worker_docs": {
+    "Jose Nilton Alvesda  Silva": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ],
+    "Joel Oliveira": [
+      {
+        "doc": "OS Segurança",
+        "st_s": "Inválido"
+      }
+    ],
+    "Gabriel De Lima Rodrigues Dos Reis": [
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Jaubânice Maria De Souza": [
+      {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Jose Ronaldo Da Costa": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ],
+    "Patricia De Almeida Dos Santos": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ]
+  },
   "cpci": [
     {
       "fornecedor": "Almir Godofredo Flores Cardoso",
@@ -2056,6 +838,16 @@
       "fornecedor": "Pejota Construções",
       "funcionario": "Joel Oliveira",
       "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Pejota Construções",
+      "funcionario": "José Raimundo De Sousa Ribeiro",
+      "status": "Falta Integração"
+    },
+    {
+      "fornecedor": "Pejota Construções",
+      "funcionario": "Raimundo Nonato Vieira Do Nascimento",
+      "status": "Falta Integração"
     },
     {
       "fornecedor": "Ronieli Mendes Bastos",
