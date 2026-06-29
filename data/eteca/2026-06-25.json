@@ -28,7 +28,7 @@
     "ci_falta": 3
   },
   "variacao": {
-    "data_anterior": "2026-06-24",
+    "data_anterior": "2026-06-29",
     "d_conf": -2.268,
     "d_ader": -1.875,
     "d_total": 2.492,
@@ -3926,6 +3926,228 @@
       ]
     }
   ],
+  "worker_docs": {
+    "Gabriela Cidrine De Sena": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      }
+    ],
+    "Diego De Andrade Ferreira": [
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Edson Oliveira De Almeida": [
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Inválido"
+      }
+    ],
+    "Felipe Santos Vieira Da Cruz": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Vinicius Santos Vieira Da Cruz": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      }
+    ],
+    "William Vieira Dos Santos": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Pendente"
+      }
+    ],
+    "Israel Ricardo Da Silva": [
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Leandro Ricardo Mota Da Conceição Junior": [
+      {
+        "doc": "OS Segurança",
+        "st_s": "Inválido"
+      }
+    ],
+    "Marcos Viniciusde Oliveira Silva": [
+      {
+        "doc": "OS Segurança",
+        "st_s": "Inválido"
+      }
+    ],
+    "Cicero Lucas Da Silva": [
+      {
+        "doc": "NR35 Altura — Cordas",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Júlio Sebastião De Oliveira": [
+      {
+        "doc": "Treinamento para içamento de cargas",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 33 - Emergência e Salvamento em espaços confinados 24h",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Treinamento em trabalho de solda",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR33 Trabalho em Espaços Confinados 40Hrs - Supervisor",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Treinamento  das brigadas de emergência",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 Altura — Cordas",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Carteira do Conselho Regional - Registro de Classe",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR-18 - Treinamento para uso/montagem de andaime",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Treinamento de escoramento de valas, conforme NR-18 - Carga horária 8 Horas",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR33 Trabalho em Espaços Confinados 16 Hrs Trabalhador autorizado",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "RG",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Carteira Profissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 - Treinamento para operadores de plataforma elevatória (PEMT) (4 Hrs)",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "CNH",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 - Treinamento para usuário de Cadeira Suspensa (8Hrs Teórica +8Hrs Prática)",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
+        "st_s": "Pendente"
+      }
+    ],
+    "Severino Fernandes Da Silva": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Cleiton Lima": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Wesley Felipe Pancieri Ambrosio": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Antoni Ferreira De Abreu Abreu": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Joao Santos De Almeida": [
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ]
+  },
   "cpci": [
     {
       "fornecedor": "Ademilson Donizeti De Andrade",
