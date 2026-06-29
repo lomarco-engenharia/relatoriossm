@@ -28,7 +28,7 @@
     "ci_falta": 0
   },
   "variacao": {
-    "data_anterior": "2026-06-25",
+    "data_anterior": "2026-06-29",
     "d_conf": -0.143,
     "d_ader": -0.002,
     "d_total": -1.649,
@@ -661,6 +661,44 @@
       ]
     }
   ],
+  "worker_docs": {
+    "Jose Nilton Alvesda  Silva": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ],
+    "Joel Oliveira": [
+      {
+        "doc": "OS Segurança",
+        "st_s": "Inválido"
+      }
+    ],
+    "Gabriel De Lima Rodrigues Dos Reis": [
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Jaubânice Maria De Souza": [
+      {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Jose Ronaldo Da Costa": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ],
+    "Patricia De Almeida Dos Santos": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ]
+  },
   "cpci": [
     {
       "fornecedor": "Almir Godofredo Flores Cardoso",
