@@ -410,112 +410,7 @@ function renderDashboard(d) {
     </div>
   </div>`;
 
-  // ── Seção 3 — NC por Tipo ─────────────────────────────────────────────────
-  const ncStatus = d.nc_status || [];
-  let ncHtml = '<div class="bar-list">';
-  ncStatus.forEach(item => {
-    const rows = item.entries.map(e =>
-      `<tr><td>${e.empresa}</td><td>${e.func}</td><td>${e.doc_s}</td></tr>`
-    ).join('');
-    ncHtml += `
-    <div class="bar-item" onclick="toggle(this)">
-      <div class="bar-header">
-        <span style="display:flex;align-items:center;gap:8px">
-          <span class="expand-arrow">&#9654;</span>
-          <span class="bar-title" style="color:${item.color}">${item.label}</span>
-        </span>
-        <span class="bar-count">${item.count}</span>
-      </div>
-      <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
-      <div class="expand-list">
-        <table class="detail-table">
-          <thead><tr><th>Empresa</th><th>Funcionário</th><th>Documento</th></tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>
-    </div>`;
-  });
-  ncHtml += '</div>';
-
-  html += `
-  <div class="section">
-    <div class="section-title">Seção 3 — NC por Tipo de Problema</div>
-    ${ncHtml}
-  </div>`;
-
-  // ── Seção 4 — Pendências por Documento ──────────────────────────────────
-  const docs = d.docs || [];
-  let docsHtml = '<div class="bar-list">';
-  docs.forEach(item => {
-    const rows = item.entries.map(e => {
-      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
-      return `<tr><td>${e.empresa}</td><td>${e.func}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
-    }).join('');
-    docsHtml += `
-    <div class="bar-item" onclick="toggle(this)">
-      <div class="bar-header">
-        <span style="display:flex;align-items:center;gap:8px">
-          <span class="expand-arrow">&#9654;</span>
-          <span class="bar-title"><span class="dot" style="background:${item.color}"></span>${item.name}</span>
-        </span>
-        <span class="bar-count">${item.count}</span>
-      </div>
-      <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
-      <div class="expand-list">
-        <table class="detail-table">
-          <thead><tr><th>Empresa</th><th>Funcionário</th><th>Status</th></tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>
-    </div>`;
-  });
-  docsHtml += '</div>';
-
-  html += `
-  <div class="section">
-    <div class="section-title">Seção 4 — Pendências por Tipo de Documento</div>
-    ${docsHtml}
-  </div>`;
-
-  // ── Seção 5 — Ranking Subcontratadas ─────────────────────────────────────
-  const subs = d.subs || [];
-  let subsHtml = '<div class="bar-list">';
-  subs.forEach((s, i) => {
-    const rows = (s.entries || []).map(e => {
-      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
-      return `<tr><td>${e.func}</td><td>${e.doc_s}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
-    }).join('') || `<tr><td colspan="3" style="color:var(--muted);font-size:12px">Sem pendências.</td></tr>`;
-    const barPct = Math.min(parseFloat(s.taxa)||0, 100);
-    subsHtml += `
-    <div class="bar-item" onclick="toggle(this)">
-      <div class="bar-header">
-        <span style="display:flex;align-items:center;gap:8px">
-          <span class="expand-arrow">&#9654;</span>
-          <span class="bar-title"><strong style="color:var(--muted);margin-right:4px">${i+1}.</strong>${s.nome}</span>
-        </span>
-        <span style="display:flex;align-items:center;gap:8px">
-          <span class="pill-tag" style="background:${s.pill_color}22;color:${s.pill_color}">${s.taxa}%</span>
-          <span class="bar-count">${s.focus} pend.</span>
-        </span>
-      </div>
-      <div class="bar-track"><div class="bar-fill" style="width:${barPct}%;background:${s.pill_color}"></div></div>
-      <div class="expand-list">
-        <table class="detail-table">
-          <thead><tr><th>Funcionário</th><th>Documento</th><th>Status</th></tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>
-    </div>`;
-  });
-  subsHtml += '</div>';
-
-  html += `
-  <div class="section">
-    <div class="section-title">Seção 5 — Ranking de Subcontratadas</div>
-    ${subsHtml}
-  </div>`;
-
-  // ── Seção 6 — CP & CI ────────────────────────────────────────────────────
+  // ── Seção 3 — CP & CI ────────────────────────────────────────────────────
   const cpci = d.cpci || [];
   let cpciHtml = '';
   if (!m.cp_pct && m.cp_pct !== 0) {
@@ -540,33 +435,19 @@ function renderDashboard(d) {
       &nbsp;· ${m.total_workers} trabalhadores únicos
     </div>`;
 
-    // Mapa funcionário → documentos NC + pendentes (cross-ref nc_status e docs)
-    const workerDocMap = {};
-    (d.nc_status || []).forEach(nc => {
-      (nc.entries || []).forEach(e => {
-        if (!workerDocMap[e.func]) workerDocMap[e.func] = [];
-        workerDocMap[e.func].push({ tipo: nc.label, doc: e.doc_s });
-      });
-    });
-    const pendSts = ['Pend. — Isenção Ag. Aprovação', 'Em Validação'];
-    (d.docs || []).forEach(item => {
-      (item.entries || []).filter(e => pendSts.includes(e.st_s)).forEach(e => {
-        if (!workerDocMap[e.func]) workerDocMap[e.func] = [];
-        workerDocMap[e.func].push({ tipo: e.st_s, doc: item.name });
-      });
-    });
+    const workerDocMap = d.worker_docs || {};
 
-    const pillFor = tipo => {
-      if (tipo === 'Em Validação' || tipo.indexOf('Isenção') >= 0) return 'p-pend';
-      if (tipo.indexOf('Vencido') >= 0 || tipo.indexOf('venc') >= 0) return 'p-venc';
-      if (tipo.indexOf('Reprovado') >= 0) return 'p-rep';
+    const pillFor = st => {
+      if (st === 'Em Validação' || st.indexOf('Isenção Ag') >= 0) return 'p-pend';
+      if (st === 'Vencido' || st.indexOf('Vencido') >= 0) return 'p-venc';
+      if (st === 'Reprovado') return 'p-rep';
       return 'p-inv';
     };
     const barItem = r => {
       const wdocs = workerDocMap[r.funcionario] || [];
       const docRows = wdocs.length
         ? wdocs.map(wd =>
-            '<tr><td><span class="pill ' + pillFor(wd.tipo) + '">' + wd.tipo + '</span></td><td>' + wd.doc + '</td></tr>'
+            '<tr><td><span class="pill ' + pillFor(wd.st_s) + '">' + wd.st_s + '</span></td><td>' + wd.doc + '</td></tr>'
           ).join('')
         : '<tr><td colspan="2" style="color:var(--muted);font-size:12px">Sem documentos NC identificados (pendência de integração).</td></tr>';
       return '<div class="bar-item" onclick="toggle(this)">'
@@ -603,8 +484,113 @@ function renderDashboard(d) {
 
   html += `
   <div class="section">
-    <div class="section-title">Seção 6 — Conformidade Pessoal (CP) e Conformidade de Integração (CI)</div>
+    <div class="section-title">Seção 3 — Conformidade Pessoal (CP) e Conformidade de Integração (CI)</div>
     ${cpciHtml}
+  </div>`;
+
+  // ── Seção 4 — Ranking Subcontratadas ─────────────────────────────────────
+  const subs = d.subs || [];
+  let subsHtml = '<div class="bar-list">';
+  subs.forEach((s, i) => {
+    const rows = (s.entries || []).map(e => {
+      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
+      return `<tr><td>${e.func}</td><td>${e.doc_s}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
+    }).join('') || `<tr><td colspan="3" style="color:var(--muted);font-size:12px">Sem pendências.</td></tr>`;
+    const barPct = Math.min(parseFloat(s.taxa)||0, 100);
+    subsHtml += `
+    <div class="bar-item" onclick="toggle(this)">
+      <div class="bar-header">
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="expand-arrow">&#9654;</span>
+          <span class="bar-title"><strong style="color:var(--muted);margin-right:4px">${i+1}.</strong>${s.nome}</span>
+        </span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="pill-tag" style="background:${s.pill_color}22;color:${s.pill_color}">${s.taxa}%</span>
+          <span class="bar-count">${s.focus} pend.</span>
+        </span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${barPct}%;background:${s.pill_color}"></div></div>
+      <div class="expand-list">
+        <table class="detail-table">
+          <thead><tr><th>Funcionário</th><th>Documento</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+  });
+  subsHtml += '</div>';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 4 — Ranking de Subcontratadas</div>
+    ${subsHtml}
+  </div>`;
+
+  // ── Seção 5 — Pendências por Documento ──────────────────────────────────
+  const docs = d.docs || [];
+  let docsHtml = '<div class="bar-list">';
+  docs.forEach(item => {
+    const rows = item.entries.map(e => {
+      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
+      return `<tr><td>${e.empresa}</td><td>${e.func}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
+    }).join('');
+    docsHtml += `
+    <div class="bar-item" onclick="toggle(this)">
+      <div class="bar-header">
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="expand-arrow">&#9654;</span>
+          <span class="bar-title"><span class="dot" style="background:${item.color}"></span>${item.name}</span>
+        </span>
+        <span class="bar-count">${item.count}</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
+      <div class="expand-list">
+        <table class="detail-table">
+          <thead><tr><th>Empresa</th><th>Funcionário</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+  });
+  docsHtml += '</div>';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 5 — Pendências por Tipo de Documento</div>
+    ${docsHtml}
+  </div>`;
+
+  // ── Seção 6 — NC por Tipo ─────────────────────────────────────────────────
+  const ncStatus = d.nc_status || [];
+  let ncHtml = '<div class="bar-list">';
+  ncStatus.forEach(item => {
+    const rows = item.entries.map(e =>
+      `<tr><td>${e.empresa}</td><td>${e.func}</td><td>${e.doc_s}</td></tr>`
+    ).join('');
+    ncHtml += `
+    <div class="bar-item" onclick="toggle(this)">
+      <div class="bar-header">
+        <span style="display:flex;align-items:center;gap:8px">
+          <span class="expand-arrow">&#9654;</span>
+          <span class="bar-title" style="color:${item.color}">${item.label}</span>
+        </span>
+        <span class="bar-count">${item.count}</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${item.pct}%;background:${item.color}"></div></div>
+      <div class="expand-list">
+        <table class="detail-table">
+          <thead><tr><th>Empresa</th><th>Funcionário</th><th>Documento</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+  });
+  ncHtml += '</div>';
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 6 — NC por Tipo de Problema</div>
+    ${ncHtml}
   </div>`;
 
   // ── Render ────────────────────────────────────────────────────────────────

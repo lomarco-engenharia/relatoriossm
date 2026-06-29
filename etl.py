@@ -247,7 +247,9 @@ def badge(st):
 def shorten_st(st):
     m = {
         'Pendente': 'Pendente', 'Inválido': 'Inválido', 'Vencido': 'Vencido',
-        'Reprovado pelo cliente': 'Reprovado', 'Pendente - Isenção Reprovada': 'Isen. Reprovada'
+        'Reprovado pelo cliente': 'Reprovado', 'Pendente - Isenção Reprovada': 'Isen. Reprovada',
+        'Pendente - Isenção Aguardando Aprovação': 'Isenção Ag. Aprovação',
+        'Em validação': 'Em Validação',
     }
     return m.get(st, st)
 
@@ -382,6 +384,18 @@ def process_docs(rows, sub_names, proprio_label):
             'pill_color': pill_color, 'entries': sub_entries[emp]
         })
 
+    # Mapa funcionário → docs NC completo (inclui Isenção Ag. e Em Validação)
+    worker_docs = collections.defaultdict(list)
+    for r in rows:
+        st = r.get('Status do Documento', '')
+        if st in NC_STATUSES:
+            func = clean_func(r.get('Funcionário'))
+            if func and func != '—':
+                worker_docs[func].append({
+                    'doc':  shorten_doc(r.get('Documento')),
+                    'st_s': shorten_st(st),
+                })
+
     return {
         'total': total, 'nc': nc, 'na': na,
         'conf_pct': round(conf_pct, 5),
@@ -396,6 +410,7 @@ def process_docs(rows, sub_names, proprio_label):
         'nc_status': nc_status,
         'docs': docs,
         'subs': subs,
+        'worker_docs': dict(worker_docs),
     }
 
 # ─── PROCESSAMENTO DE INTEGRAÇÃO ─────────────────────────────────────────────
@@ -572,6 +587,7 @@ def main():
         'nc_status':   doc_result['nc_status'],
         'docs':        doc_result['docs'],
         'subs':        doc_result['subs'],
+        'worker_docs': doc_result['worker_docs'],
         'cpci':        int_result['cpci'] if int_result else [],
     }
 
