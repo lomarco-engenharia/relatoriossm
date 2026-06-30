@@ -540,21 +540,36 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
         return 'pen'
 
     # Mapa CPF → melhor registro de integração
+    # empresa/cnpj: prefere linha com Subcontratado explícito (desacopla do status)
+    # status: melhor (menor prioridade), independente da linha
     by_cpf = {}
     for r in rows_int:
         cpf  = (r.get('CPF') or '').strip()
         nome = (r.get('Funcionário') or '').strip()
         if not cpf or not nome: continue
+        sub_nome  = (r.get('Subcontratado') or '').strip()
         sub_cnpj  = (r.get('Subcontratado CNPJ') or '').strip()
         main_cnpj = (r.get('CNPJ') or '').strip()
         cnpj    = sub_cnpj or main_cnpj
         empresa = clean_emp(r.get('Subcontratado'), r.get('Fornecedor'))
+        has_sub = bool(sub_nome)
         st  = r.get('Status', '')
         pri = INT_PRIORITY.get(st, 99)
-        if cpf not in by_cpf or pri < by_cpf[cpf]['pri']:
-            by_cpf[cpf] = {'cpf': cpf, 'nome': nome.title(),
-                           'empresa': empresa, 'cnpj': cnpj,
+        if cpf not in by_cpf:
+            by_cpf[cpf] = {'nome': nome.title(), 'empresa': empresa,
+                           'cnpj': cnpj, 'has_sub': has_sub,
                            'status_int': st, 'pri': pri}
+        else:
+            w = by_cpf[cpf]
+            # Empresa/CNPJ: linha com subcontratado explícito tem precedência
+            if has_sub and not w['has_sub']:
+                w['empresa'] = empresa
+                w['cnpj']    = cnpj
+                w['has_sub'] = True
+            # Status: sempre o melhor
+            if pri < w['pri']:
+                w['status_int'] = st
+                w['pri'] = pri
 
     # Documentos pessoais (CPF preenchido) e de empresa (CPF vazio)
     p_docs = collections.defaultdict(list)   # CPF  → [{doc,st_s,sev}]
@@ -586,7 +601,7 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
         c = dedup(c_docs.get(w['cnpj'], []))
         sevs = [d['sev'] for d in p + c]
         row_sev = 'rep' if 'rep' in sevs else ('val' if 'val' in sevs else ('pen' if sevs else 'ok'))
-        detail.append({'cpf': cpf, 'nome': w['nome'], 'empresa': w['empresa'],
+        detail.append({'nome': w['nome'], 'empresa': w['empresa'],
                        'status_int': w['status_int'],
                        'n_pess': len(p), 'n_emp': len(c),
                        'docs_pessoais': p, 'docs_empresa': c, 'sev': row_sev})

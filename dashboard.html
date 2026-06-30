@@ -211,7 +211,6 @@ tr:last-child td { border-bottom:none; }
 .ci-sev-val td:first-child::before { background:var(--blue); }
 .ci-sev-ok  td:first-child::before { background:var(--c-ok); }
 .ci-nm  { display:block; font-weight:600; font-size:13px; }
-.ci-cpf { display:block; font-size:10.5px; color:var(--muted); font-family:monospace; margin-top:1px; }
 .ci-exp-btn { background:none; border:0; cursor:pointer; color:var(--muted); padding:4px 6px; font-size:13px; line-height:1; transition:transform .15s; }
 .ci-exp-btn[aria-expanded="true"] { transform:rotate(90deg); color:var(--blue); }
 .ci-detail > td { background:#fafbfc; padding:0; border-bottom:1px solid #f1f5f9; }
@@ -951,7 +950,7 @@ function renderIntegracao(d) {
       + ' data-emp="'  + (w.n_emp  > 0 ? 1 : 0) + '"'
       + ' data-search="' + searchTxt + '">'
       + '<td><button class="ci-exp-btn" aria-expanded="false" data-idx="' + idx + '">&#9658;</button></td>'
-      + '<td><span class="ci-nm">' + w.nome + '</span><span class="ci-cpf">' + w.cpf + '</span></td>'
+      + '<td><span class="ci-nm">' + w.nome + '</span></td>'
       + '<td>' + w.empresa + '</td>'
       + '<td>' + intPill  + '</td>'
       + '<td>' + pessPill + '</td>'
