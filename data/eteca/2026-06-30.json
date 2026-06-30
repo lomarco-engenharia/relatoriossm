@@ -1,0 +1,2176 @@
+{
+  "meta": {
+    "projeto": "eteca",
+    "data": "2026-06-30",
+    "total": 3381,
+    "nc": 171,
+    "na": 34,
+    "conf_pct": 94.94232,
+    "ader_pct": 98.99438,
+    "n_subs": 28,
+    "conf_fmt": "94,9%",
+    "ader_fmt": "99,0%",
+    "conf_class": "kpi-yellow",
+    "ader_class": "kpi-yellow",
+    "total_workers": null,
+    "cp_ok": null,
+    "cp_nc": null,
+    "cp_pct": null,
+    "cp_fmt": "N/D",
+    "cp_class": "kpi-nd",
+    "ci_ok": null,
+    "ci_nc": null,
+    "ci_pct": null,
+    "ci_fmt": "N/D",
+    "ci_class": "kpi-nd",
+    "ci_acesso": null,
+    "ci_pend_int": null,
+    "ci_falta": null
+  },
+  "variacao": {
+    "data_anterior": "2026-06-29",
+    "d_conf": 3.262,
+    "d_ader": 0.634,
+    "d_total": 0.148,
+    "d_subs": 0.0,
+    "d_cp": null,
+    "d_ci": null
+  },
+  "status_rows": [
+    {
+      "label": "Isento",
+      "qty": 2049,
+      "color": "#059669",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 60.6
+    },
+    {
+      "label": "OK",
+      "qty": 932,
+      "color": "#16a34a",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 27.6
+    },
+    {
+      "label": "Liberado com Ressalvas",
+      "qty": 145,
+      "color": "#0891b2",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 4.3
+    },
+    {
+      "label": "Pend. — Isenção Ag. Aprovação",
+      "qty": 77,
+      "color": "#d97706",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 2.3
+    },
+    {
+      "label": "Aprovado pelo Cliente",
+      "qty": 47,
+      "color": "#7c3aed",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 1.4
+    },
+    {
+      "label": "Perto do Vencimento",
+      "qty": 37,
+      "color": "#f97316",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 1.1
+    },
+    {
+      "label": "Pendente",
+      "qty": 34,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
+      "pct": 1.0
+    },
+    {
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 31,
+      "color": "#be123c",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.9
+    },
+    {
+      "label": "Em Validação",
+      "qty": 19,
+      "color": "#2563a8",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.6
+    },
+    {
+      "label": "Reprovado/Vencido",
+      "qty": 6,
+      "color": "#9f1239",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Inválido",
+      "qty": 4,
+      "color": "#dc2626",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.1
+    }
+  ],
+  "donut": {
+    "labels": [
+      "Isento",
+      "OK",
+      "Liberado com Ressalvas",
+      "Pend. — Isenção Ag. Aprovação",
+      "Aprovado pelo Cliente",
+      "Perto do Vencimento",
+      "Pendente",
+      "Pend. — Isenção Reprovada",
+      "Em Validação",
+      "Reprovado/Vencido",
+      "Inválido"
+    ],
+    "data": [
+      2049,
+      932,
+      145,
+      77,
+      47,
+      37,
+      34,
+      31,
+      19,
+      6,
+      4
+    ],
+    "colors": [
+      "#059669",
+      "#16a34a",
+      "#0891b2",
+      "#d97706",
+      "#7c3aed",
+      "#f97316",
+      "#ca8a04",
+      "#be123c",
+      "#2563a8",
+      "#9f1239",
+      "#dc2626"
+    ]
+  },
+  "nc_status": [
+    {
+      "id": "ns1",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 34,
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "LTCAT"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Curso Básico de Segurança para Trabalhos a Quente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 Altura — Cordas"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "RG"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "Gabriela Cidrine De Sena",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "ASO Demissional"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "ASO Demissional"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "doc_s": "Folha de Ponto"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "doc_s": "ASO Demissional"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CNDT"
+        }
+      ]
+    },
+    {
+      "id": "ns2",
+      "label": "Pend. — Isenção Reprovada",
+      "color": "#be123c",
+      "count": 31,
+      "pct": 91,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Diego De Andrade Ferreira",
+          "doc_s": "ASO Demissional"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Gilmar Santos Oliveira",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Júlio Sebastião De Oliveira",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Roberto Carlos Rojo De Barros",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Roberto Carlos Rojo De Barros",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Ademilson Donizeti De Andrade",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Joao Santos De Almeida",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
+        }
+      ]
+    },
+    {
+      "id": "ns3",
+      "label": "Reprovado/Vencido",
+      "color": "#9f1239",
+      "count": 6,
+      "pct": 18,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        },
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Convenção Coletiva"
+        }
+      ]
+    },
+    {
+      "id": "ns4",
+      "label": "Inválido",
+      "color": "#dc2626",
+      "count": 4,
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "doc_s": "LTCAT"
+        }
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "id": "d1",
+      "name": "PCMSO",
+      "count": 8,
+      "color": "#be123c",
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ronaldo Barbosa De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ademilson Donizeti De Andrade",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "CND Municipal",
+      "count": 6,
+      "color": "#0891b2",
+      "pct": 75,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Alexssandro Jannini Izidoro",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Gilmar Santos Oliveira",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "PGR",
+      "count": 5,
+      "color": "#be123c",
+      "pct": 62,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "name": "CND FGTS — CRF",
+      "count": 5,
+      "color": "#0891b2",
+      "pct": 62,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Edmilson De Jesus Santos",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "Contrato Social / Reg. MEI",
+      "count": 4,
+      "color": "#6366f1",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Roberto Carlos Rojo De Barros",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Roberto Carlos Rojo De Barros",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "Folha de Ponto",
+      "count": 4,
+      "color": "#059669",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "Gabriela Cidrine De Sena",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "ASO Demissional",
+      "count": 4,
+      "color": "#dc2626",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Diego De Andrade Ferreira",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "CND Federal",
+      "count": 3,
+      "color": "#0891b2",
+      "pct": 38,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "Plano de Rigging (Içamento)",
+      "count": 3,
+      "color": "#2563a8",
+      "pct": 38,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 38,
+      "entries": [
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "name": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+      "count": 3,
+      "color": "#9f1239",
+      "pct": 38,
+      "entries": [
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "Felipe Santos Vieira Da Cruz",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "William Vieira Dos Santos",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Júlio Sebastião De Oliveira",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "name": "LTCAT",
+      "count": 2,
+      "color": "#be123c",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "name": "CNDT",
+      "count": 2,
+      "color": "#0891b2",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "Autorização de Subcontratação",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Joao Santos De Almeida",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "ASO",
+      "count": 2,
+      "color": "#dc2626",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "name": "NR 6 — EPI",
+      "count": 2,
+      "color": "#d97706",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d17",
+      "name": "NR 18 — Admissional",
+      "count": 2,
+      "color": "#d97706",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d18",
+      "name": "OS Segurança",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "name": "Ficha de EPI",
+      "count": 2,
+      "color": "#64748b",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d20",
+      "name": "NR35 - Trabalho em Altura",
+      "count": 2,
+      "color": "#d97706",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d21",
+      "name": "Folha de Pagamento",
+      "count": 2,
+      "color": "#059669",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d22",
+      "name": "Contrato de Prestação de Serviço",
+      "count": 1,
+      "color": "#6366f1",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d23",
+      "name": "Curso Básico de Segurança para Trabalhos a Quente",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d24",
+      "name": "NR35 Altura — Cordas",
+      "count": 1,
+      "color": "#d97706",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Darlam Gregório De Souza",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d25",
+      "name": "RG",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "Sidney Santiago Freitas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d26",
+      "name": "Programa de Saúde Mental",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Real Eng Pinturas em Geral",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d27",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d28",
+      "name": "Convenção Coletiva",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 12,
+      "entries": [
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    }
+  ],
+  "subs": [
+    {
+      "id": "s1",
+      "nome": "Alufer Engenharia Ltda.",
+      "focus": 25,
+      "total": 129,
+      "taxa": 19,
+      "crit": 4,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "LTCAT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Curso Básico de Segurança para Trabalhos a Quente",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 Altura — Cordas",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "Ficha de EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Darlam Gregório De Souza",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "RG",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "Ficha de EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Sidney Santiago Freitas",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nome": "Fluiter Engenharia e Soluções",
+      "focus": 9,
+      "total": 149,
+      "taxa": 6,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "Diego De Andrade Ferreira",
+          "doc_s": "ASO Demissional",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "ASO Demissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Felipe Santos Vieira Da Cruz",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Vinicius Santos Vieira Da Cruz",
+          "doc_s": "ASO Demissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "William Vieira Dos Santos",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "William Vieira Dos Santos",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "William Vieira Dos Santos",
+          "doc_s": "ASO Demissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "nome": "Lais Silvestre Gardin",
+      "focus": 5,
+      "total": 7,
+      "taxa": 71,
+      "crit": 1,
+      "pill_color": "#dc2626",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "nome": "Ryfal Construções e Reformas",
+      "focus": 4,
+      "total": 433,
+      "taxa": 1,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "nome": "Consórcio ETE Caieiras (próprio)",
+      "focus": 4,
+      "total": 1371,
+      "taxa": 0,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "Convenção Coletiva",
+          "badge": "venc",
+          "st_s": "Vencido"
+        },
+        {
+          "func": "Júlio Sebastião De Oliveira",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "nome": "Edmilson De Jesus Santos",
+      "focus": 4,
+      "total": 62,
+      "taxa": 6,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "nome": "Pedro H. Vercosa Geraldes",
+      "focus": 3,
+      "total": 28,
+      "taxa": 11,
+      "crit": 3,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "nome": "Gabriela Cidrine de Sena",
+      "focus": 2,
+      "total": 78,
+      "taxa": 3,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "Gabriela Cidrine De Sena",
+          "doc_s": "Folha de Ponto",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "nome": "João Nestardo Neto",
+      "focus": 2,
+      "total": 79,
+      "taxa": 3,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "nome": "Potência Terraplenagem e Locação",
+      "focus": 2,
+      "total": 79,
+      "taxa": 3,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "nome": "Bruno Luiz Fonseca Pimenta",
+      "focus": 2,
+      "total": 43,
+      "taxa": 5,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "nome": "Roberto Carlos Rojo De Barros",
+      "focus": 2,
+      "total": 23,
+      "taxa": 9,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "nome": "Erisvaldo Da Silva Santana",
+      "focus": 2,
+      "total": 57,
+      "taxa": 4,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "nome": "Real Eng Pinturas em Geral",
+      "focus": 1,
+      "total": 143,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "nome": "Alexssandro Jannini Izidoro",
+      "focus": 1,
+      "total": 24,
+      "taxa": 4,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "nome": "Gilmar Santos Oliveira",
+      "focus": 1,
+      "total": 33,
+      "taxa": 3,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "nome": "Ronaldo Barbosa De Souza",
+      "focus": 1,
+      "total": 104,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "nome": "Seitech Serv. Instalação e Automação",
+      "focus": 1,
+      "total": 79,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "LTCAT",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "nome": "Wesley Felipe Pancieri Ambrosio",
+      "focus": 1,
+      "total": 35,
+      "taxa": 3,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "nome": "Ademilson Donizeti De Andrade",
+      "focus": 1,
+      "total": 102,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "nome": "Antoni Ferreira De Abreu",
+      "focus": 1,
+      "total": 91,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "nome": "Joao Santos De Almeida",
+      "focus": 1,
+      "total": 63,
+      "taxa": 2,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    }
+  ],
+  "worker_docs": {
+    "Darlam Gregório De Souza": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 Altura — Cordas",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Sidney Santiago Freitas": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "RG",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Gabriela Cidrine De Sena": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      }
+    ],
+    "Diego De Andrade Ferreira": [
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Felipe Santos Vieira Da Cruz": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Vinicius Santos Vieira Da Cruz": [
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      }
+    ],
+    "William Vieira Dos Santos": [
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "Folha de Ponto",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "ASO Demissional",
+        "st_s": "Pendente"
+      }
+    ],
+    "Israel Ricardo Da Silva": [
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Júlio Sebastião De Oliveira": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira do Conselho Regional - Registro de Classe",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira Profissional",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "CNH",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "st_s": "Isen. Reprovada"
+      }
+    ],
+    "Severino Fernandes Da Silva": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Cleiton Lima": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Wesley Felipe Pancieri Ambrosio": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Antoni Ferreira De Abreu Abreu": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Joao Santos De Almeida": [
+      {
+        "doc": "Curso Básico de Segurança para Trabalhos a Quente",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ]
+  },
+  "cpci": []
+}
