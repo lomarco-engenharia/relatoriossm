@@ -2,72 +2,64 @@
   "meta": {
     "projeto": "etemp",
     "data": "2026-06-30",
-    "total": 3787,
-    "nc": 262,
-    "na": 19,
-    "conf_pct": 93.08159,
-    "ader_pct": 99.49828,
+    "total": 3764,
+    "nc": 261,
+    "na": 28,
+    "conf_pct": 93.06589,
+    "ader_pct": 99.25611,
     "n_subs": 29,
     "conf_fmt": "93,1%",
-    "ader_fmt": "99,5%",
+    "ader_fmt": "99,3%",
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-green",
     "total_workers": 59,
-    "cp_ok": 25,
-    "cp_nc": 34,
-    "cp_pct": 42.37288,
-    "cp_fmt": "42,4%",
+    "cp_ok": 44,
+    "cp_nc": 15,
+    "cp_pct": 74.57627,
+    "cp_fmt": "74,6%",
     "cp_class": "kpi-yellow",
     "ci_ok": 56,
     "ci_nc": 3,
     "ci_pct": 94.91525,
     "ci_fmt": "94,9%",
     "ci_class": "kpi-yellow",
-    "ci_acesso": 25,
-    "ci_pend_int": 31,
+    "ci_acesso": 44,
+    "ci_pend_int": 12,
     "ci_falta": 0
   },
   "variacao": {
     "data_anterior": "2026-06-29",
-    "d_conf": 0.449,
-    "d_ader": 0.716,
-    "d_total": 1.746,
+    "d_conf": 0.432,
+    "d_ader": 0.471,
+    "d_total": 1.128,
     "d_subs": 0.0,
-    "d_cp": -46.071,
+    "d_cp": -5.085,
     "d_ci": -5.085
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2472,
+      "qty": 2448,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
-      "pct": 65.3
+      "pct": 65.0
     },
     {
       "label": "OK",
-      "qty": 908,
+      "qty": 910,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
-      "pct": 24.0
-    },
-    {
-      "label": "Pend. — Isenção Reprovada",
-      "qty": 103,
-      "color": "#be123c",
-      "is_nc": true,
-      "is_na": false,
-      "pct": 2.7
+      "pct": 24.2
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
-      "qty": 102,
+      "qty": 142,
       "color": "#d97706",
       "is_nc": true,
       "is_na": false,
-      "pct": 2.7
+      "pct": 3.8
     },
     {
       "label": "Liberado com Ressalvas",
@@ -86,20 +78,28 @@
       "pct": 1.5
     },
     {
-      "label": "Em Validação",
-      "qty": 27,
-      "color": "#2563a8",
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 50,
+      "color": "#be123c",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.7
+      "pct": 1.3
     },
     {
       "label": "Pendente",
-      "qty": 19,
+      "qty": 28,
       "color": "#ca8a04",
       "is_nc": true,
       "is_na": true,
-      "pct": 0.5
+      "pct": 0.7
+    },
+    {
+      "label": "Em Validação",
+      "qty": 24,
+      "color": "#2563a8",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.6
     },
     {
       "label": "Perto do Vencimento",
@@ -111,15 +111,15 @@
     },
     {
       "label": "Inválido",
-      "qty": 6,
+      "qty": 13,
       "color": "#dc2626",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.2
+      "pct": 0.3
     },
     {
       "label": "Reprovado/Vencido",
-      "qty": 5,
+      "qty": 4,
       "color": "#9f1239",
       "is_nc": true,
       "is_na": false,
@@ -130,38 +130,38 @@
     "labels": [
       "Isento",
       "OK",
-      "Pend. — Isenção Reprovada",
       "Pend. — Isenção Ag. Aprovação",
       "Liberado com Ressalvas",
       "Aprovado pelo Cliente",
-      "Em Validação",
+      "Pend. — Isenção Reprovada",
       "Pendente",
+      "Em Validação",
       "Perto do Vencimento",
       "Inválido",
       "Reprovado/Vencido"
     ],
     "data": [
-      2472,
-      908,
-      103,
-      102,
+      2448,
+      910,
+      142,
       75,
       55,
-      27,
-      19,
+      50,
+      28,
+      24,
       15,
-      6,
-      5
+      13,
+      4
     ],
     "colors": [
       "#059669",
       "#16a34a",
-      "#be123c",
       "#d97706",
       "#0891b2",
       "#7c3aed",
-      "#2563a8",
+      "#be123c",
       "#ca8a04",
+      "#2563a8",
       "#f97316",
       "#dc2626",
       "#9f1239"
@@ -172,98 +172,28 @@
       "id": "ns1",
       "label": "Pend. — Isenção Reprovada",
       "color": "#be123c",
-      "count": 103,
+      "count": 50,
       "pct": 100,
       "entries": [
         {
-          "empresa": "Joel Leite Filho",
+          "empresa": "Cedro Engenharia",
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+          "doc_s": "Folha de Pagamento"
         },
         {
-          "empresa": "Joel Leite Filho",
+          "empresa": "Tuca Pisos Construções",
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+          "doc_s": "PCMSO"
         },
         {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Joel Leite Filho",
+          "empresa": "Tuca Pisos Construções",
           "func": "—",
           "doc_s": "CND Federal"
         },
         {
-          "empresa": "Joel Leite Filho",
+          "empresa": "Tuca Pisos Construções",
           "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "doc_s": "PCMSO"
+          "doc_s": "CND Municipal"
         },
         {
           "empresa": "Tuca Pisos Construções",
@@ -273,32 +203,12 @@
         {
           "empresa": "Tuca Pisos Construções",
           "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
           "doc_s": "Contrato Social / Reg. MEI"
         },
         {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação"
-        },
-        {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+          "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -308,7 +218,7 @@
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "Folha de Pagamento"
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -328,127 +238,17 @@
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Marina Costa Lani Leal",
-          "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Marina Costa Lani Leal",
-          "func": "—",
-          "doc_s": "CND Municipal"
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
         },
         {
           "empresa": "Marina Costa Lani Leal",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        },
-        {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Ronieli Mendes Bastos",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "Ronieli Mendes Bastos",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Diego Rodrigues De Castro",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Diego Rodrigues De Castro",
-          "func": "—",
-          "doc_s": "PGR"
         },
         {
           "empresa": "LL Nogueira Tecnologia",
@@ -458,6 +258,11 @@
         {
           "empresa": "Erisvaldo Da Silva Santana",
           "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
           "doc_s": "CND Federal"
         },
         {
@@ -466,41 +271,6 @@
           "doc_s": "Contrato Social / Reg. MEI"
         },
         {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "ICS Montagem e Instalação Elétrica",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "ICS Montagem e Instalação Elétrica",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação"
-        },
-        {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
@@ -539,6 +309,11 @@
           "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "doc_s": "CND Municipal"
         },
         {
           "empresa": "MCA Soluções em Engenharia",
@@ -546,44 +321,9 @@
           "doc_s": "CND Federal"
         },
         {
-          "empresa": "MCA Soluções em Engenharia",
+          "empresa": "Antoni Ferreira De Abreu",
           "func": "—",
           "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "Antoni Ferreira De Abreu",
@@ -591,19 +331,14 @@
           "doc_s": "PCMSO"
         },
         {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Jeferson Da Silva Bonfim",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
           "empresa": "Jeferson Da Silva Bonfim",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "doc_s": "CND Municipal"
         },
         {
           "empresa": "Davi De Castro Landim",
@@ -614,16 +349,16 @@
           "empresa": "Davi De Castro Landim",
           "func": "—",
           "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação"
         },
         {
           "empresa": "Davi De Castro Landim",
           "func": "—",
           "doc_s": "PGR"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
         },
         {
           "empresa": "Davi De Castro Landim",
@@ -638,17 +373,12 @@
         {
           "empresa": "Ingryd Santos Borges",
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
+          "doc_s": "Autorização de Subcontratação"
         },
         {
           "empresa": "Ingryd Santos Borges",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Ingryd Santos Borges",
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação"
         },
         {
           "empresa": "Ingryd Santos Borges",
@@ -656,9 +386,14 @@
           "doc_s": "PCMSO"
         },
         {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
           "empresa": "Almir Godofredo Flores Cardoso",
           "func": "—",
-          "doc_s": "CND FGTS — CRF"
+          "doc_s": "PCMSO"
         },
         {
           "empresa": "Almir Godofredo Flores Cardoso",
@@ -668,7 +403,7 @@
         {
           "empresa": "Almir Godofredo Flores Cardoso",
           "func": "—",
-          "doc_s": "PCMSO"
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "CEC Transportes e Locação",
@@ -678,17 +413,17 @@
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
           "doc_s": "Comp. de Pagamento GPS/DARF"
         },
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
         }
       ]
     },
@@ -696,13 +431,18 @@
       "id": "ns2",
       "label": "Pendente",
       "color": "#ca8a04",
-      "count": 19,
-      "pct": 18,
+      "count": 28,
+      "pct": 56,
       "entries": [
         {
           "empresa": "Valdir Rodrigues Topógrafo",
           "func": "—",
           "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "J F Lucena",
@@ -712,17 +452,7 @@
         {
           "empresa": "J F Lucena",
           "func": "Aleomar Soares Alves",
-          "doc_s": "OS Segurança"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Aleomar Soares Alves",
-          "doc_s": "NR 6 — EPI"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Aleomar Soares Alves",
-          "doc_s": "NR35 - Trabalho em Altura"
+          "doc_s": "NR 18 — Admissional"
         },
         {
           "empresa": "J F Lucena",
@@ -732,7 +462,17 @@
         {
           "empresa": "J F Lucena",
           "func": "Aleomar Soares Alves",
-          "doc_s": "NR 18 — Admissional"
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR 6 — EPI"
         },
         {
           "empresa": "J F Lucena",
@@ -742,22 +482,17 @@
         {
           "empresa": "J F Lucena",
           "func": "Josemar Ferreira Lucena",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
           "doc_s": "NR 6 — EPI"
         },
         {
           "empresa": "J F Lucena",
           "func": "Josemar Ferreira Lucena",
           "doc_s": "NR 18 — Admissional"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Josemar Ferreira Lucena",
-          "doc_s": "OS Segurança"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR35 - Trabalho em Altura"
         },
         {
           "empresa": "J F Lucena",
@@ -767,7 +502,7 @@
         {
           "empresa": "J F Lucena",
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR 6 — EPI"
+          "doc_s": "OS Segurança"
         },
         {
           "empresa": "J F Lucena",
@@ -777,12 +512,17 @@
         {
           "empresa": "J F Lucena",
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "OS Segurança"
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR 6 — EPI"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "doc_s": "CND Municipal"
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -791,6 +531,46 @@
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
         }
@@ -800,8 +580,8 @@
       "id": "ns3",
       "label": "Inválido",
       "color": "#dc2626",
-      "count": 6,
-      "pct": 6,
+      "count": 13,
+      "pct": 26,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -809,9 +589,34 @@
           "doc_s": "CND Federal"
         },
         {
-          "empresa": "Gabriela Cidrine de Sena",
-          "func": "Jose Nilton Alvesda  Silva",
-          "doc_s": "ASO"
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "Ficha de EPI"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "Ficha de EPI"
         },
         {
           "empresa": "J F Lucena",
@@ -824,9 +629,19 @@
           "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
         },
         {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "Ficha de EPI"
+        },
+        {
           "empresa": "Pejota Construções",
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -839,8 +654,8 @@
       "id": "ns4",
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
-      "count": 5,
-      "pct": 5,
+      "count": 4,
+      "pct": 8,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -858,11 +673,6 @@
           "doc_s": "Contrato de Prestação de Serviço"
         },
         {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço"
-        },
-        {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
           "func": "—",
           "doc_s": "Programa de Saúde Mental"
@@ -874,35 +684,11 @@
     {
       "id": "d1",
       "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-      "count": 19,
+      "count": 12,
       "color": "#7c3aed",
       "pct": 100,
       "entries": [
         {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
           "badge": "inv",
@@ -910,24 +696,6 @@
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -977,14 +745,14 @@
         {
           "empresa": "Isabelly Duarte De Souza",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "empresa": "Isabelly Duarte De Souza",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "empresa": "CEC Transportes e Locação",
@@ -996,43 +764,13 @@
     },
     {
       "id": "d2",
-      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-      "count": 15,
-      "color": "#64748b",
-      "pct": 79,
+      "name": "CND FGTS — CRF",
+      "count": 9,
+      "color": "#0891b2",
+      "pct": 75,
       "entries": [
         {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
+          "empresa": "Marina Costa Lani Leal",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1040,35 +778,17 @@
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "empresa": "Erisvaldo Da Silva Santana",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Pejota Construções",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
+          "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1076,80 +796,11 @@
         {
           "empresa": "Isabelly Duarte De Souza",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d3",
-      "name": "PCMSO",
-      "count": 12,
-      "color": "#be123c",
-      "pct": 63,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Ronieli Mendes Bastos",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Diego Rodrigues De Castro",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "ICS Montagem e Instalação Elétrica",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
+          "empresa": "Jeferson Da Silva Bonfim",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1175,86 +826,11 @@
       ]
     },
     {
-      "id": "d4",
-      "name": "Comp. de Pagamento GPS/DARF",
-      "count": 11,
-      "color": "#64748b",
-      "pct": 58,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d5",
+      "id": "d3",
       "name": "CND Federal",
-      "count": 9,
+      "count": 8,
       "color": "#0891b2",
-      "pct": 47,
+      "pct": 67,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -1265,8 +841,8 @@
         {
           "empresa": "Joel Leite Filho",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "empresa": "Tuca Pisos Construções",
@@ -1281,12 +857,6 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "Marina Costa Lani Leal",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
           "badge": "pend",
@@ -1313,194 +883,11 @@
       ]
     },
     {
-      "id": "d6",
-      "name": "PGR",
-      "count": 9,
-      "color": "#be123c",
-      "pct": 47,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "João Nestardo Neto",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Ronieli Mendes Bastos",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Diego Rodrigues De Castro",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "ICS Montagem e Instalação Elétrica",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Ingryd Santos Borges",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Almir Godofredo Flores Cardoso",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d7",
-      "name": "CND FGTS — CRF",
-      "count": 9,
-      "color": "#0891b2",
-      "pct": 47,
-      "entries": [
-        {
-          "empresa": "Marina Costa Lani Leal",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "MCA Soluções em Engenharia",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Jeferson Da Silva Bonfim",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Ingryd Santos Borges",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Almir Godofredo Flores Cardoso",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d8",
-      "name": "CND Municipal",
-      "count": 8,
-      "color": "#0891b2",
-      "pct": 42,
-      "entries": [
-        {
-          "empresa": "Valdir Rodrigues Topógrafo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Marina Costa Lani Leal",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "MCA Soluções em Engenharia",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Jeferson Da Silva Bonfim",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d9",
+      "id": "d4",
       "name": "Contrato Social / Reg. MEI",
       "count": 7,
       "color": "#6366f1",
-      "pct": 37,
+      "pct": 58,
       "entries": [
         {
           "empresa": "Tuca Pisos Construções",
@@ -1511,8 +898,8 @@
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "empresa": "LL Nogueira Tecnologia",
@@ -1530,6 +917,180 @@
           "empresa": "Shalom Terraplenagem Locações",
           "func": "—",
           "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "PGR",
+      "count": 7,
+      "color": "#be123c",
+      "pct": 58,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "CND Municipal",
+      "count": 6,
+      "color": "#0891b2",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 6,
+      "color": "#64748b",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "PCMSO",
+      "count": 5,
+      "color": "#be123c",
+      "pct": 42,
+      "entries": [
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
@@ -1540,6 +1101,51 @@
         },
         {
           "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 5,
+      "color": "#64748b",
+      "pct": 42,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1549,9 +1155,9 @@
     {
       "id": "d10",
       "name": "Folha de Pagamento",
-      "count": 5,
+      "count": 3,
       "color": "#059669",
-      "pct": 26,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Cedro Engenharia",
@@ -1560,12 +1166,6 @@
           "st_s": "Isen. Reprovada"
         },
         {
-          "empresa": "Cedro Engenharia",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
           "badge": "inv",
@@ -1573,12 +1173,6 @@
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1587,43 +1181,37 @@
     },
     {
       "id": "d11",
-      "name": "Autorização de Subcontratação",
-      "count": 4,
+      "name": "Ficha de EPI",
+      "count": 3,
       "color": "#64748b",
-      "pct": 21,
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
-          "func": "—",
+          "func": "Aleomar Soares Alves",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         },
         {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         },
         {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Ingryd Santos Borges",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         }
       ]
     },
     {
       "id": "d12",
-      "name": "OS Segurança",
+      "name": "NR 18 — Admissional",
       "count": 3,
-      "color": "#64748b",
-      "pct": 16,
+      "color": "#d97706",
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1647,10 +1235,10 @@
     },
     {
       "id": "d13",
-      "name": "NR 6 — EPI",
+      "name": "OS Segurança",
       "count": 3,
-      "color": "#d97706",
-      "pct": 16,
+      "color": "#64748b",
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1677,7 +1265,7 @@
       "name": "NR35 - Trabalho em Altura",
       "count": 3,
       "color": "#d97706",
-      "pct": 16,
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1701,10 +1289,10 @@
     },
     {
       "id": "d15",
-      "name": "NR 18 — Admissional",
+      "name": "NR 6 — EPI",
       "count": 3,
       "color": "#d97706",
-      "pct": 16,
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1731,7 +1319,7 @@
       "name": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
       "count": 3,
       "color": "#d97706",
-      "pct": 16,
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1756,9 +1344,9 @@
     {
       "id": "d17",
       "name": "Contrato de Prestação de Serviço",
-      "count": 3,
+      "count": 2,
       "color": "#6366f1",
-      "pct": 16,
+      "pct": 17,
       "entries": [
         {
           "empresa": "Ronieli Mendes Bastos",
@@ -1771,33 +1359,27 @@
           "func": "—",
           "badge": "rep",
           "st_s": "Reprovado"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "badge": "rep",
-          "st_s": "Reprovado"
         }
       ]
     },
     {
       "id": "d18",
-      "name": "ASO",
+      "name": "Autorização de Subcontratação",
       "count": 2,
-      "color": "#dc2626",
-      "pct": 11,
+      "color": "#64748b",
+      "pct": 17,
       "entries": [
         {
-          "empresa": "Gabriela Cidrine de Sena",
-          "func": "Jose Nilton Alvesda  Silva",
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
           "badge": "inv",
-          "st_s": "Inválido"
+          "st_s": "Isen. Reprovada"
         },
         {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "Jose Ronaldo Da Costa",
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
           "badge": "inv",
-          "st_s": "Inválido"
+          "st_s": "Isen. Reprovada"
         }
       ]
     },
@@ -1806,7 +1388,7 @@
       "name": "CNDT",
       "count": 1,
       "color": "#0891b2",
-      "pct": 5,
+      "pct": 8,
       "entries": [
         {
           "empresa": "Tuca Pisos Construções",
@@ -1821,7 +1403,7 @@
       "name": "NR-18 - Treinamento para uso/montagem de andaime",
       "count": 1,
       "color": "#64748b",
-      "pct": 5,
+      "pct": 8,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1836,7 +1418,7 @@
       "name": "Inventário de Máquinas",
       "count": 1,
       "color": "#64748b",
-      "pct": 5,
+      "pct": 8,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -1848,25 +1430,10 @@
     },
     {
       "id": "d22",
-      "name": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 5,
-      "entries": [
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d23",
       "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
-      "pct": 5,
+      "pct": 8,
       "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -1875,18 +1442,57 @@
           "st_s": "Reprovado"
         }
       ]
+    },
+    {
+      "id": "d23",
+      "name": "ASO",
+      "count": 1,
+      "color": "#dc2626",
+      "pct": 8,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jose Ronaldo Da Costa",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
     }
   ],
   "subs": [
     {
       "id": "s1",
       "nome": "J F Lucena",
-      "focus": 18,
+      "focus": 24,
       "total": 106,
-      "taxa": 17,
-      "crit": 3,
+      "taxa": 23,
+      "crit": 9,
       "pill_color": "#ca8a04",
       "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
         {
           "func": "—",
           "doc_s": "CND Federal",
@@ -1894,26 +1500,14 @@
           "st_s": "Pendente"
         },
         {
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "Ficha de EPI",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         },
         {
           "func": "Aleomar Soares Alves",
-          "doc_s": "OS Segurança",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Aleomar Soares Alves",
-          "doc_s": "NR 6 — EPI",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Aleomar Soares Alves",
-          "doc_s": "NR35 - Trabalho em Altura",
+          "doc_s": "NR 18 — Admissional",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1925,7 +1519,19 @@
         },
         {
           "func": "Aleomar Soares Alves",
-          "doc_s": "NR 18 — Admissional",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR 6 — EPI",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1937,6 +1543,12 @@
         },
         {
           "func": "Josemar Ferreira Lucena",
+          "doc_s": "Ficha de EPI",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
           "doc_s": "NR35 - Trabalho em Altura",
           "badge": "inv",
           "st_s": "Inválido"
@@ -1946,6 +1558,12 @@
           "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
           "badge": "inv",
           "st_s": "Inválido"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "Josemar Ferreira Lucena",
@@ -1960,16 +1578,10 @@
           "st_s": "Pendente"
         },
         {
-          "func": "Josemar Ferreira Lucena",
-          "doc_s": "OS Segurança",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR35 - Trabalho em Altura",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "doc_s": "Ficha de EPI",
+          "badge": "inv",
+          "st_s": "Inválido"
         },
         {
           "func": "Onilio Cardozo Cantuaria Filho",
@@ -1979,7 +1591,7 @@
         },
         {
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR 6 — EPI",
+          "doc_s": "OS Segurança",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1991,7 +1603,13 @@
         },
         {
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "OS Segurança",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR 6 — EPI",
           "badge": "pend",
           "st_s": "Pendente"
         }
@@ -1999,119 +1617,6 @@
     },
     {
       "id": "s2",
-      "nome": "Murilo Pinheiro de Carvalho Camilo",
-      "focus": 17,
-      "total": 106,
-      "taxa": 16,
-      "crit": 14,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s3",
       "nome": "Souza Soares — Locações e Serviços",
       "focus": 9,
       "total": 232,
@@ -2121,7 +1626,7 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "doc_s": "Folha de Pagamento",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2133,7 +1638,7 @@
         },
         {
           "func": "—",
-          "doc_s": "Folha de Pagamento",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2157,13 +1662,13 @@
         },
         {
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2176,10 +1681,10 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s3",
       "nome": "Consórcio KTL Mairiporã (próprio)",
       "focus": 9,
-      "total": 984,
+      "total": 977,
       "taxa": 1,
       "crit": 9,
       "pill_color": "#16a34a",
@@ -2241,178 +1746,60 @@
       ]
     },
     {
-      "id": "s5",
-      "nome": "Joel Leite Filho",
-      "focus": 8,
-      "total": 96,
-      "taxa": 8,
-      "crit": 8,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "nome": "João Nestardo Neto",
-      "focus": 8,
-      "total": 36,
-      "taxa": 22,
-      "crit": 8,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s7",
+      "id": "s4",
       "nome": "Isabelly Duarte De Souza",
       "focus": 7,
       "total": 37,
       "taxa": 19,
-      "crit": 7,
+      "crit": 0,
       "pill_color": "#ca8a04",
       "entries": [
         {
           "func": "—",
           "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
           "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "func": "—",
           "doc_s": "CND FGTS — CRF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "s8",
+      "id": "s5",
       "nome": "Tuca Pisos Construções",
       "focus": 5,
       "total": 137,
@@ -2422,7 +1809,7 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CNDT",
+          "doc_s": "PCMSO",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2434,67 +1821,26 @@
         },
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s9",
-      "nome": "Shalom Terraplenagem Locações",
-      "focus": 5,
-      "total": 148,
-      "taxa": 3,
-      "crit": 5,
-      "pill_color": "#16a34a",
-      "entries": [
+        },
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
         {
           "func": "—",
           "doc_s": "Contrato Social / Reg. MEI",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Autorização de Subcontratação",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço",
-          "badge": "rep",
-          "st_s": "Reprovado"
         }
       ]
     },
     {
-      "id": "s10",
+      "id": "s6",
       "nome": "Davi De Castro Landim",
       "focus": 5,
       "total": 98,
@@ -2516,13 +1862,13 @@
         },
         {
           "func": "—",
-          "doc_s": "Autorização de Subcontratação",
+          "doc_s": "PGR",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "PGR",
+          "doc_s": "Autorização de Subcontratação",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2535,7 +1881,7 @@
       ]
     },
     {
-      "id": "s11",
+      "id": "s7",
       "nome": "Ingryd Santos Borges",
       "focus": 5,
       "total": 98,
@@ -2551,7 +1897,7 @@
         },
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
+          "doc_s": "Autorização de Subcontratação",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2563,23 +1909,58 @@
         },
         {
           "func": "—",
-          "doc_s": "Autorização de Subcontratação",
+          "doc_s": "PCMSO",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "PCMSO",
+          "doc_s": "Contrato Social / Reg. MEI",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s12",
+      "id": "s8",
+      "nome": "Murilo Pinheiro de Carvalho Camilo",
+      "focus": 4,
+      "total": 106,
+      "taxa": 4,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s9",
       "nome": "CEC Transportes e Locação",
       "focus": 4,
-      "total": 96,
+      "total": 94,
       "taxa": 4,
       "crit": 4,
       "pill_color": "#16a34a",
@@ -2587,12 +1968,6 @@
         {
           "func": "—",
           "doc_s": "CND Federal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -2607,98 +1982,17 @@
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s13",
-      "nome": "Marina Costa Lani Leal",
-      "focus": 3,
-      "total": 21,
-      "taxa": 14,
-      "crit": 3,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s14",
-      "nome": "Ronieli Mendes Bastos",
-      "focus": 3,
-      "total": 90,
-      "taxa": 3,
-      "crit": 3,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "s15",
-      "nome": "Diego Rodrigues De Castro",
-      "focus": 3,
-      "total": 87,
-      "taxa": 3,
-      "crit": 3,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "s16",
+      "id": "s10",
       "nome": "Erisvaldo Da Silva Santana",
       "focus": 3,
       "total": 14,
@@ -2706,6 +2000,12 @@
       "crit": 3,
       "pill_color": "#ca8a04",
       "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
         {
           "func": "—",
           "doc_s": "CND Federal",
@@ -2717,17 +2017,11 @@
           "doc_s": "Contrato Social / Reg. MEI",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s17",
+      "id": "s11",
       "nome": "MCA Soluções em Engenharia",
       "focus": 3,
       "total": 22,
@@ -2743,20 +2037,20 @@
         },
         {
           "func": "—",
-          "doc_s": "CND Federal",
+          "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "CND Municipal",
+          "doc_s": "CND Federal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s18",
+      "id": "s12",
       "nome": "Almir Godofredo Flores Cardoso",
       "focus": 3,
       "total": 81,
@@ -2766,118 +2060,26 @@
       "entries": [
         {
           "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
           "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s19",
-      "nome": "Gabriela Cidrine de Sena",
-      "focus": 2,
-      "total": 88,
-      "taxa": 2,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "Jose Nilton Alvesda  Silva",
-          "doc_s": "ASO",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s20",
-      "nome": "Cedro Engenharia",
-      "focus": 2,
-      "total": 7,
-      "taxa": 29,
-      "crit": 2,
-      "pill_color": "#ca8a04",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s21",
-      "nome": "Cleiton Jose De Lima",
-      "focus": 2,
-      "total": 87,
-      "taxa": 2,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s22",
-      "nome": "ICS Montagem e Instalação Elétrica",
-      "focus": 2,
-      "total": 37,
-      "taxa": 5,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s23",
+      "id": "s13",
       "nome": "Antoni Ferreira De Abreu",
       "focus": 2,
       "total": 79,
@@ -2887,20 +2089,20 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "PCMSO",
+          "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "CND Municipal",
+          "doc_s": "PCMSO",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s24",
+      "id": "s14",
       "nome": "Jeferson Da Silva Bonfim",
       "focus": 2,
       "total": 28,
@@ -2910,20 +2112,20 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND Municipal",
+          "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s25",
+      "id": "s15",
       "nome": "Valdir Rodrigues Topógrafo",
       "focus": 1,
       "total": 80,
@@ -2940,10 +2142,95 @@
       ]
     },
     {
-      "id": "s26",
+      "id": "s16",
+      "nome": "Gabriela Cidrine de Sena",
+      "focus": 1,
+      "total": 88,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "nome": "Joel Leite Filho",
+      "focus": 1,
+      "total": 96,
+      "taxa": 1,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "nome": "Cedro Engenharia",
+      "focus": 1,
+      "total": 7,
+      "taxa": 14,
+      "crit": 1,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "nome": "Marina Costa Lani Leal",
+      "focus": 1,
+      "total": 21,
+      "taxa": 5,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "nome": "Ronieli Mendes Bastos",
+      "focus": 1,
+      "total": 90,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s21",
       "nome": "Pejota Construções",
       "focus": 1,
-      "total": 615,
+      "total": 601,
       "taxa": 0,
       "crit": 1,
       "pill_color": "#16a34a",
@@ -2957,7 +2244,24 @@
       ]
     },
     {
-      "id": "s27",
+      "id": "s22",
+      "nome": "Diego Rodrigues De Castro",
+      "focus": 1,
+      "total": 87,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s23",
       "nome": "LL Nogueira Tecnologia",
       "focus": 1,
       "total": 121,
@@ -2972,30 +2276,39 @@
           "st_s": "Isen. Reprovada"
         }
       ]
+    },
+    {
+      "id": "s24",
+      "nome": "Shalom Terraplenagem Locações",
+      "focus": 1,
+      "total": 148,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
     }
   ],
   "worker_docs": {
     "Jose Nilton Alvesda  Silva": [
       {
         "doc": "ASO",
-        "st_s": "Inválido"
+        "st_s": "Em Validação"
       }
     ],
     "Aleomar Soares Alves": [
       {
         "doc": "Ficha de EPI",
-        "st_s": "Em Validação"
+        "st_s": "Inválido"
       },
       {
-        "doc": "OS Segurança",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 6 — EPI",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR35 - Trabalho em Altura",
+        "doc": "NR 18 — Admissional",
         "st_s": "Pendente"
       },
       {
@@ -3003,7 +2316,15 @@
         "st_s": "Pendente"
       },
       {
-        "doc": "NR 18 — Admissional",
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
         "st_s": "Pendente"
       },
       {
@@ -3018,7 +2339,7 @@
       },
       {
         "doc": "Ficha de EPI",
-        "st_s": "Em Validação"
+        "st_s": "Inválido"
       },
       {
         "doc": "NR35 - Trabalho em Altura",
@@ -3029,15 +2350,15 @@
         "st_s": "Inválido"
       },
       {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
         "doc": "NR 6 — EPI",
         "st_s": "Pendente"
       },
       {
         "doc": "NR 18 — Admissional",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "OS Segurança",
         "st_s": "Pendente"
       }
     ],
@@ -3048,22 +2369,10 @@
       },
       {
         "doc": "Ficha de EPI",
-        "st_s": "Em Validação"
-      },
-      {
-        "doc": "NR35 - Trabalho em Altura",
-        "st_s": "Pendente"
+        "st_s": "Inválido"
       },
       {
         "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 6 — EPI",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR 18 — Admissional",
         "st_s": "Pendente"
       },
       {
@@ -3071,8 +2380,16 @@
         "st_s": "Pendente"
       },
       {
-        "doc": "NR 13 — Vasos de Pressão",
-        "st_s": "Isenção Ag. Aprovação"
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
       }
     ],
     "Joel Oliveira": [
@@ -3223,113 +2540,18 @@
       "status": "Pendências porém Integrado"
     },
     {
+      "fornecedor": "Cedro Engenharia",
+      "funcionario": "Bruno Salgado De Almeida",
+      "status": "Pendências porém Integrado"
+    },
+    {
       "fornecedor": "Cleiton Jose De Lima",
       "funcionario": "Cleiton Lima",
       "status": "Pendências porém Integrado"
     },
     {
       "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Alcindo Largueza",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Alessandro De Oliveira Espirito Santo",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Edson Wilson Dos Santos",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Erisvaldo Da Silva Santana",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
       "funcionario": "Gabriel De Lima Rodrigues Dos Reis",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Janaína Da Rocha Morais",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Jose Pinto Simoes",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Jose Severino Da Silva Filho",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Jucinaldo Pedro Dos Santos",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Manoel Constantino Franca De Macedo",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Marcelo Miguel Da Costa",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Maria Antônia Alves",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Mauro Cesar Soares De Araujo",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Odais José Santos Do Vale",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Osvaldo Dos Reis Junior",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Patricia De Almeida Dos Santos",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Paulo Oliveira Da Silva",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Raimundo José",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Reinaldo Aparecido Gonçalves",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Ronaldo Jesus Dos Santos",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
-      "funcionario": "Vivaldo Moraes Nascimento",
       "status": "Pendências porém Integrado"
     },
     {
@@ -3390,27 +2612,27 @@
   ],
   "cpci_detail": {
     "total": 59,
-    "n_liberado": 25,
+    "n_liberado": 44,
     "n_pend_pess": 5,
     "n_pend_emp": 48,
     "combos": [
       {
-        "si": "Pendências porém Integrado",
-        "sp": "Sem pendências",
-        "se": "Com pendências",
-        "qty": 29
-      },
-      {
         "si": "Acesso Liberado",
         "sp": "Sem pendências",
         "se": "Com pendências",
-        "qty": 14
+        "qty": 34
       },
       {
         "si": "Acesso Liberado",
         "sp": "Sem pendências",
         "se": "Sem pendências",
-        "qty": 11
+        "qty": 10
+      },
+      {
+        "si": "Pendências porém Integrado",
+        "sp": "Sem pendências",
+        "se": "Com pendências",
+        "qty": 9
       },
       {
         "si": "Pendências e Falta Integração",
@@ -3423,11 +2645,16 @@
         "sp": "Com pendências",
         "se": "Com pendências",
         "qty": 2
+      },
+      {
+        "si": "Pendências porém Integrado",
+        "sp": "Sem pendências",
+        "se": "Sem pendências",
+        "qty": 1
       }
     ],
     "workers": [
       {
-        "cpf": "013.916.553-38",
         "nome": "Antonio Da Cruz Ferreira Silva",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3438,7 +2665,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "059.632.883-47",
         "nome": "Antonio Pedro Cosme Do Vale",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3449,18 +2675,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "465.098.358-43",
-        "nome": "Bruno Salgado De Almeida",
-        "empresa": "CONSORCIO BAIXADA SANTISTA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 0,
-        "docs_pessoais": [],
-        "docs_empresa": [],
-        "sev": "ok"
-      },
-      {
-        "cpf": "046.625.875-57",
         "nome": "Edilandio Araujo Silva De Melo",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3471,7 +2685,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "913.438.603-34",
         "nome": "Francisco Rodrigues Do Vale",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3482,7 +2695,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "026.666.624-89",
         "nome": "Givanildo Ferreira Dos Santos",
         "empresa": "CONSORCIO AGCS ELEVACAO",
         "status_int": "Acesso Liberado",
@@ -3493,7 +2705,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "046.642.313-69",
         "nome": "José Raimundo De Sousa Ribeiro",
         "empresa": "FAST INDUSTRIA E COMERCIO LTDA",
         "status_int": "Acesso Liberado",
@@ -3504,7 +2715,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "569.983.503-25",
         "nome": "José Risonaldo Barros Albuquerque",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3515,7 +2725,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "082.929.975-04",
         "nome": "Patricio Nascimento Da Silva",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3526,7 +2735,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "078.981.513-30",
         "nome": "Pedro Augusto De Oliveira Inacio",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3537,7 +2745,6 @@
         "sev": "ok"
       },
       {
-        "cpf": "081.816.693-20",
         "nome": "Raimundo Nonato Vieira Do Nascimento",
         "empresa": "CONSORCIO PERFORMANCE PERUS",
         "status_int": "Acesso Liberado",
@@ -3548,12 +2755,11 @@
         "sev": "ok"
       },
       {
-        "cpf": "048.550.733-18",
         "nome": "Adriano Ernandes Da Silva",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3563,11 +2769,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3600,12 +2801,195 @@
         "sev": "rep"
       },
       {
-        "cpf": "072.193.103-07",
+        "nome": "Alcindo Largueza",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Alessandro De Oliveira Espirito Santo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Edson Wilson Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Erisvaldo Da Silva Santana",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Francisco Luiz Alves Da Silva",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3615,11 +2999,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3652,12 +3031,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "400.797.558-28",
         "nome": "Gildemar Rodrigues Pereira",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3667,11 +3045,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3704,12 +3077,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "141.686.138-60",
         "nome": "Haroldo Lacerda",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3719,11 +3091,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3756,12 +3123,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "502.224.988-03",
         "nome": "Isabelly Duarte",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3771,11 +3137,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3808,12 +3169,57 @@
         "sev": "rep"
       },
       {
-        "cpf": "399.631.978-92",
+        "nome": "Janaína Da Rocha Morais",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Jeferson Da Silva Bonfim",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3823,11 +3229,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3860,12 +3261,103 @@
         "sev": "rep"
       },
       {
-        "cpf": "497.659.817-91",
+        "nome": "Jose Pinto Simoes",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jose Severino Da Silva Filho",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "José Bernardes Filho",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3875,11 +3367,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3912,12 +3399,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "116.288.818-01",
         "nome": "José Luiz Avila Vieira",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3927,11 +3413,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -3964,12 +3445,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "009.625.503-02",
         "nome": "José Regilovan Barros De Albuquerque",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3979,11 +3459,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4016,12 +3491,57 @@
         "sev": "rep"
       },
       {
-        "cpf": "317.422.088-27",
+        "nome": "Jucinaldo Pedro Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Juscimar Carvalho Silva",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4031,11 +3551,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4068,12 +3583,195 @@
         "sev": "rep"
       },
       {
-        "cpf": "933.868.263-34",
+        "nome": "Manoel Constantino Franca De Macedo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Marcelo Miguel Da Costa",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Maria Antônia Alves",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Mauro Cesar Soares De Araujo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Nivaldo Perira Da Silva",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4083,11 +3781,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4120,12 +3813,287 @@
         "sev": "rep"
       },
       {
-        "cpf": "163.742.167-25",
+        "nome": "Odais José Santos Do Vale",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Osvaldo Dos Reis Junior",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Patricia De Almeida Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Paulo Oliveira Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Raimundo José",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Reinaldo Aparecido Gonçalves",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Robson Oliveira De Lima",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4135,11 +4103,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4172,12 +4135,57 @@
         "sev": "rep"
       },
       {
-        "cpf": "398.999.718-12",
+        "nome": "Ronaldo Jesus Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Ronison Barros Albuquerque",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4187,11 +4195,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4224,12 +4227,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "537.717.018-05",
         "nome": "Ruan Celestino",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Acesso Liberado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4239,11 +4241,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4276,116 +4273,67 @@
         "sev": "rep"
       },
       {
-        "cpf": "103.589.298-73",
-        "nome": "Alcindo Largueza",
+        "nome": "Vivaldo Moraes Nascimento",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Bruno Salgado De Almeida",
+        "empresa": "CONSORCIO BAIXADA SANTISTA",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 0,
         "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
+        "docs_empresa": [],
+        "sev": "ok"
       },
       {
-        "cpf": "389.243.978-85",
-        "nome": "Alessandro De Oliveira Espirito Santo",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "418.952.745-91",
         "nome": "Almir Godofredo",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4395,11 +4343,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4432,12 +4375,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "104.746.034-31",
         "nome": "Cleiton Lima",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4447,11 +4389,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4484,12 +4421,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "020.011.931-14",
         "nome": "Davi De Castro Landim",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4499,11 +4435,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4536,12 +4467,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "017.618.663-89",
         "nome": "Diego Rodrigues",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4551,11 +4481,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4588,116 +4513,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "125.191.138-20",
-        "nome": "Edson Wilson Dos Santos",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "002.854.965-14",
-        "nome": "Erisvaldo Da Silva Santana",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "063.895.759-12",
         "nome": "Giovani Waligura",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4707,11 +4527,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4744,12 +4559,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "032.604.111-78",
         "nome": "Glênio Benedito Pereira Gomes",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4759,11 +4573,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4796,12 +4605,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "084.142.757-70",
         "nome": "Igor Chaves",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4811,11 +4619,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4848,12 +4651,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "540.225.288-26",
         "nome": "Ingryd Borges",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4863,11 +4665,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -4900,792 +4697,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "472.963.738-06",
-        "nome": "Janaína Da Rocha Morais",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "904.479.996-72",
-        "nome": "Jose Pinto Simoes",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "610.528.504-30",
-        "nome": "Jose Severino Da Silva Filho",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "351.988.668-57",
-        "nome": "Jucinaldo Pedro Dos Santos",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "301.546.888-00",
-        "nome": "Manoel Constantino Franca De Macedo",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "087.473.094-58",
-        "nome": "Marcelo Miguel Da Costa",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "938.658.213-91",
-        "nome": "Maria Antônia Alves",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "349.933.648-06",
-        "nome": "Mauro Cesar Soares De Araujo",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "444.914.503-82",
-        "nome": "Odais José Santos Do Vale",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "154.337.138-81",
-        "nome": "Osvaldo Dos Reis Junior",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "441.294.988-51",
-        "nome": "Patricia De Almeida Dos Santos",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "327.085.748-92",
-        "nome": "Paulo Oliveira Da Silva",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "208.250.992-34",
-        "nome": "Raimundo José",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "251.671.078-06",
-        "nome": "Reinaldo Aparecido Gonçalves",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "866.501.795-07",
-        "nome": "Ronaldo Jesus Dos Santos",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "037.149.131-22",
         "nome": "Ronieli Bastos",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5699,11 +4715,6 @@
             "sev": "val"
           },
           {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Em Validação",
             "sev": "val"
@@ -5732,175 +4743,19 @@
         "sev": "rep"
       },
       {
-        "cpf": "322.571.238-83",
-        "nome": "Vivaldo Moraes Nascimento",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "403.588.118-05",
-        "nome": "Onilio Cardozo Cantuaria Filho",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "status_int": "Pendências e Falta Integração",
-        "n_pess": 8,
-        "n_emp": 8,
-        "docs_pessoais": [
-          {
-            "doc": "ASO",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Ficha de EPI",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "NR35 - Trabalho em Altura",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR 6 — EPI",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR 18 — Admissional",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "OS Segurança",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR 13 — Vasos de Pressão",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Registro de SESMT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "cpf": "167.605.418-98",
         "nome": "Aleomar Soares Alves",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências e Falta Integração",
         "n_pess": 7,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [
           {
             "doc": "Ficha de EPI",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
-            "doc": "OS Segurança",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR 6 — EPI",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR35 - Trabalho em Altura",
+            "doc": "NR 18 — Admissional",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -5910,7 +4765,17 @@
             "sev": "pen"
           },
           {
-            "doc": "NR 18 — Admissional",
+            "doc": "OS Segurança",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR35 - Trabalho em Altura",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 6 — EPI",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -5928,11 +4793,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -5965,12 +4825,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "285.326.998-12",
         "nome": "Josemar Ferreira Lucena",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências e Falta Integração",
         "n_pess": 7,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [
           {
             "doc": "ASO",
@@ -5979,8 +4838,8 @@
           },
           {
             "doc": "Ficha de EPI",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "NR35 - Trabalho em Altura",
@@ -5993,17 +4852,17 @@
             "sev": "rep"
           },
           {
+            "doc": "OS Segurança",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "NR 6 — EPI",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
             "doc": "NR 18 — Admissional",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "OS Segurança",
             "st_s": "Pendente",
             "sev": "pen"
           }
@@ -6016,11 +4875,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
@@ -6053,12 +4907,93 @@
         "sev": "rep"
       },
       {
-        "cpf": "538.823.408-86",
+        "nome": "Onilio Cardozo Cantuaria Filho",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências e Falta Integração",
+        "n_pess": 7,
+        "n_emp": 7,
+        "docs_pessoais": [
+          {
+            "doc": "ASO",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Ficha de EPI",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "OS Segurança",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 18 — Admissional",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR35 - Trabalho em Altura",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 6 — EPI",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Gabriel De Lima Rodrigues Dos Reis",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 1,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -6078,11 +5013,6 @@
             "sev": "val"
           },
           {
-            "doc": "PGR",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Em Validação",
             "sev": "val"
@@ -6111,12 +5041,11 @@
         "sev": "rep"
       },
       {
-        "cpf": "553.535.173-34",
         "nome": "Joel Oliveira",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
         "status_int": "Pendências porém Integrado",
         "n_pess": 1,
-        "n_emp": 8,
+        "n_emp": 7,
         "docs_pessoais": [
           {
             "doc": "OS Segurança",
@@ -6132,11 +5061,6 @@
           },
           {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Em Validação",
             "sev": "val"
           },
