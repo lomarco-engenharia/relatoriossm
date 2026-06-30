@@ -72,8 +72,11 @@ def load_historico(projeto):
 
 def save_json(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
+    content = json.dumps(obj, ensure_ascii=False, indent=2)
+    # Abre em modo binário com truncate explícito para evitar null bytes residuais
+    with open(path, 'wb') as f:
+        f.truncate(0)
+        f.write(content.encode('utf-8'))
 
 # ─── CONSTANTES DE NEGÓCIO ───────────────────────────────────────────────────
 
