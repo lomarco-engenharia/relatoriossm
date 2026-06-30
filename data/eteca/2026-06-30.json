@@ -2,44 +2,44 @@
   "meta": {
     "projeto": "eteca",
     "data": "2026-06-30",
-    "total": 3370,
+    "total": 3368,
     "nc": 151,
-    "na": 5,
-    "conf_pct": 95.51929,
-    "ader_pct": 99.85163,
+    "na": 6,
+    "conf_pct": 95.51663,
+    "ader_pct": 99.82185,
     "n_subs": 28,
     "conf_fmt": "95,5%",
-    "ader_fmt": "99,9%",
+    "ader_fmt": "99,8%",
     "conf_class": "kpi-green",
     "ader_class": "kpi-green",
-    "total_workers": 52,
-    "cp_ok": 42,
-    "cp_nc": 10,
-    "cp_pct": 80.76923,
-    "cp_fmt": "80,8%",
-    "cp_class": "kpi-yellow",
-    "ci_ok": 49,
-    "ci_nc": 3,
-    "ci_pct": 94.23077,
-    "ci_fmt": "94,2%",
-    "ci_class": "kpi-yellow",
-    "ci_acesso": 42,
-    "ci_pend_int": 7,
-    "ci_falta": 1
+    "total_workers": null,
+    "cp_ok": null,
+    "cp_nc": null,
+    "cp_pct": null,
+    "cp_fmt": "N/D",
+    "cp_class": "kpi-nd",
+    "ci_ok": null,
+    "ci_nc": null,
+    "ci_pct": null,
+    "ci_fmt": "N/D",
+    "ci_class": "kpi-nd",
+    "ci_acesso": null,
+    "ci_pend_int": null,
+    "ci_falta": null
   },
   "variacao": {
     "data_anterior": "2026-06-29",
-    "d_conf": 3.89,
-    "d_ader": 1.505,
-    "d_total": -0.178,
+    "d_conf": 3.887,
+    "d_ader": 1.475,
+    "d_total": -0.237,
     "d_subs": 0.0,
-    "d_cp": 0.0,
-    "d_ci": 0.0
+    "d_cp": null,
+    "d_ci": null
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2043,
+      "qty": 2041,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
@@ -87,7 +87,7 @@
     },
     {
       "label": "Em Validação",
-      "qty": 33,
+      "qty": 34,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
@@ -95,7 +95,7 @@
     },
     {
       "label": "Pend. — Isenção Reprovada",
-      "qty": 20,
+      "qty": 19,
       "color": "#be123c",
       "is_nc": true,
       "is_na": false,
@@ -103,15 +103,15 @@
     },
     {
       "label": "Pendente",
-      "qty": 5,
+      "qty": 6,
       "color": "#ca8a04",
       "is_nc": true,
       "is_na": true,
-      "pct": 0.1
+      "pct": 0.2
     },
     {
       "label": "Reprovado/Vencido",
-      "qty": 5,
+      "qty": 4,
       "color": "#9f1239",
       "is_nc": true,
       "is_na": false,
@@ -141,16 +141,16 @@
       "Inválido"
     ],
     "data": [
-      2043,
+      2041,
       944,
       146,
       86,
       48,
       38,
-      33,
-      20,
-      5,
-      5,
+      34,
+      19,
+      6,
+      4,
       2
     ],
     "colors": [
@@ -172,7 +172,7 @@
       "id": "ns1",
       "label": "Pend. — Isenção Reprovada",
       "color": "#be123c",
-      "count": 20,
+      "count": 19,
       "pct": 100,
       "entries": [
         {
@@ -266,11 +266,6 @@
           "doc_s": "PCMSO"
         },
         {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
           "empresa": "Joao Santos De Almeida",
           "func": "—",
           "doc_s": "Autorização de Subcontratação"
@@ -281,18 +276,13 @@
       "id": "ns2",
       "label": "Pendente",
       "color": "#ca8a04",
-      "count": 5,
-      "pct": 25,
+      "count": 6,
+      "pct": 32,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
           "func": "Gabriela Cidrine De Sena",
           "doc_s": "Folha de Ponto"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "doc_s": "CNDT"
         },
         {
           "empresa": "Lais Silvestre Gardin",
@@ -308,6 +298,16 @@
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
           "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "doc_s": "PCMSO"
         }
       ]
     },
@@ -315,8 +315,8 @@
       "id": "ns3",
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
-      "count": 5,
-      "pct": 25,
+      "count": 4,
+      "pct": 21,
       "entries": [
         {
           "empresa": "Real Eng Pinturas em Geral",
@@ -337,11 +337,6 @@
           "empresa": "Consórcio ETE Caieiras (próprio)",
           "func": "—",
           "doc_s": "Plano de Rigging (Içamento)"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "doc_s": "Convenção Coletiva"
         }
       ]
     },
@@ -350,7 +345,7 @@
       "label": "Inválido",
       "color": "#dc2626",
       "count": 2,
-      "pct": 10,
+      "pct": 11,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -394,8 +389,8 @@
         {
           "empresa": "Antoni Ferreira De Abreu",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
@@ -641,21 +636,6 @@
     },
     {
       "id": "d14",
-      "name": "Convenção Coletiva",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 25,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "badge": "venc",
-          "st_s": "Vencido"
-        }
-      ]
-    },
-    {
-      "id": "d15",
       "name": "ASO",
       "count": 1,
       "color": "#dc2626",
@@ -670,7 +650,7 @@
       ]
     },
     {
-      "id": "d16",
+      "id": "d15",
       "name": "LTCAT",
       "count": 1,
       "color": "#be123c",
@@ -685,7 +665,7 @@
       ]
     },
     {
-      "id": "d17",
+      "id": "d16",
       "name": "CNDT",
       "count": 1,
       "color": "#0891b2",
@@ -700,7 +680,7 @@
       ]
     },
     {
-      "id": "d18",
+      "id": "d17",
       "name": "PGR",
       "count": 1,
       "color": "#be123c",
@@ -715,7 +695,7 @@
       ]
     },
     {
-      "id": "d19",
+      "id": "d18",
       "name": "Autorização de Subcontratação",
       "count": 1,
       "color": "#64748b",
@@ -733,47 +713,6 @@
   "subs": [
     {
       "id": "s1",
-      "nome": "Consórcio ETE Caieiras (próprio)",
-      "focus": 5,
-      "total": 1364,
-      "taxa": 0,
-      "crit": 5,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Plano de Rigging (Içamento)",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        },
-        {
-          "func": "—",
-          "doc_s": "Plano de Rigging (Içamento)",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        },
-        {
-          "func": "—",
-          "doc_s": "Convenção Coletiva",
-          "badge": "venc",
-          "st_s": "Vencido"
-        },
-        {
-          "func": "Júlio Sebastião De Oliveira",
-          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "Severino Fernandes Da Silva",
-          "doc_s": "ASO",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s2",
       "nome": "Lais Silvestre Gardin",
       "focus": 5,
       "total": 7,
@@ -781,12 +720,6 @@
       "crit": 1,
       "pill_color": "#dc2626",
       "entries": [
-        {
-          "func": "—",
-          "doc_s": "CNDT",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
         {
           "func": "—",
           "doc_s": "CND FGTS — CRF",
@@ -807,9 +740,50 @@
         },
         {
           "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
           "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nome": "Consórcio ETE Caieiras (próprio)",
+      "focus": 4,
+      "total": 1364,
+      "taxa": 0,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "Júlio Sebastião De Oliveira",
+          "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Severino Fernandes Da Silva",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
         }
       ]
     },
@@ -1001,7 +975,7 @@
       "id": "s11",
       "nome": "Ronaldo Barbosa De Souza",
       "focus": 1,
-      "total": 104,
+      "total": 103,
       "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
@@ -1052,7 +1026,7 @@
       "id": "s14",
       "nome": "Ademilson Donizeti De Andrade",
       "focus": 1,
-      "total": 102,
+      "total": 101,
       "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
@@ -1071,14 +1045,14 @@
       "focus": 1,
       "total": 90,
       "taxa": 1,
-      "crit": 1,
+      "crit": 0,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
           "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
@@ -1155,11 +1129,11 @@
     ],
     "William Vieira Dos Santos": [
       {
-        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+        "doc": "Folha de Ponto",
         "st_s": "Em Validação"
       },
       {
-        "doc": "Folha de Ponto",
+        "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
         "st_s": "Em Validação"
       },
       {
@@ -1179,10 +1153,6 @@
         "st_s": "Em Validação"
       },
       {
-        "doc": "Carteira Profissional",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
         "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
         "st_s": "Isenção Ag. Aprovação"
       },
@@ -1191,15 +1161,19 @@
         "st_s": "Isenção Ag. Aprovação"
       },
       {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira Profissional",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
         "doc": "CNH",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
         "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1240,11 +1214,11 @@
   },
   "vencimento_proximo": [
     {
-      "empresa": "Alexssandro Jannini Izidoro",
+      "empresa": "Joao Santos De Almeida",
       "func": "—",
       "doc": "CND FGTS — CRF",
-      "data_venc": "09/07/2026",
-      "dias": 9,
+      "data_venc": "02/07/2026",
+      "dias": 2,
       "tag": "vermelho"
     },
     {
@@ -1256,35 +1230,11 @@
       "tag": "vermelho"
     },
     {
-      "empresa": "Consórcio ETE Caieiras (próprio)",
-      "func": "—",
-      "doc": "CND FGTS — CRF",
-      "data_venc": "08/07/2026",
-      "dias": 8,
-      "tag": "vermelho"
-    },
-    {
       "empresa": "Fluiter Engenharia e Soluções",
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "06/07/2026",
       "dias": 6,
-      "tag": "vermelho"
-    },
-    {
-      "empresa": "Gilmar Santos Oliveira",
-      "func": "—",
-      "doc": "CND FGTS — CRF",
-      "data_venc": "09/07/2026",
-      "dias": 9,
-      "tag": "vermelho"
-    },
-    {
-      "empresa": "Joao Santos De Almeida",
-      "func": "—",
-      "doc": "CND FGTS — CRF",
-      "data_venc": "02/07/2026",
-      "dias": 2,
       "tag": "vermelho"
     },
     {
@@ -1304,6 +1254,14 @@
       "tag": "vermelho"
     },
     {
+      "empresa": "Consórcio ETE Caieiras (próprio)",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "08/07/2026",
+      "dias": 8,
+      "tag": "vermelho"
+    },
+    {
       "empresa": "Ryfal Construções e Reformas",
       "func": "—",
       "doc": "CND FGTS — CRF",
@@ -1320,7 +1278,7 @@
       "tag": "vermelho"
     },
     {
-      "empresa": "Wert Engenharia e Soluções",
+      "empresa": "Alexssandro Jannini Izidoro",
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "09/07/2026",
@@ -1328,12 +1286,20 @@
       "tag": "vermelho"
     },
     {
-      "empresa": "Ademilson Donizeti De Andrade",
+      "empresa": "Gilmar Santos Oliveira",
       "func": "—",
       "doc": "CND FGTS — CRF",
-      "data_venc": "12/07/2026",
-      "dias": 12,
-      "tag": "amarelo"
+      "data_venc": "09/07/2026",
+      "dias": 9,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "Wert Engenharia e Soluções",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "09/07/2026",
+      "dias": 9,
+      "tag": "vermelho"
     },
     {
       "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -1360,14 +1326,6 @@
       "tag": "amarelo"
     },
     {
-      "empresa": "Roberto Carlos Rojo De Barros",
-      "func": "—",
-      "doc": "CND FGTS — CRF",
-      "data_venc": "12/07/2026",
-      "dias": 12,
-      "tag": "amarelo"
-    },
-    {
       "empresa": "Ryfal Construções e Reformas",
       "func": "Ediniz De Oliveira Santos",
       "doc": "ASO",
@@ -1384,6 +1342,54 @@
       "tag": "amarelo"
     },
     {
+      "empresa": "Ademilson Donizeti De Andrade",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "12/07/2026",
+      "dias": 12,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Roberto Carlos Rojo De Barros",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "12/07/2026",
+      "dias": 12,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Fluiter Engenharia e Soluções",
+      "func": "Allyson Rodrigo Da Silva De Araujo",
+      "doc": "ASO",
+      "data_venc": "21/07/2026",
+      "dias": 21,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Bruno Luiz Fonseca Pimenta",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "27/07/2026",
+      "dias": 27,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Bruno Luiz Fonseca Pimenta",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "27/07/2026",
+      "dias": 27,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Consórcio ETE Caieiras (próprio)",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "27/07/2026",
+      "dias": 27,
+      "tag": "cinza"
+    },
+    {
       "empresa": "Alexssandro Jannini Izidoro",
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
@@ -1392,35 +1398,11 @@
       "tag": "cinza"
     },
     {
-      "empresa": "Alufer Engenharia Ltda.",
-      "func": "—",
-      "doc": "PCMSO",
-      "data_venc": "14/08/2026",
-      "dias": 45,
-      "tag": "cinza"
-    },
-    {
       "empresa": "Bruno Luiz Fonseca Pimenta",
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
       "dias": 31,
-      "tag": "cinza"
-    },
-    {
-      "empresa": "Bruno Luiz Fonseca Pimenta",
-      "func": "—",
-      "doc": "CND Municipal",
-      "data_venc": "27/07/2026",
-      "dias": 27,
-      "tag": "cinza"
-    },
-    {
-      "empresa": "Bruno Luiz Fonseca Pimenta",
-      "func": "—",
-      "doc": "CND Municipal",
-      "data_venc": "27/07/2026",
-      "dias": 27,
       "tag": "cinza"
     },
     {
@@ -1432,35 +1414,11 @@
       "tag": "cinza"
     },
     {
-      "empresa": "Consórcio ETE Caieiras (próprio)",
-      "func": "Edmundo Dias De Oliveira",
-      "doc": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
-      "data_venc": "04/08/2026",
-      "dias": 35,
-      "tag": "cinza"
-    },
-    {
-      "empresa": "Consórcio ETE Caieiras (próprio)",
-      "func": "—",
-      "doc": "CND Municipal",
-      "data_venc": "27/07/2026",
-      "dias": 27,
-      "tag": "cinza"
-    },
-    {
       "empresa": "Diego Rodrigues De Castro",
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
       "dias": 31,
-      "tag": "cinza"
-    },
-    {
-      "empresa": "Fluiter Engenharia e Soluções",
-      "func": "Allyson Rodrigo Da Silva De Araujo",
-      "doc": "ASO",
-      "data_venc": "21/07/2026",
-      "dias": 21,
       "tag": "cinza"
     },
     {
@@ -1477,14 +1435,6 @@
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
       "dias": 31,
-      "tag": "cinza"
-    },
-    {
-      "empresa": "Lomarco Engenharia",
-      "func": "—",
-      "doc": "CND Municipal",
-      "data_venc": "13/08/2026",
-      "dias": 44,
       "tag": "cinza"
     },
     {
@@ -1528,1913 +1478,46 @@
       "tag": "cinza"
     },
     {
-      "empresa": "Ryfal Construções e Reformas",
-      "func": "—",
-      "doc": "CND Municipal",
-      "data_venc": "20/08/2026",
-      "dias": 51,
-      "tag": "cinza"
-    },
-    {
       "empresa": "Wesley Felipe Pancieri Ambrosio",
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
       "dias": 31,
       "tag": "cinza"
+    },
+    {
+      "empresa": "Consórcio ETE Caieiras (próprio)",
+      "func": "Edmundo Dias De Oliveira",
+      "doc": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
+      "data_venc": "04/08/2026",
+      "dias": 35,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Lomarco Engenharia",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "13/08/2026",
+      "dias": 44,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Alufer Engenharia Ltda.",
+      "func": "—",
+      "doc": "PCMSO",
+      "data_venc": "14/08/2026",
+      "dias": 45,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Ryfal Construções e Reformas",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "20/08/2026",
+      "dias": 51,
+      "tag": "cinza"
     }
   ],
-  "cpci": [
-    {
-      "fornecedor": "Ademilson Donizeti De Andrade",
-      "funcionario": "Ademilson Andrade",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Alufer Engenharia Ltda.",
-      "funcionario": "Darlam Gregório De Souza",
-      "status": "Pendências e Falta Integração"
-    },
-    {
-      "fornecedor": "Alufer Engenharia Ltda.",
-      "funcionario": "Sidney Santiago Freitas",
-      "status": "Pendências e Falta Integração"
-    },
-    {
-      "fornecedor": "Antoni Ferreira De Abreu",
-      "funcionario": "Antoni Ferreira De Abreu Abreu",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Cleiton Jose De Lima",
-      "funcionario": "Cleiton Lima",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Diego Rodrigues De Castro",
-      "funcionario": "Diego Rodrigues",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Fluiter Engenharia e Soluções",
-      "funcionario": "Jonathan Ferreia De Lima",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Real Eng Pinturas em Geral",
-      "funcionario": "Wellington Ribeiro",
-      "status": "Falta Integração"
-    },
-    {
-      "fornecedor": "Ronaldo Barbosa De Souza",
-      "funcionario": "Ronaldo Barbosa De Souza",
-      "status": "Pendências porém Integrado"
-    },
-    {
-      "fornecedor": "Ronieli Mendes Bastos",
-      "funcionario": "Ronieli Bastos",
-      "status": "Pendências porém Integrado"
-    }
-  ],
-  "cpci_detail": {
-    "total": 52,
-    "n_liberado": 42,
-    "n_pend_pess": 6,
-    "n_pend_emp": 47,
-    "combos": [
-      {
-        "si": "Acesso Liberado",
-        "sp": "Sem pendências",
-        "se": "Com pendências",
-        "qty": 40
-      },
-      {
-        "si": "Pendências porém Integrado",
-        "sp": "Sem pendências",
-        "se": "Sem pendências",
-        "qty": 3
-      },
-      {
-        "si": "Acesso Liberado",
-        "sp": "Com pendências",
-        "se": "Com pendências",
-        "qty": 2
-      },
-      {
-        "si": "Pendências porém Integrado",
-        "sp": "Sem pendências",
-        "se": "Com pendências",
-        "qty": 2
-      },
-      {
-        "si": "Pendências e Falta Integração",
-        "sp": "Com pendências",
-        "se": "Com pendências",
-        "qty": 2
-      },
-      {
-        "si": "Falta Integração",
-        "sp": "Sem pendências",
-        "se": "Sem pendências",
-        "qty": 1
-      },
-      {
-        "si": "Pendências porém Integrado",
-        "sp": "Com pendências",
-        "se": "Sem pendências",
-        "qty": 1
-      },
-      {
-        "si": "Pendências porém Integrado",
-        "sp": "Com pendências",
-        "se": "Com pendências",
-        "qty": 1
-      }
-    ],
-    "workers": [
-      {
-        "nome": "Alexssandro Izidoro",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Allyson Rodrigo Da Silva De Araujo",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Antonio Marcos Caitano Ramos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Arthur De Faria Werner",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Carlito Gregório",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Cicero Lucas Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Cleidiomarques Muniz Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Daniel Pereira De Jesus Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Diogo Do Nascimento Araujo",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Ediniz De Oliveira Santos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Edmilson Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Edmundo Dias De Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Emerson Rodrigo Dos Santos Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Evaldo Perycles Nunes Lopes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Fernando Celestino",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Francisco Da Luz",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Gilmar Santos Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Italo Numeriano De Sales",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Ivanildo Carneiro Da Ponte",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jorge Ramos Lopes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jose Alexandre Ferreira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jose Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jose Filho Lopes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Josoel Nunes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "João Florentino De Matos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Klinger Leal",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Leandro Aguirre De Souza Lucio",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Lourival Jose Dos Santos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Luis Aprígio Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Luis Paulo Ferreira Dos Santos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Marcelo Bacelar Benedito Junior",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Marcos Viniciusde Oliveira Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Natalino Dutra De Paulo",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Nelito Santos Bonfim",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Pedro Henrique Verçosa Geraldes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Reginaldo Vicente",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Renato Batista De Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Ronaldo Bispo Dos Santos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Valmir Da Silva Lins",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Welberti Alves David De Souza",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Israel Ricardo Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 1,
-        "n_emp": 5,
-        "docs_pessoais": [
-          {
-            "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Joao Santos De Almeida",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Acesso Liberado",
-        "n_pess": 1,
-        "n_emp": 5,
-        "docs_pessoais": [
-          {
-            "doc": "Curso Básico de Segurança para Trabalhos a Quente",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Diego Rodrigues",
-        "empresa": "CONSORCIO KTL MAIRIPORA",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 0,
-        "docs_pessoais": [],
-        "docs_empresa": [],
-        "sev": "ok"
-      },
-      {
-        "nome": "Jonathan Ferreia De Lima",
-        "empresa": "CONSORCIO PERFORMANCE PERUS",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 0,
-        "docs_pessoais": [],
-        "docs_empresa": [],
-        "sev": "ok"
-      },
-      {
-        "nome": "Ronieli Bastos",
-        "empresa": "CONSORCIO KTL MAIRIPORA",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 0,
-        "docs_pessoais": [],
-        "docs_empresa": [],
-        "sev": "ok"
-      },
-      {
-        "nome": "Wellington Ribeiro",
-        "empresa": "CONSORCIO ESGOTO TERRA PRETA VES",
-        "status_int": "Falta Integração",
-        "n_pess": 0,
-        "n_emp": 0,
-        "docs_pessoais": [],
-        "docs_empresa": [],
-        "sev": "ok"
-      },
-      {
-        "nome": "Ademilson Andrade",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Ronaldo Barbosa De Souza",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Cleiton Lima",
-        "empresa": "CONSORCIO KTL MAIRIPORA",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 1,
-        "n_emp": 0,
-        "docs_pessoais": [
-          {
-            "doc": "ASO",
-            "st_s": "Em Validação",
-            "sev": "val"
-          }
-        ],
-        "docs_empresa": [],
-        "sev": "val"
-      },
-      {
-        "nome": "Darlam Gregório De Souza",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Pendências e Falta Integração",
-        "n_pess": 2,
-        "n_emp": 5,
-        "docs_pessoais": [
-          {
-            "doc": "Ficha de EPI",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Antoni Ferreira De Abreu Abreu",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Pendências porém Integrado",
-        "n_pess": 1,
-        "n_emp": 5,
-        "docs_pessoais": [
-          {
-            "doc": "ASO",
-            "st_s": "Em Validação",
-            "sev": "val"
-          }
-        ],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Sidney Santiago Freitas",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
-        "status_int": "Pendências e Falta Integração",
-        "n_pess": 1,
-        "n_emp": 5,
-        "docs_pessoais": [
-          {
-            "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "docs_empresa": [
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Convenção Coletiva",
-            "st_s": "Vencido",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      }
-    ]
-  }
+  "cpci": [],
+  "cpci_detail": null
 }
