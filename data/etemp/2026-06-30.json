@@ -1,0 +1,3098 @@
+{
+  "meta": {
+    "projeto": "etemp",
+    "data": "2026-06-30",
+    "total": 3787,
+    "nc": 262,
+    "na": 19,
+    "conf_pct": 93.08159,
+    "ader_pct": 99.49828,
+    "n_subs": 29,
+    "conf_fmt": "93,1%",
+    "ader_fmt": "99,5%",
+    "conf_class": "kpi-yellow",
+    "ader_class": "kpi-green",
+    "total_workers": null,
+    "cp_ok": null,
+    "cp_nc": null,
+    "cp_pct": null,
+    "cp_fmt": "N/D",
+    "cp_class": "kpi-nd",
+    "ci_ok": null,
+    "ci_nc": null,
+    "ci_pct": null,
+    "ci_fmt": "N/D",
+    "ci_class": "kpi-nd",
+    "ci_acesso": null,
+    "ci_pend_int": null,
+    "ci_falta": null
+  },
+  "variacao": {
+    "data_anterior": "2026-06-29",
+    "d_conf": 0.449,
+    "d_ader": 0.716,
+    "d_total": 1.746,
+    "d_subs": 0.0,
+    "d_cp": null,
+    "d_ci": null
+  },
+  "status_rows": [
+    {
+      "label": "Isento",
+      "qty": 2472,
+      "color": "#059669",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 65.3
+    },
+    {
+      "label": "OK",
+      "qty": 908,
+      "color": "#16a34a",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 24.0
+    },
+    {
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 103,
+      "color": "#be123c",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 2.7
+    },
+    {
+      "label": "Pend. — Isenção Ag. Aprovação",
+      "qty": 102,
+      "color": "#d97706",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 2.7
+    },
+    {
+      "label": "Liberado com Ressalvas",
+      "qty": 75,
+      "color": "#0891b2",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 2.0
+    },
+    {
+      "label": "Aprovado pelo Cliente",
+      "qty": 55,
+      "color": "#7c3aed",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 1.5
+    },
+    {
+      "label": "Em Validação",
+      "qty": 27,
+      "color": "#2563a8",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.7
+    },
+    {
+      "label": "Pendente",
+      "qty": 19,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
+      "pct": 0.5
+    },
+    {
+      "label": "Perto do Vencimento",
+      "qty": 15,
+      "color": "#f97316",
+      "is_nc": false,
+      "is_na": false,
+      "pct": 0.4
+    },
+    {
+      "label": "Inválido",
+      "qty": 6,
+      "color": "#dc2626",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.2
+    },
+    {
+      "label": "Reprovado/Vencido",
+      "qty": 5,
+      "color": "#9f1239",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.1
+    }
+  ],
+  "donut": {
+    "labels": [
+      "Isento",
+      "OK",
+      "Pend. — Isenção Reprovada",
+      "Pend. — Isenção Ag. Aprovação",
+      "Liberado com Ressalvas",
+      "Aprovado pelo Cliente",
+      "Em Validação",
+      "Pendente",
+      "Perto do Vencimento",
+      "Inválido",
+      "Reprovado/Vencido"
+    ],
+    "data": [
+      2472,
+      908,
+      103,
+      102,
+      75,
+      55,
+      27,
+      19,
+      15,
+      6,
+      5
+    ],
+    "colors": [
+      "#059669",
+      "#16a34a",
+      "#be123c",
+      "#d97706",
+      "#0891b2",
+      "#7c3aed",
+      "#2563a8",
+      "#ca8a04",
+      "#f97316",
+      "#dc2626",
+      "#9f1239"
+    ]
+  },
+  "nc_status": [
+    {
+      "id": "ns1",
+      "label": "Pend. — Isenção Reprovada",
+      "color": "#be123c",
+      "count": 103,
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Cedro Engenharia",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Cedro Engenharia",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Cleiton Jose De Lima",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Cleiton Jose De Lima",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "ICS Montagem e Instalação Elétrica",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "ICS Montagem e Instalação Elétrica",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        }
+      ]
+    },
+    {
+      "id": "ns2",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 19,
+      "pct": 18,
+      "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR-18 - Treinamento para uso/montagem de andaime"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR 6 — EPI"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "OS Segurança"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        }
+      ]
+    },
+    {
+      "id": "ns3",
+      "label": "Inválido",
+      "color": "#dc2626",
+      "count": 6,
+      "pct": 6,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "Jose Nilton Alvesda  Silva",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR35 - Trabalho em Altura"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jose Ronaldo Da Costa",
+          "doc_s": "ASO"
+        }
+      ]
+    },
+    {
+      "id": "ns4",
+      "label": "Reprovado/Vencido",
+      "color": "#9f1239",
+      "count": 5,
+      "pct": 5,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Inventário de Máquinas"
+        },
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental"
+        }
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "id": "d1",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+      "count": 19,
+      "color": "#7c3aed",
+      "pct": 100,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 15,
+      "color": "#64748b",
+      "pct": 79,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "PCMSO",
+      "count": 12,
+      "color": "#be123c",
+      "pct": 63,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Cleiton Jose De Lima",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "ICS Montagem e Instalação Elétrica",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 11,
+      "color": "#64748b",
+      "pct": 58,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "CND Federal",
+      "count": 9,
+      "color": "#0891b2",
+      "pct": 47,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "PGR",
+      "count": 9,
+      "color": "#be123c",
+      "pct": 47,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "João Nestardo Neto",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "ICS Montagem e Instalação Elétrica",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "CND FGTS — CRF",
+      "count": 9,
+      "color": "#0891b2",
+      "pct": 47,
+      "entries": [
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Isabelly Duarte De Souza",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "CND Municipal",
+      "count": 8,
+      "color": "#0891b2",
+      "pct": 42,
+      "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Cleiton Jose De Lima",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "name": "Contrato Social / Reg. MEI",
+      "count": 7,
+      "color": "#6366f1",
+      "pct": 37,
+      "entries": [
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "LL Nogueira Tecnologia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "name": "Folha de Pagamento",
+      "count": 5,
+      "color": "#059669",
+      "pct": 26,
+      "entries": [
+        {
+          "empresa": "Cedro Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Cedro Engenharia",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "name": "Autorização de Subcontratação",
+      "count": 4,
+      "color": "#64748b",
+      "pct": 21,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "name": "OS Segurança",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 16,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "name": "NR 6 — EPI",
+      "count": 3,
+      "color": "#d97706",
+      "pct": 16,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "NR35 - Trabalho em Altura",
+      "count": 3,
+      "color": "#d97706",
+      "pct": 16,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "NR 18 — Admissional",
+      "count": 3,
+      "color": "#d97706",
+      "pct": 16,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "name": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+      "count": 3,
+      "color": "#d97706",
+      "pct": 16,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d17",
+      "name": "Contrato de Prestação de Serviço",
+      "count": 3,
+      "color": "#6366f1",
+      "pct": 16,
+      "entries": [
+        {
+          "empresa": "Ronieli Mendes Bastos",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Diego Rodrigues De Castro",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d18",
+      "name": "ASO",
+      "count": 2,
+      "color": "#dc2626",
+      "pct": 11,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "Jose Nilton Alvesda  Silva",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jose Ronaldo Da Costa",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "name": "CNDT",
+      "count": 1,
+      "color": "#0891b2",
+      "pct": 5,
+      "entries": [
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d20",
+      "name": "NR-18 - Treinamento para uso/montagem de andaime",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 5,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d21",
+      "name": "Inventário de Máquinas",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 5,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "d22",
+      "name": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 5,
+      "entries": [
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d23",
+      "name": "Programa de Saúde Mental",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 5,
+      "entries": [
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    }
+  ],
+  "subs": [
+    {
+      "id": "s1",
+      "nome": "J F Lucena",
+      "focus": 18,
+      "total": 106,
+      "taxa": 17,
+      "crit": 3,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR-18 - Treinamento para uso/montagem de andaime",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Aleomar Soares Alves",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR35 - Trabalho em Altura",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR 6 — EPI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "OS Segurança",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nome": "Murilo Pinheiro de Carvalho Camilo",
+      "focus": 17,
+      "total": 106,
+      "taxa": 16,
+      "crit": 14,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "nome": "Souza Soares — Locações e Serviços",
+      "focus": 9,
+      "total": 232,
+      "taxa": 4,
+      "crit": 9,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Inventário de Máquinas",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "nome": "Consórcio KTL Mairiporã (próprio)",
+      "focus": 9,
+      "total": 984,
+      "taxa": 1,
+      "crit": 9,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "Jose Ronaldo Da Costa",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "nome": "Joel Leite Filho",
+      "focus": 8,
+      "total": 96,
+      "taxa": 8,
+      "crit": 8,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "nome": "João Nestardo Neto",
+      "focus": 8,
+      "total": 36,
+      "taxa": 22,
+      "crit": 8,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "nome": "Isabelly Duarte De Souza",
+      "focus": 7,
+      "total": 37,
+      "taxa": 19,
+      "crit": 7,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "nome": "Tuca Pisos Construções",
+      "focus": 5,
+      "total": 137,
+      "taxa": 4,
+      "crit": 5,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CNDT",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "nome": "Shalom Terraplenagem Locações",
+      "focus": 5,
+      "total": 148,
+      "taxa": 3,
+      "crit": 5,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "nome": "Davi De Castro Landim",
+      "focus": 5,
+      "total": 98,
+      "taxa": 5,
+      "crit": 5,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "nome": "Ingryd Santos Borges",
+      "focus": 5,
+      "total": 98,
+      "taxa": 5,
+      "crit": 5,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Autorização de Subcontratação",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "nome": "CEC Transportes e Locação",
+      "focus": 4,
+      "total": 96,
+      "taxa": 4,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "nome": "Marina Costa Lani Leal",
+      "focus": 3,
+      "total": 21,
+      "taxa": 14,
+      "crit": 3,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "nome": "Ronieli Mendes Bastos",
+      "focus": 3,
+      "total": 90,
+      "taxa": 3,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "nome": "Diego Rodrigues De Castro",
+      "focus": 3,
+      "total": 87,
+      "taxa": 3,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "nome": "Erisvaldo Da Silva Santana",
+      "focus": 3,
+      "total": 14,
+      "taxa": 21,
+      "crit": 3,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "nome": "MCA Soluções em Engenharia",
+      "focus": 3,
+      "total": 22,
+      "taxa": 14,
+      "crit": 3,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "nome": "Almir Godofredo Flores Cardoso",
+      "focus": 3,
+      "total": 81,
+      "taxa": 4,
+      "crit": 3,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "nome": "Gabriela Cidrine de Sena",
+      "focus": 2,
+      "total": 88,
+      "taxa": 2,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "Jose Nilton Alvesda  Silva",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "nome": "Cedro Engenharia",
+      "focus": 2,
+      "total": 7,
+      "taxa": 29,
+      "crit": 2,
+      "pill_color": "#ca8a04",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "nome": "Cleiton Jose De Lima",
+      "focus": 2,
+      "total": 87,
+      "taxa": 2,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "nome": "ICS Montagem e Instalação Elétrica",
+      "focus": 2,
+      "total": 37,
+      "taxa": 5,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "nome": "Antoni Ferreira De Abreu",
+      "focus": 2,
+      "total": 79,
+      "taxa": 3,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "nome": "Jeferson Da Silva Bonfim",
+      "focus": 2,
+      "total": 28,
+      "taxa": 7,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "nome": "Valdir Rodrigues Topógrafo",
+      "focus": 1,
+      "total": 80,
+      "taxa": 1,
+      "crit": 0,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "nome": "Pejota Construções",
+      "focus": 1,
+      "total": 615,
+      "taxa": 0,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "nome": "LL Nogueira Tecnologia",
+      "focus": 1,
+      "total": 121,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    }
+  ],
+  "worker_docs": {
+    "Jose Nilton Alvesda  Silva": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ],
+    "Aleomar Soares Alves": [
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR-18 - Treinamento para uso/montagem de andaime",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+        "st_s": "Pendente"
+      }
+    ],
+    "Josemar Ferreira Lucena": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+        "st_s": "Inválido"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      }
+    ],
+    "Onilio Cardozo Cantuaria Filho": [
+      {
+        "doc": "ASO",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "Ficha de EPI",
+        "st_s": "Em Validação"
+      },
+      {
+        "doc": "NR35 - Trabalho em Altura",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 6 — EPI",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "OS Segurança",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR 13 — Vasos de Pressão",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Joel Oliveira": [
+      {
+        "doc": "OS Segurança",
+        "st_s": "Em Validação"
+      }
+    ],
+    "Gabriel De Lima Rodrigues Dos Reis": [
+      {
+        "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+        "st_s": "Isenção Ag. Aprovação"
+      }
+    ],
+    "Jose Ronaldo Da Costa": [
+      {
+        "doc": "ASO",
+        "st_s": "Inválido"
+      }
+    ]
+  },
+  "cpci": []
+}
