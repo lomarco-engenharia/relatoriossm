@@ -253,6 +253,16 @@ def shorten_st(st):
     }
     return m.get(st, st)
 
+def parse_date(s):
+    if not s: return None
+    s = str(s).strip()
+    for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%m/%d/%Y'):
+        try:
+            return datetime.datetime.strptime(s, fmt).date()
+        except ValueError:
+            continue
+    return None
+
 def fmt_pct1(v):
     return f"{v:.1f}%".replace('.', ',')
 
@@ -384,6 +394,34 @@ def process_docs(rows, sub_names, proprio_label):
             'pill_color': pill_color, 'entries': sub_entries[emp]
         })
 
+    # Seção 7 — Documentos próximos do vencimento
+    today = datetime.date.today()
+    def alert_tag(dt):
+        if dt is None: return ('cinza', 2)
+        days = (dt - today).days
+        if days <= 10: return ('vermelho', 0)
+        if days <= 20: return ('amarelo', 1)
+        return ('cinza', 2)
+
+    venc_entries = []
+    for r in rows:
+        if r.get('Status do Documento') == 'Perto do Vencimento':
+            dt = parse_date(r.get('Data de Vencimento'))
+            tag, tag_ord = alert_tag(dt)
+            emp = clean_name(r.get('Subcontratado'))
+            func = clean_func(r.get('Funcionário'))
+            venc_entries.append({
+                'empresa':   emp,
+                'func':      func,
+                'doc':       shorten_doc(r.get('Documento')),
+                'data_venc': dt.strftime('%d/%m/%Y') if dt else '—',
+                'dias':      (dt - today).days if dt else None,
+                'tag':       tag,
+                '_ord':      (tag_ord, emp, func),
+            })
+    venc_entries.sort(key=lambda x: x['_ord'])
+    vencimento_proximo = [{k: v for k, v in e.items() if k != '_ord'} for e in venc_entries]
+
     # Mapa funcionário → docs NC completo (inclui Isenção Ag. e Em Validação)
     worker_docs = collections.defaultdict(list)
     for r in rows:
@@ -411,6 +449,7 @@ def process_docs(rows, sub_names, proprio_label):
         'docs': docs,
         'subs': subs,
         'worker_docs': dict(worker_docs),
+        'vencimento_proximo': vencimento_proximo,
     }
 
 # ─── PROCESSAMENTO DE INTEGRAÇÃO ─────────────────────────────────────────────
@@ -587,8 +626,9 @@ def main():
         'nc_status':   doc_result['nc_status'],
         'docs':        doc_result['docs'],
         'subs':        doc_result['subs'],
-        'worker_docs': doc_result['worker_docs'],
-        'cpci':        int_result['cpci'] if int_result else [],
+        'worker_docs':        doc_result['worker_docs'],
+        'vencimento_proximo': doc_result['vencimento_proximo'],
+        'cpci':               int_result['cpci'] if int_result else [],
     }
 
     out_path = os.path.join('data', projeto, f'{extraction_date}.json')

@@ -159,6 +159,9 @@ tr:last-child td { border-bottom:none; }
 .spinner { text-align:center; padding:60px; color:var(--muted); }
 .error   { text-align:center; padding:40px; color:var(--c-inv); }
 .var-note { font-size:11px; color:var(--muted); margin-bottom:8px; }
+.tag-venc-r { background:#fee2e2; color:#991b1b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+.tag-venc-y { background:#fef9c3; color:#854d0e; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+.tag-venc-g { background:#f1f5f9; color:#64748b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
 </style>
 </head>
 <body>
@@ -591,6 +594,38 @@ function renderDashboard(d) {
   <div class="section">
     <div class="section-title">Seção 6 — NC por Tipo de Problema</div>
     ${ncHtml}
+  </div>`;
+
+  // ── Seção 7 — Documentos próximos do vencimento ──────────────────────────
+  const vencProx = d.vencimento_proximo || [];
+  let vencHtml = '';
+  if (vencProx.length === 0) {
+    vencHtml = '<div style="font-size:13px;color:var(--c-ok)">Nenhum documento com vencimento nos próximos 30 dias.</div>';
+  } else {
+    const tagHtml = tag => {
+      if (tag === 'vermelho') return '<span class="tag-venc-r">&#9650; &le;10 dias</span>';
+      if (tag === 'amarelo')  return '<span class="tag-venc-y">&#9650; &le;20 dias</span>';
+      return '<span class="tag-venc-g">&le;30 dias</span>';
+    };
+    let tbody = '';
+    vencProx.forEach(e => {
+      tbody += '<tr>'
+        + '<td>' + tagHtml(e.tag) + '</td>'
+        + '<td>' + e.empresa + '</td>'
+        + '<td>' + e.func + '</td>'
+        + '<td>' + e.doc + '</td>'
+        + '<td style="white-space:nowrap">' + e.data_venc + '</td>'
+        + '</tr>';
+    });
+    vencHtml = '<table><thead><tr>'
+      + '<th>Alerta</th><th>Empresa</th><th>Funcionário</th><th>Documento</th><th>Vencimento</th>'
+      + '</tr></thead><tbody>' + tbody + '</tbody></table>';
+  }
+
+  html += `
+  <div class="section">
+    <div class="section-title">Seção 7 — Documentos com Vencimento nos Próximos 30 Dias (${vencProx.length})</div>
+    ${vencHtml}
   </div>`;
 
   // ── Render ────────────────────────────────────────────────────────────────
