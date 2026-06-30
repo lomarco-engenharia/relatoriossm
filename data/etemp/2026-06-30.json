@@ -183,17 +183,17 @@
         {
           "empresa": "Tuca Pisos Construções",
           "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
           "doc_s": "PCMSO"
         },
         {
           "empresa": "Tuca Pisos Construções",
           "func": "—",
           "doc_s": "CND Municipal"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "Tuca Pisos Construções",
@@ -208,6 +208,26 @@
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
@@ -224,26 +244,6 @@
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Marina Costa Lani Leal",
@@ -273,17 +273,17 @@
         {
           "empresa": "MCA Soluções em Engenharia",
           "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
           "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "MCA Soluções em Engenharia",
-          "func": "—",
-          "doc_s": "CND Federal"
         },
         {
           "empresa": "Antoni Ferreira De Abreu",
@@ -318,7 +318,7 @@
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
         },
         {
           "empresa": "CEC Transportes e Locação",
@@ -328,7 +328,7 @@
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         }
       ]
     },
@@ -352,22 +352,22 @@
         {
           "empresa": "J F Lucena",
           "func": "Aleomar Soares Alves",
-          "doc_s": "OS Segurança"
+          "doc_s": "NR 6 — EPI"
         },
         {
           "empresa": "J F Lucena",
           "func": "Aleomar Soares Alves",
-          "doc_s": "NR 6 — EPI"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Josemar Ferreira Lucena",
-          "doc_s": "NR 6 — EPI"
+          "doc_s": "OS Segurança"
         },
         {
           "empresa": "J F Lucena",
           "func": "Josemar Ferreira Lucena",
           "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "doc_s": "NR 6 — EPI"
         },
         {
           "empresa": "J F Lucena",
@@ -377,12 +377,7 @@
         {
           "empresa": "J F Lucena",
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR 18 — Admissional"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
+          "doc_s": "NR 6 — EPI"
         },
         {
           "empresa": "J F Lucena",
@@ -397,7 +392,22 @@
         {
           "empresa": "J F Lucena",
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR 6 — EPI"
+          "doc_s": "NR 18 — Admissional"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -408,16 +418,6 @@
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
           "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Antoni Ferreira De Abreu",
@@ -946,33 +946,6 @@
     },
     {
       "id": "d12",
-      "name": "OS Segurança",
-      "count": 3,
-      "color": "#64748b",
-      "pct": 43,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "Aleomar Soares Alves",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Josemar Ferreira Lucena",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d13",
       "name": "NR 6 — EPI",
       "count": 3,
       "color": "#d97706",
@@ -999,10 +972,37 @@
       ]
     },
     {
-      "id": "d14",
-      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+      "id": "d13",
+      "name": "OS Segurança",
       "count": 3,
-      "color": "#7c3aed",
+      "color": "#64748b",
+      "pct": 43,
+      "entries": [
+        {
+          "empresa": "J F Lucena",
+          "func": "Aleomar Soares Alves",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Josemar Ferreira Lucena",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 3,
+      "color": "#64748b",
       "pct": 43,
       "entries": [
         {
@@ -1027,9 +1027,9 @@
     },
     {
       "id": "d15",
-      "name": "Comp. de Pagamento GPS/DARF",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
       "count": 3,
-      "color": "#64748b",
+      "color": "#7c3aed",
       "pct": 43,
       "entries": [
         {
@@ -1215,13 +1215,13 @@
         },
         {
           "func": "Aleomar Soares Alves",
-          "doc_s": "OS Segurança",
+          "doc_s": "NR 6 — EPI",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "Aleomar Soares Alves",
-          "doc_s": "NR 6 — EPI",
+          "doc_s": "OS Segurança",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1245,13 +1245,13 @@
         },
         {
           "func": "Josemar Ferreira Lucena",
-          "doc_s": "NR 6 — EPI",
+          "doc_s": "NR 18 — Admissional",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "Josemar Ferreira Lucena",
-          "doc_s": "NR 18 — Admissional",
+          "doc_s": "NR 6 — EPI",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1269,13 +1269,7 @@
         },
         {
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR 18 — Admissional",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+          "doc_s": "NR 6 — EPI",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1293,7 +1287,13 @@
         },
         {
           "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "NR 6 — EPI",
+          "doc_s": "NR 18 — Admissional",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "Onilio Cardozo Cantuaria Filho",
+          "doc_s": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
           "badge": "pend",
           "st_s": "Pendente"
         }
@@ -1310,6 +1310,30 @@
       "entries": [
         {
           "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1329,30 +1353,6 @@
         {
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1375,12 +1375,6 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND Federal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "PCMSO",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1388,6 +1382,12 @@
         {
           "func": "—",
           "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1416,13 +1416,7 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
+          "doc_s": "Contrato Social / Reg. MEI",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1434,7 +1428,13 @@
         },
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
+          "doc_s": "CND Municipal",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
           "badge": "pend",
           "st_s": "Pendente"
         }
@@ -1457,7 +1457,7 @@
         },
         {
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1469,7 +1469,7 @@
         },
         {
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
@@ -1515,6 +1515,12 @@
       "entries": [
         {
           "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
           "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1522,12 +1528,6 @@
         {
           "func": "—",
           "doc_s": "CND Municipal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Federal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
@@ -1838,11 +1838,11 @@
         "st_s": "Inválido"
       },
       {
-        "doc": "OS Segurança",
+        "doc": "NR 6 — EPI",
         "st_s": "Pendente"
       },
       {
-        "doc": "NR 6 — EPI",
+        "doc": "OS Segurança",
         "st_s": "Pendente"
       }
     ],
@@ -1864,11 +1864,11 @@
         "st_s": "Inválido"
       },
       {
-        "doc": "NR 6 — EPI",
+        "doc": "NR 18 — Admissional",
         "st_s": "Pendente"
       },
       {
-        "doc": "NR 18 — Admissional",
+        "doc": "NR 6 — EPI",
         "st_s": "Pendente"
       },
       {
@@ -1886,11 +1886,7 @@
         "st_s": "Inválido"
       },
       {
-        "doc": "NR 18 — Admissional",
-        "st_s": "Pendente"
-      },
-      {
-        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+        "doc": "NR 6 — EPI",
         "st_s": "Pendente"
       },
       {
@@ -1902,7 +1898,11 @@
         "st_s": "Pendente"
       },
       {
-        "doc": "NR 6 — EPI",
+        "doc": "NR 18 — Admissional",
+        "st_s": "Pendente"
+      },
+      {
+        "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
         "st_s": "Pendente"
       }
     ],
@@ -2129,8 +2129,8 @@
     "n_liberado": 44,
     "n_pend_pess": 5,
     "n_pend_emp": 57,
-    "n_alocados": 53,
-    "n_participaram": 6,
+    "n_alocados": 54,
+    "n_participaram": 5,
     "n_pend_falta_int": 3,
     "n_falta_int": 0,
     "n_pend_integrado": 12,
@@ -2196,12 +2196,12 @@
             "sev": "rep"
           },
           {
-            "doc": "NR 6 — EPI",
+            "doc": "NR 18 — Admissional",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
-            "doc": "NR 18 — Admissional",
+            "doc": "NR 6 — EPI",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -2228,22 +2228,7 @@
             "sev": "rep"
           },
           {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Trabalho em Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2253,7 +2238,12 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2263,7 +2253,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2274,6 +2264,16 @@
           },
           {
             "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2299,12 +2299,7 @@
             "sev": "rep"
           },
           {
-            "doc": "NR 18 — Admissional",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+            "doc": "NR 6 — EPI",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -2319,7 +2314,12 @@
             "sev": "pen"
           },
           {
-            "doc": "NR 6 — EPI",
+            "doc": "NR 18 — Admissional",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
             "st_s": "Pendente",
             "sev": "pen"
           }
@@ -2341,22 +2341,7 @@
             "sev": "rep"
           },
           {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Trabalho em Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2366,7 +2351,12 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2376,7 +2366,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2387,6 +2377,16 @@
           },
           {
             "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2422,12 +2422,12 @@
             "sev": "rep"
           },
           {
-            "doc": "OS Segurança",
+            "doc": "NR 6 — EPI",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
-            "doc": "NR 6 — EPI",
+            "doc": "OS Segurança",
             "st_s": "Pendente",
             "sev": "pen"
           }
@@ -2449,22 +2449,7 @@
             "sev": "rep"
           },
           {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Trabalho em Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2474,7 +2459,12 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2484,7 +2474,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2495,6 +2485,16 @@
           },
           {
             "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2580,12 +2580,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2607,17 +2607,7 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2627,17 +2617,27 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2659,17 +2659,17 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "PGR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2684,12 +2684,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PCMSO",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2711,7 +2711,7 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2721,17 +2721,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PGR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "LTCAT",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2742,6 +2732,16 @@
           },
           {
             "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2758,12 +2758,7 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2773,17 +2768,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2800,11 +2800,6 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -2815,12 +2810,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2842,17 +2842,7 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "CND FGTS — CRF",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2862,12 +2852,22 @@
             "sev": "pen"
           },
           {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND FGTS — CRF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Apólice Seguro Garantia",
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2884,17 +2884,17 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2972,22 +2972,22 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -2997,7 +2997,7 @@
             "sev": "rep"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -3187,6 +3187,11 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -3203,11 +3208,6 @@
           },
           {
             "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3916,12 +3916,86 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Antonio Pedro Cosme Do Vale",
+        "empresa": "Pejota Construções",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 5,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Edilandio Araujo Silva De Melo",
+        "empresa": "Pejota Construções",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 5,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -3953,12 +4027,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -3990,12 +4064,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4027,12 +4101,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4064,12 +4138,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4101,12 +4175,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4138,12 +4212,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4175,12 +4249,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4212,12 +4286,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4249,49 +4323,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Patricio Nascimento Da Silva",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
           },
           {
             "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4323,12 +4360,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4360,12 +4397,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4397,12 +4434,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4434,86 +4471,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Antonio Pedro Cosme Do Vale",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
           },
           {
             "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Edilandio Araujo Silva De Melo",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
-        "n_pess": 0,
-        "n_emp": 5,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4545,12 +4508,49 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Patricio Nascimento Da Silva",
+        "empresa": "Pejota Construções",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 5,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4582,12 +4582,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
