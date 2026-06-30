@@ -3094,6 +3094,128 @@
       }
     ]
   },
+  "vencimento_proximo": [
+    {
+      "empresa": "Consórcio KTL Mairiporã (próprio)",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "08/07/2026",
+      "dias": 8,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "Engemar SP Engenharia e Construções",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "07/07/2026",
+      "dias": 7,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "ICS Montagem e Instalação Elétrica",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "09/07/2026",
+      "dias": 9,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "J F Lucena",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "06/07/2026",
+      "dias": 6,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "Joel Leite Filho",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "06/07/2026",
+      "dias": 6,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "Ronieli Mendes Bastos",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "09/07/2026",
+      "dias": 9,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "Valdir Rodrigues Topógrafo",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "05/07/2026",
+      "dias": 5,
+      "tag": "vermelho"
+    },
+    {
+      "empresa": "Antoni Ferreira De Abreu",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "13/07/2026",
+      "dias": 13,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Cleiton Jose De Lima",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "13/07/2026",
+      "dias": 13,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Consórcio KTL Mairiporã (próprio)",
+      "func": "Alcindo Largueza",
+      "doc": "ASO",
+      "data_venc": "11/07/2026",
+      "dias": 11,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Joclamar",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "13/07/2026",
+      "dias": 13,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Consórcio KTL Mairiporã (próprio)",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "13/08/2026",
+      "dias": 44,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "ICS Montagem e Instalação Elétrica",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "11/08/2026",
+      "dias": 42,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "J F Lucena",
+      "func": "—",
+      "doc": "PCMSO",
+      "data_venc": "22/08/2026",
+      "dias": 53,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Joclamar",
+      "func": "—",
+      "doc": "LTCAT",
+      "data_venc": "01/08/2026",
+      "dias": 32,
+      "tag": "cinza"
+    }
+  ],
   "cpci": [
     {
       "fornecedor": "Almir Godofredo Flores Cardoso",
@@ -3265,5 +3387,2787 @@
       "funcionario": "Ronieli Bastos",
       "status": "Pendências porém Integrado"
     }
-  ]
+  ],
+  "cpci_detail": {
+    "total": 59,
+    "n_liberado": 25,
+    "n_pend_pess": 5,
+    "n_pend_emp": 48,
+    "combos": [
+      {
+        "si": "Pendências porém Integrado",
+        "sp": "Sem pendências",
+        "se": "Com pendências",
+        "qty": 29
+      },
+      {
+        "si": "Acesso Liberado",
+        "sp": "Sem pendências",
+        "se": "Com pendências",
+        "qty": 14
+      },
+      {
+        "si": "Acesso Liberado",
+        "sp": "Sem pendências",
+        "se": "Sem pendências",
+        "qty": 11
+      },
+      {
+        "si": "Pendências e Falta Integração",
+        "sp": "Com pendências",
+        "se": "Com pendências",
+        "qty": 3
+      },
+      {
+        "si": "Pendências porém Integrado",
+        "sp": "Com pendências",
+        "se": "Com pendências",
+        "qty": 2
+      }
+    ],
+    "workers": [
+      {
+        "cpf": "013.916.553-38",
+        "nome": "Antonio Da Cruz Ferreira Silva",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "059.632.883-47",
+        "nome": "Antonio Pedro Cosme Do Vale",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "465.098.358-43",
+        "nome": "Bruno Salgado De Almeida",
+        "empresa": "CONSORCIO BAIXADA SANTISTA",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "046.625.875-57",
+        "nome": "Edilandio Araujo Silva De Melo",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "913.438.603-34",
+        "nome": "Francisco Rodrigues Do Vale",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "026.666.624-89",
+        "nome": "Givanildo Ferreira Dos Santos",
+        "empresa": "CONSORCIO AGCS ELEVACAO",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "046.642.313-69",
+        "nome": "José Raimundo De Sousa Ribeiro",
+        "empresa": "FAST INDUSTRIA E COMERCIO LTDA",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "569.983.503-25",
+        "nome": "José Risonaldo Barros Albuquerque",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "082.929.975-04",
+        "nome": "Patricio Nascimento Da Silva",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "078.981.513-30",
+        "nome": "Pedro Augusto De Oliveira Inacio",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "081.816.693-20",
+        "nome": "Raimundo Nonato Vieira Do Nascimento",
+        "empresa": "CONSORCIO PERFORMANCE PERUS",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 0,
+        "docs_pessoais": [],
+        "docs_empresa": [],
+        "sev": "ok"
+      },
+      {
+        "cpf": "048.550.733-18",
+        "nome": "Adriano Ernandes Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "072.193.103-07",
+        "nome": "Francisco Luiz Alves Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "400.797.558-28",
+        "nome": "Gildemar Rodrigues Pereira",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "141.686.138-60",
+        "nome": "Haroldo Lacerda",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "502.224.988-03",
+        "nome": "Isabelly Duarte",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "399.631.978-92",
+        "nome": "Jeferson Da Silva Bonfim",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "497.659.817-91",
+        "nome": "José Bernardes Filho",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "116.288.818-01",
+        "nome": "José Luiz Avila Vieira",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "009.625.503-02",
+        "nome": "José Regilovan Barros De Albuquerque",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "317.422.088-27",
+        "nome": "Juscimar Carvalho Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "933.868.263-34",
+        "nome": "Nivaldo Perira Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "163.742.167-25",
+        "nome": "Robson Oliveira De Lima",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "398.999.718-12",
+        "nome": "Ronison Barros Albuquerque",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "537.717.018-05",
+        "nome": "Ruan Celestino",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Acesso Liberado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "103.589.298-73",
+        "nome": "Alcindo Largueza",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "389.243.978-85",
+        "nome": "Alessandro De Oliveira Espirito Santo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "418.952.745-91",
+        "nome": "Almir Godofredo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "104.746.034-31",
+        "nome": "Cleiton Lima",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "020.011.931-14",
+        "nome": "Davi De Castro Landim",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "017.618.663-89",
+        "nome": "Diego Rodrigues",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "125.191.138-20",
+        "nome": "Edson Wilson Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "002.854.965-14",
+        "nome": "Erisvaldo Da Silva Santana",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "063.895.759-12",
+        "nome": "Giovani Waligura",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "032.604.111-78",
+        "nome": "Glênio Benedito Pereira Gomes",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "084.142.757-70",
+        "nome": "Igor Chaves",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "540.225.288-26",
+        "nome": "Ingryd Borges",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "472.963.738-06",
+        "nome": "Janaína Da Rocha Morais",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "904.479.996-72",
+        "nome": "Jose Pinto Simoes",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "610.528.504-30",
+        "nome": "Jose Severino Da Silva Filho",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "351.988.668-57",
+        "nome": "Jucinaldo Pedro Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "301.546.888-00",
+        "nome": "Manoel Constantino Franca De Macedo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "087.473.094-58",
+        "nome": "Marcelo Miguel Da Costa",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "938.658.213-91",
+        "nome": "Maria Antônia Alves",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "349.933.648-06",
+        "nome": "Mauro Cesar Soares De Araujo",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "444.914.503-82",
+        "nome": "Odais José Santos Do Vale",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "154.337.138-81",
+        "nome": "Osvaldo Dos Reis Junior",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "441.294.988-51",
+        "nome": "Patricia De Almeida Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "327.085.748-92",
+        "nome": "Paulo Oliveira Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "208.250.992-34",
+        "nome": "Raimundo José",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "251.671.078-06",
+        "nome": "Reinaldo Aparecido Gonçalves",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "866.501.795-07",
+        "nome": "Ronaldo Jesus Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "037.149.131-22",
+        "nome": "Ronieli Bastos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "322.571.238-83",
+        "nome": "Vivaldo Moraes Nascimento",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "403.588.118-05",
+        "nome": "Onilio Cardozo Cantuaria Filho",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências e Falta Integração",
+        "n_pess": 8,
+        "n_emp": 8,
+        "docs_pessoais": [
+          {
+            "doc": "ASO",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Ficha de EPI",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "NR35 - Trabalho em Altura",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 6 — EPI",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 18 — Admissional",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "OS Segurança",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 13 — Vasos de Pressão",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "167.605.418-98",
+        "nome": "Aleomar Soares Alves",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências e Falta Integração",
+        "n_pess": 7,
+        "n_emp": 8,
+        "docs_pessoais": [
+          {
+            "doc": "Ficha de EPI",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "OS Segurança",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 6 — EPI",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR35 - Trabalho em Altura",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR-18 - Treinamento para uso/montagem de andaime",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 18 — Admissional",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "285.326.998-12",
+        "nome": "Josemar Ferreira Lucena",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências e Falta Integração",
+        "n_pess": 7,
+        "n_emp": 8,
+        "docs_pessoais": [
+          {
+            "doc": "ASO",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Ficha de EPI",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "NR35 - Trabalho em Altura",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "NR12 -  Máquinas e equipamentos. Operação, manutenção, inspeção e demais intervenções",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "NR 6 — EPI",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "NR 18 — Admissional",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "OS Segurança",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "538.823.408-86",
+        "nome": "Gabriel De Lima Rodrigues Dos Reis",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 1,
+        "n_emp": 8,
+        "docs_pessoais": [
+          {
+            "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "cpf": "553.535.173-34",
+        "nome": "Joel Oliveira",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "status_int": "Pendências porém Integrado",
+        "n_pess": 1,
+        "n_emp": 8,
+        "docs_pessoais": [
+          {
+            "doc": "OS Segurança",
+            "st_s": "Em Validação",
+            "sev": "val"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Registro de SESMT",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      }
+    ]
+  }
 }
