@@ -521,6 +521,100 @@ def process_integration(rows_int, sub_names, proprio_label):
         'cpci': cpci,
     }
 
+# ─── DETALHE CP/CI POR FUNCIONÁRIO ──────────────────────────────────────────
+
+def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
+    """Cruzamento detalhado: docs pessoais vs docs de empresa por funcionário."""
+
+    def clean_emp(sub_raw, forn_raw):
+        raw = (sub_raw or '').strip() or (forn_raw or '').strip()
+        if raw in sub_names: return sub_names[raw]
+        cleaned = re.sub(r'^\d{2}\.\d{3}\.\d{3}\s+', '', raw)
+        cleaned = re.sub(r'^\d{8,11}\s+', '', cleaned)
+        return cleaned.strip() or proprio_label
+
+    def doc_sev(st):
+        if st in ('Inválido','Pendente - Isenção Reprovada','Vencido','Reprovado pelo cliente'):
+            return 'rep'
+        if st == 'Em validação': return 'val'
+        return 'pen'
+
+    # Mapa CPF → melhor registro de integração
+    by_cpf = {}
+    for r in rows_int:
+        cpf  = (r.get('CPF') or '').strip()
+        nome = (r.get('Funcionário') or '').strip()
+        if not cpf or not nome: continue
+        sub_cnpj  = (r.get('Subcontratado CNPJ') or '').strip()
+        main_cnpj = (r.get('CNPJ') or '').strip()
+        cnpj    = sub_cnpj or main_cnpj
+        empresa = clean_emp(r.get('Subcontratado'), r.get('Fornecedor'))
+        st  = r.get('Status', '')
+        pri = INT_PRIORITY.get(st, 99)
+        if cpf not in by_cpf or pri < by_cpf[cpf]['pri']:
+            by_cpf[cpf] = {'cpf': cpf, 'nome': nome.title(),
+                           'empresa': empresa, 'cnpj': cnpj,
+                           'status_int': st, 'pri': pri}
+
+    # Documentos pessoais (CPF preenchido) e de empresa (CPF vazio)
+    p_docs = collections.defaultdict(list)   # CPF  → [{doc,st_s,sev}]
+    c_docs = collections.defaultdict(list)   # CNPJ → [{doc,st_s,sev}]
+    for r in rows_doc:
+        st = r.get('Status do Documento', '')
+        if st not in NC_STATUSES: continue
+        cpf       = (r.get('CPF') or '').strip()
+        sub_cnpj  = (r.get('Subcontratado CNPJ') or '').strip()
+        main_cnpj = (r.get('CNPJ') or '').strip()
+        entry = {'doc':  shorten_doc(r.get('Documento')),
+                 'st_s': shorten_st(st), 'sev': doc_sev(st)}
+        if cpf:
+            p_docs[cpf].append(entry)
+        else:
+            c_docs[sub_cnpj or main_cnpj].append(entry)
+
+    def dedup(lst):
+        seen, out = set(), []
+        for d in lst:
+            k = (d['doc'], d['st_s'])
+            if k not in seen:
+                seen.add(k); out.append(d)
+        return out
+
+    detail = []
+    for cpf, w in by_cpf.items():
+        p = dedup(p_docs.get(cpf, []))
+        c = dedup(c_docs.get(w['cnpj'], []))
+        sevs = [d['sev'] for d in p + c]
+        row_sev = 'rep' if 'rep' in sevs else ('val' if 'val' in sevs else ('pen' if sevs else 'ok'))
+        detail.append({'cpf': cpf, 'nome': w['nome'], 'empresa': w['empresa'],
+                       'status_int': w['status_int'],
+                       'n_pess': len(p), 'n_emp': len(c),
+                       'docs_pessoais': p, 'docs_empresa': c, 'sev': row_sev})
+
+    def sort_key(w):
+        return (0 if w['status_int'] == 'Acesso Liberado' else 1,
+                0 if w['n_pess'] == 0 else 1,
+                0 if w['n_emp']  == 0 else 1,
+                -(w['n_pess'] + w['n_emp']), w['nome'])
+    detail.sort(key=sort_key)
+
+    total  = len(detail)
+    n_lib  = sum(1 for w in detail if w['status_int'] == 'Acesso Liberado')
+    n_pess = sum(1 for w in detail if w['n_pess'] > 0)
+    n_emp  = sum(1 for w in detail if w['n_emp']  > 0)
+
+    cnt = collections.Counter()
+    for w in detail:
+        ps = 'Com pendências' if w['n_pess'] > 0 else 'Sem pendências'
+        es = 'Com pendências' if w['n_emp']  > 0 else 'Sem pendências'
+        cnt[(w['status_int'], ps, es)] += 1
+    combos = [{'si': k[0], 'sp': k[1], 'se': k[2], 'qty': v}
+              for k, v in cnt.most_common()]
+
+    return {'total': total, 'n_liberado': n_lib,
+            'n_pend_pess': n_pess, 'n_pend_emp': n_emp,
+            'combos': combos, 'workers': detail}
+
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -548,7 +642,9 @@ def main():
     if doc_result is None:
         sys.exit('[etl] CSV de documentos vazio ou sem colunas reconhecidas.')
 
-    int_result = None
+    int_result   = None
+    cpci_detail  = None
+    rows_int     = []
     if csv_int:
         print(f'[etl] CSV integração: {csv_int}')
         rows_int = read_tabular(csv_int)
@@ -556,6 +652,9 @@ def main():
         int_result = process_integration(rows_int, sub_names, proprio_label)
         if int_result:
             print(f'[etl] Trabalhadores únicos: {int_result["total_workers"]}  CP={int_result["cp_fmt"]}  CI={int_result["ci_fmt"]}')
+        cpci_detail = process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label)
+        if cpci_detail:
+            print(f'[etl] cpci_detail: {cpci_detail["total"]} funcionários')
 
     # Histórico
     historico = load_historico(projeto)
@@ -629,6 +728,7 @@ def main():
         'worker_docs':        doc_result['worker_docs'],
         'vencimento_proximo': doc_result['vencimento_proximo'],
         'cpci':               int_result['cpci'] if int_result else [],
+        'cpci_detail':        cpci_detail,
     }
 
     out_path = os.path.join('data', projeto, f'{extraction_date}.json')

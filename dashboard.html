@@ -162,6 +162,76 @@ tr:last-child td { border-bottom:none; }
 .tag-venc-r { background:#fee2e2; color:#991b1b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
 .tag-venc-y { background:#fef9c3; color:#854d0e; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
 .tag-venc-g { background:#f1f5f9; color:#64748b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+
+/* ── Aba Integração (CP/CI detalhe) ── */
+.ci-metrics { display:flex; flex-wrap:wrap; gap:0; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:18px; overflow:hidden; }
+.ci-metric  { flex:1 1 140px; padding:14px 20px; border-right:1px solid var(--border); }
+.ci-metric:last-child { border-right:0; }
+.ci-metric-k { font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+.ci-metric-v { font-size:26px; font-weight:800; margin-top:4px; }
+.ci-vok  { color:var(--c-ok); }
+.ci-vbad { color:var(--c-inv); }
+.ci-vmut { color:var(--muted); }
+.ci-summary { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; margin-bottom:18px; }
+.ci-summary-title { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--navy); margin-bottom:12px; }
+.ci-combo { width:100%; border-collapse:collapse; font-size:13px; }
+.ci-combo thead th { text-align:left; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; padding:7px 10px; border-bottom:1px solid var(--border); }
+.ci-combo tbody td { padding:9px 10px; border-bottom:1px solid #f1f5f9; vertical-align:middle; }
+.ci-combo tbody tr:last-child td { border-bottom:0; }
+.ci-num { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
+.ci-kpi-row { display:flex; gap:24px; margin-top:16px; padding-top:14px; border-top:1px solid var(--border); flex-wrap:wrap; }
+.ci-kpi { flex:1 1 200px; }
+.ci-kpi-label { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+.ci-kpi-val { font-size:28px; font-weight:800; margin:4px 0 2px; }
+.ci-kpi-formula { font-size:11px; color:var(--muted); }
+.ci-pill { display:inline-block; font-size:11.5px; font-weight:600; padding:3px 9px; border-radius:20px; white-space:nowrap; }
+.ci-pill.ci-ok  { background:#e9f5ed; color:var(--c-ok); }
+.ci-pill.ci-bad { background:#fbf0df; color:#b45309; }
+.ci-controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:12px; }
+.ci-search { flex:1 1 220px; max-width:320px; position:relative; }
+.ci-search svg { position:absolute; left:9px; top:50%; transform:translateY(-50%); color:var(--muted); pointer-events:none; }
+.ci-search input { width:100%; padding:8px 12px 8px 30px; border:1px solid var(--border); border-radius:6px; font-size:13px; background:var(--card); outline:none; }
+.ci-filters { display:flex; gap:6px; flex-wrap:wrap; }
+.ci-filter { font-size:12px; padding:6px 12px; border:1px solid var(--border); background:var(--card); border-radius:6px; cursor:pointer; color:var(--muted); }
+.ci-filter.active { background:var(--navy); color:#fff; border-color:var(--navy); }
+.ci-expand-all { margin-left:auto; font-size:12px; padding:6px 12px; border:1px solid var(--border); background:var(--card); border-radius:6px; cursor:pointer; color:var(--muted); }
+.ci-tablecard { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+.ci-tablecard table { width:100%; border-collapse:collapse; }
+.ci-tablecard thead th { font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-weight:600; padding:10px 12px; border-bottom:1px solid var(--border); text-align:left; background:#fbfcfd; }
+.ci-row td { padding:10px 12px; border-bottom:1px solid #f1f5f9; vertical-align:middle; position:relative; }
+.ci-row td:first-child { padding-left:16px; }
+.ci-sev-rep td:first-child::before,
+.ci-sev-pen td:first-child::before,
+.ci-sev-val td:first-child::before,
+.ci-sev-ok  td:first-child::before {
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+}
+.ci-sev-rep td:first-child::before { background:var(--c-inv); }
+.ci-sev-pen td:first-child::before { background:var(--c-warn); }
+.ci-sev-val td:first-child::before { background:var(--blue); }
+.ci-sev-ok  td:first-child::before { background:var(--c-ok); }
+.ci-nm  { display:block; font-weight:600; font-size:13px; }
+.ci-cpf { display:block; font-size:10.5px; color:var(--muted); font-family:monospace; margin-top:1px; }
+.ci-exp-btn { background:none; border:0; cursor:pointer; color:var(--muted); padding:4px 6px; font-size:13px; line-height:1; transition:transform .15s; }
+.ci-exp-btn[aria-expanded="true"] { transform:rotate(90deg); color:var(--blue); }
+.ci-detail > td { background:#fafbfc; padding:0; border-bottom:1px solid #f1f5f9; }
+.ci-dwrap { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:14px 12px 18px; }
+@media(max-width:640px) { .ci-dwrap { grid-template-columns:1fr; } }
+.ci-dcol-title { font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--navy); font-weight:700; margin-bottom:8px; display:flex; align-items:center; gap:6px; }
+.ci-cnt { background:var(--navy); color:#fff; font-size:10px; padding:1px 6px; border-radius:10px; font-weight:600; }
+.ci-doclist { list-style:none; margin:0; padding:0; }
+.ci-doclist li { display:grid; grid-template-columns:10px 1fr auto; gap:8px; align-items:start; padding:5px 0; border-bottom:1px dashed #f1f5f9; }
+.ci-doclist li:last-child { border-bottom:0; }
+.ci-dot { width:8px; height:8px; border-radius:50%; margin-top:3px; flex-shrink:0; display:inline-block; }
+.ci-dot-pen { background:var(--c-warn); }
+.ci-dot-rep { background:var(--c-inv); }
+.ci-dot-val { background:var(--blue); }
+.ci-dname { font-size:12px; }
+.ci-dst { font-size:10px; font-weight:600; padding:2px 6px; border-radius:4px; white-space:nowrap; }
+.ci-dst-pen { background:#fef3c7; color:#b45309; }
+.ci-dst-rep { background:#fee2e2; color:#991b1b; }
+.ci-dst-val { background:#dbeafe; color:#1e40af; }
+.ci-nd-msg { color:var(--muted); font-size:12px; font-style:italic; }
 </style>
 </head>
 <body>
@@ -182,6 +252,7 @@ tr:last-child td { border-bottom:none; }
 <div class="tabs">
   <button class="tab-btn active" id="tab-dash" onclick="showTab('dashboard')">Dashboard</button>
   <button class="tab-btn" id="tab-evol" onclick="showTab('evolucao')">Evolução</button>
+  <button class="tab-btn" id="tab-integ" onclick="showTab('integracao')">Integração</button>
 </div>
 
 <div class="main">
@@ -192,6 +263,9 @@ tr:last-child td { border-bottom:none; }
   <div id="tab-content-evolucao" style="display:none">
     <div class="spinner" id="evol-spinner">Carregando histórico…</div>
     <div id="evol-content" style="display:none"></div>
+  </div>
+  <div id="tab-content-integracao" style="display:none">
+    <div id="integ-content"></div>
   </div>
 </div>
 
@@ -279,11 +353,14 @@ async function loadDate(date) {
 
 // ── Tabs ─────────────────────────────────────────────────────────────────────
 function showTab(tab) {
-  document.getElementById('tab-content-dashboard').style.display = tab==='dashboard' ? '' : 'none';
-  document.getElementById('tab-content-evolucao').style.display  = tab==='evolucao'  ? '' : 'none';
-  document.getElementById('tab-dash').classList.toggle('active', tab==='dashboard');
-  document.getElementById('tab-evol').classList.toggle('active', tab==='evolucao');
-  if (tab === 'evolucao' && !evolBuilt) loadEvolucao();
+  document.getElementById('tab-content-dashboard').style.display  = tab==='dashboard'  ? '' : 'none';
+  document.getElementById('tab-content-evolucao').style.display   = tab==='evolucao'   ? '' : 'none';
+  document.getElementById('tab-content-integracao').style.display = tab==='integracao' ? '' : 'none';
+  document.getElementById('tab-dash').classList.toggle('active',  tab==='dashboard');
+  document.getElementById('tab-evol').classList.toggle('active',  tab==='evolucao');
+  document.getElementById('tab-integ').classList.toggle('active', tab==='integracao');
+  if (tab === 'evolucao'   && !evolBuilt)  loadEvolucao();
+  if (tab === 'integracao' && CURRENT_DATA) renderIntegracao(CURRENT_DATA);
 }
 
 // ── Dashboard ────────────────────────────────────────────────────────────────
@@ -742,6 +819,224 @@ function renderEvolucao(hist) {
   buildLine('ch-ci',  slice.map(h => h.ci_pct),   '#0891b2', 95);
   buildLine('ch-ad',  slice.map(h => h.ader_pct), '#059669', 99);
   buildLine('ch-tot', slice.map(h => h.total),     '#64748b', null, true);
+}
+
+// ── Aba Integração — CP/CI Detalhe ───────────────────────────────────────────
+
+function pillCI(txt, ok) {
+  return '<span class="ci-pill ' + (ok ? 'ci-ok' : 'ci-bad') + '">' + txt + '</span>';
+}
+
+function renderIntegracao(d) {
+  var ci = d.cpci_detail;
+  var m  = d.meta;
+  var el = document.getElementById('integ-content');
+
+  if (!ci || !ci.total) {
+    el.innerHTML = '<div class="section"><div class="error">Dados de integração não disponíveis. Re-envie o CSV de integração para gerar esta aba.</div></div>';
+    return;
+  }
+
+  // ── Métricas ──
+  var met = '<div class="ci-metrics">'
+    + '<div class="ci-metric"><div class="ci-metric-k">Funcionários</div>'
+    +   '<div class="ci-metric-v">' + ci.total + '</div></div>'
+    + '<div class="ci-metric"><div class="ci-metric-k">Acesso Liberado</div>'
+    +   '<div class="ci-metric-v ci-vok">' + ci.n_liberado + '</div></div>'
+    + '<div class="ci-metric"><div class="ci-metric-k">Com Pend. Pessoal</div>'
+    +   '<div class="ci-metric-v ' + (ci.n_pend_pess > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + ci.n_pend_pess + '</div></div>'
+    + '<div class="ci-metric"><div class="ci-metric-k">Com Pend. de Empresa</div>'
+    +   '<div class="ci-metric-v ' + (ci.n_pend_emp > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + ci.n_pend_emp + '</div></div>'
+    + '</div>';
+
+  // ── Quadro Resumo ──
+  var comboRows = '';
+  ci.combos.forEach(function(c) {
+    var iOk = (c.si === 'Acesso Liberado');
+    var pOk = (c.sp === 'Sem pendências');
+    var eOk = (c.se === 'Sem pendências');
+    comboRows += '<tr>'
+      + '<td>' + pillCI(c.si, iOk) + '</td>'
+      + '<td>' + pillCI(c.sp, pOk) + '</td>'
+      + '<td>' + pillCI(c.se, eOk) + '</td>'
+      + '<td class="ci-num">' + c.qty + '</td>'
+      + '<td class="ci-num ci-vmut">' + (c.qty / ci.total * 100).toFixed(1).replace('.', ',') + '%</td>'
+      + '</tr>';
+  });
+
+  var cpClass = (m.cp_class === 'kpi-green') ? 'ci-vok' : 'ci-vbad';
+  var ciClass = (m.ci_class === 'kpi-green') ? 'ci-vok' : 'ci-vbad';
+
+  var cpFormula = m.cp_ok != null
+    ? m.cp_ok + ' Acesso Liberado / ' + ci.total + ' trabalhadores'
+    : '—';
+  var ciFormula = m.ci_ok != null
+    ? m.ci_ok + ' (Acesso Lib. + Pend. Integrado) / ' + ci.total + ' trabalhadores'
+    : '—';
+
+  var summ = '<div class="ci-summary">'
+    + '<div class="ci-summary-title">Quadro Resumo — Combinações de Status</div>'
+    + '<table class="ci-combo">'
+    + '<thead><tr>'
+    +   '<th>Status Integração</th><th>Status Pessoal</th>'
+    +   '<th>Status Empresa</th><th class="ci-num">Qtd.</th><th class="ci-num">%</th>'
+    + '</tr></thead>'
+    + '<tbody>' + comboRows + '</tbody>'
+    + '</table>'
+    + '<div class="ci-kpi-row">'
+    +   '<div class="ci-kpi">'
+    +     '<div class="ci-kpi-label">CP — Conformidade Pessoal</div>'
+    +     '<div class="ci-kpi-val ' + cpClass + '">' + (m.cp_fmt || 'N/D') + '</div>'
+    +     '<div class="ci-kpi-formula">' + cpFormula + '</div>'
+    +   '</div>'
+    +   '<div class="ci-kpi">'
+    +     '<div class="ci-kpi-label">CI — Conformidade de Integração</div>'
+    +     '<div class="ci-kpi-val ' + ciClass + '">' + (m.ci_fmt || 'N/D') + '</div>'
+    +     '<div class="ci-kpi-formula">' + ciFormula + '</div>'
+    +   '</div>'
+    + '</div>'
+    + '</div>';
+
+  // ── Controles ──
+  var ctrl = '<div class="ci-controls">'
+    + '<div class="ci-search">'
+    +   '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>'
+    +   '<input id="ci-q" type="search" placeholder="Buscar funcionário ou empresa…" autocomplete="off">'
+    + '</div>'
+    + '<div class="ci-filters">'
+    +   '<button class="ci-filter active" data-f="all">Todos</button>'
+    +   '<button class="ci-filter" data-f="liberado">Acesso liberado</button>'
+    +   '<button class="ci-filter" data-f="clean">Sem pendências (docs)</button>'
+    +   '<button class="ci-filter" data-f="pess">Pend. pessoal</button>'
+    +   '<button class="ci-filter" data-f="emp">Pend. empresa</button>'
+    + '</div>'
+    + '<button class="ci-expand-all" id="ci-expand-all">Expandir todos</button>'
+    + '</div>';
+
+  // ── Tabela de funcionários ──
+  var tbody = '';
+  ci.workers.forEach(function(w, idx) {
+    var iLib = (w.status_int === 'Acesso Liberado');
+    var intPill = pillCI(w.status_int, iLib);
+
+    var pessPill = w.n_pess > 0
+      ? '<span class="ci-pill ci-bad">' + w.n_pess + ' pendência' + (w.n_pess > 1 ? 's' : '') + '</span>'
+      : '<span class="ci-pill ci-ok">Sem pendências</span>';
+    var empPill = w.n_emp > 0
+      ? '<span class="ci-pill ci-bad">' + w.n_emp + ' pendência' + (w.n_emp > 1 ? 's' : '') + '</span>'
+      : '<span class="ci-pill ci-ok">Sem pendências</span>';
+
+    var searchTxt = (w.nome + ' ' + w.empresa).toLowerCase();
+
+    var pHtml = w.docs_pessoais.length > 0
+      ? '<ul class="ci-doclist">' + w.docs_pessoais.map(function(dd) {
+          return '<li><span class="ci-dot ci-dot-' + dd.sev + '"></span>'
+            + '<span class="ci-dname">' + dd.doc + '</span>'
+            + '<span class="ci-dst ci-dst-' + dd.sev + '">' + dd.st_s + '</span></li>';
+        }).join('') + '</ul>'
+      : '<span class="ci-nd-msg">—</span>';
+
+    var cHtml = w.docs_empresa.length > 0
+      ? '<ul class="ci-doclist">' + w.docs_empresa.map(function(dd) {
+          return '<li><span class="ci-dot ci-dot-' + dd.sev + '"></span>'
+            + '<span class="ci-dname">' + dd.doc + '</span>'
+            + '<span class="ci-dst ci-dst-' + dd.sev + '">' + dd.st_s + '</span></li>';
+        }).join('') + '</ul>'
+      : '<span class="ci-nd-msg">—</span>';
+
+    tbody += '<tr class="ci-row ci-sev-' + w.sev + '"'
+      + ' data-liberado="' + (iLib ? 1 : 0) + '"'
+      + ' data-clean="' + (w.n_pess === 0 && w.n_emp === 0 ? 1 : 0) + '"'
+      + ' data-pess="' + (w.n_pess > 0 ? 1 : 0) + '"'
+      + ' data-emp="'  + (w.n_emp  > 0 ? 1 : 0) + '"'
+      + ' data-search="' + searchTxt + '">'
+      + '<td><button class="ci-exp-btn" aria-expanded="false" data-idx="' + idx + '">&#9658;</button></td>'
+      + '<td><span class="ci-nm">' + w.nome + '</span><span class="ci-cpf">' + w.cpf + '</span></td>'
+      + '<td>' + w.empresa + '</td>'
+      + '<td>' + intPill  + '</td>'
+      + '<td>' + pessPill + '</td>'
+      + '<td>' + empPill  + '</td>'
+      + '</tr>'
+      + '<tr class="ci-detail" id="ci-det-' + idx + '" style="display:none">'
+      + '<td></td>'
+      + '<td colspan="5"><div class="ci-dwrap">'
+      + '<div class="ci-dcol">'
+      +   '<div class="ci-dcol-title">Documentos Pessoais Pendentes '
+      +     '<span class="ci-cnt">' + w.n_pess + '</span></div>'
+      +   pHtml
+      + '</div>'
+      + '<div class="ci-dcol">'
+      +   '<div class="ci-dcol-title">Documentos da Empresa Pendentes '
+      +     '<span class="ci-cnt">' + w.n_emp + '</span></div>'
+      +   cHtml
+      + '</div>'
+      + '</div></td></tr>';
+  });
+
+  var tbl = '<div class="ci-tablecard">'
+    + '<table><thead><tr>'
+    +   '<th style="width:38px"></th>'
+    +   '<th>Funcionário</th><th>Empresa</th>'
+    +   '<th>Status Integração</th><th>Docs Pessoais</th><th>Docs Empresa</th>'
+    + '</tr></thead>'
+    + '<tbody id="ci-tbody">' + tbody + '</tbody>'
+    + '</table></div>';
+
+  el.innerHTML = '<div class="section"><div class="section-title">Aba Integração — Conformidade Pessoal e de Empresa</div>'
+    + met + summ + ctrl + tbl + '</div>';
+
+  // ── Eventos ──
+  document.getElementById('ci-q').addEventListener('input', ciFilter);
+  document.querySelectorAll('.ci-filter').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.ci-filter').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      ciFilter();
+    });
+  });
+
+  document.getElementById('ci-expand-all').addEventListener('click', function() {
+    var allDet = document.querySelectorAll('.ci-detail');
+    var anyOpen = false;
+    allDet.forEach(function(d) { if (d.style.display !== 'none') anyOpen = true; });
+    allDet.forEach(function(d) { d.style.display = anyOpen ? 'none' : ''; });
+    document.querySelectorAll('.ci-exp-btn').forEach(function(b) {
+      b.setAttribute('aria-expanded', String(!anyOpen));
+    });
+    this.textContent = anyOpen ? 'Expandir todos' : 'Recolher todos';
+  });
+
+  document.querySelectorAll('.ci-exp-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var idx = this.dataset.idx;
+      var det = document.getElementById('ci-det-' + idx);
+      var open = det.style.display !== 'none';
+      det.style.display = open ? 'none' : '';
+      this.setAttribute('aria-expanded', String(!open));
+    });
+  });
+}
+
+function ciFilter() {
+  var rawQ = (document.getElementById('ci-q').value || '').toLowerCase();
+  var activeBtn = document.querySelector('.ci-filter.active');
+  var f = activeBtn ? activeBtn.dataset.f : 'all';
+  document.querySelectorAll('#ci-tbody .ci-row').forEach(function(row) {
+    var search  = row.dataset.search || '';
+    var matchQ  = !rawQ || search.indexOf(rawQ) >= 0;
+    var matchF  = true;
+    if (f === 'liberado') matchF = row.dataset.liberado === '1';
+    if (f === 'clean')    matchF = row.dataset.clean    === '1';
+    if (f === 'pess')     matchF = row.dataset.pess     === '1';
+    if (f === 'emp')      matchF = row.dataset.emp      === '1';
+    var show = matchQ && matchF;
+    row.style.display = show ? '' : 'none';
+    var idx = row.querySelector('.ci-exp-btn');
+    if (idx) {
+      var det = document.getElementById('ci-det-' + idx.dataset.idx);
+      if (det && !show) det.style.display = 'none';
+    }
+  });
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
