@@ -141,7 +141,7 @@ tr:last-child td { border-bottom:none; }
 .pill-tag { border-radius:99px; font-size:11px; font-weight:700; padding:3px 9px; display:inline-block; }
 
 /* ── Seção 6 — CPCI ── */
-.s-pend-falta { background:#fff0e0; color:#c2410c; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
+.s-pend-falta { background:#fee2e2; color:#991b1b; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
 .s-pint       { background:#dbeafe; color:#1e40af; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
 .s-falta      { background:#fee2e2; color:#991b1b; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
 .s-int-venc   { background:#f3e8ff; color:#7e22ce; border-radius:6px; padding:2px 7px; font-size:11px; font-weight:700; display:inline-block; }
@@ -190,8 +190,9 @@ tr:last-child td { border-bottom:none; }
 .ci-kpi-val { font-size:28px; font-weight:800; margin:4px 0 2px; }
 .ci-kpi-formula { font-size:11px; color:var(--muted); }
 .ci-pill { display:inline-block; font-size:11.5px; font-weight:600; padding:3px 9px; border-radius:20px; white-space:nowrap; }
-.ci-pill.ci-ok  { background:#e9f5ed; color:var(--c-ok); }
-.ci-pill.ci-bad { background:#fbf0df; color:#b45309; }
+.ci-pill.ci-ok   { background:#e9f5ed; color:var(--c-ok); }
+.ci-pill.ci-bad  { background:#fbf0df; color:#b45309; }
+.ci-pill.ci-crit { background:#fee2e2; color:#991b1b; }
 .ci-controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:12px; }
 .ci-search { flex:1 1 220px; max-width:320px; position:relative; }
 .ci-search svg { position:absolute; left:9px; top:50%; transform:translateY(-50%); color:var(--muted); pointer-events:none; }
@@ -826,6 +827,8 @@ function renderVencimentos(d) {
 // ── Aba Integração — CP/CI Detalhe ───────────────────────────────────────────
 
 function pillCI(txt, ok) {
+  if (txt === 'Pendências e Falta Integração' || txt === 'Falta Integração')
+    return '<span class="ci-pill ci-crit">' + txt + '</span>';
   return '<span class="ci-pill ' + (ok ? 'ci-ok' : 'ci-bad') + '">' + txt + '</span>';
 }
 
@@ -852,38 +855,35 @@ function renderIntegracao(d) {
   if (ci.n_falta_int)      pendParts.push(ci.n_falta_int + ' falta integração');
   if (ci.n_pend_integrado) pendParts.push(ci.n_pend_integrado + ' pend. porém integrado');
 
-  var met = '<div class="ci-metrics">'
-    + '<div class="ci-metric">'
-    +   '<div class="ci-metric-k">Funcionários</div>'
-    +   '<div class="ci-metric-v">' + ci.total + '</div>'
-    +   '<div class="ci-metric-sub">' + (ci.n_alocados || 0) + ' Funcionários Alocados · ' + (ci.n_participaram || 0) + ' que já participaram</div>'
+  // ── Grid de KPIs (estilo Seção 1) ──
+  var ciGrid = '<div class="kpi-grid" style="margin-bottom:24px">'
+    + '<div class="kpi kpi-nd">'
+    +   '<div class="kpi-label">Funcionários</div>'
+    +   '<div class="kpi-value" style="color:var(--navy)">' + ci.total + '</div>'
+    +   '<div class="kpi-sub">' + (ci.n_alocados||0) + ' Alocados · ' + (ci.n_participaram||0) + ' que já participaram</div>'
     + '</div>'
-    + '<div class="ci-metric">'
-    +   '<div class="ci-metric-k">Acesso Liberado</div>'
-    +   '<div class="ci-metric-v ci-vok">' + ci.n_liberado + '</div>'
+    + '<div class="kpi kpi-nd">'
+    +   '<div class="kpi-label">Acesso Liberado</div>'
+    +   '<div class="kpi-value" style="color:var(--c-ok)">' + ci.n_liberado + '</div>'
     + '</div>'
-    + '<div class="ci-metric">'
-    +   '<div class="ci-metric-k">Pendências de Integração</div>'
-    +   '<div class="ci-metric-v ' + (nPendInt > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + nPendInt + '</div>'
-    +   (pendParts.length ? '<div class="ci-metric-sub">' + pendParts.join(' · ') + '</div>' : '')
+    + '<div class="kpi kpi-nd">'
+    +   '<div class="kpi-label">Pendências de Integração</div>'
+    +   '<div class="kpi-value" style="color:' + (nPendInt > 0 ? 'var(--c-inv)' : 'var(--muted)') + '">' + nPendInt + '</div>'
+    +   (pendParts.length ? '<div class="kpi-sub">' + pendParts.join(' · ') + '</div>' : '')
     + '</div>'
-    + '<div class="ci-metric">'
-    +   '<div class="ci-metric-k">Com Pend. de Empresa</div>'
-    +   '<div class="ci-metric-v ' + (ci.n_pend_emp > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + ci.n_pend_emp + '</div>'
+    + '<div class="kpi kpi-nd">'
+    +   '<div class="kpi-label">Com Pend. de Empresa</div>'
+    +   '<div class="kpi-value" style="color:' + (ci.n_pend_emp > 0 ? 'var(--c-inv)' : 'var(--muted)') + '">' + ci.n_pend_emp + '</div>'
     + '</div>'
-    + '</div>';
-
-  // ── CP / CI abaixo das métricas ──
-  var kpis = '<div class="ci-kpi-row">'
-    + '<div class="ci-kpi-card">'
-    +   '<div class="ci-kpi-label">CP — Conformidade Pessoal</div>'
-    +   '<div class="ci-kpi-val ' + cpClass + '">' + (m.cp_fmt || 'N/D') + '</div>'
-    +   '<div class="ci-kpi-formula">' + cpFormula + '</div>'
+    + '<div class="kpi ' + (m.cp_class||'kpi-nd') + '">'
+    +   '<div class="kpi-label">CP — Conformidade Pessoal</div>'
+    +   '<div class="kpi-value">' + (m.cp_fmt||'N/D') + '</div>'
+    +   '<div class="kpi-sub">' + cpFormula + '</div>'
     + '</div>'
-    + '<div class="ci-kpi-card">'
-    +   '<div class="ci-kpi-label">CI — Conformidade de Integração</div>'
-    +   '<div class="ci-kpi-val ' + ciClass + '">' + (m.ci_fmt || 'N/D') + '</div>'
-    +   '<div class="ci-kpi-formula">' + ciFormula + '</div>'
+    + '<div class="kpi ' + (m.ci_class||'kpi-nd') + '">'
+    +   '<div class="kpi-label">CI — Conformidade de Integração</div>'
+    +   '<div class="kpi-value">' + (m.ci_fmt||'N/D') + '</div>'
+    +   '<div class="kpi-sub">' + ciFormula + '</div>'
     + '</div>'
     + '</div>';
 
@@ -993,7 +993,7 @@ function renderIntegracao(d) {
 
   el.innerHTML = '<div class="section">'
     + '<div class="section-title">Relatório de Colaboradores e Prestadores: Conformidade Pessoal (CP) e Conformidade de Integração (CI)</div>'
-    + '<div class="ci-header-band">' + met + kpis + '</div>'
+    + ciGrid
     + summ + ctrl + tbl + '</div>';
 
   // ── Eventos ──
@@ -1053,8 +1053,4 @@ function ciFilter() {
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function toggle(el) { el.classList.toggle('open'); }
 
-// ── Start ─────────────────────────────────────────────────────────────────────
-init();
-</script>
-</body>
-</html>
+// ── Start ────────────────────────�
