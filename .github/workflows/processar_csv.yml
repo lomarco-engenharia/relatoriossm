@@ -52,4 +52,25 @@ jobs:
           echo "CSV_DOC=$CSV_DOC"   >> $GITHUB_ENV
           echo "CSV_INT=$CSV_INT"   >> $GITHUB_ENV
           echo "Projeto: $PROJETO"
-      
+          echo "CSV docs: $CSV_DOC"
+          echo "CSV integração: $CSV_INT"
+
+      - name: Rodar ETL
+        run: |
+          if [ -z "$CSV_DOC" ]; then
+            echo "CSV de documentos não encontrado no push. Abortando."
+            exit 1
+          fi
+          INT_ARG=""
+          if [ -n "$CSV_INT" ]; then
+            INT_ARG="--csv-int $CSV_INT"
+          fi
+          python etl.py --projeto $PROJETO --csv $CSV_DOC $INT_ARG
+
+      - name: Commit dos dados gerados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/$PROJETO/
+          git diff --cached --quiet || git commit -m "ETL: atualiza $PROJETO ($CSV_DOC)"
+          git push
