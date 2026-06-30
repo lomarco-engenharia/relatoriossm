@@ -231,6 +231,9 @@ tr:last-child td { border-bottom:none; }
 .ci-dst-rep { background:#fee2e2; color:#991b1b; }
 .ci-dst-val { background:#dbeafe; color:#1e40af; }
 .ci-nd-msg { color:var(--muted); font-size:12px; font-style:italic; }
+.ci-metric-sub { font-size:11px; color:var(--muted); margin-top:4px; line-height:1.5; }
+.ci-kpi-card { flex:1 1 200px; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:14px 20px; }
+.ci-pill.ci-past { background:#fee2e2; color:#991b1b; }
 </style>
 </head>
 <body>
@@ -251,7 +254,8 @@ tr:last-child td { border-bottom:none; }
 <div class="tabs">
   <button class="tab-btn active" id="tab-dash" onclick="showTab('dashboard')">Dashboard</button>
   <button class="tab-btn" id="tab-evol" onclick="showTab('evolucao')">Evolução</button>
-  <button class="tab-btn" id="tab-integ" onclick="showTab('integracao')">Integração</button>
+  <button class="tab-btn" id="tab-integ" onclick="showTab('integracao')">Colaboradores e Prestadores</button>
+  <button class="tab-btn" id="tab-venc" onclick="showTab('vencimentos')">Vencimentos</button>
 </div>
 
 <div class="main">
@@ -265,6 +269,9 @@ tr:last-child td { border-bottom:none; }
   </div>
   <div id="tab-content-integracao" style="display:none">
     <div id="integ-content"></div>
+  </div>
+  <div id="tab-content-vencimentos" style="display:none">
+    <div id="venc-content"></div>
   </div>
 </div>
 
@@ -352,14 +359,17 @@ async function loadDate(date) {
 
 // ── Tabs ─────────────────────────────────────────────────────────────────────
 function showTab(tab) {
-  document.getElementById('tab-content-dashboard').style.display  = tab==='dashboard'  ? '' : 'none';
-  document.getElementById('tab-content-evolucao').style.display   = tab==='evolucao'   ? '' : 'none';
-  document.getElementById('tab-content-integracao').style.display = tab==='integracao' ? '' : 'none';
+  document.getElementById('tab-content-dashboard').style.display   = tab==='dashboard'  ? '' : 'none';
+  document.getElementById('tab-content-evolucao').style.display    = tab==='evolucao'   ? '' : 'none';
+  document.getElementById('tab-content-integracao').style.display  = tab==='integracao' ? '' : 'none';
+  document.getElementById('tab-content-vencimentos').style.display = tab==='vencimentos'? '' : 'none';
   document.getElementById('tab-dash').classList.toggle('active',  tab==='dashboard');
   document.getElementById('tab-evol').classList.toggle('active',  tab==='evolucao');
   document.getElementById('tab-integ').classList.toggle('active', tab==='integracao');
-  if (tab === 'evolucao'   && !evolBuilt)  loadEvolucao();
-  if (tab === 'integracao' && CURRENT_DATA) renderIntegracao(CURRENT_DATA);
+  document.getElementById('tab-venc').classList.toggle('active',  tab==='vencimentos');
+  if (tab === 'evolucao'    && !evolBuilt)  loadEvolucao();
+  if (tab === 'integracao'  && CURRENT_DATA) renderIntegracao(CURRENT_DATA);
+  if (tab === 'vencimentos' && CURRENT_DATA) renderVencimentos(CURRENT_DATA);
 }
 
 // ── Dashboard ────────────────────────────────────────────────────────────────
@@ -399,10 +409,18 @@ function renderDashboard(d) {
   const cpStr  = m.cp_fmt  || 'N/D';
   const ciStr  = m.ci_fmt  || 'N/D';
 
+  const cpOkStr = m.cp_ok != null ? fmtNum(m.cp_ok) + ' de ' + fmtNum(m.total_workers||0) : '';
+  const ciOkStr = m.ci_ok != null ? fmtNum(m.ci_ok) + ' de ' + fmtNum(m.total_workers||0) : '';
+  const inlineDelta = (val, neutral=false) => {
+    if (val == null) return '';
+    const arrow = val >= 0 ? '&#9650;' : '&#9660;';
+    const cls   = neutral ? 'delta-neu' : (val >= 0 ? 'delta-up' : 'delta-down');
+    return ` <span class="delta ${cls}">(${arrow} ${Math.abs(val).toFixed(1).replace('.',',')}%)</span>`;
+  };
+
   html += `
   <div class="section">
     <div class="section-title">Seção 1 — Indicadores de Conformidade</div>
-    <div class="var-note" style="margin-bottom:14px">${varNote}</div>
     <div class="cl-hero">
       <div class="cl-hero-label">Conformidade Legal (CL) — Programa de Excelência SABESP</div>
       <div class="cl-hero-score ${clCls}">${clVal.toFixed(0)}</div>
@@ -416,41 +434,38 @@ function renderDashboard(d) {
     <div class="kpi-grid">
       <div class="kpi ${m.conf_class||'kpi-nd'}">
         <div class="kpi-label">CD — Conf. Documental</div>
-        <div class="kpi-value">${m.conf_fmt}</div>
+        <div class="kpi-value">${m.conf_fmt}${inlineDelta(v.d_conf)}</div>
         <div class="kpi-sub">${fmtNum(m.total-m.nc)} conformes de ${fmtNum(m.total)}</div>
-        ${deltaHtml(v.d_conf)}
       </div>
       <div class="kpi ${m.cp_class||'kpi-nd'}">
-        <div class="kpi-label">CP — Conf. Pessoal</div>
-        <div class="kpi-value">${m.cp_fmt||'N/D'}</div>
+        <div class="kpi-label">CP — Conformidade Pessoal</div>
+        <div class="kpi-value">${m.cp_fmt||'N/D'}${inlineDelta(v.d_cp)}</div>
         <div class="kpi-sub">Todos docs conformes / Total</div>
-        ${deltaHtml(v.d_cp)}
+        ${cpOkStr ? '<div class="kpi-sub"><strong>' + cpOkStr + '</strong></div>' : ''}
       </div>
       <div class="kpi ${m.ci_class||'kpi-nd'}">
-        <div class="kpi-label">CI — Conf. Integração</div>
-        <div class="kpi-value">${m.ci_fmt||'N/D'}</div>
+        <div class="kpi-label">CI — Conformidade de Integração</div>
+        <div class="kpi-value">${m.ci_fmt||'N/D'}${inlineDelta(v.d_ci)}</div>
         <div class="kpi-sub">(Acesso Liberado + Pend. porém Integrado) / Total</div>
-        ${deltaHtml(v.d_ci)}
+        ${ciOkStr ? '<div class="kpi-sub"><strong>' + ciOkStr + '</strong></div>' : ''}
       </div>
       <div class="kpi ${m.ader_class||'kpi-nd'}">
         <div class="kpi-label">Aderência</div>
-        <div class="kpi-value">${m.ader_fmt}</div>
+        <div class="kpi-value">${m.ader_fmt}${inlineDelta(v.d_ader)}</div>
         <div class="kpi-sub">${fmtNum(m.total-m.na)} aderentes de ${fmtNum(m.total)}</div>
-        ${deltaHtml(v.d_ader)}
       </div>
       <div class="kpi kpi-nd">
         <div class="kpi-label">Total de Documentos</div>
-        <div class="kpi-value" style="color:var(--navy)">${fmtNum(m.total)}</div>
+        <div class="kpi-value" style="color:var(--navy)">${fmtNum(m.total)}${inlineDelta(v.d_total, true)}</div>
         <div class="kpi-sub">registros ativos no contrato</div>
-        ${deltaHtml(v.d_total, true)}
       </div>
       <div class="kpi kpi-nd">
         <div class="kpi-label">Subcontratadas</div>
-        <div class="kpi-value" style="color:var(--navy)">${m.n_subs}</div>
+        <div class="kpi-value" style="color:var(--navy)">${m.n_subs}${inlineDelta(v.d_subs, true)}</div>
         <div class="kpi-sub">empresas com documentos no contrato</div>
-        ${deltaHtml(v.d_subs, true)}
       </div>
     </div>
+    <div class="var-note" style="margin-top:12px">${varNote}</div>
   </div>`;
 
   // ── Seção 2 — Status dos Documentos ─────────────────────────────────────
@@ -507,58 +522,43 @@ function renderDashboard(d) {
     const cp_rows = cpci.filter(r => r.status !== 'Pendências porém Integrado');
     const ci_rows = cpci.filter(r => r.status === 'Pendências porém Integrado');
 
-    cpciHtml = `
-    <div class="cpci-legend">
-      <strong>CP</strong> = Todos documentos conformes / Total &nbsp;|&nbsp;
-      <strong>CI</strong> = (Acesso Liberado + Pend. porém Integrado) / Total
-      &nbsp;· ${m.total_workers} trabalhadores únicos
-    </div>`;
-
-    const workerDocMap = d.worker_docs || {};
-
-    const pillFor = st => {
-      if (st === 'Em Validação' || st.indexOf('Isenção Ag') >= 0) return 'p-pend';
-      if (st === 'Vencido' || st.indexOf('Vencido') >= 0) return 'p-venc';
-      if (st === 'Reprovado') return 'p-rep';
-      return 'p-inv';
-    };
-    const barItem = r => {
-      const wdocs = workerDocMap[r.funcionario] || [];
-      const docRows = wdocs.length
-        ? wdocs.map(wd =>
-            '<tr><td><span class="pill ' + pillFor(wd.st_s) + '">' + wd.st_s + '</span></td><td>' + wd.doc + '</td></tr>'
-          ).join('')
-        : '<tr><td colspan="2" style="color:var(--muted);font-size:12px">Sem documentos NC identificados (pendência de integração).</td></tr>';
-      return '<div class="bar-item" onclick="toggle(this)">'
-        + '<div class="bar-header">'
-        +   '<span style="display:flex;align-items:center;gap:8px">'
-        +     '<span class="expand-arrow">&#9654;</span>'
-        +     '<span class="bar-title">' + r.funcionario + '</span>'
-        +     '<span style="font-size:12px;color:#334155;font-weight:400">' + r.fornecedor + '</span>'
-        +   '</span>'
-        +   '<span>' + stBadge(r.status) + '</span>'
-        + '</div>'
-        + '<div class="expand-list">'
-        +   '<table class="detail-table">'
-        +     '<thead><tr><th>Situação</th><th>Documento</th></tr></thead>'
-        +     '<tbody>' + docRows + '</tbody>'
-        +   '</table>'
-        + '</div>'
-        + '</div>';
-    };
-
     if (cp_rows.length) {
-      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">Não conformes para CP e CI (' + cp_rows.length + ')</p>';
+      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">'
+        + 'Falta Integração: não conformes para CP e CI (' + cp_rows.length + ')</p>';
       cpciHtml += '<div class="bar-list" style="margin-bottom:16px">';
-      cp_rows.forEach(r => { cpciHtml += barItem(r); });
+      cp_rows.forEach(r => {
+        cpciHtml += '<div class="bar-item" style="cursor:default">'
+          + '<div class="bar-header">'
+          +   '<span style="display:flex;align-items:center;gap:8px">'
+          +     '<span class="bar-title">' + r.funcionario + '</span>'
+          +     '<span style="font-size:12px;color:#334155;font-weight:400">' + r.fornecedor + '</span>'
+          +   '</span>'
+          +   '<span>' + stBadge(r.status) + '</span>'
+          + '</div>'
+          + '</div>';
+      });
       cpciHtml += '</div>';
     }
     if (ci_rows.length) {
-      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">Integrados com pendências — OK para CI (' + ci_rows.length + ')</p>';
-      cpciHtml += '<div class="bar-list">';
-      ci_rows.forEach(r => { cpciHtml += barItem(r); });
+      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">'
+        + 'Integrados: porém com pendências (' + ci_rows.length + ')</p>';
+      cpciHtml += '<div class="bar-list" style="margin-bottom:16px">';
+      ci_rows.forEach(r => {
+        cpciHtml += '<div class="bar-item" style="cursor:default">'
+          + '<div class="bar-header">'
+          +   '<span style="display:flex;align-items:center;gap:8px">'
+          +     '<span class="bar-title">' + r.funcionario + '</span>'
+          +     '<span style="font-size:12px;color:#334155;font-weight:400">' + r.fornecedor + '</span>'
+          +   '</span>'
+          +   '<span>' + stBadge(r.status) + '</span>'
+          + '</div>'
+          + '</div>';
+      });
       cpciHtml += '</div>';
     }
+    cpciHtml += '<div class="var-note" style="margin-top:4px">Ver detalhes completos na aba '
+      + '<a href="#" onclick="showTab(\'integracao\');return false;" style="color:var(--blue);font-weight:600;text-decoration:underline">Colaboradores e Prestadores</a>.'
+      + '</div>';
   }
 
   html += `
@@ -672,37 +672,14 @@ function renderDashboard(d) {
     ${ncHtml}
   </div>`;
 
-  // ── Seção 7 — Documentos próximos do vencimento ──────────────────────────
+  // ── Atualizar botão aba Vencimentos ──────────────────────────────────────
   const vencProx = d.vencimento_proximo || [];
-  let vencHtml = '';
-  if (vencProx.length === 0) {
-    vencHtml = '<div style="font-size:13px;color:var(--c-ok)">Nenhum documento com vencimento nos próximos 30 dias.</div>';
-  } else {
-    const tagHtml = tag => {
-      if (tag === 'vermelho') return '<span class="tag-venc-r">&#9650; &le;10 dias</span>';
-      if (tag === 'amarelo')  return '<span class="tag-venc-y">&#9650; &le;20 dias</span>';
-      return '<span class="tag-venc-g">&le;30 dias</span>';
-    };
-    let tbody = '';
-    vencProx.forEach(e => {
-      tbody += '<tr>'
-        + '<td>' + tagHtml(e.tag) + '</td>'
-        + '<td>' + e.empresa + '</td>'
-        + '<td>' + e.func + '</td>'
-        + '<td>' + e.doc + '</td>'
-        + '<td style="white-space:nowrap">' + e.data_venc + '</td>'
-        + '</tr>';
-    });
-    vencHtml = '<table><thead><tr>'
-      + '<th>Alerta</th><th>Empresa</th><th>Funcionário</th><th>Documento</th><th>Vencimento</th>'
-      + '</tr></thead><tbody>' + tbody + '</tbody></table>';
-  }
-
-  html += `
-  <div class="section">
-    <div class="section-title">Seção 7 — Documentos com Vencimento nos Próximos 30 Dias (${vencProx.length})</div>
-    ${vencHtml}
-  </div>`;
+  const nVenc    = vencProx.length;
+  const hasUrgent = vencProx.some(e => e.tag === 'vermelho');
+  const tabVencEl = document.getElementById('tab-venc');
+  tabVencEl.textContent = 'Vencimentos (' + nVenc + ')';
+  tabVencEl.style.color = hasUrgent ? 'var(--c-inv)' : '';
+  tabVencEl.style.fontWeight = hasUrgent ? '700' : '';
 
   // ── Render ────────────────────────────────────────────────────────────────
   el.innerHTML = html;
@@ -820,6 +797,41 @@ function renderEvolucao(hist) {
   buildLine('ch-tot', slice.map(h => h.total),     '#64748b', null, true);
 }
 
+// ── Aba Vencimentos ───────────────────────────────────────────────────────────
+function renderVencimentos(d) {
+  var vp  = d.vencimento_proximo || [];
+  var el  = document.getElementById('venc-content');
+  var nUr = vp.filter(function(e) { return e.tag === 'vermelho'; }).length;
+  var title = 'Documentos com Vencimento nos Próximos 30 Dias (' + vp.length + ')';
+  var inner = '';
+
+  if (vp.length === 0) {
+    inner = '<div style="font-size:13px;color:var(--c-ok)">Nenhum documento com vencimento nos próximos 30 dias.</div>';
+  } else {
+    var tagLbl = function(tag, dias) {
+      var d_str = dias != null ? dias + ' dia' + (Math.abs(dias) !== 1 ? 's' : '') : '';
+      if (tag === 'vermelho') return '<span class="tag-venc-r">&le;10 dias' + (d_str ? ' · ' + d_str : '') + '</span>';
+      if (tag === 'amarelo')  return '<span class="tag-venc-y">&le;20 dias' + (d_str ? ' · ' + d_str : '') + '</span>';
+      return '<span class="tag-venc-g">&le;30 dias' + (d_str ? ' · ' + d_str : '') + '</span>';
+    };
+    var tbody = '';
+    vp.forEach(function(e) {
+      tbody += '<tr>'
+        + '<td>' + tagLbl(e.tag, e.dias) + '</td>'
+        + '<td>' + e.empresa + '</td>'
+        + '<td>' + e.func + '</td>'
+        + '<td>' + e.doc + '</td>'
+        + '<td style="white-space:nowrap">' + e.data_venc + '</td>'
+        + '</tr>';
+    });
+    inner = '<table><thead><tr>'
+      + '<th>Alerta</th><th>Empresa</th><th>Funcionário</th><th>Documento</th><th>Vencimento</th>'
+      + '</tr></thead><tbody>' + tbody + '</tbody></table>';
+  }
+
+  el.innerHTML = '<div class="section"><div class="section-title">' + title + '</div>' + inner + '</div>';
+}
+
 // ── Aba Integração — CP/CI Detalhe ───────────────────────────────────────────
 
 function pillCI(txt, ok) {
@@ -836,19 +848,55 @@ function renderIntegracao(d) {
     return;
   }
 
+  // ── CP / CI base ──
+  var cpClass   = (m.cp_class === 'kpi-green') ? 'ci-vok' : 'ci-vbad';
+  var ciClass   = (m.ci_class === 'kpi-green') ? 'ci-vok' : 'ci-vbad';
+  var cpFormula = m.cp_ok != null ? m.cp_ok + ' Acesso Liberado / ' + ci.total + ' trabalhadores' : '—';
+  var ciFormula = m.ci_ok != null ? m.ci_ok + ' (Acesso Lib. + Pend. Integrado) / ' + ci.total + ' trabalhadores' : '—';
+
   // ── Métricas ──
+  var nPendInt = ci.total - ci.n_liberado;
+  var pendParts = [];
+  if (ci.n_pend_falta_int) pendParts.push(ci.n_pend_falta_int + ' pend. e falta integração');
+  if (ci.n_falta_int)      pendParts.push(ci.n_falta_int + ' falta integração');
+  if (ci.n_pend_integrado) pendParts.push(ci.n_pend_integrado + ' pend. porém integrado');
+
   var met = '<div class="ci-metrics">'
-    + '<div class="ci-metric"><div class="ci-metric-k">Funcionários</div>'
-    +   '<div class="ci-metric-v">' + ci.total + '</div></div>'
-    + '<div class="ci-metric"><div class="ci-metric-k">Acesso Liberado</div>'
-    +   '<div class="ci-metric-v ci-vok">' + ci.n_liberado + '</div></div>'
-    + '<div class="ci-metric"><div class="ci-metric-k">Com Pend. Pessoal</div>'
-    +   '<div class="ci-metric-v ' + (ci.n_pend_pess > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + ci.n_pend_pess + '</div></div>'
-    + '<div class="ci-metric"><div class="ci-metric-k">Com Pend. de Empresa</div>'
-    +   '<div class="ci-metric-v ' + (ci.n_pend_emp > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + ci.n_pend_emp + '</div></div>'
+    + '<div class="ci-metric">'
+    +   '<div class="ci-metric-k">Funcionários</div>'
+    +   '<div class="ci-metric-v">' + ci.total + '</div>'
+    +   '<div class="ci-metric-sub">' + (ci.n_alocados || 0) + ' Funcionários Alocados · ' + (ci.n_participaram || 0) + ' que já participaram</div>'
+    + '</div>'
+    + '<div class="ci-metric">'
+    +   '<div class="ci-metric-k">Acesso Liberado</div>'
+    +   '<div class="ci-metric-v ci-vok">' + ci.n_liberado + '</div>'
+    + '</div>'
+    + '<div class="ci-metric">'
+    +   '<div class="ci-metric-k">Pendências de Integração</div>'
+    +   '<div class="ci-metric-v ' + (nPendInt > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + nPendInt + '</div>'
+    +   (pendParts.length ? '<div class="ci-metric-sub">' + pendParts.join(' · ') + '</div>' : '')
+    + '</div>'
+    + '<div class="ci-metric">'
+    +   '<div class="ci-metric-k">Com Pend. de Empresa</div>'
+    +   '<div class="ci-metric-v ' + (ci.n_pend_emp > 0 ? 'ci-vbad' : 'ci-vmut') + '">' + ci.n_pend_emp + '</div>'
+    + '</div>'
     + '</div>';
 
-  // ── Quadro Resumo ──
+  // ── CP / CI abaixo das métricas ──
+  var kpis = '<div class="ci-kpi-row">'
+    + '<div class="ci-kpi-card">'
+    +   '<div class="ci-kpi-label">CP — Conformidade Pessoal</div>'
+    +   '<div class="ci-kpi-val ' + cpClass + '">' + (m.cp_fmt || 'N/D') + '</div>'
+    +   '<div class="ci-kpi-formula">' + cpFormula + '</div>'
+    + '</div>'
+    + '<div class="ci-kpi-card">'
+    +   '<div class="ci-kpi-label">CI — Conformidade de Integração</div>'
+    +   '<div class="ci-kpi-val ' + ciClass + '">' + (m.ci_fmt || 'N/D') + '</div>'
+    +   '<div class="ci-kpi-formula">' + ciFormula + '</div>'
+    + '</div>'
+    + '</div>';
+
+  // ── Quadro Resumo (combos já ordenados pelo ETL) ──
   var comboRows = '';
   ci.combos.forEach(function(c) {
     var iOk = (c.si === 'Acesso Liberado');
@@ -863,37 +911,12 @@ function renderIntegracao(d) {
       + '</tr>';
   });
 
-  var cpClass = (m.cp_class === 'kpi-green') ? 'ci-vok' : 'ci-vbad';
-  var ciClass = (m.ci_class === 'kpi-green') ? 'ci-vok' : 'ci-vbad';
-
-  var cpFormula = m.cp_ok != null
-    ? m.cp_ok + ' Acesso Liberado / ' + ci.total + ' trabalhadores'
-    : '—';
-  var ciFormula = m.ci_ok != null
-    ? m.ci_ok + ' (Acesso Lib. + Pend. Integrado) / ' + ci.total + ' trabalhadores'
-    : '—';
-
   var summ = '<div class="ci-summary">'
     + '<div class="ci-summary-title">Quadro Resumo — Combinações de Status</div>'
-    + '<table class="ci-combo">'
-    + '<thead><tr>'
+    + '<table class="ci-combo"><thead><tr>'
     +   '<th>Status Integração</th><th>Status Pessoal</th>'
     +   '<th>Status Empresa</th><th class="ci-num">Qtd.</th><th class="ci-num">%</th>'
-    + '</tr></thead>'
-    + '<tbody>' + comboRows + '</tbody>'
-    + '</table>'
-    + '<div class="ci-kpi-row">'
-    +   '<div class="ci-kpi">'
-    +     '<div class="ci-kpi-label">CP — Conformidade Pessoal</div>'
-    +     '<div class="ci-kpi-val ' + cpClass + '">' + (m.cp_fmt || 'N/D') + '</div>'
-    +     '<div class="ci-kpi-formula">' + cpFormula + '</div>'
-    +   '</div>'
-    +   '<div class="ci-kpi">'
-    +     '<div class="ci-kpi-label">CI — Conformidade de Integração</div>'
-    +     '<div class="ci-kpi-val ' + ciClass + '">' + (m.ci_fmt || 'N/D') + '</div>'
-    +     '<div class="ci-kpi-formula">' + ciFormula + '</div>'
-    +   '</div>'
-    + '</div>'
+    + '</tr></thead><tbody>' + comboRows + '</tbody></table>'
     + '</div>';
 
   // ── Controles ──
@@ -916,14 +939,17 @@ function renderIntegracao(d) {
   var tbody = '';
   ci.workers.forEach(function(w, idx) {
     var iLib = (w.status_int === 'Acesso Liberado');
-    var intPill = pillCI(w.status_int, iLib);
-
+    var intPill  = pillCI(w.status_int, iLib);
     var pessPill = w.n_pess > 0
       ? '<span class="ci-pill ci-bad">' + w.n_pess + ' pendência' + (w.n_pess > 1 ? 's' : '') + '</span>'
       : '<span class="ci-pill ci-ok">Sem pendências</span>';
     var empPill = w.n_emp > 0
       ? '<span class="ci-pill ci-bad">' + w.n_emp + ' pendência' + (w.n_emp > 1 ? 's' : '') + '</span>'
       : '<span class="ci-pill ci-ok">Sem pendências</span>';
+    var isAloc  = (w.alocacao === 'Funcionários Alocados');
+    var alocPill = isAloc
+      ? '<span class="ci-pill ci-ok">Alocado</span>'
+      : '<span class="ci-pill ci-past">Já participou</span>';
 
     var searchTxt = (w.nome + ' ' + w.empresa).toLowerCase();
 
@@ -955,34 +981,28 @@ function renderIntegracao(d) {
       + '<td>' + intPill  + '</td>'
       + '<td>' + pessPill + '</td>'
       + '<td>' + empPill  + '</td>'
+      + '<td>' + alocPill + '</td>'
       + '</tr>'
       + '<tr class="ci-detail" id="ci-det-' + idx + '" style="display:none">'
       + '<td></td>'
-      + '<td colspan="5"><div class="ci-dwrap">'
-      + '<div class="ci-dcol">'
-      +   '<div class="ci-dcol-title">Documentos Pessoais Pendentes '
-      +     '<span class="ci-cnt">' + w.n_pess + '</span></div>'
-      +   pHtml
-      + '</div>'
-      + '<div class="ci-dcol">'
-      +   '<div class="ci-dcol-title">Documentos da Empresa Pendentes '
-      +     '<span class="ci-cnt">' + w.n_emp + '</span></div>'
-      +   cHtml
-      + '</div>'
+      + '<td colspan="6"><div class="ci-dwrap">'
+      + '<div class="ci-dcol"><div class="ci-dcol-title">Documentos Pessoais Pendentes '
+      +   '<span class="ci-cnt">' + w.n_pess + '</span></div>' + pHtml + '</div>'
+      + '<div class="ci-dcol"><div class="ci-dcol-title">Documentos da Empresa Pendentes '
+      +   '<span class="ci-cnt">' + w.n_emp + '</span></div>' + cHtml + '</div>'
       + '</div></td></tr>';
   });
 
-  var tbl = '<div class="ci-tablecard">'
-    + '<table><thead><tr>'
-    +   '<th style="width:38px"></th>'
-    +   '<th>Funcionário</th><th>Empresa</th>'
-    +   '<th>Status Integração</th><th>Docs Pessoais</th><th>Docs Empresa</th>'
-    + '</tr></thead>'
-    + '<tbody id="ci-tbody">' + tbody + '</tbody>'
-    + '</table></div>';
+  var tbl = '<div class="ci-tablecard"><table><thead><tr>'
+    + '<th style="width:38px"></th>'
+    + '<th>Funcionário</th><th>Empresa</th>'
+    + '<th>Status Integração</th><th>Docs Pessoais</th><th>Docs Empresa</th>'
+    + '<th>Alocação</th>'
+    + '</tr></thead><tbody id="ci-tbody">' + tbody + '</tbody></table></div>';
 
-  el.innerHTML = '<div class="section"><div class="section-title">Aba Integração — Conformidade Pessoal e de Empresa</div>'
-    + met + summ + ctrl + tbl + '</div>';
+  el.innerHTML = '<div class="section">'
+    + '<div class="section-title">Relatório de Colaboradores e Prestadores: Conformidade Pessoal (CP) e Conformidade de Integração (CI)</div>'
+    + met + kpis + summ + ctrl + tbl + '</div>';
 
   // ── Eventos ──
   document.getElementById('ci-q').addEventListener('input', ciFilter);

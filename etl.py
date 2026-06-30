@@ -84,7 +84,7 @@ NC_STATUSES = {
 FOCUS = {'Pendente', 'Inválido', 'Pendente - Isenção Reprovada', 'Vencido', 'Reprovado pelo cliente'}
 CRIT  = {'Inválido', 'Vencido', 'Reprovado pelo cliente', 'Pendente - Isenção Reprovada'}
 CI_OK = {'Acesso Liberado', 'Pendências porém Integrado'}
-INT_PRIORITY = {'Acesso Liberado': 0, 'Pendências porém Integrado': 1, 'Falta Integração': 2}
+INT_PRIORITY = {'Acesso Liberado': 0, 'Pendências porém Integrado': 1, 'Falta Integração': 2, 'Pendências e Falta Integração': 3}
 
 CONF_TARGET = 95
 ADER_TARGET = 99
@@ -410,14 +410,16 @@ def process_docs(rows, sub_names, proprio_label):
             tag, tag_ord = alert_tag(dt)
             emp = clean_name(r.get('Subcontratado'))
             func = clean_func(r.get('Funcionário'))
+            dias_val = (dt - today).days if dt else None
+            doc_s    = shorten_doc(r.get('Documento'))
             venc_entries.append({
                 'empresa':   emp,
                 'func':      func,
-                'doc':       shorten_doc(r.get('Documento')),
+                'doc':       doc_s,
                 'data_venc': dt.strftime('%d/%m/%Y') if dt else '—',
-                'dias':      (dt - today).days if dt else None,
+                'dias':      dias_val,
                 'tag':       tag,
-                '_ord':      (tag_ord, emp, func),
+                '_ord':      (dias_val if dias_val is not None else 999, emp, func, doc_s),
             })
     venc_entries.sort(key=lambda x: x['_ord'])
     vencimento_proximo = [{k: v for k, v in e.items() if k != '_ord'} for e in venc_entries]
@@ -540,33 +542,26 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
         return 'pen'
 
     # Mapa CPF → melhor registro de integração
-    # empresa/cnpj: prefere linha com Subcontratado explícito (desacopla do status)
-    # status: melhor (menor prioridade), independente da linha
+    # empresa = Fornecedor (empresa direta do funcionário)
+    # cnpj    = CNPJ (CNPJ do Fornecedor)
+    # status  = melhor de todas as linhas do CPF
     by_cpf = {}
     for r in rows_int:
         cpf  = (r.get('CPF') or '').strip()
         nome = (r.get('Funcionário') or '').strip()
         if not cpf or not nome: continue
-        sub_nome  = (r.get('Subcontratado') or '').strip()
-        sub_cnpj  = (r.get('Subcontratado CNPJ') or '').strip()
-        main_cnpj = (r.get('CNPJ') or '').strip()
-        cnpj    = sub_cnpj or main_cnpj
-        empresa = clean_emp(r.get('Subcontratado'), r.get('Fornecedor'))
-        has_sub = bool(sub_nome)
+        empresa = clean_emp(None, r.get('Fornecedor'))
+        cnpj    = (r.get('CNPJ') or '').strip()
+        alocacao = (r.get('Alocação do Funcionário') or '').strip()
         st  = r.get('Status', '')
         pri = INT_PRIORITY.get(st, 99)
         if cpf not in by_cpf:
             by_cpf[cpf] = {'nome': nome.title(), 'empresa': empresa,
-                           'cnpj': cnpj, 'has_sub': has_sub,
+                           'cnpj': cnpj, 'alocacao': alocacao,
                            'status_int': st, 'pri': pri}
         else:
+            # Status: sempre o melhor; empresa/cnpj/alocacao: primeira ocorrência
             w = by_cpf[cpf]
-            # Empresa/CNPJ: linha com subcontratado explícito tem precedência
-            if has_sub and not w['has_sub']:
-                w['empresa'] = empresa
-                w['cnpj']    = cnpj
-                w['has_sub'] = True
-            # Status: sempre o melhor
             if pri < w['pri']:
                 w['status_int'] = st
                 w['pri'] = pri
@@ -602,32 +597,55 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
         sevs = [d['sev'] for d in p + c]
         row_sev = 'rep' if 'rep' in sevs else ('val' if 'val' in sevs else ('pen' if sevs else 'ok'))
         detail.append({'nome': w['nome'], 'empresa': w['empresa'],
-                       'status_int': w['status_int'],
+                       'status_int': w['status_int'], 'alocacao': w.get('alocacao', ''),
                        'n_pess': len(p), 'n_emp': len(c),
                        'docs_pessoais': p, 'docs_empresa': c, 'sev': row_sev})
 
+    # Ordenação pior → melhor
+    INT_SORT_D = {
+        'Pendências e Falta Integração': 0,
+        'Falta Integração': 1,
+        'Pendências porém Integrado': 2,
+        'Acesso Liberado': 3,
+    }
+    ALOC_SORT = {'Funcionários Alocados': 0, 'Funcionários que já participaram': 1}
+
     def sort_key(w):
-        return (0 if w['status_int'] == 'Acesso Liberado' else 1,
-                0 if w['n_pess'] == 0 else 1,
-                0 if w['n_emp']  == 0 else 1,
-                -(w['n_pess'] + w['n_emp']), w['nome'])
+        return (INT_SORT_D.get(w['status_int'], 4),
+                0 if w['n_pess'] > 0 else 1, -w['n_pess'],
+                0 if w['n_emp']  > 0 else 1, -w['n_emp'],
+                ALOC_SORT.get(w.get('alocacao', ''), 2),
+                w['nome'])
     detail.sort(key=sort_key)
 
     total  = len(detail)
     n_lib  = sum(1 for w in detail if w['status_int'] == 'Acesso Liberado')
     n_pess = sum(1 for w in detail if w['n_pess'] > 0)
     n_emp  = sum(1 for w in detail if w['n_emp']  > 0)
+    n_alocados    = sum(1 for w in detail if w.get('alocacao') == 'Funcionários Alocados')
+    n_participaram = sum(1 for w in detail if w.get('alocacao') == 'Funcionários que já participaram')
+    n_pend_falta  = sum(1 for w in detail if w['status_int'] == 'Pendências e Falta Integração')
+    n_falta_int   = sum(1 for w in detail if w['status_int'] == 'Falta Integração')
+    n_pend_integr = sum(1 for w in detail if w['status_int'] == 'Pendências porém Integrado')
 
     cnt = collections.Counter()
     for w in detail:
         ps = 'Com pendências' if w['n_pess'] > 0 else 'Sem pendências'
         es = 'Com pendências' if w['n_emp']  > 0 else 'Sem pendências'
         cnt[(w['status_int'], ps, es)] += 1
-    combos = [{'si': k[0], 'sp': k[1], 'se': k[2], 'qty': v}
-              for k, v in cnt.most_common()]
+
+    combos = sorted(
+        [{'si': k[0], 'sp': k[1], 'se': k[2], 'qty': v} for k, v in cnt.items()],
+        key=lambda x: (INT_SORT_D.get(x['si'], 4),
+                       0 if x['sp'] == 'Com pendências' else 1,
+                       0 if x['se'] == 'Com pendências' else 1)
+    )
 
     return {'total': total, 'n_liberado': n_lib,
             'n_pend_pess': n_pess, 'n_pend_emp': n_emp,
+            'n_alocados': n_alocados, 'n_participaram': n_participaram,
+            'n_pend_falta_int': n_pend_falta, 'n_falta_int': n_falta_int,
+            'n_pend_integrado': n_pend_integr,
             'combos': combos, 'workers': detail}
 
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
