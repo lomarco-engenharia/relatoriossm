@@ -528,14 +528,21 @@ function renderDashboard(d) {
     const ci_rows = cpci.filter(r => r.status === 'Pendências porém Integrado');
 
     if (cp_rows.length) {
-      cpciHtml += '<p style="font-size:13px;font-weight:600;color:var(--navy);margin-bottom:8px">'
+      cpciHtml += '<p style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:8px">'
         + 'Falta Integração: não conformes para CP e CI (' + cp_rows.length + ')</p>';
+      cpciHtml += '<ul style="margin:0 0 12px 0;padding-left:18px;">';
+      cp_rows.forEach(function(r) {
+        cpciHtml += '<li style="font-size:13px;margin-bottom:4px">'
+          + r.funcionario + ' — ' + r.fornecedor + '&ensp;' + stBadge(r.status)
+          + '</li>';
+      });
+      cpciHtml += '</ul>';
     }
     if (ci_rows.length) {
-      cpciHtml += '<p style="font-size:13px;font-weight:600;color:var(--blue);margin-bottom:8px">'
+      cpciHtml += '<p style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:8px">'
         + 'Integrados: porém com pendências (' + ci_rows.length + ')</p>';
     }
-    cpciHtml += '<div class="var-note" style="margin-top:6px;font-size:13px">Ver detalhes completos na aba '
+    cpciHtml += '<div class="var-note" style="margin-top:6px;font-size:14px">Ver detalhes completos na aba '
       + '<a href="#" onclick="showTab(\'integracao\');return false;" style="color:var(--blue);font-weight:600;text-decoration:underline">Colaboradores e Prestadores</a>.'
       + '</div>';
   }
