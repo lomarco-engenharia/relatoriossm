@@ -159,12 +159,15 @@ tr:last-child td { border-bottom:none; }
 .spinner { text-align:center; padding:60px; color:var(--muted); }
 .error   { text-align:center; padding:40px; color:var(--c-inv); }
 .var-note { font-size:11px; color:var(--muted); margin-bottom:8px; }
-.tag-venc-r { background:#fee2e2; color:#991b1b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
-.tag-venc-y { background:#fef9c3; color:#854d0e; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
-.tag-venc-g { background:#f1f5f9; color:#64748b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+.tag-venc-exp { background:#fee2e2; color:#991b1b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+.tag-venc-r   { background:#ffedd5; color:#c2410c; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+.tag-venc-y   { background:#fef9c3; color:#854d0e; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+.tag-venc-g   { background:#f1f5f9; color:#64748b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
 
 /* ── Aba Integração (CP/CI detalhe) ── */
-.ci-metrics { display:flex; flex-wrap:wrap; gap:0; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:18px; overflow:hidden; }
+/* Band = métricas + CP/CI em card unificado */
+.ci-header-band { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:24px; overflow:hidden; }
+.ci-metrics { display:flex; flex-wrap:wrap; gap:0; border-bottom:1px solid var(--border); }
 .ci-metric  { flex:1 1 140px; padding:14px 20px; border-right:1px solid var(--border); }
 .ci-metric:last-child { border-right:0; }
 .ci-metric-k { font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; }
@@ -179,8 +182,10 @@ tr:last-child td { border-bottom:none; }
 .ci-combo tbody td { padding:9px 10px; border-bottom:1px solid #f1f5f9; vertical-align:middle; }
 .ci-combo tbody tr:last-child td { border-bottom:0; }
 .ci-num { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
-.ci-kpi-row { display:flex; gap:24px; margin-top:16px; padding-top:14px; border-top:1px solid var(--border); flex-wrap:wrap; }
+.ci-kpi-row { display:flex; flex-wrap:wrap; gap:0; background:#fbfcfd; }
 .ci-kpi { flex:1 1 200px; }
+.ci-kpi-card { flex:1 1 200px; padding:16px 20px; border-right:1px solid var(--border); }
+.ci-kpi-card:last-child { border-right:0; }
 .ci-kpi-label { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
 .ci-kpi-val { font-size:28px; font-weight:800; margin:4px 0 2px; }
 .ci-kpi-formula { font-size:11px; color:var(--muted); }
@@ -433,7 +438,7 @@ function renderDashboard(d) {
     </div>
     <div class="kpi-grid">
       <div class="kpi ${m.conf_class||'kpi-nd'}">
-        <div class="kpi-label">CD — Conf. Documental</div>
+        <div class="kpi-label">CD — Conformidade Documental</div>
         <div class="kpi-value">${m.conf_fmt}${inlineDelta(v.d_conf)}</div>
         <div class="kpi-sub">${fmtNum(m.total-m.nc)} conformes de ${fmtNum(m.total)}</div>
       </div>
@@ -523,40 +528,14 @@ function renderDashboard(d) {
     const ci_rows = cpci.filter(r => r.status === 'Pendências porém Integrado');
 
     if (cp_rows.length) {
-      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px">'
+      cpciHtml += '<p style="font-size:13px;font-weight:600;color:var(--navy);margin-bottom:8px">'
         + 'Falta Integração: não conformes para CP e CI (' + cp_rows.length + ')</p>';
-      cpciHtml += '<div class="bar-list" style="margin-bottom:16px">';
-      cp_rows.forEach(r => {
-        cpciHtml += '<div class="bar-item" style="cursor:default">'
-          + '<div class="bar-header">'
-          +   '<span style="display:flex;align-items:center;gap:8px">'
-          +     '<span class="bar-title">' + r.funcionario + '</span>'
-          +     '<span style="font-size:12px;color:#334155;font-weight:400">' + r.fornecedor + '</span>'
-          +   '</span>'
-          +   '<span>' + stBadge(r.status) + '</span>'
-          + '</div>'
-          + '</div>';
-      });
-      cpciHtml += '</div>';
     }
     if (ci_rows.length) {
-      cpciHtml += '<p style="font-size:12px;font-weight:600;color:var(--blue);margin-bottom:6px">'
+      cpciHtml += '<p style="font-size:13px;font-weight:600;color:var(--blue);margin-bottom:8px">'
         + 'Integrados: porém com pendências (' + ci_rows.length + ')</p>';
-      cpciHtml += '<div class="bar-list" style="margin-bottom:16px">';
-      ci_rows.forEach(r => {
-        cpciHtml += '<div class="bar-item" style="cursor:default">'
-          + '<div class="bar-header">'
-          +   '<span style="display:flex;align-items:center;gap:8px">'
-          +     '<span class="bar-title">' + r.funcionario + '</span>'
-          +     '<span style="font-size:12px;color:#334155;font-weight:400">' + r.fornecedor + '</span>'
-          +   '</span>'
-          +   '<span>' + stBadge(r.status) + '</span>'
-          + '</div>'
-          + '</div>';
-      });
-      cpciHtml += '</div>';
     }
-    cpciHtml += '<div class="var-note" style="margin-top:4px">Ver detalhes completos na aba '
+    cpciHtml += '<div class="var-note" style="margin-top:6px;font-size:13px">Ver detalhes completos na aba '
       + '<a href="#" onclick="showTab(\'integracao\');return false;" style="color:var(--blue);font-weight:600;text-decoration:underline">Colaboradores e Prestadores</a>.'
       + '</div>';
   }
@@ -675,9 +654,10 @@ function renderDashboard(d) {
   // ── Atualizar botão aba Vencimentos ──────────────────────────────────────
   const vencProx = d.vencimento_proximo || [];
   const nVenc    = vencProx.length;
-  const hasUrgent = vencProx.some(e => e.tag === 'vermelho');
+  const hasVencidos = vencProx.some(e => e.tag === 'vencido');
+  const hasUrgent   = hasVencidos || vencProx.some(e => e.tag === 'vermelho');
   const tabVencEl = document.getElementById('tab-venc');
-  tabVencEl.textContent = 'Vencimentos (' + nVenc + ')';
+  tabVencEl.textContent = (hasVencidos ? '⚠ ' : '') + 'Vencimentos (' + nVenc + ')';
   tabVencEl.style.color = hasUrgent ? 'var(--c-inv)' : '';
   tabVencEl.style.fontWeight = hasUrgent ? '700' : '';
 
@@ -801,23 +781,27 @@ function renderEvolucao(hist) {
 function renderVencimentos(d) {
   var vp  = d.vencimento_proximo || [];
   var el  = document.getElementById('venc-content');
-  var nUr = vp.filter(function(e) { return e.tag === 'vermelho'; }).length;
-  var title = 'Documentos com Vencimento nos Próximos 30 Dias (' + vp.length + ')';
+  var nExp = vp.filter(function(e) { return e.tag === 'vencido'; }).length;
+  var nUr  = vp.filter(function(e) { return e.tag === 'vermelho'; }).length;
+  var titleParts = [];
+  if (nExp > 0) titleParts.push(nExp + ' vencido' + (nExp !== 1 ? 's' : ''));
+  titleParts.push((vp.length - nExp) + ' a vencer');
+  var title = 'Documentos — Vencidos e Próximos ao Vencimento (' + vp.length + ')';
   var inner = '';
 
   if (vp.length === 0) {
-    inner = '<div style="font-size:13px;color:var(--c-ok)">Nenhum documento com vencimento nos próximos 30 dias.</div>';
+    inner = '<div style="font-size:13px;color:var(--c-ok)">Nenhum documento vencido ou com vencimento nos próximos 30 dias.</div>';
   } else {
-    var tagLbl = function(tag, dias) {
-      var d_str = dias != null ? dias + ' dia' + (Math.abs(dias) !== 1 ? 's' : '') : '';
-      if (tag === 'vermelho') return '<span class="tag-venc-r">&le;10 dias' + (d_str ? ' · ' + d_str : '') + '</span>';
-      if (tag === 'amarelo')  return '<span class="tag-venc-y">&le;20 dias' + (d_str ? ' · ' + d_str : '') + '</span>';
-      return '<span class="tag-venc-g">&le;30 dias' + (d_str ? ' · ' + d_str : '') + '</span>';
+    var tagLbl = function(tag) {
+      if (tag === 'vencido')  return '<span class="tag-venc-exp">Vencido</span>';
+      if (tag === 'vermelho') return '<span class="tag-venc-r">&le;10 dias</span>';
+      if (tag === 'amarelo')  return '<span class="tag-venc-y">&le;20 dias</span>';
+      return '<span class="tag-venc-g">&le;30 dias</span>';
     };
     var tbody = '';
     vp.forEach(function(e) {
       tbody += '<tr>'
-        + '<td>' + tagLbl(e.tag, e.dias) + '</td>'
+        + '<td>' + tagLbl(e.tag) + '</td>'
         + '<td>' + e.empresa + '</td>'
         + '<td>' + e.func + '</td>'
         + '<td>' + e.doc + '</td>'
@@ -1002,7 +986,8 @@ function renderIntegracao(d) {
 
   el.innerHTML = '<div class="section">'
     + '<div class="section-title">Relatório de Colaboradores e Prestadores: Conformidade Pessoal (CP) e Conformidade de Integração (CI)</div>'
-    + met + kpis + summ + ctrl + tbl + '</div>';
+    + '<div class="ci-header-band">' + met + kpis + '</div>'
+    + summ + ctrl + tbl + '</div>';
 
   // ── Eventos ──
   document.getElementById('ci-q').addEventListener('input', ciFilter);

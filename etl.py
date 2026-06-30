@@ -405,22 +405,28 @@ def process_docs(rows, sub_names, proprio_label):
 
     venc_entries = []
     for r in rows:
-        if r.get('Status do Documento') == 'Perto do Vencimento':
-            dt = parse_date(r.get('Data de Vencimento'))
-            tag, tag_ord = alert_tag(dt)
-            emp = clean_name(r.get('Subcontratado'))
-            func = clean_func(r.get('Funcionário'))
-            dias_val = (dt - today).days if dt else None
-            doc_s    = shorten_doc(r.get('Documento'))
-            venc_entries.append({
-                'empresa':   emp,
-                'func':      func,
-                'doc':       doc_s,
-                'data_venc': dt.strftime('%d/%m/%Y') if dt else '—',
-                'dias':      dias_val,
-                'tag':       tag,
-                '_ord':      (dias_val if dias_val is not None else 999, emp, func, doc_s),
-            })
+        st_doc = r.get('Status do Documento')
+        if st_doc not in ('Perto do Vencimento', 'Vencido'):
+            continue
+        dt = parse_date(r.get('Data de Vencimento'))
+        emp = clean_name(r.get('Subcontratado'))
+        func = clean_func(r.get('Funcionário'))
+        dias_val = (dt - today).days if dt else None
+        doc_s    = shorten_doc(r.get('Documento'))
+        if st_doc == 'Vencido':
+            tag = 'vencido'
+        else:
+            tag, _ = alert_tag(dt)
+        # vencidos têm dias negativo → ordenam primeiro naturalmente
+        venc_entries.append({
+            'empresa':   emp,
+            'func':      func,
+            'doc':       doc_s,
+            'data_venc': dt.strftime('%d/%m/%Y') if dt else '—',
+            'dias':      dias_val,
+            'tag':       tag,
+            '_ord':      (dias_val if dias_val is not None else 999, emp, func, doc_s),
+        })
     venc_entries.sort(key=lambda x: x['_ord'])
     vencimento_proximo = [{k: v for k, v in e.items() if k != '_ord'} for e in venc_entries]
 
