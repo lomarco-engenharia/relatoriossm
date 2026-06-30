@@ -12,20 +12,20 @@
     "ader_fmt": "99,5%",
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-green",
-    "total_workers": null,
-    "cp_ok": null,
-    "cp_nc": null,
-    "cp_pct": null,
-    "cp_fmt": "N/D",
-    "cp_class": "kpi-nd",
-    "ci_ok": null,
-    "ci_nc": null,
-    "ci_pct": null,
-    "ci_fmt": "N/D",
-    "ci_class": "kpi-nd",
-    "ci_acesso": null,
-    "ci_pend_int": null,
-    "ci_falta": null
+    "total_workers": 59,
+    "cp_ok": 25,
+    "cp_nc": 34,
+    "cp_pct": 42.37288,
+    "cp_fmt": "42,4%",
+    "cp_class": "kpi-yellow",
+    "ci_ok": 56,
+    "ci_nc": 3,
+    "ci_pct": 94.91525,
+    "ci_fmt": "94,9%",
+    "ci_class": "kpi-yellow",
+    "ci_acesso": 25,
+    "ci_pend_int": 31,
+    "ci_falta": 0
   },
   "variacao": {
     "data_anterior": "2026-06-29",
@@ -33,8 +33,8 @@
     "d_ader": 0.716,
     "d_total": 1.746,
     "d_subs": 0.0,
-    "d_cp": null,
-    "d_ci": null
+    "d_cp": -46.071,
+    "d_ci": -5.085
   },
   "status_rows": [
     {
@@ -3094,5 +3094,176 @@
       }
     ]
   },
-  "cpci": []
+  "cpci": [
+    {
+      "fornecedor": "Almir Godofredo Flores Cardoso",
+      "funcionario": "Almir Godofredo",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Cleiton Jose De Lima",
+      "funcionario": "Cleiton Lima",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Alcindo Largueza",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Alessandro De Oliveira Espirito Santo",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Edson Wilson Dos Santos",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Erisvaldo Da Silva Santana",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Gabriel De Lima Rodrigues Dos Reis",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Janaína Da Rocha Morais",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Jose Pinto Simoes",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Jose Severino Da Silva Filho",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Jucinaldo Pedro Dos Santos",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Manoel Constantino Franca De Macedo",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Marcelo Miguel Da Costa",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Maria Antônia Alves",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Mauro Cesar Soares De Araujo",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Odais José Santos Do Vale",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Osvaldo Dos Reis Junior",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Patricia De Almeida Dos Santos",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Paulo Oliveira Da Silva",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Raimundo José",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Reinaldo Aparecido Gonçalves",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Ronaldo Jesus Dos Santos",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Consórcio KTL Mairiporã (próprio)",
+      "funcionario": "Vivaldo Moraes Nascimento",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Davi De Castro Landim",
+      "funcionario": "Davi De Castro Landim",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Diego Rodrigues De Castro",
+      "funcionario": "Diego Rodrigues",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "ICS Montagem e Instalação Elétrica",
+      "funcionario": "Igor Chaves",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Ingryd Santos Borges",
+      "funcionario": "Ingryd Borges",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "J F Lucena",
+      "funcionario": "Aleomar Soares Alves",
+      "status": "Pendências e Falta Integração"
+    },
+    {
+      "fornecedor": "J F Lucena",
+      "funcionario": "Josemar Ferreira Lucena",
+      "status": "Pendências e Falta Integração"
+    },
+    {
+      "fornecedor": "J F Lucena",
+      "funcionario": "Onilio Cardozo Cantuaria Filho",
+      "status": "Pendências e Falta Integração"
+    },
+    {
+      "fornecedor": "Joclamar",
+      "funcionario": "Giovani Waligura",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Joclamar",
+      "funcionario": "Glênio Benedito Pereira Gomes",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Pejota Construções",
+      "funcionario": "Joel Oliveira",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Ronieli Mendes Bastos",
+      "funcionario": "Ronieli Bastos",
+      "status": "Pendências porém Integrado"
+    }
+  ]
 }
