@@ -12,20 +12,20 @@
     "ader_fmt": "99,0%",
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-yellow",
-    "total_workers": null,
-    "cp_ok": null,
-    "cp_nc": null,
-    "cp_pct": null,
-    "cp_fmt": "N/D",
-    "cp_class": "kpi-nd",
-    "ci_ok": null,
-    "ci_nc": null,
-    "ci_pct": null,
-    "ci_fmt": "N/D",
-    "ci_class": "kpi-nd",
-    "ci_acesso": null,
-    "ci_pend_int": null,
-    "ci_falta": null
+    "total_workers": 52,
+    "cp_ok": 42,
+    "cp_nc": 10,
+    "cp_pct": 80.76923,
+    "cp_fmt": "80,8%",
+    "cp_class": "kpi-yellow",
+    "ci_ok": 49,
+    "ci_nc": 3,
+    "ci_pct": 94.23077,
+    "ci_fmt": "94,2%",
+    "ci_class": "kpi-yellow",
+    "ci_acesso": 42,
+    "ci_pend_int": 7,
+    "ci_falta": 1
   },
   "variacao": {
     "data_anterior": "2026-06-29",
@@ -33,8 +33,8 @@
     "d_ader": 0.634,
     "d_total": 0.148,
     "d_subs": 0.0,
-    "d_cp": null,
-    "d_ci": null
+    "d_cp": 0.0,
+    "d_ci": 0.0
   },
   "status_rows": [
     {
@@ -2172,5 +2172,56 @@
       }
     ]
   },
-  "cpci": []
+  "cpci": [
+    {
+      "fornecedor": "Ademilson Donizeti De Andrade",
+      "funcionario": "Ademilson Andrade",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Alufer Engenharia Ltda.",
+      "funcionario": "Darlam Gregório De Souza",
+      "status": "Pendências e Falta Integração"
+    },
+    {
+      "fornecedor": "Alufer Engenharia Ltda.",
+      "funcionario": "Sidney Santiago Freitas",
+      "status": "Pendências e Falta Integração"
+    },
+    {
+      "fornecedor": "Antoni Ferreira De Abreu",
+      "funcionario": "Antoni Ferreira De Abreu Abreu",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Cleiton Jose De Lima",
+      "funcionario": "Cleiton Lima",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Diego Rodrigues De Castro",
+      "funcionario": "Diego Rodrigues",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Fluiter Engenharia e Soluções",
+      "funcionario": "Jonathan Ferreia De Lima",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Real Eng Pinturas em Geral",
+      "funcionario": "Wellington Ribeiro",
+      "status": "Falta Integração"
+    },
+    {
+      "fornecedor": "Ronaldo Barbosa De Souza",
+      "funcionario": "Ronaldo Barbosa De Souza",
+      "status": "Pendências porém Integrado"
+    },
+    {
+      "fornecedor": "Ronieli Mendes Bastos",
+      "funcionario": "Ronieli Bastos",
+      "status": "Pendências porém Integrado"
+    }
+  ]
 }
