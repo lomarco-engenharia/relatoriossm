@@ -418,10 +418,12 @@ function renderDashboard(d) {
   const cpStr  = m.cp_fmt  || 'N/D';
   const ciStr  = m.ci_fmt  || 'N/D';
 
-  const cpOkStr = (m.cp_ok != null && m.n_ativos != null)
-    ? fmtNum(m.cp_ok) + ' Todos docs conformes / ' + fmtNum(m.n_ativos) + ' Ativos' : '';
-  const ciOkStr = (m.ci_ok != null && m.n_ativos != null)
-    ? fmtNum(m.ci_ok) + ' Acesso liberado / ' + fmtNum(m.n_ativos) + ' Ativos' : '';
+  const cpOkStr = m.n_ativos != null
+    ? fmtNum(m.cp_ok||0) + ' Todos docs conformes / ' + fmtNum(m.n_ativos) + ' Ativos'
+    : (m.cp_ok != null ? fmtNum(m.cp_ok) + ' de ' + fmtNum(m.total_workers||0) + ' trabalhadores' : '');
+  const ciOkStr = m.n_ativos != null
+    ? fmtNum(m.ci_ok||0) + ' Acesso liberado / ' + fmtNum(m.n_ativos) + ' Ativos'
+    : (m.ci_ok != null ? fmtNum(m.ci_ok) + ' de ' + fmtNum(m.total_workers||0) + ' trabalhadores' : '');
   const inlineDelta = (val, neutral=false) => {
     if (val == null) return '';
     const arrow = val >= 0 ? '&#9650;' : '&#9660;';
@@ -887,12 +889,12 @@ function renderIntegracao(d) {
   var ciGrid = '<div class="kpi-grid" style="margin-bottom:24px">'
 
     // (1,1) Funcionários — Total | Ativos + N.D.
-    + '<div class="kpi kpi-nd" style="display:flex;gap:0;padding:0">'
-    +   '<div ' + _spR + '>'
+    + '<div class="kpi kpi-nd" style="display:flex;gap:0;padding:0;align-items:stretch">'
+    +   '<div style="flex:1;padding:14px 12px;border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center">'
     +     '<div class="kpi-label">Total</div>'
     +     '<div class="kpi-value" style="color:var(--navy)">' + ci.total + '</div>'
     +   '</div>'
-    +   '<div ' + _sp + ' style="display:flex;flex-direction:column;gap:10px;padding:14px 12px">'
+    +   '<div style="flex:1;padding:14px 12px;display:flex;flex-direction:column;justify-content:center;gap:10px">'
     +     '<div><div class="kpi-label">Ativos</div>'
     +     '<div style="font-size:22px;font-weight:700;color:var(--navy)">' + nat + '</div></div>'
     +     '<div><div class="kpi-label">N.D.</div>'
@@ -901,25 +903,25 @@ function renderIntegracao(d) {
     + '</div>'
 
     // (1,2) Docs pessoais — Conformes | Pendentes
-    + '<div class="kpi kpi-nd" style="display:flex;gap:0;padding:0">'
-    +   '<div ' + _spR + '>'
-    +     '<div class="kpi-label">Todos Docs Conformes</div>'
+    + '<div class="kpi kpi-nd" style="display:flex;gap:0;padding:0;align-items:stretch">'
+    +   '<div style="flex:1;padding:14px 12px;border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center">'
+    +     '<div class="kpi-label" style="white-space:normal">Todos Docs Conformes</div>'
     +     '<div style="font-size:24px;font-weight:700;color:var(--c-ok)">' + (ci.n_ativos_doc_ok||0) + '</div>'
     +   '</div>'
-    +   '<div ' + _sp + ' style="padding:14px 12px">'
-    +     '<div class="kpi-label">Docs Pendentes</div>'
+    +   '<div style="flex:1;padding:14px 12px;display:flex;flex-direction:column;justify-content:center">'
+    +     '<div class="kpi-label" style="white-space:normal">Docs Pendentes</div>'
     +     '<div style="font-size:24px;font-weight:700;color:' + ((ci.n_ativos_doc_pend||0)>0?'var(--c-inv)':'var(--muted)') + '">' + (ci.n_ativos_doc_pend||0) + '</div>'
     +   '</div>'
     + '</div>'
 
     // (1,3) Integração — Acesso Liberado | Pendente
-    + '<div class="kpi kpi-nd" style="display:flex;gap:0;padding:0">'
-    +   '<div ' + _spR + '>'
-    +     '<div class="kpi-label">Acesso Liberado</div>'
+    + '<div class="kpi kpi-nd" style="display:flex;gap:0;padding:0;align-items:stretch">'
+    +   '<div style="flex:1;padding:14px 12px;border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center">'
+    +     '<div class="kpi-label" style="white-space:normal">Acesso Liberado</div>'
     +     '<div style="font-size:24px;font-weight:700;color:var(--c-ok)">' + (ci.n_ativos_acesso_lib||0) + '</div>'
     +   '</div>'
-    +   '<div ' + _sp + ' style="padding:14px 12px">'
-    +     '<div class="kpi-label">Integração Pendente</div>'
+    +   '<div style="flex:1;padding:14px 12px;display:flex;flex-direction:column;justify-content:center">'
+    +     '<div class="kpi-label" style="white-space:normal">Integração Pendente</div>'
     +     '<div style="font-size:24px;font-weight:700;color:' + ((ci.n_ativos_int_pend||0)>0?'var(--c-inv)':'var(--muted)') + '">' + (ci.n_ativos_int_pend||0) + '</div>'
     +   '</div>'
     + '</div>'
