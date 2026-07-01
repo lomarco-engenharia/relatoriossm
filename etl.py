@@ -535,61 +535,107 @@ def process_integration(rows_int, sub_names, proprio_label):
 # ─── DETALHE CP/CI POR FUNCIONÁRIO ──────────────────────────────────────────
 
 def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
-    """Cruzamento detalhado: docs pessoais vs docs de empresa por funcionário."""
+    """
+    Workers vêm de relatorio_de_documentos (CPF único).
+    Status de integração vem de status_integracao (join por CPF).
+    Workers sem par no CSV de integração recebem status_int = 'N.D.'.
+    """
 
-    def clean_emp(sub_raw, forn_raw):
-        raw = (sub_raw or '').strip() or (forn_raw or '').strip()
+    def clean_emp(raw):
+        if not raw or not str(raw).strip():
+            return proprio_label
+        raw = str(raw).strip()
         if raw in sub_names: return sub_names[raw]
         cleaned = re.sub(r'^\d{2}\.\d{3}\.\d{3}\s+', '', raw)
         cleaned = re.sub(r'^\d{8,11}\s+', '', cleaned)
         return cleaned.strip() or proprio_label
 
     def doc_sev(st):
-        if st in ('Inválido','Pendente - Isenção Reprovada','Vencido','Reprovado pelo cliente'):
+        if st in ('Inválido', 'Pendente - Isenção Reprovada', 'Vencido', 'Reprovado pelo cliente'):
             return 'rep'
         if st == 'Em validação': return 'val'
         return 'pen'
 
-    # Mapa CPF → melhor registro de integração
-    # empresa = Fornecedor (empresa direta do funcionário)
-    # cnpj    = CNPJ (CNPJ do Fornecedor)
-    # status  = melhor de todas as linhas do CPF
-    by_cpf = {}
+    ALOC_DISPLAY_MAP = {
+        'Funcionários Alocados':        'Alocado',
+        'Funcionários que já participaram': 'Já participou',
+        'Demitidos':                    'Demitido',
+    }
+    ALOC_SORT_MAP = {
+        'Funcionários Alocados':        0,
+        'Funcionários que já participaram': 1,
+        'Demitidos':                    2,
+    }
+    INT_SORT_D = {
+        'Pendências e Falta Integração': 0,
+        'Falta Integração':              1,
+        'Pendências porém Integrado':    2,
+        'Acesso Liberado':               3,
+        'N.D.':                          4,
+    }
+
+    # 1. Mapa CPF → melhor status de integração (de status_integracao)
+    by_cpf_int = {}
     for r in rows_int:
-        cpf  = (r.get('CPF') or '').strip()
-        nome = (r.get('Funcionário') or '').strip()
-        if not cpf or not nome: continue
-        empresa = clean_emp(None, r.get('Fornecedor'))
-        cnpj    = (r.get('CNPJ') or '').strip()
-        alocacao = (r.get('Alocação do Funcionário') or '').strip()
+        cpf = (r.get('CPF') or '').strip()
+        if not cpf: continue
         st  = r.get('Status', '')
         pri = INT_PRIORITY.get(st, 99)
-        if cpf not in by_cpf:
-            by_cpf[cpf] = {'nome': nome.title(), 'empresa': empresa,
-                           'cnpj': cnpj, 'alocacao': alocacao,
-                           'status_int': st, 'pri': pri}
+        if cpf not in by_cpf_int:
+            by_cpf_int[cpf] = {'status_int': st, 'pri': pri}
         else:
-            # Status: sempre o melhor; empresa/cnpj/alocacao: primeira ocorrência
-            w = by_cpf[cpf]
-            if pri < w['pri']:
-                w['status_int'] = st
-                w['pri'] = pri
+            if pri < by_cpf_int[cpf]['pri']:
+                by_cpf_int[cpf] = {'status_int': st, 'pri': pri}
 
-    # Documentos pessoais (CPF preenchido) e de empresa (CPF vazio)
-    p_docs = collections.defaultdict(list)   # CPF  → [{doc,st_s,sev}]
-    c_docs = collections.defaultdict(list)   # CNPJ → [{doc,st_s,sev}]
+    # 2. Documentos pessoais (CPF preenchido) e de empresa (CPF vazio) com NC
+    p_docs = collections.defaultdict(list)   # CPF  → [{doc, st_s, sev}]
+    c_docs = collections.defaultdict(list)   # CNPJ → [{doc, st_s, sev}]
     for r in rows_doc:
         st = r.get('Status do Documento', '')
         if st not in NC_STATUSES: continue
         cpf       = (r.get('CPF') or '').strip()
         sub_cnpj  = (r.get('Subcontratado CNPJ') or '').strip()
         main_cnpj = (r.get('CNPJ') or '').strip()
-        entry = {'doc':  shorten_doc(r.get('Documento')),
+        entry = {'doc': shorten_doc(r.get('Documento')),
                  'st_s': shorten_st(st), 'sev': doc_sev(st)}
         if cpf:
             p_docs[cpf].append(entry)
         else:
             c_docs[sub_cnpj or main_cnpj].append(entry)
+
+    # 3. Workers únicos de relatorio_de_documentos (somente linhas com CPF)
+    #    Para alocação: prioridade Alocado > Participou > Demitido
+    by_cpf_doc = {}
+    for r in rows_doc:
+        cpf  = (r.get('CPF') or '').strip()
+        nome = (r.get('Funcionário') or '').strip()
+        if not cpf or not nome: continue
+        sub_raw  = (r.get('Subcontratado') or '').strip()
+        sub_cnpj = (r.get('Subcontratado CNPJ') or '').strip()
+        cnpj     = sub_cnpj or (r.get('CNPJ') or '').strip()
+        cargo    = str(r.get('Cargo') or '').strip().title()
+        regime   = str(r.get('Regime de Contratação') or '').strip()
+        aloc_raw = str(r.get('Status do Funcionário') or '').strip()
+        aloc_pri = ALOC_SORT_MAP.get(aloc_raw, 9)
+        empresa  = clean_emp(sub_raw)
+        if cpf not in by_cpf_doc:
+            by_cpf_doc[cpf] = {
+                'nome': nome.title(), 'empresa': empresa, 'cnpj': cnpj,
+                'cargo': cargo, 'regime': regime,
+                'alocacao_raw': aloc_raw, 'aloc_pri': aloc_pri,
+            }
+        else:
+            w = by_cpf_doc[cpf]
+            # Alocação: vence o melhor status
+            if aloc_pri < w['aloc_pri']:
+                w['alocacao_raw'] = aloc_raw
+                w['aloc_pri'] = aloc_pri
+            # Preenche campos faltantes
+            if not w['cargo'] and cargo:   w['cargo'] = cargo
+            if not w['regime'] and regime: w['regime'] = regime
+
+    if not by_cpf_doc:
+        return None
 
     def dedup(lst):
         seen, out = set(), []
@@ -599,31 +645,34 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
                 seen.add(k); out.append(d)
         return out
 
+    # 4. Montar detail cruzando docs + integração
     detail = []
-    for cpf, w in by_cpf.items():
+    for cpf, w in by_cpf_doc.items():
+        int_info   = by_cpf_int.get(cpf)
+        status_int = int_info['status_int'] if int_info else 'N.D.'
         p = dedup(p_docs.get(cpf, []))
         c = dedup(c_docs.get(w['cnpj'], []))
-        sevs = [d['sev'] for d in p + c]
+        sevs    = [d['sev'] for d in p + c]
         row_sev = 'rep' if 'rep' in sevs else ('val' if 'val' in sevs else ('pen' if sevs else 'ok'))
-        detail.append({'nome': w['nome'], 'empresa': w['empresa'],
-                       'status_int': w['status_int'], 'alocacao': w.get('alocacao', ''),
-                       'n_pess': len(p), 'n_emp': len(c),
-                       'docs_pessoais': p, 'docs_empresa': c, 'sev': row_sev})
+        aloc_raw = w['alocacao_raw']
+        detail.append({
+            'nome':       w['nome'],
+            'empresa':    w['empresa'],
+            'cargo':      w['cargo'],
+            'regime':     w['regime'],
+            'status_int': status_int,
+            'alocacao':   ALOC_DISPLAY_MAP.get(aloc_raw, aloc_raw or '—'),
+            'alocacao_raw': aloc_raw,
+            'n_pess': len(p), 'n_emp': len(c),
+            'docs_pessoais': p, 'docs_empresa': c, 'sev': row_sev,
+        })
 
-    # Ordenação pior → melhor
-    INT_SORT_D = {
-        'Pendências e Falta Integração': 0,
-        'Falta Integração': 1,
-        'Pendências porém Integrado': 2,
-        'Acesso Liberado': 3,
-    }
-    ALOC_SORT = {'Funcionários Alocados': 0, 'Funcionários que já participaram': 1}
-
+    # 5. Ordenação: pior integração → melhor; pior docs → melhor; alocação; nome
     def sort_key(w):
         return (INT_SORT_D.get(w['status_int'], 4),
                 0 if w['n_pess'] > 0 else 1, -w['n_pess'],
                 0 if w['n_emp']  > 0 else 1, -w['n_emp'],
-                ALOC_SORT.get(w.get('alocacao', ''), 2),
+                ALOC_SORT_MAP.get(w['alocacao_raw'], 9),
                 w['nome'])
     detail.sort(key=sort_key)
 
@@ -631,11 +680,12 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
     n_lib  = sum(1 for w in detail if w['status_int'] == 'Acesso Liberado')
     n_pess = sum(1 for w in detail if w['n_pess'] > 0)
     n_emp  = sum(1 for w in detail if w['n_emp']  > 0)
-    n_alocados    = sum(1 for w in detail if w.get('alocacao') == 'Funcionários Alocados')
-    n_participaram = sum(1 for w in detail if w.get('alocacao') == 'Funcionários que já participaram')
-    n_pend_falta  = sum(1 for w in detail if w['status_int'] == 'Pendências e Falta Integração')
-    n_falta_int   = sum(1 for w in detail if w['status_int'] == 'Falta Integração')
-    n_pend_integr = sum(1 for w in detail if w['status_int'] == 'Pendências porém Integrado')
+    n_nd   = sum(1 for w in detail if w['status_int'] == 'N.D.')
+    n_alocados     = sum(1 for w in detail if w['alocacao_raw'] == 'Funcionários Alocados')
+    n_participaram = sum(1 for w in detail if w['alocacao_raw'] == 'Funcionários que já participaram')
+    n_pend_falta   = sum(1 for w in detail if w['status_int'] == 'Pendências e Falta Integração')
+    n_falta_int    = sum(1 for w in detail if w['status_int'] == 'Falta Integração')
+    n_pend_integr  = sum(1 for w in detail if w['status_int'] == 'Pendências porém Integrado')
 
     cnt = collections.Counter()
     for w in detail:
@@ -652,11 +702,11 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
 
     return {'total': total, 'n_liberado': n_lib,
             'n_pend_pess': n_pess, 'n_pend_emp': n_emp,
+            'n_nd': n_nd,
             'n_alocados': n_alocados, 'n_participaram': n_participaram,
             'n_pend_falta_int': n_pend_falta, 'n_falta_int': n_falta_int,
             'n_pend_integrado': n_pend_integr,
             'combos': combos, 'workers': detail}
-
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 def main():
