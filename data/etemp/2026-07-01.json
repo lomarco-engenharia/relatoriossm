@@ -2,44 +2,44 @@
   "meta": {
     "projeto": "etemp",
     "data": "2026-07-01",
-    "total": 3807,
-    "nc": 273,
-    "na": 41,
-    "conf_pct": 92.829,
-    "ader_pct": 98.92304,
+    "total": 3804,
+    "nc": 268,
+    "na": 30,
+    "conf_pct": 92.95478,
+    "ader_pct": 99.21136,
     "n_subs": 29,
-    "conf_fmt": "92,8%",
-    "ader_fmt": "98,9%",
+    "conf_fmt": "93,0%",
+    "ader_fmt": "99,2%",
     "conf_class": "kpi-yellow",
-    "ader_class": "kpi-yellow",
+    "ader_class": "kpi-green",
     "total_workers": 59,
-    "cp_ok": 45,
-    "cp_nc": 14,
-    "cp_pct": 76.27119,
-    "cp_fmt": "76,3%",
+    "cp_ok": 46,
+    "cp_nc": 13,
+    "cp_pct": 77.9661,
+    "cp_fmt": "78,0%",
     "cp_class": "kpi-yellow",
     "ci_ok": 56,
     "ci_nc": 3,
     "ci_pct": 94.91525,
     "ci_fmt": "94,9%",
     "ci_class": "kpi-yellow",
-    "ci_acesso": 45,
-    "ci_pend_int": 11,
+    "ci_acesso": 46,
+    "ci_pend_int": 10,
     "ci_falta": 0
   },
   "variacao": {
     "data_anterior": "2026-06-30",
-    "d_conf": -0.393,
-    "d_ader": -0.628,
-    "d_total": 1.196,
+    "d_conf": -0.258,
+    "d_ader": -0.338,
+    "d_total": 1.116,
     "d_subs": 0.0,
-    "d_cp": 2.273,
+    "d_cp": 4.545,
     "d_ci": 0.0
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2460,
+      "qty": 2459,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
@@ -47,19 +47,19 @@
     },
     {
       "label": "OK",
-      "qty": 929,
+      "qty": 931,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
-      "pct": 24.4
+      "pct": 24.5
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
-      "qty": 156,
+      "qty": 161,
       "color": "#d97706",
       "is_nc": true,
       "is_na": false,
-      "pct": 4.1
+      "pct": 4.2
     },
     {
       "label": "Liberado com Ressalvas",
@@ -71,35 +71,35 @@
     },
     {
       "label": "Aprovado pelo Cliente",
-      "qty": 55,
+      "qty": 56,
       "color": "#7c3aed",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.4
-    },
-    {
-      "label": "Pendente",
-      "qty": 41,
-      "color": "#ca8a04",
-      "is_nc": true,
-      "is_na": true,
-      "pct": 1.1
+      "pct": 1.5
     },
     {
       "label": "Em Validação",
-      "qty": 34,
+      "qty": 37,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.9
+      "pct": 1.0
+    },
+    {
+      "label": "Pendente",
+      "qty": 30,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
+      "pct": 0.8
     },
     {
       "label": "Pend. — Isenção Reprovada",
-      "qty": 30,
+      "qty": 28,
       "color": "#be123c",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.8
+      "pct": 0.7
     },
     {
       "label": "Perto do Vencimento",
@@ -133,22 +133,22 @@
       "Pend. — Isenção Ag. Aprovação",
       "Liberado com Ressalvas",
       "Aprovado pelo Cliente",
-      "Pendente",
       "Em Validação",
+      "Pendente",
       "Pend. — Isenção Reprovada",
       "Perto do Vencimento",
       "Inválido",
       "Reprovado/Vencido"
     ],
     "data": [
-      2460,
-      929,
-      156,
+      2459,
+      931,
+      161,
       75,
-      55,
-      41,
-      34,
+      56,
+      37,
       30,
+      28,
       15,
       8,
       4
@@ -159,8 +159,8 @@
       "#d97706",
       "#0891b2",
       "#7c3aed",
-      "#ca8a04",
       "#2563a8",
+      "#ca8a04",
       "#be123c",
       "#f97316",
       "#dc2626",
@@ -172,7 +172,7 @@
       "id": "ns1",
       "label": "Pendente",
       "color": "#ca8a04",
-      "count": 41,
+      "count": 30,
       "pct": 100,
       "entries": [
         {
@@ -216,21 +216,6 @@
           "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Campanha SST"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg."
-        },
-        {
           "empresa": "Marina Costa Lani Leal",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
@@ -243,12 +228,12 @@
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "doc_s": "CND FGTS — CRF"
+          "doc_s": "CND Municipal"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "doc_s": "CND Municipal"
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -261,22 +246,7 @@
           "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Ronieli Mendes Bastos",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
           "empresa": "Pejota Construções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Diego Rodrigues De Castro",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
         },
@@ -291,21 +261,6 @@
           "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "doc_s": "Campanha SST"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg."
-        },
-        {
           "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
@@ -316,16 +271,6 @@
           "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
           "empresa": "Jeferson Da Silva Bonfim",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
@@ -333,11 +278,6 @@
         {
           "empresa": "Davi De Castro Landim",
           "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg."
-        },
-        {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
           "doc_s": "Campanha SST"
         },
         {
@@ -346,6 +286,16 @@
           "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg."
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg."
+        },
+        {
           "empresa": "Ingryd Santos Borges",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
@@ -356,9 +306,9 @@
           "doc_s": "Campanha SST"
         },
         {
-          "empresa": "Ingryd Santos Borges",
+          "empresa": "Almir Godofredo Flores Cardoso",
           "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg."
+          "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
           "empresa": "Almir Godofredo Flores Cardoso",
@@ -369,11 +319,6 @@
           "empresa": "Almir Godofredo Flores Cardoso",
           "func": "—",
           "doc_s": "Campanha SST"
-        },
-        {
-          "empresa": "Almir Godofredo Flores Cardoso",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
           "empresa": "Joclamar",
@@ -386,23 +331,13 @@
       "id": "ns2",
       "label": "Pend. — Isenção Reprovada",
       "color": "#be123c",
-      "count": 30,
-      "pct": 73,
+      "count": 28,
+      "pct": 93,
       "entries": [
         {
           "empresa": "Cedro Engenharia",
           "func": "—",
           "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "doc_s": "CNDT"
         },
         {
           "empresa": "Tuca Pisos Construções",
@@ -417,12 +352,27 @@
         {
           "empresa": "Tuca Pisos Construções",
           "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
           "doc_s": "PCMSO"
+        },
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -432,22 +382,17 @@
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
           "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -465,14 +410,9 @@
           "doc_s": "CND FGTS — CRF"
         },
         {
-          "empresa": "LL Nogueira Tecnologia",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        },
-        {
           "empresa": "Erisvaldo Da Silva Santana",
           "func": "—",
-          "doc_s": "CND FGTS — CRF"
+          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Erisvaldo Da Silva Santana",
@@ -482,7 +422,12 @@
         {
           "empresa": "Erisvaldo Da Silva Santana",
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "doc_s": "CND Municipal"
         },
         {
           "empresa": "MCA Soluções em Engenharia",
@@ -493,16 +438,6 @@
           "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "MCA Soluções em Engenharia",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "doc_s": "CND Municipal"
         },
         {
           "empresa": "Jeferson Da Silva Bonfim",
@@ -527,17 +462,17 @@
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
           "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
         }
       ]
     },
@@ -546,7 +481,7 @@
       "label": "Inválido",
       "color": "#dc2626",
       "count": 8,
-      "pct": 20,
+      "pct": 27,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -595,7 +530,7 @@
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
       "count": 4,
-      "pct": 10,
+      "pct": 13,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -624,7 +559,7 @@
     {
       "id": "d1",
       "name": "Evidências Prog. Saúde Mental",
-      "count": 22,
+      "count": 16,
       "color": "#64748b",
       "pct": 100,
       "entries": [
@@ -653,12 +588,6 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
           "empresa": "Marina Costa Lani Leal",
           "func": "—",
           "badge": "pend",
@@ -671,25 +600,7 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Ronieli Mendes Bastos",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
           "empresa": "Pejota Construções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Diego Rodrigues De Castro",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -707,12 +618,6 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
           "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "badge": "pend",
@@ -720,12 +625,6 @@
         },
         {
           "empresa": "Isabelly Duarte De Souza",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -767,7 +666,7 @@
       "name": "CND Federal",
       "count": 7,
       "color": "#0891b2",
-      "pct": 32,
+      "pct": 44,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -815,145 +714,10 @@
     },
     {
       "id": "d3",
-      "name": "CND Municipal",
-      "count": 6,
-      "color": "#0891b2",
-      "pct": 27,
-      "entries": [
-        {
-          "empresa": "Valdir Rodrigues Topógrafo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Murilo Pinheiro de Carvalho Camilo",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "MCA Soluções em Engenharia",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Jeferson Da Silva Bonfim",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d4",
-      "name": "DDS — Diálogo Diário de Seg.",
-      "count": 6,
-      "color": "#64748b",
-      "pct": 27,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Ingryd Santos Borges",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Almir Godofredo Flores Cardoso",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d5",
-      "name": "Campanha SST",
-      "count": 6,
-      "color": "#64748b",
-      "pct": 27,
-      "entries": [
-        {
-          "empresa": "Joel Leite Filho",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Davi De Castro Landim",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Ingryd Santos Borges",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Almir Godofredo Flores Cardoso",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d6",
       "name": "CND FGTS — CRF",
       "count": 6,
       "color": "#0891b2",
-      "pct": 27,
+      "pct": 38,
       "entries": [
         {
           "empresa": "Marina Costa Lani Leal",
@@ -994,12 +758,18 @@
       ]
     },
     {
-      "id": "d7",
-      "name": "Contrato Social / Reg. MEI",
+      "id": "d4",
+      "name": "CND Municipal",
       "count": 5,
-      "color": "#6366f1",
-      "pct": 23,
+      "color": "#0891b2",
+      "pct": 31,
       "entries": [
+        {
+          "empresa": "Valdir Rodrigues Topógrafo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
         {
           "empresa": "Tuca Pisos Construções",
           "func": "—",
@@ -1013,10 +783,103 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "LL Nogueira Tecnologia",
+          "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "DDS — Diálogo Diário de Seg.",
+      "count": 4,
+      "color": "#64748b",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "Campanha SST",
+      "count": 4,
+      "color": "#64748b",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Joel Leite Filho",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Davi De Castro Landim",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Ingryd Santos Borges",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "Contrato Social / Reg. MEI",
+      "count": 4,
+      "color": "#6366f1",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Murilo Pinheiro de Carvalho Camilo",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
         },
         {
           "empresa": "Erisvaldo Da Silva Santana",
@@ -1037,7 +900,7 @@
       "name": "PGR",
       "count": 4,
       "color": "#be123c",
-      "pct": 18,
+      "pct": 25,
       "entries": [
         {
           "empresa": "J F Lucena",
@@ -1070,7 +933,7 @@
       "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
       "count": 4,
       "color": "#64748b",
-      "pct": 18,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -1103,7 +966,7 @@
       "name": "Folha de Pagamento",
       "count": 3,
       "color": "#059669",
-      "pct": 14,
+      "pct": 19,
       "entries": [
         {
           "empresa": "Cedro Engenharia",
@@ -1127,10 +990,10 @@
     },
     {
       "id": "d11",
-      "name": "Comp. de Pagamento GPS/DARF",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
       "count": 3,
-      "color": "#64748b",
-      "pct": 14,
+      "color": "#7c3aed",
+      "pct": 19,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -1154,10 +1017,10 @@
     },
     {
       "id": "d12",
-      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+      "name": "Comp. de Pagamento GPS/DARF",
       "count": 3,
-      "color": "#7c3aed",
-      "pct": 14,
+      "color": "#64748b",
+      "pct": 19,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -1181,31 +1044,10 @@
     },
     {
       "id": "d13",
-      "name": "PCMSO",
-      "count": 2,
-      "color": "#be123c",
-      "pct": 9,
-      "entries": [
-        {
-          "empresa": "Tuca Pisos Construções",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d14",
       "name": "Contrato de Prestação de Serviço",
       "count": 2,
       "color": "#6366f1",
-      "pct": 9,
+      "pct": 12,
       "entries": [
         {
           "empresa": "Ronieli Mendes Bastos",
@@ -1222,11 +1064,26 @@
       ]
     },
     {
-      "id": "d15",
+      "id": "d14",
       "name": "CNDT",
       "count": 1,
       "color": "#0891b2",
-      "pct": 5,
+      "pct": 6,
+      "entries": [
+        {
+          "empresa": "Tuca Pisos Construções",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "PCMSO",
+      "count": 1,
+      "color": "#be123c",
+      "pct": 6,
       "entries": [
         {
           "empresa": "Tuca Pisos Construções",
@@ -1241,7 +1098,7 @@
       "name": "Inventário de Máquinas",
       "count": 1,
       "color": "#64748b",
-      "pct": 5,
+      "pct": 6,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -1256,7 +1113,7 @@
       "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
-      "pct": 5,
+      "pct": 6,
       "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -1271,7 +1128,7 @@
       "name": "ASO",
       "count": 1,
       "color": "#dc2626",
-      "pct": 5,
+      "pct": 6,
       "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -1294,7 +1151,13 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1306,6 +1169,12 @@
         },
         {
           "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
           "doc_s": "Folha de Pagamento",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1313,18 +1182,6 @@
         {
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Folha de Pagamento",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1350,59 +1207,6 @@
     },
     {
       "id": "s2",
-      "nome": "J F Lucena",
-      "focus": 7,
-      "total": 106,
-      "taxa": 7,
-      "crit": 4,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "Campanha SST",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "s3",
       "nome": "Tuca Pisos Construções",
       "focus": 5,
       "total": 137,
@@ -1410,18 +1214,6 @@
       "crit": 5,
       "pill_color": "#16a34a",
       "entries": [
-        {
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "CNDT",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
         {
           "func": "—",
           "doc_s": "CND Municipal",
@@ -1436,55 +1228,26 @@
         },
         {
           "func": "—",
+          "doc_s": "CNDT",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
           "doc_s": "PCMSO",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s4",
-      "nome": "Consórcio KTL Mairiporã (próprio)",
-      "focus": 5,
-      "total": 981,
-      "taxa": 1,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Campanha SST",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        },
-        {
-          "func": "Jose Ronaldo Da Costa",
-          "doc_s": "ASO",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s5",
+      "id": "s3",
       "nome": "Joel Leite Filho",
       "focus": 4,
       "total": 99,
@@ -1519,7 +1282,42 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s4",
+      "nome": "J F Lucena",
+      "focus": 4,
+      "total": 106,
+      "taxa": 4,
+      "crit": 4,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s5",
       "nome": "Murilo Pinheiro de Carvalho Camilo",
       "focus": 4,
       "total": 105,
@@ -1535,13 +1333,13 @@
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "CND Municipal",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "CND Municipal",
+          "doc_s": "CND FGTS — CRF",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1554,7 +1352,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s6",
       "nome": "Erisvaldo Da Silva Santana",
       "focus": 4,
       "total": 15,
@@ -1570,7 +1368,7 @@
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "Contrato Social / Reg. MEI",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1582,14 +1380,14 @@
         },
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
+          "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s8",
+      "id": "s7",
       "nome": "MCA Soluções em Engenharia",
       "focus": 4,
       "total": 23,
@@ -1605,6 +1403,12 @@
         },
         {
           "func": "—",
+          "doc_s": "CND Municipal",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
           "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1614,30 +1418,18 @@
           "doc_s": "CND Federal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s9",
+      "id": "s8",
       "nome": "Davi De Castro Landim",
       "focus": 4,
-      "total": 100,
+      "total": 99,
       "taxa": 4,
       "crit": 1,
       "pill_color": "#16a34a",
       "entries": [
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
         {
           "func": "—",
           "doc_s": "Campanha SST",
@@ -1652,6 +1444,12 @@
         },
         {
           "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg.",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
           "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1659,7 +1457,7 @@
       ]
     },
     {
-      "id": "s10",
+      "id": "s9",
       "nome": "CEC Transportes e Locação",
       "focus": 4,
       "total": 94,
@@ -1675,12 +1473,6 @@
         },
         {
           "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1690,40 +1482,17 @@
           "doc_s": "Comp. de Pagamento GPS/DARF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s11",
-      "nome": "Antoni Ferreira De Abreu",
-      "focus": 3,
-      "total": 82,
-      "taxa": 4,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s12",
+      "id": "s10",
       "nome": "Jeferson Da Silva Bonfim",
       "focus": 3,
       "total": 29,
@@ -1752,14 +1521,20 @@
       ]
     },
     {
-      "id": "s13",
+      "id": "s11",
       "nome": "Ingryd Santos Borges",
       "focus": 3,
-      "total": 100,
+      "total": 99,
       "taxa": 3,
       "crit": 0,
       "pill_color": "#16a34a",
       "entries": [
+        {
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg.",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
         {
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental",
@@ -1771,17 +1546,11 @@
           "doc_s": "Campanha SST",
           "badge": "pend",
           "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "s14",
+      "id": "s12",
       "nome": "Almir Godofredo Flores Cardoso",
       "focus": 3,
       "total": 84,
@@ -1791,6 +1560,12 @@
       "entries": [
         {
           "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
           "doc_s": "DDS — Diálogo Diário de Seg.",
           "badge": "pend",
           "st_s": "Pendente"
@@ -1800,17 +1575,11 @@
           "doc_s": "Campanha SST",
           "badge": "pend",
           "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "s15",
+      "id": "s13",
       "nome": "Valdir Rodrigues Topógrafo",
       "focus": 2,
       "total": 83,
@@ -1833,7 +1602,7 @@
       ]
     },
     {
-      "id": "s16",
+      "id": "s14",
       "nome": "Marina Costa Lani Leal",
       "focus": 2,
       "total": 22,
@@ -1856,30 +1625,7 @@
       ]
     },
     {
-      "id": "s17",
-      "nome": "Ronieli Mendes Bastos",
-      "focus": 2,
-      "total": 93,
-      "taxa": 2,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "s18",
+      "id": "s15",
       "nome": "Pejota Construções",
       "focus": 2,
       "total": 604,
@@ -1902,30 +1648,30 @@
       ]
     },
     {
-      "id": "s19",
-      "nome": "Diego Rodrigues De Castro",
+      "id": "s16",
+      "nome": "Consórcio KTL Mairiporã (próprio)",
       "focus": 2,
-      "total": 90,
-      "taxa": 2,
-      "crit": 1,
+      "total": 980,
+      "taxa": 0,
+      "crit": 2,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Contrato de Prestação de Serviço",
+          "doc_s": "Programa de Saúde Mental",
           "badge": "rep",
           "st_s": "Reprovado"
+        },
+        {
+          "func": "Jose Ronaldo Da Costa",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
         }
       ]
     },
     {
-      "id": "s20",
+      "id": "s17",
       "nome": "Gabriela Cidrine de Sena",
       "focus": 1,
       "total": 88,
@@ -1942,7 +1688,7 @@
       ]
     },
     {
-      "id": "s21",
+      "id": "s18",
       "nome": "Engemar SP Engenharia e Construções",
       "focus": 1,
       "total": 26,
@@ -1959,7 +1705,7 @@
       ]
     },
     {
-      "id": "s22",
+      "id": "s19",
       "nome": "Cedro Engenharia",
       "focus": 1,
       "total": 7,
@@ -1976,7 +1722,7 @@
       ]
     },
     {
-      "id": "s23",
+      "id": "s20",
       "nome": "João Nestardo Neto",
       "focus": 1,
       "total": 37,
@@ -1993,7 +1739,7 @@
       ]
     },
     {
-      "id": "s24",
+      "id": "s21",
       "nome": "Ruan da Cruz Celestino",
       "focus": 1,
       "total": 29,
@@ -2010,41 +1756,41 @@
       ]
     },
     {
-      "id": "s25",
-      "nome": "Cleiton Jose De Lima",
+      "id": "s22",
+      "nome": "Ronieli Mendes Bastos",
       "focus": 1,
-      "total": 90,
-      "taxa": 1,
-      "crit": 0,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "s26",
-      "nome": "LL Nogueira Tecnologia",
-      "focus": 1,
-      "total": 121,
+      "total": 93,
       "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
         }
       ]
     },
     {
-      "id": "s27",
+      "id": "s23",
+      "nome": "Diego Rodrigues De Castro",
+      "focus": 1,
+      "total": 90,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Contrato de Prestação de Serviço",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s24",
       "nome": "ICS Montagem e Instalação Elétrica",
       "focus": 1,
       "total": 38,
@@ -2061,7 +1807,7 @@
       ]
     },
     {
-      "id": "s28",
+      "id": "s25",
       "nome": "Shalom Terraplenagem Locações",
       "focus": 1,
       "total": 148,
@@ -2078,7 +1824,7 @@
       ]
     },
     {
-      "id": "s29",
+      "id": "s26",
       "nome": "Isabelly Duarte De Souza",
       "focus": 1,
       "total": 38,
@@ -2095,7 +1841,7 @@
       ]
     },
     {
-      "id": "s30",
+      "id": "s27",
       "nome": "Joclamar",
       "focus": 1,
       "total": 106,
@@ -2287,11 +2033,6 @@
       "status": "Pendências porém Integrado"
     },
     {
-      "fornecedor": "Cedro Engenharia",
-      "funcionario": "Bruno Salgado De Almeida",
-      "status": "Pendências porém Integrado"
-    },
-    {
       "fornecedor": "Cleiton Jose De Lima",
       "funcionario": "Cleiton Lima",
       "status": "Pendências porém Integrado"
@@ -2354,14 +2095,14 @@
   ],
   "cpci_detail": {
     "total": 59,
-    "n_liberado": 45,
+    "n_liberado": 46,
     "n_pend_pess": 4,
     "n_pend_emp": 59,
     "n_alocados": 54,
     "n_participaram": 5,
     "n_pend_falta_int": 3,
     "n_falta_int": 0,
-    "n_pend_integrado": 11,
+    "n_pend_integrado": 10,
     "combos": [
       {
         "si": "Pendências e Falta Integração",
@@ -2379,13 +2120,13 @@
         "si": "Pendências porém Integrado",
         "sp": "Sem pendências",
         "se": "Com pendências",
-        "qty": 10
+        "qty": 9
       },
       {
         "si": "Acesso Liberado",
         "sp": "Sem pendências",
         "se": "Com pendências",
-        "qty": 45
+        "qty": 46
       }
     ],
     "workers": [
@@ -2395,7 +2136,7 @@
         "status_int": "Pendências e Falta Integração",
         "alocacao": "Funcionários Alocados",
         "n_pess": 2,
-        "n_emp": 15,
+        "n_emp": 12,
         "docs_pessoais": [
           {
             "doc": "ASO",
@@ -2420,18 +2161,8 @@
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
+            "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
@@ -2440,27 +2171,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
+            "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2475,12 +2186,27 @@
             "sev": "pen"
           },
           {
-            "doc": "Apólice Seguro Garantia",
+            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2493,7 +2219,7 @@
         "status_int": "Pendências e Falta Integração",
         "alocacao": "Funcionários Alocados",
         "n_pess": 2,
-        "n_emp": 15,
+        "n_emp": 12,
         "docs_pessoais": [
           {
             "doc": "ASO",
@@ -2518,18 +2244,8 @@
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
+            "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
@@ -2538,27 +2254,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
+            "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2573,12 +2269,27 @@
             "sev": "pen"
           },
           {
-            "doc": "Apólice Seguro Garantia",
+            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2591,7 +2302,7 @@
         "status_int": "Pendências e Falta Integração",
         "alocacao": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 15,
+        "n_emp": 12,
         "docs_pessoais": [
           {
             "doc": "Ficha de EPI",
@@ -2611,18 +2322,8 @@
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
+            "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
@@ -2631,27 +2332,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
+            "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2666,12 +2347,27 @@
             "sev": "pen"
           },
           {
-            "doc": "Apólice Seguro Garantia",
+            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2684,7 +2380,7 @@
         "status_int": "Pendências porém Integrado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -2709,6 +2405,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -2717,21 +2423,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -2756,6 +2447,11 @@
             "sev": "val"
           },
           {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Pendente",
             "sev": "pen"
@@ -2766,22 +2462,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
             "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2791,7 +2472,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PGR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2806,7 +2497,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PGR",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2823,11 +2514,6 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
             "doc": "Campanha SST",
             "st_s": "Pendente",
             "sev": "pen"
@@ -2838,13 +2524,8 @@
             "sev": "pen"
           },
           {
-            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Isenção Ag. Aprovação",
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Pendente",
             "sev": "pen"
           },
           {
@@ -2858,7 +2539,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2880,6 +2571,11 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Pendente",
             "sev": "pen"
@@ -2890,8 +2586,8 @@
             "sev": "pen"
           },
           {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
@@ -2900,7 +2596,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2911,11 +2607,6 @@
           },
           {
             "doc": "CND FGTS — CRF",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2938,11 +2629,21 @@
         "docs_empresa": [
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
+            "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2957,22 +2658,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PGR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2999,6 +2690,21 @@
             "sev": "pen"
           },
           {
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -3010,21 +2716,6 @@
           },
           {
             "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "LTCAT",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3047,16 +2738,6 @@
         "docs_empresa": [
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3066,12 +2747,22 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3094,16 +2785,6 @@
         "docs_empresa": [
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3113,30 +2794,18 @@
             "sev": "pen"
           },
           {
-            "doc": "Contrato de Prestação de Serviço",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Bruno Salgado De Almeida",
-        "empresa": "Cedro Engenharia",
-        "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 2,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
           },
           {
-            "doc": "Folha de Pagamento",
-            "st_s": "Isen. Reprovada",
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Contrato de Prestação de Serviço",
+            "st_s": "Reprovado",
             "sev": "rep"
           }
         ],
@@ -3192,7 +2861,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3211,6 +2880,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3219,21 +2898,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3249,7 +2913,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3268,6 +2932,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3276,21 +2950,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3306,7 +2965,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3325,6 +2984,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3333,21 +3002,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3363,7 +3017,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3382,6 +3036,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3390,21 +3054,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3420,7 +3069,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3439,6 +3088,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3447,21 +3106,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3477,7 +3121,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3496,6 +3140,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3504,21 +3158,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3534,7 +3173,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3553,6 +3192,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3561,21 +3210,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3591,7 +3225,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3610,6 +3244,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3618,21 +3262,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3648,7 +3277,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3667,6 +3296,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3675,21 +3314,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3705,7 +3329,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3724,6 +3348,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3732,21 +3366,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3762,7 +3381,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3781,6 +3400,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3789,21 +3418,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3819,7 +3433,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3838,6 +3452,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3846,21 +3470,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3876,7 +3485,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3895,6 +3504,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3903,21 +3522,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3933,7 +3537,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3952,6 +3556,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -3960,21 +3574,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -3990,7 +3589,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4009,6 +3608,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -4017,21 +3626,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -4047,7 +3641,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4066,6 +3660,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -4074,21 +3678,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -4104,7 +3693,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4123,6 +3712,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -4131,21 +3730,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -4161,7 +3745,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4180,6 +3764,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -4188,21 +3782,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -4218,7 +3797,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4237,6 +3816,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -4245,21 +3834,6 @@
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Em Validação",
             "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
           },
           {
             "doc": "Programa de Saúde Mental",
@@ -4275,7 +3849,7 @@
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4294,6 +3868,16 @@
             "sev": "val"
           },
           {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Em Validação",
             "sev": "val"
@@ -4304,22 +3888,54 @@
             "sev": "val"
           },
           {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
             "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Givanildo Ferreira Dos Santos",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -4341,17 +3957,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4361,7 +3972,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4372,53 +3988,6 @@
           }
         ],
         "sev": "pen"
-      },
-      {
-        "nome": "Givanildo Ferreira Dos Santos",
-        "empresa": "Souza Soares — Locações e Serviços",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
-        "n_pess": 0,
-        "n_emp": 7,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Inventário de Máquinas",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
       },
       {
         "nome": "Adriano Ernandes Da Silva",
@@ -4463,7 +4032,7 @@
         "sev": "rep"
       },
       {
-        "nome": "Antonio Pedro Cosme Do Vale",
+        "nome": "Antonio Da Cruz Ferreira Silva",
         "empresa": "Pejota Construções",
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
@@ -4841,48 +4410,6 @@
         "sev": "rep"
       },
       {
-        "nome": "José Risonaldo Barros Albuquerque",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
         "nome": "Juscimar Carvalho Silva",
         "empresa": "Pejota Construções",
         "status_int": "Acesso Liberado",
@@ -4967,7 +4494,7 @@
         "sev": "rep"
       },
       {
-        "nome": "Raimundo Nonato Vieira Do Nascimento",
+        "nome": "Patricio Nascimento Da Silva",
         "empresa": "Pejota Construções",
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários Alocados",
@@ -5093,7 +4620,7 @@
         "sev": "rep"
       },
       {
-        "nome": "Antonio Da Cruz Ferreira Silva",
+        "nome": "Antonio Pedro Cosme Do Vale",
         "empresa": "Pejota Construções",
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários que já participaram",
@@ -5177,7 +4704,7 @@
         "sev": "rep"
       },
       {
-        "nome": "Patricio Nascimento Da Silva",
+        "nome": "José Risonaldo Barros Albuquerque",
         "empresa": "Pejota Construções",
         "status_int": "Acesso Liberado",
         "alocacao": "Funcionários que já participaram",
@@ -5261,6 +4788,48 @@
         "sev": "rep"
       },
       {
+        "nome": "Raimundo Nonato Vieira Do Nascimento",
+        "empresa": "Pejota Construções",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
         "nome": "Jeferson Da Silva Bonfim",
         "empresa": "JEFERSON DA SILVA BONFIM",
         "status_int": "Acesso Liberado",
@@ -5281,6 +4850,28 @@
           },
           {
             "doc": "CND FGTS — CRF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Bruno Salgado De Almeida",
+        "empresa": "Cedro Engenharia",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 2,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
