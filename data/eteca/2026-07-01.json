@@ -3,12 +3,12 @@
     "projeto": "eteca",
     "data": "2026-07-01",
     "total": 3405,
-    "nc": 163,
-    "na": 11,
-    "conf_pct": 95.21292,
-    "ader_pct": 99.67695,
+    "nc": 161,
+    "na": 10,
+    "conf_pct": 95.27166,
+    "ader_pct": 99.70631,
     "n_subs": 28,
-    "conf_fmt": "95,2%",
+    "conf_fmt": "95,3%",
     "ader_fmt": "99,7%",
     "conf_class": "kpi-green",
     "ader_class": "kpi-green",
@@ -30,8 +30,8 @@
   },
   "variacao": {
     "data_anterior": "2026-06-30",
-    "d_conf": -0.318,
-    "d_ader": -0.145,
+    "d_conf": -0.256,
+    "d_ader": -0.116,
     "d_total": 1.099,
     "d_subs": 0.0,
     "d_cp": 8.052,
@@ -40,7 +40,7 @@
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2049,
+      "qty": 2050,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
@@ -64,7 +64,7 @@
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
-      "qty": 110,
+      "qty": 109,
       "color": "#d97706",
       "is_nc": true,
       "is_na": false,
@@ -80,34 +80,34 @@
     },
     {
       "label": "Perto do Vencimento",
-      "qty": 39,
+      "qty": 40,
       "color": "#f97316",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.1
+      "pct": 1.2
     },
     {
       "label": "Em Validação",
-      "qty": 19,
+      "qty": 17,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.6
-    },
-    {
-      "label": "Pendente",
-      "qty": 11,
-      "color": "#ca8a04",
-      "is_nc": true,
-      "is_na": true,
-      "pct": 0.3
+      "pct": 0.5
     },
     {
       "label": "Inválido",
-      "qty": 9,
+      "qty": 11,
       "color": "#dc2626",
       "is_nc": true,
       "is_na": false,
+      "pct": 0.3
+    },
+    {
+      "label": "Pendente",
+      "qty": 10,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
       "pct": 0.3
     },
     {
@@ -136,21 +136,21 @@
       "Aprovado pelo Cliente",
       "Perto do Vencimento",
       "Em Validação",
-      "Pendente",
       "Inválido",
+      "Pendente",
       "Pend. — Isenção Reprovada",
       "Reprovado/Vencido"
     ],
     "data": [
-      2049,
+      2050,
       955,
       146,
-      110,
+      109,
       53,
-      39,
-      19,
+      40,
+      17,
       11,
-      9,
+      10,
       8,
       6
     ],
@@ -162,8 +162,8 @@
       "#7c3aed",
       "#f97316",
       "#2563a8",
-      "#ca8a04",
       "#dc2626",
+      "#ca8a04",
       "#be123c",
       "#9f1239"
     ]
@@ -171,74 +171,10 @@
   "nc_status": [
     {
       "id": "ns1",
-      "label": "Pendente",
-      "color": "#ca8a04",
-      "count": 11,
-      "pct": 100,
-      "entries": [
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg."
-        },
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "doc_s": "Campanha SST"
-        },
-        {
-          "empresa": "Fluiter Engenharia e Soluções",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Ryfal Construções e Reformas",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Ruan da Cruz Celestino",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Seitech Serv. Instalação e Automação",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "doc_s": "CNDT"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        }
-      ]
-    },
-    {
-      "id": "ns2",
       "label": "Inválido",
       "color": "#dc2626",
-      "count": 9,
-      "pct": 82,
+      "count": 11,
+      "pct": 100,
       "entries": [
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -249,6 +185,16 @@
           "empresa": "Potência Terraplenagem e Locação",
           "func": "—",
           "doc_s": "PGR"
+        },
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
         },
         {
           "empresa": "Pedro H. Vercosa Geraldes",
@@ -284,6 +230,65 @@
           "empresa": "Antoni Ferreira De Abreu",
           "func": "Antoni Ferreira De Abreu Abreu",
           "doc_s": "ASO"
+        }
+      ]
+    },
+    {
+      "id": "ns2",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 10,
+      "pct": 91,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Campanha SST"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg."
+        },
+        {
+          "empresa": "Fluiter Engenharia e Soluções",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CNDT"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
         }
       ]
     },
@@ -380,7 +385,7 @@
     {
       "id": "d1",
       "name": "Evidências Prog. Saúde Mental",
-      "count": 5,
+      "count": 4,
       "color": "#64748b",
       "pct": 100,
       "entries": [
@@ -403,12 +408,6 @@
           "st_s": "Pendente"
         },
         {
-          "empresa": "Ruan da Cruz Celestino",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
           "empresa": "Seitech Serv. Instalação e Automação",
           "func": "—",
           "badge": "pend",
@@ -421,7 +420,7 @@
       "name": "ASO",
       "count": 4,
       "color": "#dc2626",
-      "pct": 80,
+      "pct": 100,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -454,7 +453,7 @@
       "name": "Plano de Rigging (Içamento)",
       "count": 3,
       "color": "#2563a8",
-      "pct": 60,
+      "pct": 75,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -478,10 +477,37 @@
     },
     {
       "id": "d4",
+      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+      "count": 3,
+      "color": "#64748b",
+      "pct": 75,
+      "entries": [
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Bruno Luiz Fonseca Pimenta",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d5",
       "name": "PGR",
       "count": 2,
       "color": "#be123c",
-      "pct": 40,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -498,11 +524,11 @@
       ]
     },
     {
-      "id": "d5",
+      "id": "d6",
       "name": "LTCAT",
       "count": 2,
       "color": "#be123c",
-      "pct": 40,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -519,11 +545,11 @@
       ]
     },
     {
-      "id": "d6",
+      "id": "d7",
       "name": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
       "count": 2,
       "color": "#9f1239",
-      "pct": 40,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -540,11 +566,11 @@
       ]
     },
     {
-      "id": "d7",
+      "id": "d8",
       "name": "CND FGTS — CRF",
       "count": 2,
       "color": "#0891b2",
-      "pct": 40,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Pedro H. Vercosa Geraldes",
@@ -561,11 +587,11 @@
       ]
     },
     {
-      "id": "d8",
+      "id": "d9",
       "name": "CND Federal",
       "count": 2,
       "color": "#0891b2",
-      "pct": 40,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Pedro H. Vercosa Geraldes",
@@ -582,26 +608,11 @@
       ]
     },
     {
-      "id": "d9",
-      "name": "DDS — Diálogo Diário de Seg.",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 20,
-      "entries": [
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
       "id": "d10",
       "name": "Campanha SST",
       "count": 1,
       "color": "#64748b",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -613,10 +624,25 @@
     },
     {
       "id": "d11",
+      "name": "DDS — Diálogo Diário de Seg.",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 25,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d12",
       "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Real Eng Pinturas em Geral",
@@ -627,11 +653,11 @@
       ]
     },
     {
-      "id": "d12",
+      "id": "d13",
       "name": "ASO Demissional",
       "count": 1,
       "color": "#dc2626",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -642,26 +668,11 @@
       ]
     },
     {
-      "id": "d13",
-      "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 20,
-      "entries": [
-        {
-          "empresa": "Ryfal Construções e Reformas",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
       "id": "d14",
       "name": "Comp. de Pagamento GPS/DARF",
       "count": 1,
       "color": "#64748b",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Ryfal Construções e Reformas",
@@ -676,7 +687,7 @@
       "name": "Folha de Pagamento",
       "count": 1,
       "color": "#059669",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Ryfal Construções e Reformas",
@@ -691,7 +702,7 @@
       "name": "Apólice Seguro Garantia",
       "count": 1,
       "color": "#0f766e",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -706,7 +717,7 @@
       "name": "Plano Resgate Altura",
       "count": 1,
       "color": "#2563a8",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -721,7 +732,7 @@
       "name": "CNDT",
       "count": 1,
       "color": "#0891b2",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Lais Silvestre Gardin",
@@ -736,7 +747,7 @@
       "name": "Contrato Social / Reg. MEI",
       "count": 1,
       "color": "#6366f1",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Lais Silvestre Gardin",
@@ -751,7 +762,7 @@
       "name": "CND Municipal",
       "count": 1,
       "color": "#0891b2",
-      "pct": 20,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Lais Silvestre Gardin",
@@ -827,6 +838,12 @@
         },
         {
           "func": "—",
+          "doc_s": "Campanha SST",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental",
           "badge": "pend",
           "st_s": "Pendente"
@@ -834,12 +851,6 @@
         {
           "func": "—",
           "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Campanha SST",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -862,25 +873,25 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CNDT",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
           "doc_s": "CND Federal",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "—",
+          "doc_s": "CNDT",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
           "doc_s": "Contrato Social / Reg. MEI",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -958,6 +969,29 @@
     },
     {
       "id": "s6",
+      "nome": "Bruno Luiz Fonseca Pimenta",
+      "focus": 2,
+      "total": 44,
+      "taxa": 5,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s7",
       "nome": "Pedro H. Vercosa Geraldes",
       "focus": 2,
       "total": 29,
@@ -980,7 +1014,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s8",
       "nome": "Seitech Serv. Instalação e Automação",
       "focus": 2,
       "total": 82,
@@ -1003,7 +1037,7 @@
       ]
     },
     {
-      "id": "s8",
+      "id": "s9",
       "nome": "Real Eng Pinturas em Geral",
       "focus": 1,
       "total": 144,
@@ -1020,7 +1054,7 @@
       ]
     },
     {
-      "id": "s9",
+      "id": "s10",
       "nome": "Gabriela Cidrine de Sena",
       "focus": 1,
       "total": 78,
@@ -1037,7 +1071,7 @@
       ]
     },
     {
-      "id": "s10",
+      "id": "s11",
       "nome": "Potência Terraplenagem e Locação",
       "focus": 1,
       "total": 82,
@@ -1050,23 +1084,6 @@
           "doc_s": "PGR",
           "badge": "inv",
           "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s11",
-      "nome": "Ruan da Cruz Celestino",
-      "focus": 1,
-      "total": 17,
-      "taxa": 6,
-      "crit": 0,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
@@ -1181,15 +1198,11 @@
     ],
     "Júlio Sebastião De Oliveira": [
       {
+        "doc": "Carteira do Conselho Regional - Registro de Classe",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
         "doc": "Carteira Profissional",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "CNH",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1197,11 +1210,15 @@
         "st_s": "Isenção Ag. Aprovação"
       },
       {
+        "doc": "CNH",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
         "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
-        "doc": "Carteira do Conselho Regional - Registro de Classe",
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1560,6 +1577,14 @@
       "data_venc": "20/08/2026",
       "dias": 50,
       "tag": "cinza"
+    },
+    {
+      "empresa": "Alufer Engenharia Ltda.",
+      "func": "—",
+      "doc": "CND Municipal",
+      "data_venc": "26/08/2026",
+      "dias": 56,
+      "tag": "cinza"
     }
   ],
   "cpci": [
@@ -1625,8 +1650,8 @@
     "n_pend_pess": 14,
     "n_pend_emp": 88,
     "n_nd": 33,
-    "n_alocados": 51,
-    "n_participaram": 13,
+    "n_alocados": 54,
+    "n_participaram": 10,
     "n_pend_falta_int": 2,
     "n_falta_int": 1,
     "n_pend_integrado": 8,
@@ -1696,7 +1721,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -1711,11 +1736,6 @@
             "sev": "val"
           },
           {
-            "doc": "CND Municipal",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "CNDT",
             "st_s": "Em Validação",
             "sev": "val"
@@ -1726,17 +1746,17 @@
             "sev": "rep"
           },
           {
+            "doc": "Campanha SST",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Campanha SST",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -1762,7 +1782,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 9,
+        "n_emp": 8,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -1777,11 +1797,6 @@
             "sev": "val"
           },
           {
-            "doc": "CND Municipal",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "CNDT",
             "st_s": "Em Validação",
             "sev": "val"
@@ -1792,17 +1807,17 @@
             "sev": "rep"
           },
           {
+            "doc": "Campanha SST",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Campanha SST",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -1837,17 +1852,7 @@
             "sev": "val"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1857,7 +1862,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1893,17 +1908,12 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1913,12 +1923,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCMSO",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -1954,12 +1969,12 @@
             "sev": "val"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2020,7 +2035,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2030,17 +2045,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2166,6 +2181,41 @@
             "sev": "pen"
           },
           {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de demolição, conforme NR-18",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de ventilação dos espaços confinados",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -2176,82 +2226,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "ART (especifico por serviço)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Proj. Escoramento de Vala",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "LTCAT",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Trabalho em Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de demolição, conforme NR-18",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de Segurança para atividades com escavações",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de ventilação dos espaços confinados",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2261,7 +2236,47 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "ART (especifico por serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de Segurança para atividades com escavações",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Proj. Escoramento de Vala",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2297,22 +2312,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2322,7 +2327,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2367,22 +2382,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2392,7 +2397,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2437,22 +2452,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2462,7 +2467,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2507,22 +2522,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2532,7 +2537,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2577,22 +2592,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2602,7 +2607,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2647,22 +2662,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2672,7 +2677,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2717,22 +2732,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2742,7 +2747,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2787,22 +2802,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2812,7 +2817,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2857,22 +2872,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2882,7 +2887,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2927,22 +2942,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2952,7 +2957,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2992,17 +3007,7 @@
             "sev": "val"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3012,7 +3017,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3042,17 +3057,7 @@
             "sev": "val"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3062,7 +3067,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3092,17 +3107,7 @@
             "sev": "val"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3112,7 +3117,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3142,17 +3157,7 @@
             "sev": "val"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3162,7 +3167,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3192,6 +3207,21 @@
             "sev": "val"
           },
           {
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -3202,22 +3232,52 @@
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "LTCAT",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Abel Dos Santos Germano",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -3990,66 +4050,21 @@
         "sev": "rep"
       },
       {
-        "nome": "Abel Dos Santos Germano",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Já participou",
-        "alocacao_raw": "Funcionários que já participaram",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
         "nome": "Bruno Pimenta",
         "empresa": "Bruno Luiz Fonseca Pimenta",
         "cargo": "Técnico De Controle De Qualidade E Projetos",
         "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Já participou",
-        "alocacao_raw": "Funcionários que já participaram",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 4,
         "docs_pessoais": [],
         "docs_empresa": [
           {
             "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "GFD — Guia FGTS Digital",
@@ -4067,7 +4082,7 @@
             "sev": "pen"
           }
         ],
-        "sev": "val"
+        "sev": "rep"
       },
       {
         "nome": "Pedro Henrique Verçosa Geraldes",
@@ -4134,6 +4149,26 @@
           {
             "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Arthur De Faria Werner",
+        "empresa": "Wert Engenharia e Soluções",
+        "cargo": "Coordenador De Engenharia E Suprimentos",
+        "regime": "Sócio",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 1,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
         ],
@@ -4240,26 +4275,6 @@
         "sev": "pen"
       },
       {
-        "nome": "Arthur De Faria Werner",
-        "empresa": "Wert Engenharia e Soluções",
-        "cargo": "Coordenador De Engenharia E Suprimentos",
-        "regime": "Sócio",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Já participou",
-        "alocacao_raw": "Funcionários que já participaram",
-        "n_pess": 0,
-        "n_emp": 1,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "pen"
-      },
-      {
         "nome": "Júlio Sebastião De Oliveira",
         "empresa": "Consórcio ETE Caieiras (próprio)",
         "cargo": "Técnico De Segurança Do Trabalho",
@@ -4271,17 +4286,12 @@
         "n_emp": 6,
         "docs_pessoais": [
           {
+            "doc": "Carteira do Conselho Regional - Registro de Classe",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Carteira Profissional",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "CNH",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4291,12 +4301,17 @@
             "sev": "pen"
           },
           {
+            "doc": "CNH",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Carteira do Conselho Regional - Registro de Classe",
+            "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4554,22 +4569,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4579,7 +4584,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4624,22 +4639,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4649,7 +4654,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4694,22 +4709,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4719,7 +4724,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4764,22 +4779,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4789,7 +4794,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4834,22 +4849,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4859,7 +4864,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4904,22 +4919,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4929,7 +4934,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
