@@ -687,12 +687,11 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
     n_falta_int    = sum(1 for w in detail if w['status_int'] == 'Falta Integração')
     n_pend_integr  = sum(1 for w in detail if w['status_int'] == 'Pendências porém Integrado')
 
-    # Campos de ativos (Alocados + Participaram, excluindo Demitidos e N.D.)
-    _ATIVOS = {'Funcionários Alocados', 'Funcionários que já participaram'}
-    n_ativos          = sum(1 for w in detail if w['alocacao_raw'] in _ATIVOS)
-    n_ativos_doc_ok   = sum(1 for w in detail if w['alocacao_raw'] in _ATIVOS and w['n_pess'] == 0)
-    n_ativos_doc_pend = sum(1 for w in detail if w['alocacao_raw'] in _ATIVOS and w['n_pess'] > 0)
-    n_ativos_acesso_lib = sum(1 for w in detail if w['alocacao_raw'] in _ATIVOS and w['status_int'] == 'Acesso Liberado')
+    # Ativos = trabalhadores presentes no CSV de integração (status_int != 'N.D.')
+    n_ativos            = sum(1 for w in detail if w['status_int'] != 'N.D.')
+    n_ativos_doc_ok     = sum(1 for w in detail if w['status_int'] != 'N.D.' and w['n_pess'] == 0)
+    n_ativos_doc_pend   = sum(1 for w in detail if w['status_int'] != 'N.D.' and w['n_pess'] > 0)
+    n_ativos_acesso_lib = sum(1 for w in detail if w['status_int'] == 'Acesso Liberado')
     n_ativos_int_pend   = n_ativos - n_ativos_acesso_lib
     n_ativos_pend_emp   = sum(1 for w in detail if w['status_int'] != 'N.D.' and w['n_emp'] > 0)
 
@@ -762,20 +761,22 @@ def main():
         cpci_detail = process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label)
         if cpci_detail:
             print(f'[etl] cpci_detail: {cpci_detail["total"]} funcionários')
-            # Redefinir CP e CI com base nos ativos (docs CSV)
-            nat = cpci_detail.get('n_ativos', 0)
-            if nat > 0:
-                new_cp_pct = cpci_detail['n_ativos_doc_ok'] / nat * 100
-                new_ci_pct = cpci_detail['n_ativos_acesso_lib'] / nat * 100
-                if int_result:
-                    int_result['cp_ok']    = cpci_detail['n_ativos_doc_ok']
+            # CP: recalcular sobre ativos (CSV integração como denominador autoritário)
+            # CI: manter do process_integration (CSV integração é fonte autoritária)
+            if int_result:
+                nat = int_result.get('total_workers', 0)  # ativos = presentes no CSV integração
+                if nat > 0:
+                    cp_ok      = cpci_detail['n_ativos_doc_ok']
+                    new_cp_pct = cp_ok / nat * 100
+                    int_result['cp_ok']    = cp_ok
                     int_result['cp_pct']   = round(new_cp_pct, 5)
                     int_result['cp_fmt']   = fmt_pct1(new_cp_pct)
                     int_result['cp_class'] = kpi_class(new_cp_pct, CP_TARGET)
-                    int_result['ci_ok']    = cpci_detail['n_ativos_acesso_lib']
-                    int_result['ci_pct']   = round(new_ci_pct, 5)
-                    int_result['ci_fmt']   = fmt_pct1(new_ci_pct)
-                    int_result['ci_class'] = kpi_class(new_ci_pct, CI_TARGET)
+                    # CI permanece inalterado (process_integration já computou corretamente)
+                # Sincronizar cpci_detail com contagens autoritárias do CSV integração
+                cpci_detail['n_ativos']            = nat
+                cpci_detail['n_ativos_acesso_lib'] = int_result.get('ci_ok', 0)
+                cpci_detail['n_ativos_int_pend']   = nat - int_result.get('ci_ok', 0)
 
     # Histórico
     historico = load_historico(projeto)

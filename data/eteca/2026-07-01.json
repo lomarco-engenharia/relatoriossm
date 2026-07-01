@@ -13,20 +13,20 @@
     "conf_class": "kpi-green",
     "ader_class": "kpi-green",
     "total_workers": 55,
-    "cp_ok": 55,
+    "cp_ok": 48,
     "cp_nc": 11,
-    "cp_pct": 85.9375,
-    "cp_fmt": "85,9%",
+    "cp_pct": 87.27273,
+    "cp_fmt": "87,3%",
     "cp_class": "kpi-yellow",
-    "ci_ok": 44,
+    "ci_ok": 52,
     "ci_nc": 3,
-    "ci_pct": 68.75,
-    "ci_fmt": "68,8%",
+    "ci_pct": 94.54545,
+    "ci_fmt": "94,5%",
     "ci_class": "kpi-yellow",
     "ci_acesso": 44,
     "ci_pend_int": 8,
     "ci_falta": 1,
-    "n_ativos": 64
+    "n_ativos": 55
   },
   "variacao": {
     "data_anterior": "2026-06-30",
@@ -34,8 +34,8 @@
     "d_ader": -0.145,
     "d_total": 1.099,
     "d_subs": 0.0,
-    "d_cp": 6.399,
-    "d_ci": -27.041
+    "d_cp": 8.052,
+    "d_ci": 0.334
   },
   "status_rows": [
     {
@@ -1630,11 +1630,11 @@
     "n_pend_falta_int": 2,
     "n_falta_int": 1,
     "n_pend_integrado": 8,
-    "n_ativos": 64,
-    "n_ativos_doc_ok": 55,
-    "n_ativos_doc_pend": 9,
-    "n_ativos_acesso_lib": 44,
-    "n_ativos_int_pend": 20,
+    "n_ativos": 55,
+    "n_ativos_doc_ok": 48,
+    "n_ativos_doc_pend": 7,
+    "n_ativos_acesso_lib": 52,
+    "n_ativos_int_pend": 3,
     "n_ativos_pend_emp": 55,
     "combos": [
       {

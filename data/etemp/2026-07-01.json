@@ -13,10 +13,10 @@
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-green",
     "total_workers": 59,
-    "cp_ok": 46,
+    "cp_ok": 55,
     "cp_nc": 13,
-    "cp_pct": 77.9661,
-    "cp_fmt": "78,0%",
+    "cp_pct": 93.22034,
+    "cp_fmt": "93,2%",
     "cp_class": "kpi-yellow",
     "ci_ok": 56,
     "ci_nc": 3,
@@ -25,7 +25,8 @@
     "ci_class": "kpi-yellow",
     "ci_acesso": 46,
     "ci_pend_int": 10,
-    "ci_falta": 0
+    "ci_falta": 0,
+    "n_ativos": 59
   },
   "variacao": {
     "data_anterior": "2026-06-30",
@@ -33,7 +34,7 @@
     "d_ader": -0.338,
     "d_total": 1.116,
     "d_subs": 0.0,
-    "d_cp": 4.545,
+    "d_cp": 25.0,
     "d_ci": 0.0
   },
   "status_rows": [
@@ -2094,15 +2095,22 @@
     }
   ],
   "cpci_detail": {
-    "total": 59,
+    "total": 103,
     "n_liberado": 46,
-    "n_pend_pess": 4,
-    "n_pend_emp": 59,
-    "n_alocados": 54,
-    "n_participaram": 5,
+    "n_pend_pess": 6,
+    "n_pend_emp": 103,
+    "n_nd": 44,
+    "n_alocados": 48,
+    "n_participaram": 31,
     "n_pend_falta_int": 3,
     "n_falta_int": 0,
     "n_pend_integrado": 10,
+    "n_ativos": 59,
+    "n_ativos_doc_ok": 55,
+    "n_ativos_doc_pend": 4,
+    "n_ativos_acesso_lib": 56,
+    "n_ativos_int_pend": 3,
+    "n_ativos_pend_emp": 59,
     "combos": [
       {
         "si": "Pendências e Falta Integração",
@@ -2127,14 +2135,29 @@
         "sp": "Sem pendências",
         "se": "Com pendências",
         "qty": 46
+      },
+      {
+        "si": "N.D.",
+        "sp": "Com pendências",
+        "se": "Com pendências",
+        "qty": 2
+      },
+      {
+        "si": "N.D.",
+        "sp": "Sem pendências",
+        "se": "Com pendências",
+        "qty": 42
       }
     ],
     "workers": [
       {
         "nome": "Josemar Ferreira Lucena",
         "empresa": "J F LUCENA",
+        "cargo": "Gerente De Obra",
+        "regime": "Autônomo",
         "status_int": "Pendências e Falta Integração",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 2,
         "n_emp": 12,
         "docs_pessoais": [
@@ -2216,8 +2239,11 @@
       {
         "nome": "Onilio Cardozo Cantuaria Filho",
         "empresa": "J F LUCENA",
+        "cargo": "Ajudante Geral",
+        "regime": "Autônomo",
         "status_int": "Pendências e Falta Integração",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 2,
         "n_emp": 12,
         "docs_pessoais": [
@@ -2299,8 +2325,11 @@
       {
         "nome": "Aleomar Soares Alves",
         "empresa": "J F LUCENA",
+        "cargo": "Pedreiro",
+        "regime": "Autônomo",
         "status_int": "Pendências e Falta Integração",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 12,
         "docs_pessoais": [
@@ -2377,8 +2406,11 @@
       {
         "nome": "Gabriel De Lima Rodrigues Dos Reis",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 8,
         "docs_pessoais": [
@@ -2435,8 +2467,11 @@
       {
         "nome": "Almir Godofredo",
         "empresa": "ALMIR GODOFREDO FLORES CARDOSO",
+        "cargo": "Analista Departamento Pessoal",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 12,
         "docs_pessoais": [],
@@ -2507,8 +2542,11 @@
       {
         "nome": "Davi De Castro Landim",
         "empresa": "DAVI DE CASTRO LANDIM",
+        "cargo": "Assistente De Comunicação",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 9,
         "docs_pessoais": [],
@@ -2564,8 +2602,11 @@
       {
         "nome": "Ingryd Borges",
         "empresa": "INGRYD SANTOS BORGES",
+        "cargo": "Agente Social",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 9,
         "docs_pessoais": [],
@@ -2621,8 +2662,11 @@
       {
         "nome": "Ronieli Bastos",
         "empresa": "RONIELI MENDES BASTOS",
+        "cargo": "Operador De Máquinas Pesadas",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 9,
         "docs_pessoais": [],
@@ -2678,8 +2722,11 @@
       {
         "nome": "Igor Chaves",
         "empresa": "ICS Montagem e Instalação Elétrica",
+        "cargo": "Supervisor De Eletrica",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -2730,8 +2777,11 @@
       {
         "nome": "Cleiton Lima",
         "empresa": "CLEITON JOSE DE LIMA",
+        "cargo": "Mecânico Montador",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -2777,8 +2827,11 @@
       {
         "nome": "Diego Rodrigues",
         "empresa": "DIEGO RODRIGUES DE CASTRO",
+        "cargo": "Mecânico Montador",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 5,
         "docs_pessoais": [],
@@ -2814,8 +2867,11 @@
       {
         "nome": "Giovani Waligura",
         "empresa": "Joclamar",
+        "cargo": "Analista Automação Junior",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 2,
         "docs_pessoais": [],
@@ -2836,8 +2892,11 @@
       {
         "nome": "Glênio Benedito Pereira Gomes",
         "empresa": "Joclamar",
+        "cargo": "Analista Automação Junior",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 2,
         "docs_pessoais": [],
@@ -2858,8 +2917,11 @@
       {
         "nome": "Alcindo Largueza",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -2910,8 +2972,11 @@
       {
         "nome": "Alessandro De Oliveira Espirito Santo",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Almoxarife",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -2962,8 +3027,11 @@
       {
         "nome": "Edson Wilson Dos Santos",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Determinado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3014,8 +3082,11 @@
       {
         "nome": "Erisvaldo Da Silva Santana",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Mestre De Obra",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3066,8 +3137,11 @@
       {
         "nome": "Janaína Da Rocha Morais",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Assistente Administrativo",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3118,8 +3192,11 @@
       {
         "nome": "Jose Pinto Simoes",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3170,8 +3247,11 @@
       {
         "nome": "Jose Severino Da Silva Filho",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3222,8 +3302,11 @@
       {
         "nome": "Jucinaldo Pedro Dos Santos",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3274,8 +3357,11 @@
       {
         "nome": "Manoel Constantino Franca De Macedo",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3326,8 +3412,11 @@
       {
         "nome": "Marcelo Miguel Da Costa",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Meio Oficial Marteleteiro",
+        "regime": "CLT - Tempo Determinado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3378,8 +3467,11 @@
       {
         "nome": "Maria Antônia Alves",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Auxiliar De Serviços Gerais",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3430,8 +3522,11 @@
       {
         "nome": "Mauro Cesar Soares De Araujo",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Engenheiro Civil",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3482,8 +3577,11 @@
       {
         "nome": "Odais José Santos Do Vale",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3534,8 +3632,11 @@
       {
         "nome": "Osvaldo Dos Reis Junior",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3586,8 +3687,11 @@
       {
         "nome": "Patricia De Almeida Dos Santos",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Auxiliar De Engenharia",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3638,8 +3742,11 @@
       {
         "nome": "Paulo Oliveira Da Silva",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3690,8 +3797,11 @@
       {
         "nome": "Raimundo José",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Armador",
+        "regime": "CLT - Horista",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3742,8 +3852,11 @@
       {
         "nome": "Reinaldo Aparecido Gonçalves",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Ajudante Prático",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3794,8 +3907,11 @@
       {
         "nome": "Ronaldo Jesus Dos Santos",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3846,8 +3962,11 @@
       {
         "nome": "Vivaldo Moraes Nascimento",
         "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Determinado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 8,
         "docs_pessoais": [],
@@ -3896,10 +4015,63 @@
         "sev": "rep"
       },
       {
+        "nome": "Isabelly Duarte",
+        "empresa": "ISABELLY DUARTE DE SOUZA",
+        "cargo": "Assistente Administrativo",
+        "regime": "Sócio",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND FGTS — CRF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
         "nome": "Givanildo Ferreira Dos Santos",
         "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Motorista De Comboio",
+        "regime": "CLT - Tempo Determinado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -3943,141 +4115,13 @@
         "sev": "rep"
       },
       {
-        "nome": "Isabelly Duarte",
-        "empresa": "ISABELLY DUARTE DE SOUZA",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 7,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "CND FGTS — CRF",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "pen"
-      },
-      {
         "nome": "Adriano Ernandes Da Silva",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Antonio Da Cruz Ferreira Silva",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Edilandio Araujo Silva De Melo",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4118,50 +4162,11 @@
       {
         "nome": "Francisco Luiz Alves Da Silva",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Francisco Rodrigues Do Vale",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4202,8 +4207,11 @@
       {
         "nome": "Gildemar Rodrigues Pereira",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4244,8 +4252,11 @@
       {
         "nome": "Haroldo Lacerda",
         "empresa": "Pejota Construções",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4286,8 +4297,11 @@
       {
         "nome": "Joel Oliveira",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4328,8 +4342,11 @@
       {
         "nome": "José Luiz Avila Vieira",
         "empresa": "Pejota Construções",
+        "cargo": "Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4370,8 +4387,11 @@
       {
         "nome": "José Regilovan Barros De Albuquerque",
         "empresa": "Pejota Construções",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4412,8 +4432,11 @@
       {
         "nome": "Juscimar Carvalho Silva",
         "empresa": "Pejota Construções",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4454,50 +4477,11 @@
       {
         "nome": "Nivaldo Perira Da Silva",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Folha de Pagamento",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Patricio Nascimento Da Silva",
-        "empresa": "Pejota Construções",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4538,8 +4522,11 @@
       {
         "nome": "Robson Oliveira De Lima",
         "empresa": "Pejota Construções",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4580,8 +4567,56 @@
       {
         "nome": "Ronison Barros Albuquerque",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Antonio Da Cruz Ferreira Silva",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4622,8 +4657,101 @@
       {
         "nome": "Antonio Pedro Cosme Do Vale",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Edilandio Araujo Silva De Melo",
+        "empresa": "Pejota Construções",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Rodrigues Do Vale",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4664,8 +4792,11 @@
       {
         "nome": "José Raimundo De Sousa Ribeiro",
         "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4706,8 +4837,56 @@
       {
         "nome": "José Risonaldo Barros Albuquerque",
         "empresa": "Pejota Construções",
+        "cargo": "Soldador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Patricio Nascimento Da Silva",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4748,8 +4927,11 @@
       {
         "nome": "Pedro Augusto De Oliveira Inacio",
         "empresa": "Pejota Construções",
+        "cargo": "Soldador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4790,8 +4972,11 @@
       {
         "nome": "Raimundo Nonato Vieira Do Nascimento",
         "empresa": "Pejota Construções",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
@@ -4832,8 +5017,11 @@
       {
         "nome": "Jeferson Da Silva Bonfim",
         "empresa": "JEFERSON DA SILVA BONFIM",
+        "cargo": "Tecnico Em Segurança No Trabalho",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 3,
         "docs_pessoais": [],
@@ -4859,8 +5047,11 @@
       {
         "nome": "Bruno Salgado De Almeida",
         "empresa": "Cedro Engenharia",
+        "cargo": "Auxiliar Tecnico",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 2,
         "docs_pessoais": [],
@@ -4881,8 +5072,11 @@
       {
         "nome": "José Bernardes Filho",
         "empresa": "Engemar SP Engenharia e Construções",
+        "cargo": "Gerente De Produção E Operações",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4898,8 +5092,11 @@
       {
         "nome": "Ruan Celestino",
         "empresa": "Ruan da Cruz Celestino",
+        "cargo": "Técnico Em Segurança Do Trabalho",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4911,6 +5108,2413 @@
           }
         ],
         "sev": "pen"
+      },
+      {
+        "nome": "Jose Ronaldo Da Costa",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Operador De Maquinas Ii",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 1,
+        "n_emp": 7,
+        "docs_pessoais": [
+          {
+            "doc": "ASO",
+            "st_s": "Inválido",
+            "sev": "rep"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jose Nilton Alvesda  Silva",
+        "empresa": "Gabriela Cidrine de Sena",
+        "cargo": "Operador De Munck",
+        "regime": "Temporário",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 1,
+        "n_emp": 2,
+        "docs_pessoais": [
+          {
+            "doc": "ASO",
+            "st_s": "Em Validação",
+            "sev": "val"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "CND Federal",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Joel Leite",
+        "empresa": "Joel Leite Filho",
+        "cargo": "Analista De Ti",
+        "regime": "Sócio",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 16,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Murilo Camilo",
+        "empresa": "Murilo Pinheiro de Carvalho Camilo",
+        "cargo": "Técnico Em Segurança Do Trabalho",
+        "regime": "Sócio",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 16,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Municipal",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND FGTS — CRF",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "13º Folha de Pagamento - Residual Dezembro",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "13º parcela GPS/DARF - Comprovante de pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Diego Batista Da Silva",
+        "empresa": "CEC Transportes e Locação",
+        "cargo": "Operador De Máquinas",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Helio Carneiro Dos Santos",
+        "empresa": "Tuca Pisos Construções",
+        "cargo": "Servente De Obras",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Contrato de Prestação de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Municipal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CNDT",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Halifer Augusto Pereira Da Silva",
+        "empresa": "Tuca Pisos Construções",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Contrato de Prestação de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Municipal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CNDT",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jose Eduardo Rosa Silva",
+        "empresa": "Tuca Pisos Construções",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Contrato de Prestação de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Municipal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CNDT",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Leandro Dos Santos Rodrigues",
+        "empresa": "Tuca Pisos Construções",
+        "cargo": "- Pedreiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Contrato de Prestação de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Municipal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CNDT",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Vitor Almeida Da Silva",
+        "empresa": "Tuca Pisos Construções",
+        "cargo": "Mestre De Obra (Contrução Civil)",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Contrato de Prestação de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CND Municipal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CND Federal",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "CNDT",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Cassiano Bicalho Dos Reis",
+        "empresa": "Shalom Terraplenagem Locações",
+        "cargo": "Operador De Máquina Da Const. Civil",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 9,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Termo de Constituição do Consórcio",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de Segurança para atividades com escavações",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "João Nestardo Neto",
+        "empresa": "João Nestardo Neto",
+        "cargo": "Coordenador De Elétrica E Automação",
+        "regime": "Sócio",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 9,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Lucas Alberto Santos Dlucas Alberto Santos Da Silva",
+        "empresa": "Shalom Terraplenagem Locações",
+        "cargo": "Operador De Máquinas",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 9,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Contrato Social / Reg. MEI",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Termo de Constituição do Consórcio",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de Segurança para atividades com escavações",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Dario Fernandes",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Operador De Maquina",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Adriano Conrado Veronezi",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Técnico Em Segurança Do Trabalho",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Adriano Da Silva Cardoso",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Douglas Francisco",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Operador De Maquina",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Erik Souza Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Auxiliar De Laboratório",
+        "regime": "Temporário",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Gilvan Carlos Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jaubânice Maria De Souza",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Ajudante",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Lais Silvestre Gardin",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Auxiliar Administrativo",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Marcos Grego",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Paulo Henrique Mesquita De Sousa",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Phidius Bernardes Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Técnico De Segurança Do Trabalho",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Sidnei Rosa De Oliveira",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Welinton De Santana",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Ajudante",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 8,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Andre Luis Moreira",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Motorista Basculante",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Anderson Dos Anjos Santos",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Motorista Basculante",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Guilherme Da Silva Souza",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Motorista Basculante",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Marcelo Da Silva Santos",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Motorista Basculante",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Vicenzo La Pastina Junior",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Ajundante Geral",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Victor Manoel Dos Santos De Souza",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Motorista Basculante",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Vitor Pereira De Resende",
+        "empresa": "Souza Soares — Locações e Serviços",
+        "cargo": "Ajudante Geral",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Alessandro Da Conceição Oliveira",
+        "empresa": "Pejota Construções",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Cicero Antonio Da Silva Lima",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francivaldo Medeiros Da Silva",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Isael Gonçalves Da Silva",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Isaquiel Martins Lopes",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Antonio Manoel Ferreira Monteiro",
+        "empresa": "Pejota Construções",
+        "cargo": "Ajudante/ Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Cristiano José Silva",
+        "empresa": "Pejota Construções",
+        "cargo": "Mestre De Obra",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Adailson Lima Silva",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Xavier Antao De Souza",
+        "empresa": "Pejota Construções",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Luiz Henrique Monteiro Da Silv A",
+        "empresa": "Pejota Construções",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Valdenir José Lima",
+        "empresa": "Pejota Construções",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
       }
     ]
   }
