@@ -714,7 +714,7 @@ async function loadEvolucao() {
 }
 
 function renderEvolucao(hist) {
-  const n = (CONFIG && CONFIG.evolucao_n) ? CONFIG.evolucao_n : 12;
+  const n = Math.min((CONFIG && CONFIG.evolucao_n) ? CONFIG.evolucao_n : 10, 10);
   const slice = hist.slice(-n);
   const labels = slice.map(h => fmtDate(h.data));
   const content = document.getElementById('evol-content');
@@ -790,10 +790,6 @@ function renderVencimentos(d) {
   var vp  = d.vencimento_proximo || [];
   var el  = document.getElementById('venc-content');
   var nExp = vp.filter(function(e) { return e.tag === 'vencido'; }).length;
-  var nUr  = vp.filter(function(e) { return e.tag === 'vermelho'; }).length;
-  var titleParts = [];
-  if (nExp > 0) titleParts.push(nExp + ' vencido' + (nExp !== 1 ? 's' : ''));
-  titleParts.push((vp.length - nExp) + ' a vencer');
   var title = 'Documentos — Vencidos e Próximos ao Vencimento (' + vp.length + ')';
   var inner = '';
 
@@ -808,20 +804,38 @@ function renderVencimentos(d) {
     };
     var tbody = '';
     vp.forEach(function(e) {
-      tbody += '<tr>'
-        + '<td>' + tagLbl(e.tag) + '</td>'
-        + '<td>' + e.empresa + '</td>'
-        + '<td>' + e.func + '</td>'
-        + '<td>' + e.doc + '</td>'
+      var srch = (e.empresa + ' ' + e.func).toLowerCase().replace(/"/g, '');
+      tbody += '<tr data-search="' + srch + '">'
+        + '<td style="white-space:nowrap">' + tagLbl(e.tag) + '</td>'
+        + '<td style="white-space:nowrap">' + e.empresa + '</td>'
+        + '<td style="white-space:nowrap">' + e.func + '</td>'
+        + '<td style="white-space:nowrap">' + e.doc + '</td>'
         + '<td style="white-space:nowrap">' + e.data_venc + '</td>'
         + '</tr>';
     });
-    inner = '<table><thead><tr>'
+    var ctrl = '<div class="ci-searchbar" style="margin-bottom:12px">'
+      + '<input id="venc-q" type="search" placeholder="Buscar funcionário ou empresa…" autocomplete="off" style="width:100%;box-sizing:border-box">'
+      + '</div>';
+    inner = ctrl
+      + '<div style="overflow-x:auto">'
+      + '<table style="min-width:600px"><thead><tr>'
       + '<th>Alerta</th><th>Empresa</th><th>Funcionário</th><th>Documento</th><th>Vencimento</th>'
-      + '</tr></thead><tbody>' + tbody + '</tbody></table>';
+      + '</tr></thead><tbody id="venc-tbody">' + tbody + '</tbody></table>'
+      + '</div>';
   }
 
   el.innerHTML = '<div class="section"><div class="section-title">' + title + '</div>' + inner + '</div>';
+  if (vp.length > 0) {
+    document.getElementById('venc-q').addEventListener('input', vencFilter);
+  }
+}
+
+function vencFilter() {
+  var rawQ = (document.getElementById('venc-q').value || '').toLowerCase();
+  document.querySelectorAll('#venc-tbody tr').forEach(function(row) {
+    var search = row.dataset.search || '';
+    row.style.display = (!rawQ || search.indexOf(rawQ) >= 0) ? '' : 'none';
+  });
 }
 
 // ── Aba Integração — CP/CI Detalhe ───────────────────────────────────────────
@@ -1053,12 +1067,7 @@ function ciFilter() {
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function toggle(el) { el.classList.toggle('open'); }
 
-// ── Start ────────────────────────�
-init();
-</script>
-</body>
-</html>
-��────────────────────────────────
+// ── Start ────────────────────────
 init();
 </script>
 </body>
