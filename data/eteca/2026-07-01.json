@@ -2,14 +2,14 @@
   "meta": {
     "projeto": "eteca",
     "data": "2026-07-01",
-    "total": 3408,
-    "nc": 167,
-    "na": 15,
-    "conf_pct": 95.09977,
-    "ader_pct": 99.55986,
+    "total": 3405,
+    "nc": 163,
+    "na": 11,
+    "conf_pct": 95.21292,
+    "ader_pct": 99.67695,
     "n_subs": 28,
-    "conf_fmt": "95,1%",
-    "ader_fmt": "99,6%",
+    "conf_fmt": "95,2%",
+    "ader_fmt": "99,7%",
     "conf_class": "kpi-green",
     "ader_class": "kpi-green",
     "total_workers": 52,
@@ -29,9 +29,9 @@
   },
   "variacao": {
     "data_anterior": "2026-06-30",
-    "d_conf": -0.436,
-    "d_ader": -0.262,
-    "d_total": 1.188,
+    "d_conf": -0.318,
+    "d_ader": -0.145,
+    "d_total": 1.099,
     "d_subs": 0.0,
     "d_cp": -2.381,
     "d_ci": 0.0
@@ -39,7 +39,7 @@
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2050,
+      "qty": 2049,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
@@ -47,7 +47,7 @@
     },
     {
       "label": "OK",
-      "qty": 953,
+      "qty": 955,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
@@ -63,11 +63,11 @@
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
-      "qty": 105,
+      "qty": 110,
       "color": "#d97706",
       "is_nc": true,
       "is_na": false,
-      "pct": 3.1
+      "pct": 3.2
     },
     {
       "label": "Aprovado pelo Cliente",
@@ -87,7 +87,7 @@
     },
     {
       "label": "Em Validação",
-      "qty": 22,
+      "qty": 19,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
@@ -95,35 +95,35 @@
     },
     {
       "label": "Pendente",
-      "qty": 15,
+      "qty": 11,
       "color": "#ca8a04",
       "is_nc": true,
       "is_na": true,
-      "pct": 0.4
-    },
-    {
-      "label": "Pend. — Isenção Reprovada",
-      "qty": 12,
-      "color": "#be123c",
-      "is_nc": true,
-      "is_na": false,
-      "pct": 0.4
+      "pct": 0.3
     },
     {
       "label": "Inválido",
-      "qty": 8,
+      "qty": 9,
       "color": "#dc2626",
+      "is_nc": true,
+      "is_na": false,
+      "pct": 0.3
+    },
+    {
+      "label": "Pend. — Isenção Reprovada",
+      "qty": 8,
+      "color": "#be123c",
       "is_nc": true,
       "is_na": false,
       "pct": 0.2
     },
     {
       "label": "Reprovado/Vencido",
-      "qty": 5,
+      "qty": 6,
       "color": "#9f1239",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.1
+      "pct": 0.2
     }
   ],
   "donut": {
@@ -136,22 +136,22 @@
       "Perto do Vencimento",
       "Em Validação",
       "Pendente",
-      "Pend. — Isenção Reprovada",
       "Inválido",
+      "Pend. — Isenção Reprovada",
       "Reprovado/Vencido"
     ],
     "data": [
-      2050,
-      953,
+      2049,
+      955,
       146,
-      105,
+      110,
       53,
       39,
-      22,
-      15,
-      12,
+      19,
+      11,
+      9,
       8,
-      5
+      6
     ],
     "colors": [
       "#059669",
@@ -162,8 +162,8 @@
       "#f97316",
       "#2563a8",
       "#ca8a04",
-      "#be123c",
       "#dc2626",
+      "#be123c",
       "#9f1239"
     ]
   },
@@ -172,14 +172,9 @@
       "id": "ns1",
       "label": "Pendente",
       "color": "#ca8a04",
-      "count": 15,
+      "count": 11,
       "pct": 100,
       "entries": [
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "doc_s": "Campanha SST"
-        },
         {
           "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
@@ -191,9 +186,9 @@
           "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
-          "empresa": "Gabriela Cidrine de Sena",
-          "func": "Gabriela Cidrine De Sena",
-          "doc_s": "Folha de Ponto"
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "Campanha SST"
         },
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -202,21 +197,6 @@
         },
         {
           "empresa": "Ryfal Construções e Reformas",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Gilmar Santos Oliveira",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Ronaldo Barbosa De Souza",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
         },
@@ -254,10 +234,64 @@
     },
     {
       "id": "ns2",
+      "label": "Inválido",
+      "color": "#dc2626",
+      "count": 9,
+      "pct": 82,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "doc_s": "PGR"
+        },
+        {
+          "empresa": "Pedro H. Vercosa Geraldes",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia"
+        },
+        {
+          "empresa": "Consórcio ETE Caieiras (próprio)",
+          "func": "Severino Fernandes Da Silva",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "Cleiton Jose De Lima",
+          "func": "Cleiton Lima",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "doc_s": "LTCAT"
+        },
+        {
+          "empresa": "Wesley Felipe Pancieri Ambrosio",
+          "func": "Wesley Felipe Pancieri Ambrosio",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "Antoni Ferreira De Abreu",
+          "func": "Antoni Ferreira De Abreu Abreu",
+          "doc_s": "ASO"
+        }
+      ]
+    },
+    {
+      "id": "ns3",
       "label": "Pend. — Isenção Reprovada",
       "color": "#be123c",
-      "count": 12,
-      "pct": 80,
+      "count": 8,
+      "pct": 73,
       "entries": [
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -290,83 +324,14 @@
           "doc_s": "CND Federal"
         },
         {
-          "empresa": "Gilmar Santos Oliveira",
-          "func": "—",
-          "doc_s": "CND Municipal"
-        },
-        {
           "empresa": "Consórcio ETE Caieiras (próprio)",
           "func": "Júlio Sebastião De Oliveira",
           "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)"
         },
         {
-          "empresa": "Ronaldo Barbosa De Souza",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
           "doc_s": "CND Municipal"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "doc_s": "PCMSO"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "doc_s": "PGR"
-        }
-      ]
-    },
-    {
-      "id": "ns3",
-      "label": "Inválido",
-      "color": "#dc2626",
-      "count": 8,
-      "pct": 53,
-      "entries": [
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "doc_s": "PGR"
-        },
-        {
-          "empresa": "Pedro H. Vercosa Geraldes",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "Severino Fernandes Da Silva",
-          "doc_s": "ASO"
-        },
-        {
-          "empresa": "Cleiton Jose De Lima",
-          "func": "Cleiton Lima",
-          "doc_s": "ASO"
-        },
-        {
-          "empresa": "Seitech Serv. Instalação e Automação",
-          "func": "—",
-          "doc_s": "LTCAT"
-        },
-        {
-          "empresa": "Wesley Felipe Pancieri Ambrosio",
-          "func": "Wesley Felipe Pancieri Ambrosio",
-          "doc_s": "ASO"
-        },
-        {
-          "empresa": "Antoni Ferreira De Abreu",
-          "func": "Antoni Ferreira De Abreu Abreu",
-          "doc_s": "ASO"
         }
       ]
     },
@@ -374,9 +339,14 @@
       "id": "ns4",
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
-      "count": 5,
-      "pct": 33,
+      "count": 6,
+      "pct": 55,
       "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "doc_s": "LTCAT"
+        },
         {
           "empresa": "Real Eng Pinturas em Geral",
           "func": "—",
@@ -409,7 +379,7 @@
     {
       "id": "d1",
       "name": "Evidências Prog. Saúde Mental",
-      "count": 8,
+      "count": 5,
       "color": "#64748b",
       "pct": 100,
       "entries": [
@@ -427,24 +397,6 @@
         },
         {
           "empresa": "Ryfal Construções e Reformas",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Gilmar Santos Oliveira",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Ronaldo Barbosa De Souza",
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
@@ -468,7 +420,7 @@
       "name": "ASO",
       "count": 4,
       "color": "#dc2626",
-      "pct": 50,
+      "pct": 80,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -498,37 +450,10 @@
     },
     {
       "id": "d3",
-      "name": "PGR",
-      "count": 3,
-      "color": "#be123c",
-      "pct": 38,
-      "entries": [
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "Potência Terraplenagem e Locação",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d4",
       "name": "Plano de Rigging (Içamento)",
       "count": 3,
       "color": "#2563a8",
-      "pct": 38,
+      "pct": 60,
       "entries": [
         {
           "empresa": "Gabriela Cidrine de Sena",
@@ -551,11 +476,53 @@
       ]
     },
     {
+      "id": "d4",
+      "name": "PGR",
+      "count": 2,
+      "color": "#be123c",
+      "pct": 40,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Potência Terraplenagem e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
       "id": "d5",
+      "name": "LTCAT",
+      "count": 2,
+      "color": "#be123c",
+      "pct": 40,
+      "entries": [
+        {
+          "empresa": "Alufer Engenharia Ltda.",
+          "func": "—",
+          "badge": "venc",
+          "st_s": "Vencido"
+        },
+        {
+          "empresa": "Seitech Serv. Instalação e Automação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "d6",
       "name": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
       "count": 2,
       "color": "#9f1239",
-      "pct": 25,
+      "pct": 40,
       "entries": [
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -572,38 +539,17 @@
       ]
     },
     {
-      "id": "d6",
+      "id": "d7",
       "name": "CND FGTS — CRF",
       "count": 2,
       "color": "#0891b2",
-      "pct": 25,
+      "pct": 40,
       "entries": [
         {
           "empresa": "Pedro H. Vercosa Geraldes",
           "func": "—",
           "badge": "inv",
           "st_s": "Inválido"
-        },
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d7",
-      "name": "CND Federal",
-      "count": 2,
-      "color": "#0891b2",
-      "pct": 25,
-      "entries": [
-        {
-          "empresa": "Pedro H. Vercosa Geraldes",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
         },
         {
           "empresa": "Lais Silvestre Gardin",
@@ -615,13 +561,13 @@
     },
     {
       "id": "d8",
-      "name": "CND Municipal",
+      "name": "CND Federal",
       "count": 2,
       "color": "#0891b2",
-      "pct": 25,
+      "pct": 40,
       "entries": [
         {
-          "empresa": "Gilmar Santos Oliveira",
+          "empresa": "Pedro H. Vercosa Geraldes",
           "func": "—",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -629,29 +575,23 @@
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
     {
       "id": "d9",
-      "name": "PCMSO",
-      "count": 2,
-      "color": "#be123c",
-      "pct": 25,
+      "name": "DDS — Diálogo Diário de Seg.",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 20,
       "entries": [
         {
-          "empresa": "Ronaldo Barbosa De Souza",
+          "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
@@ -660,7 +600,7 @@
       "name": "Campanha SST",
       "count": 1,
       "color": "#64748b",
-      "pct": 12,
+      "pct": 20,
       "entries": [
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -672,25 +612,10 @@
     },
     {
       "id": "d11",
-      "name": "DDS — Diálogo Diário de Seg.",
-      "count": 1,
-      "color": "#64748b",
-      "pct": 12,
-      "entries": [
-        {
-          "empresa": "Alufer Engenharia Ltda.",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d12",
       "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
-      "pct": 12,
+      "pct": 20,
       "entries": [
         {
           "empresa": "Real Eng Pinturas em Geral",
@@ -701,26 +626,11 @@
       ]
     },
     {
-      "id": "d13",
-      "name": "Folha de Ponto",
-      "count": 1,
-      "color": "#059669",
-      "pct": 12,
-      "entries": [
-        {
-          "empresa": "Gabriela Cidrine de Sena",
-          "func": "Gabriela Cidrine De Sena",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d14",
+      "id": "d12",
       "name": "ASO Demissional",
       "count": 1,
       "color": "#dc2626",
-      "pct": 12,
+      "pct": 20,
       "entries": [
         {
           "empresa": "Fluiter Engenharia e Soluções",
@@ -731,11 +641,41 @@
       ]
     },
     {
-      "id": "d15",
+      "id": "d13",
       "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
       "count": 1,
       "color": "#64748b",
-      "pct": 12,
+      "pct": 20,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 1,
+      "color": "#64748b",
+      "pct": 20,
+      "entries": [
+        {
+          "empresa": "Ryfal Construções e Reformas",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "name": "Folha de Pagamento",
+      "count": 1,
+      "color": "#059669",
+      "pct": 20,
       "entries": [
         {
           "empresa": "Ryfal Construções e Reformas",
@@ -747,40 +687,25 @@
     },
     {
       "id": "d16",
-      "name": "Comp. de Pagamento GPS/DARF",
+      "name": "Apólice Seguro Garantia",
       "count": 1,
-      "color": "#64748b",
-      "pct": 12,
+      "color": "#0f766e",
+      "pct": 20,
       "entries": [
         {
-          "empresa": "Ryfal Construções e Reformas",
+          "empresa": "Consórcio ETE Caieiras (próprio)",
           "func": "—",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         }
       ]
     },
     {
       "id": "d17",
-      "name": "Folha de Pagamento",
-      "count": 1,
-      "color": "#059669",
-      "pct": 12,
-      "entries": [
-        {
-          "empresa": "Ryfal Construções e Reformas",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d18",
       "name": "Plano Resgate Altura",
       "count": 1,
       "color": "#2563a8",
-      "pct": 12,
+      "pct": 20,
       "entries": [
         {
           "empresa": "Consórcio ETE Caieiras (próprio)",
@@ -791,47 +716,47 @@
       ]
     },
     {
-      "id": "d19",
-      "name": "LTCAT",
+      "id": "d18",
+      "name": "Contrato Social / Reg. MEI",
       "count": 1,
-      "color": "#be123c",
-      "pct": 12,
+      "color": "#6366f1",
+      "pct": 20,
       "entries": [
         {
-          "empresa": "Seitech Serv. Instalação e Automação",
+          "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "badge": "inv",
-          "st_s": "Inválido"
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
+      "id": "d19",
+      "name": "CNDT",
+      "count": 1,
+      "color": "#0891b2",
+      "pct": 20,
+      "entries": [
+        {
+          "empresa": "Lais Silvestre Gardin",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
         }
       ]
     },
     {
       "id": "d20",
-      "name": "Contrato Social / Reg. MEI",
-      "count": 1,
-      "color": "#6366f1",
-      "pct": 12,
-      "entries": [
-        {
-          "empresa": "Lais Silvestre Gardin",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d21",
-      "name": "CNDT",
+      "name": "CND Municipal",
       "count": 1,
       "color": "#0891b2",
-      "pct": 12,
+      "pct": 20,
       "entries": [
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
         }
       ]
     }
@@ -843,14 +768,14 @@
       "focus": 6,
       "total": 1367,
       "taxa": 0,
-      "crit": 5,
+      "crit": 6,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
+          "doc_s": "Apólice Seguro Garantia",
+          "badge": "inv",
+          "st_s": "Inválido"
         },
         {
           "func": "—",
@@ -886,6 +811,47 @@
     },
     {
       "id": "s2",
+      "nome": "Alufer Engenharia Ltda.",
+      "focus": 5,
+      "total": 130,
+      "taxa": 4,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg.",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Campanha SST",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "LTCAT",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    },
+    {
+      "id": "s3",
       "nome": "Lais Silvestre Gardin",
       "focus": 5,
       "total": 7,
@@ -922,41 +888,6 @@
           "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "nome": "Alufer Engenharia Ltda.",
-      "focus": 4,
-      "total": 130,
-      "taxa": 3,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "Campanha SST",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
         }
       ]
     },
@@ -999,7 +930,7 @@
       "id": "s5",
       "nome": "Fluiter Engenharia e Soluções",
       "focus": 3,
-      "total": 150,
+      "total": 147,
       "taxa": 2,
       "crit": 2,
       "pill_color": "#16a34a",
@@ -1026,29 +957,6 @@
     },
     {
       "id": "s6",
-      "nome": "Gabriela Cidrine de Sena",
-      "focus": 2,
-      "total": 78,
-      "taxa": 3,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Plano de Rigging (Içamento)",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        },
-        {
-          "func": "Gabriela Cidrine De Sena",
-          "doc_s": "Folha de Ponto",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "s7",
       "nome": "Pedro H. Vercosa Geraldes",
       "focus": 2,
       "total": 29,
@@ -1071,53 +979,7 @@
       ]
     },
     {
-      "id": "s8",
-      "nome": "Gilmar Santos Oliveira",
-      "focus": 2,
-      "total": 34,
-      "taxa": 6,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "CND Municipal",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s9",
-      "nome": "Ronaldo Barbosa De Souza",
-      "focus": 2,
-      "total": 106,
-      "taxa": 2,
-      "crit": 1,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s10",
+      "id": "s7",
       "nome": "Seitech Serv. Instalação e Automação",
       "focus": 2,
       "total": 82,
@@ -1140,30 +1002,7 @@
       ]
     },
     {
-      "id": "s11",
-      "nome": "Erisvaldo Da Silva Santana",
-      "focus": 2,
-      "total": 57,
-      "taxa": 4,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PCMSO",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s12",
+      "id": "s8",
       "nome": "Real Eng Pinturas em Geral",
       "focus": 1,
       "total": 144,
@@ -1180,7 +1019,24 @@
       ]
     },
     {
-      "id": "s13",
+      "id": "s9",
+      "nome": "Gabriela Cidrine de Sena",
+      "focus": 1,
+      "total": 78,
+      "taxa": 1,
+      "crit": 1,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Plano de Rigging (Içamento)",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        }
+      ]
+    },
+    {
+      "id": "s10",
       "nome": "Potência Terraplenagem e Locação",
       "focus": 1,
       "total": 82,
@@ -1197,7 +1053,7 @@
       ]
     },
     {
-      "id": "s14",
+      "id": "s11",
       "nome": "Ruan da Cruz Celestino",
       "focus": 1,
       "total": 17,
@@ -1214,7 +1070,7 @@
       ]
     },
     {
-      "id": "s15",
+      "id": "s12",
       "nome": "Cleiton Jose De Lima",
       "focus": 1,
       "total": 28,
@@ -1231,7 +1087,7 @@
       ]
     },
     {
-      "id": "s16",
+      "id": "s13",
       "nome": "Wesley Felipe Pancieri Ambrosio",
       "focus": 1,
       "total": 36,
@@ -1248,7 +1104,7 @@
       ]
     },
     {
-      "id": "s17",
+      "id": "s14",
       "nome": "Antoni Ferreira De Abreu",
       "focus": 1,
       "total": 93,
@@ -1281,7 +1137,7 @@
     "Gabriela Cidrine De Sena": [
       {
         "doc": "Folha de Ponto",
-        "st_s": "Pendente"
+        "st_s": "Isenção Ag. Aprovação"
       }
     ],
     "Diego De Andrade Ferreira": [
@@ -1291,10 +1147,6 @@
       }
     ],
     "Felipe Santos Vieira Da Cruz": [
-      {
-        "doc": "Folha de Ponto",
-        "st_s": "Em Validação"
-      },
       {
         "doc": "ASO Demissional",
         "st_s": "Isenção Ag. Aprovação"
@@ -1306,19 +1158,11 @@
     ],
     "Vinicius Santos Vieira Da Cruz": [
       {
-        "doc": "Folha de Ponto",
-        "st_s": "Em Validação"
-      },
-      {
         "doc": "ASO Demissional",
         "st_s": "Isenção Ag. Aprovação"
       }
     ],
     "William Vieira Dos Santos": [
-      {
-        "doc": "Folha de Ponto",
-        "st_s": "Em Validação"
-      },
       {
         "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
         "st_s": "Em Validação"
@@ -1336,11 +1180,7 @@
     ],
     "Júlio Sebastião De Oliveira": [
       {
-        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1348,11 +1188,15 @@
         "st_s": "Isenção Ag. Aprovação"
       },
       {
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
         "doc": "CNH",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
-        "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1396,6 +1240,14 @@
     ]
   },
   "vencimento_proximo": [
+    {
+      "empresa": "Alufer Engenharia Ltda.",
+      "func": "—",
+      "doc": "LTCAT",
+      "data_venc": "01/08/2024",
+      "dias": -699,
+      "tag": "vencido"
+    },
     {
       "empresa": "Joao Santos De Almeida",
       "func": "—",
@@ -1767,12 +1619,13 @@
     }
   ],
   "cpci_detail": {
-    "total": 52,
+    "total": 88,
     "n_liberado": 41,
-    "n_pend_pess": 7,
-    "n_pend_emp": 52,
-    "n_alocados": 50,
-    "n_participaram": 2,
+    "n_pend_pess": 14,
+    "n_pend_emp": 88,
+    "n_nd": 36,
+    "n_alocados": 51,
+    "n_participaram": 13,
     "n_pend_falta_int": 2,
     "n_falta_int": 1,
     "n_pend_integrado": 8,
@@ -1812,16 +1665,31 @@
         "sp": "Sem pendências",
         "se": "Com pendências",
         "qty": 39
+      },
+      {
+        "si": "N.D.",
+        "sp": "Com pendências",
+        "se": "Com pendências",
+        "qty": 7
+      },
+      {
+        "si": "N.D.",
+        "sp": "Sem pendências",
+        "se": "Com pendências",
+        "qty": 29
       }
     ],
     "workers": [
       {
         "nome": "Darlam Gregório De Souza",
         "empresa": "ALUFER ENGENHARIA LTDA.",
+        "cargo": "Auxiliar De Soldador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Pendências e Falta Integração",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 10,
+        "n_emp": 9,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -1830,16 +1698,6 @@
           }
         ],
         "docs_empresa": [
-          {
-            "doc": "LTCAT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "CND Federal",
             "st_s": "Em Validação",
@@ -1861,11 +1719,6 @@
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Pendente",
             "sev": "pen"
@@ -1876,9 +1729,19 @@
             "sev": "pen"
           },
           {
+            "doc": "Campanha SST",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
+          },
+          {
+            "doc": "LTCAT",
+            "st_s": "Vencido",
+            "sev": "rep"
           }
         ],
         "sev": "rep"
@@ -1886,10 +1749,13 @@
       {
         "nome": "Sidney Santiago Freitas",
         "empresa": "ALUFER ENGENHARIA LTDA.",
+        "cargo": "Serralheiro Pleno",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Pendências e Falta Integração",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 10,
+        "n_emp": 9,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -1898,16 +1764,6 @@
           }
         ],
         "docs_empresa": [
-          {
-            "doc": "LTCAT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "CND Federal",
             "st_s": "Em Validação",
@@ -1929,11 +1785,6 @@
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Pendente",
             "sev": "pen"
@@ -1944,9 +1795,19 @@
             "sev": "pen"
           },
           {
+            "doc": "Campanha SST",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
+          },
+          {
+            "doc": "LTCAT",
+            "st_s": "Vencido",
+            "sev": "rep"
           }
         ],
         "sev": "rep"
@@ -1954,8 +1815,11 @@
       {
         "nome": "Wellington Ribeiro",
         "empresa": "Real Eng Pinturas em Geral",
+        "cargo": "Ajudante De Obra",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Falta Integração",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -1966,7 +1830,7 @@
             "sev": "val"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1976,17 +1840,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2001,8 +1865,11 @@
       {
         "nome": "Antoni Ferreira De Abreu Abreu",
         "empresa": "ANTONI FERREIRA DE ABREU",
+        "cargo": "Mecânico Montador",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 7,
         "docs_pessoais": [
@@ -2019,7 +1886,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2029,12 +1896,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2044,7 +1906,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2054,8 +1921,11 @@
       {
         "nome": "Wesley Felipe Pancieri Ambrosio",
         "empresa": "WESLEY FELIPE PANCIERI AMBROSIO",
+        "cargo": "Tecnico De Qualidade",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários que já participaram",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 5,
         "docs_pessoais": [
@@ -2077,12 +1947,12 @@
             "sev": "val"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2097,8 +1967,11 @@
       {
         "nome": "Cleiton Lima",
         "empresa": "CLEITON JOSE DE LIMA",
+        "cargo": "Mecânico Montador",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 1,
         "docs_pessoais": [
@@ -2120,8 +1993,11 @@
       {
         "nome": "Ademilson Andrade",
         "empresa": "ADEMILSON DONIZETI DE ANDRADE",
+        "cargo": "Supervisor De Operação",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -2137,7 +2013,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2147,17 +2033,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2167,17 +2043,15 @@
       {
         "nome": "Ronaldo Barbosa De Souza",
         "empresa": "RONALDO BARBOSA DE SOUZA",
+        "cargo": "Engenheiro De Segurança Do Trabalho",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 3,
+        "n_emp": 2,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
           {
             "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
@@ -2185,17 +2059,20 @@
           },
           {
             "doc": "PCMSO",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
           }
         ],
-        "sev": "rep"
+        "sev": "pen"
       },
       {
         "nome": "Diego Rodrigues",
         "empresa": "DIEGO RODRIGUES DE CASTRO",
+        "cargo": "Mecânico Montador",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -2211,8 +2088,11 @@
       {
         "nome": "Jonathan Ferreia De Lima",
         "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Ajudante De Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -2228,8 +2108,11 @@
       {
         "nome": "Ronieli Bastos",
         "empresa": "RONIELI MENDES BASTOS",
+        "cargo": "Operador De Máquinas Pesadas",
+        "regime": "Sócio",
         "status_int": "Pendências porém Integrado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -2245,8 +2128,11 @@
       {
         "nome": "Joao Santos De Almeida",
         "empresa": "JOAO SANTOS DE ALMEIDA",
+        "cargo": "Mecânico Montador",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 23,
         "docs_pessoais": [
@@ -2258,11 +2144,6 @@
         ],
         "docs_empresa": [
           {
-            "doc": "Campanha SST",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -2273,12 +2154,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Plano de demolição, conforme NR-18",
+            "doc": "Campanha SST",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de demolição, conforme NR-18",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2288,37 +2179,22 @@
             "sev": "pen"
           },
           {
+            "doc": "Plano de ventilação dos espaços confinados",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Projeto de linha de vida para trabalhos em altura, assinado pelo projetista e sua respectiva ART",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "LTCAT",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2333,17 +2209,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Plano de Rigging (Içamento)",
+            "doc": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "Plano Resgate Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2353,12 +2229,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Plano de ventilação dos espaços confinados",
+            "doc": "Plano de Rigging (Içamento)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2368,7 +2244,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Plano Resgate Altura",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2378,8 +2264,11 @@
       {
         "nome": "Israel Ricardo Da Silva",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Temporário",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
         "n_emp": 11,
         "docs_pessoais": [
@@ -2401,22 +2290,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2426,7 +2305,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2451,8 +2340,11 @@
       {
         "nome": "Carlito Gregório",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Pedreiro",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2468,22 +2360,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2493,7 +2375,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2518,8 +2410,11 @@
       {
         "nome": "Diogo Do Nascimento Araujo",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Temporário",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2535,22 +2430,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2560,7 +2445,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2585,8 +2480,11 @@
       {
         "nome": "Ediniz De Oliveira Santos",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Encarregado",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2602,22 +2500,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2627,7 +2515,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2652,8 +2550,11 @@
       {
         "nome": "Evaldo Perycles Nunes Lopes",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Pedreiro",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2669,22 +2570,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2694,7 +2585,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2719,8 +2620,11 @@
       {
         "nome": "Leandro Aguirre De Souza Lucio",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Temporário",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2736,22 +2640,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2761,7 +2655,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2786,8 +2690,11 @@
       {
         "nome": "Luis Aprígio Da Silva",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Autônomo",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2803,22 +2710,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2828,7 +2725,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2853,8 +2760,11 @@
       {
         "nome": "Luis Paulo Ferreira Dos Santos",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Temporário",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2870,22 +2780,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2895,7 +2795,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2920,8 +2830,11 @@
       {
         "nome": "Marcos Viniciusde Oliveira Silva",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Pedreiro",
+        "regime": "Temporário",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -2937,22 +2850,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2962,7 +2865,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2987,8 +2900,11 @@
       {
         "nome": "Renato Batista De Oliveira",
         "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Mestre De Obras",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 11,
         "docs_pessoais": [],
@@ -3004,22 +2920,12 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3029,7 +2935,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3054,8 +2970,11 @@
       {
         "nome": "Edmilson Silva",
         "empresa": "Real Eng Pinturas em Geral",
+        "cargo": "Polidor",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -3066,7 +2985,7 @@
             "sev": "val"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3076,17 +2995,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3101,8 +3020,11 @@
       {
         "nome": "Jose Alexandre Ferreira",
         "empresa": "Real Eng Pinturas em Geral",
+        "cargo": "Encarregado De Carpintaria",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -3113,7 +3035,7 @@
             "sev": "val"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3123,17 +3045,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3148,8 +3070,11 @@
       {
         "nome": "Jose Da Silva",
         "empresa": "Real Eng Pinturas em Geral",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -3160,7 +3085,7 @@
             "sev": "val"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3170,17 +3095,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3195,8 +3120,11 @@
       {
         "nome": "Josoel Nunes",
         "empresa": "Real Eng Pinturas em Geral",
+        "cargo": "Ajudante De Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -3207,7 +3135,7 @@
             "sev": "val"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3217,17 +3145,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3242,8 +3170,11 @@
       {
         "nome": "Reginaldo Vicente",
         "empresa": "Real Eng Pinturas em Geral",
+        "cargo": "Polidor De Piso",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 7,
         "docs_pessoais": [],
@@ -3254,7 +3185,7 @@
             "sev": "val"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3264,17 +3195,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3288,18 +3219,16 @@
       },
       {
         "nome": "Antonio Marcos Caitano Ramos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3312,8 +3241,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3330,18 +3264,16 @@
       },
       {
         "nome": "Cicero Lucas Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3354,8 +3286,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3372,18 +3309,16 @@
       },
       {
         "nome": "Cleidiomarques Muniz Da Silva",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3396,8 +3331,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3414,18 +3354,16 @@
       },
       {
         "nome": "Daniel Pereira De Jesus Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3438,8 +3376,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3456,18 +3399,16 @@
       },
       {
         "nome": "Edmundo Dias De Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3480,8 +3421,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3498,18 +3444,16 @@
       },
       {
         "nome": "Emerson Rodrigo Dos Santos Oliveira",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3522,8 +3466,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3540,18 +3489,16 @@
       },
       {
         "nome": "Fernando Celestino",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Mecanico Montador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3564,8 +3511,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3582,18 +3534,16 @@
       },
       {
         "nome": "Francisco Da Luz",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3606,8 +3556,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3624,18 +3579,16 @@
       },
       {
         "nome": "Italo Numeriano De Sales",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3648,8 +3601,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3666,18 +3624,16 @@
       },
       {
         "nome": "Ivanildo Carneiro Da Ponte",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Marteleteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3690,8 +3646,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3708,18 +3669,16 @@
       },
       {
         "nome": "Jorge Ramos Lopes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3732,8 +3691,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3750,18 +3714,16 @@
       },
       {
         "nome": "Jose Filho Lopes",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3774,8 +3736,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3792,18 +3759,16 @@
       },
       {
         "nome": "João Florentino De Matos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3816,8 +3781,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3834,18 +3804,16 @@
       },
       {
         "nome": "Lourival Jose Dos Santos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Mecânico Montador",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3858,8 +3826,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3876,18 +3849,16 @@
       },
       {
         "nome": "Nelito Santos Bonfim",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3900,8 +3871,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3918,18 +3894,16 @@
       },
       {
         "nome": "Ronaldo Bispo Dos Santos",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3942,8 +3916,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -3960,18 +3939,16 @@
       },
       {
         "nome": "Valmir Da Silva Lins",
-        "empresa": "CONSORCIO ETE CAIEIRAS - 1 ETAPA",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 6,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
           {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Em Validação",
@@ -3984,8 +3961,13 @@
           },
           {
             "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
@@ -4003,8 +3985,11 @@
       {
         "nome": "Pedro Henrique Verçosa Geraldes",
         "empresa": "Pedro H. Vercosa Geraldes",
+        "cargo": "Administrativo",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 3,
         "docs_pessoais": [],
@@ -4028,32 +4013,13 @@
         "sev": "rep"
       },
       {
-        "nome": "Gilmar Santos Oliveira",
-        "empresa": "GILMAR SANTOS OLIVEIRA",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 2,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "CND Municipal",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
         "nome": "Alexssandro Izidoro",
         "empresa": "ALEXSSANDRO JANNINI IZIDORO",
+        "cargo": "Comprador",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4069,8 +4035,11 @@
       {
         "nome": "Allyson Rodrigo Da Silva De Araujo",
         "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4084,10 +4053,33 @@
         "sev": "pen"
       },
       {
+        "nome": "Gilmar Santos Oliveira",
+        "empresa": "GILMAR SANTOS OLIVEIRA",
+        "cargo": "Eletricista",
+        "regime": "Sócio",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 1,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
         "nome": "Klinger Leal",
         "empresa": "Lomarco Engenharia",
+        "cargo": "Gerente De Obras",
+        "regime": "Sócio",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4103,8 +4095,11 @@
       {
         "nome": "Marcelo Bacelar Benedito Junior",
         "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4120,8 +4115,11 @@
       {
         "nome": "Natalino Dutra De Paulo",
         "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Ajudante De  Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
@@ -4137,8 +4135,1678 @@
       {
         "nome": "Welberti Alves David De Souza",
         "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Ajudante Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
         "status_int": "Acesso Liberado",
-        "alocacao": "Funcionários Alocados",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 1,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Júlio Sebastião De Oliveira",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Técnico De Segurança Do Trabalho",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 7,
+        "n_emp": 6,
+        "docs_pessoais": [
+          {
+            "doc": "eSocial - evento 2200 (Admissional) ou evento 2206 (Alteração)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Carteira Profissional",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CNH",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Carteira do Conselho Regional - Registro de Classe",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Felipe Santos Vieira Da Cruz",
+        "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Supervisor  Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 2,
+        "n_emp": 1,
+        "docs_pessoais": [
+          {
+            "doc": "ASO Demissional",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "William Vieira Dos Santos",
+        "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Supervisor De Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 2,
+        "n_emp": 1,
+        "docs_pessoais": [
+          {
+            "doc": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "ASO Demissional",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "sev": "val"
+      },
+      {
+        "nome": "Severino Fernandes Da Silva",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 1,
+        "n_emp": 6,
+        "docs_pessoais": [
+          {
+            "doc": "ASO",
+            "st_s": "Inválido",
+            "sev": "rep"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Gabriela Cidrine De Sena",
+        "empresa": "Gabriela Cidrine de Sena",
+        "cargo": "Operadora De Caminhão Munck",
+        "regime": "Temporário",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 1,
+        "n_emp": 1,
+        "docs_pessoais": [
+          {
+            "doc": "Folha de Ponto",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Diego De Andrade Ferreira",
+        "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Ajudante De Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 1,
+        "n_emp": 1,
+        "docs_pessoais": [
+          {
+            "doc": "ASO Demissional",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Vinicius Santos Vieira Da Cruz",
+        "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Ajudante De Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 1,
+        "n_emp": 1,
+        "docs_pessoais": [
+          {
+            "doc": "ASO Demissional",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Diogo Timoteo Lopes",
+        "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Temporário",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 11,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Leandro Ricardo Mota Da Conceição Junior",
+        "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Temporário",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 11,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Luis Antonio Ribeiro Da Silva",
+        "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 11,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Matheus Marinho Mendes",
+        "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 11,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Pedro Antonio Paulino",
+        "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Pedreiro",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 11,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Wender Pacheco Conceição",
+        "empresa": "Ryfal Construções e Reformas",
+        "cargo": "Ajudante",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 11,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Abel Dos Santos Germano",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Thiago Barros Ramos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Mecânico Montador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Cicero Flor Da Silva",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "David Henrique Ferreira Da Silva",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Antonio Martins Gabriel",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Das Chagas Do Nascimento",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Das Chagas Silva Dos Santos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Ferreira Ramos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Ismael Da Silva Barbosa",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Joao Paulino Dos Santos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jose Pinto Simoes",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jucinaldo Pedro Dos Santos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Laudelino Ferreira",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Luciano Cristiano Rosa",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Luiz Maria Dos Santos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Natanael Figueiredo Amorim Portela",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Paulo Oliveira Da Silva",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Raimundo Jose Soares",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Reinaldo Aparecido Goncalves",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Sidinei Campos Dos Santos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 6,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Bruno Pimenta",
+        "empresa": "Bruno Luiz Fonseca Pimenta",
+        "cargo": "Técnico De Controle De Qualidade E Projetos",
+        "regime": "Sócio",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 4,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "val"
+      },
+      {
+        "nome": "Arthur De Faria Werner",
+        "empresa": "Wert Engenharia e Soluções",
+        "cargo": "Coordenador De Engenharia E Suprimentos",
+        "regime": "Sócio",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 1,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
+      },
+      {
+        "nome": "Edson Oliveira De Almeida",
+        "empresa": "Fluiter Engenharia e Soluções",
+        "cargo": "Supervisor De  Eletricista",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
         "n_pess": 0,
         "n_emp": 1,
         "docs_pessoais": [],
