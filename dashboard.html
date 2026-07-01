@@ -804,24 +804,23 @@ function renderVencimentos(d) {
     };
     var tbody = '';
     vp.forEach(function(e) {
-      var srch = (e.empresa + ' ' + e.func).toLowerCase().replace(/"/g, '');
+      var srch = (e.empresa + ' ' + e.func + ' ' + e.doc).toLowerCase().replace(/"/g, '');
+      var docShort = e.doc.length > 40 ? e.doc.slice(0, 38) + '…' : e.doc;
       tbody += '<tr data-search="' + srch + '">'
         + '<td style="white-space:nowrap">' + tagLbl(e.tag) + '</td>'
         + '<td style="white-space:nowrap">' + e.empresa + '</td>'
         + '<td style="white-space:nowrap">' + e.func + '</td>'
-        + '<td style="white-space:nowrap">' + e.doc + '</td>'
+        + '<td style="max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="' + e.doc.replace(/"/g,'&quot;') + '">' + docShort + '</td>'
         + '<td style="white-space:nowrap">' + e.data_venc + '</td>'
         + '</tr>';
     });
     var ctrl = '<div class="ci-searchbar" style="margin-bottom:12px">'
-      + '<input id="venc-q" type="search" placeholder="Buscar funcionário ou empresa…" autocomplete="off" style="width:100%;box-sizing:border-box">'
+      + '<input id="venc-q" type="search" placeholder="Buscar funcionário, empresa ou documento…" autocomplete="off" style="width:100%;box-sizing:border-box">'
       + '</div>';
     inner = ctrl
-      + '<div style="overflow-x:auto">'
-      + '<table style="min-width:600px"><thead><tr>'
+      + '<table><thead><tr>'
       + '<th>Alerta</th><th>Empresa</th><th>Funcionário</th><th>Documento</th><th>Vencimento</th>'
-      + '</tr></thead><tbody id="venc-tbody">' + tbody + '</tbody></table>'
-      + '</div>';
+      + '</tr></thead><tbody id="venc-tbody">' + tbody + '</tbody></table>';
   }
 
   el.innerHTML = '<div class="section"><div class="section-title">' + title + '</div>' + inner + '</div>';
