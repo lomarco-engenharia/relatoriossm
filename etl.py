@@ -95,22 +95,28 @@ CP_TARGET   = 95
 CI_TARGET   = 95
 
 STATUS_ROWS_DEFS = [
-    ('Isento',                          'Isento',                                     '#059669', False, False),
-    ('OK',                              'OK',                                          '#16a34a', False, False),
-    ('Liberado com Ressalvas',          'Liberado com ressalvas no cliente',           '#0891b2', False, False),
-    ('Aprovado pelo Cliente',           'Aprovado pelo cliente',                       '#7c3aed', False, False),
-    ('Pend. — Isenção Ag. Aprovação',   'Pendente - Isenção Aguardando Aprovação',    '#d97706', True,  False),
-    ('Pendente',                        'Pendente',                                    '#ca8a04', True,  True ),
-    ('Em Validação',                    'Em validação',                                '#2563a8', True,  False),
-    ('Inválido',                        'Inválido',                                    '#dc2626', True,  False),
-    ('Perto do Vencimento',             'Perto do Vencimento',                         '#f97316', False, False),
-    ('Pend. — Isenção Reprovada',       'Pendente - Isenção Reprovada',               '#be123c', True,  False),
+    ('Isenção aprovada',       'Isento',                                     '#16a34a', False, False),
+    ('Aprovado',               'OK',                                          '#16a34a', False, False),
+    ('Aprovado com ressalva',  'Liberado com ressalvas no cliente',           '#16a34a', False, False),
+    ('Aprovado pelo cliente',  'Aprovado pelo cliente',                       '#16a34a', False, False),
+    ('Isenção em análise',     'Pendente - Isenção Aguardando Aprovação',    '#2563a8', True,  False),
+    ('Pendente',               'Pendente',                                    '#d97706', True,  True ),
+    ('Em validação',           'Em validação',                                '#2563a8', True,  False),
+    ('Perto do vencimento',    'Perto do Vencimento',                         '#d97706', False, False),
+    ('Reprovado',              'Inválido',                                    '#dc2626', True,  False),
+    ('Vencido',                'Vencido',                                     '#dc2626', True,  False),
+    ('Reprovado pelo cliente', 'Reprovado pelo cliente',                      '#dc2626', True,  False),
+    ('Isenção reprovada',      'Pendente - Isenção Reprovada',               '#dc2626', True,  False),
 ]
 
 NC_STATUS_DEFS = [
-    ('Pendente',                     'Pendente',                  '#ca8a04'),
-    ('Inválido',                     'Inválido',                  '#dc2626'),
-    ('Pendente - Isenção Reprovada', 'Pend. — Isenção Reprovada', '#be123c'),
+    ('Pendente',                                'Pendente',              '#d97706'),
+    ('Inválido',                                'Reprovado',             '#dc2626'),
+    ('Vencido',                                 'Vencido',               '#dc2626'),
+    ('Reprovado pelo cliente',                  'Reprovado pelo cliente','#dc2626'),
+    ('Pendente - Isenção Reprovada',            'Isenção reprovada',     '#dc2626'),
+    ('Pendente - Isenção Aguardando Aprovação', 'Isenção em análise',    '#2563a8'),
+    ('Em validação',                            'Em validação',          '#2563a8'),
 ]
 
 DOC_SHORT = {
@@ -241,18 +247,26 @@ def doc_color(doc):
     return '#64748b'
 
 def badge(st):
-    if st == 'Pendente': return 'pend'
-    if st in ('Inválido', 'Pendente - Isenção Reprovada'): return 'inv'
     if st == 'Vencido': return 'venc'
-    if st == 'Reprovado pelo cliente': return 'rep'
-    return 'pend'
+    if st in ('Inválido', 'Pendente - Isenção Reprovada', 'Reprovado pelo cliente'): return 'rep'
+    if st in ('Em validação', 'Pendente - Isenção Aguardando Aprovação'): return 'val'
+    if st in ('Pendente', 'Perto do Vencimento'): return 'pend'
+    return 'ok'
 
 def shorten_st(st):
     m = {
-        'Pendente': 'Pendente', 'Inválido': 'Inválido', 'Vencido': 'Vencido',
-        'Reprovado pelo cliente': 'Reprovado', 'Pendente - Isenção Reprovada': 'Isen. Reprovada',
-        'Pendente - Isenção Aguardando Aprovação': 'Isenção Ag. Aprovação',
-        'Em validação': 'Em Validação',
+        'Pendente': 'Pendente',
+        'Perto do Vencimento': 'Perto do vencimento',
+        'Inválido': 'Reprovado',
+        'Vencido': 'Vencido',
+        'Reprovado pelo cliente': 'Reprovado pelo cliente',
+        'Pendente - Isenção Reprovada': 'Isenção reprovada',
+        'Pendente - Isenção Aguardando Aprovação': 'Isenção em análise',
+        'Em validação': 'Em validação',
+        'OK': 'Aprovado',
+        'Aprovado pelo cliente': 'Aprovado pelo cliente',
+        'Liberado com ressalvas no cliente': 'Aprovado com ressalva',
+        'Isento': 'Isenção aprovada',
     }
     return m.get(st, st)
 
@@ -304,10 +318,6 @@ def process_docs(rows, sub_names, proprio_label):
     for label, key, color, is_nc, is_na in STATUS_ROWS_DEFS:
         qty = sc.get(key, 0)
         defs_with_counts.append((label, qty, color, is_nc, is_na))
-    # Reprovado/Vencido agrupado
-    rv = sc.get('Vencido', 0) + sc.get('Reprovado pelo cliente', 0)
-    if rv:
-        defs_with_counts.append(('Reprovado/Vencido', rv, '#9f1239', True, False))
     defs_with_counts.sort(key=lambda x: -x[1])
 
     status_rows = []
@@ -331,9 +341,6 @@ def process_docs(rows, sub_names, proprio_label):
         st_rows = [r for r in rows if r.get('Status do Documento') == st_key]
         if st_rows:
             nc_by_st.append({'label': st_label, 'color': st_color, 'rows': st_rows})
-    reprov = [r for r in rows if r.get('Status do Documento') in ('Vencido', 'Reprovado pelo cliente')]
-    if reprov:
-        nc_by_st.append({'label': 'Reprovado/Vencido', 'color': '#9f1239', 'rows': reprov})
     nc_by_st.sort(key=lambda x: -len(x['rows']))
     max_nc = len(nc_by_st[0]['rows']) if nc_by_st else 1
     for i, item in enumerate(nc_by_st):
@@ -445,6 +452,32 @@ def process_docs(rows, sub_names, proprio_label):
                     'st_s': shorten_st(st),
                 })
 
+    # Relatório completo de todos os documentos (aba Todos Documentos)
+    ST_ORDER = {
+        'Pendente': 0, 'Isenção reprovada': 1, 'Reprovado': 2,
+        'Reprovado pelo cliente': 3, 'Vencido': 4, 'Perto do vencimento': 5,
+        'Isenção em análise': 6, 'Em validação': 7,
+        'Isenção aprovada': 8, 'Aprovado com ressalva': 9,
+        'Aprovado pelo cliente': 10, 'Aprovado': 11,
+    }
+    all_docs = []
+    for r in rows:
+        st  = r.get('Status do Documento', '').strip()
+        emp = clean_name(r.get('Subcontratado'))
+        func = clean_func(r.get('Funcionário'))
+        doc  = shorten_doc(r.get('Documento', ''))
+        st_s = shorten_st(st)
+        all_docs.append({
+            'empresa': emp,
+            'func':    func,
+            'doc':     doc,
+            'st_s':    st_s,
+            'sev':     badge(st),
+        })
+    all_docs.sort(key=lambda x: (
+        ST_ORDER.get(x['st_s'], 99), x['empresa'], x['func'], x['doc']
+    ))
+
     return {
         'total': total, 'nc': nc, 'na': na,
         'conf_pct': round(conf_pct, 5),
@@ -461,6 +494,7 @@ def process_docs(rows, sub_names, proprio_label):
         'subs': subs,
         'worker_docs': dict(worker_docs),
         'vencimento_proximo': vencimento_proximo,
+        'all_docs': all_docs,
     }
 
 # ─── PROCESSAMENTO DE INTEGRAÇÃO ─────────────────────────────────────────────
@@ -553,7 +587,7 @@ def process_cpci_detail(rows_doc, rows_int, sub_names, proprio_label):
     def doc_sev(st):
         if st in ('Inválido', 'Pendente - Isenção Reprovada', 'Vencido', 'Reprovado pelo cliente'):
             return 'rep'
-        if st == 'Em validação': return 'val'
+        if st in ('Em validação', 'Pendente - Isenção Aguardando Aprovação'): return 'val'
         return 'pen'
 
     ALOC_DISPLAY_MAP = {
@@ -851,6 +885,7 @@ def main():
         'subs':        doc_result['subs'],
         'worker_docs':        doc_result['worker_docs'],
         'vencimento_proximo': doc_result['vencimento_proximo'],
+        'all_docs':           doc_result['all_docs'],
         'cpci':               int_result['cpci'] if int_result else [],
         'cpci_detail':        cpci_detail,
     }
@@ -873,7 +908,7 @@ def main():
     historico.sort(key=lambda h: h['data'])
     hist_path = os.path.join('data', projeto, 'historico.json')
     save_json(hist_path, historico)
-    print(f'[etl] Histórico atualizado: {hist_path}  ({len(historico)} entradas)')
+    print(f'[etl] Hist\u00f3rico atualizado: {hist_path}  ({len(historico)} entradas)')
 
     # Atualiza manifest.json
     datas = sorted(h['data'] for h in historico)

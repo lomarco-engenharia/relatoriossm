@@ -125,10 +125,12 @@ tr:last-child td { border-bottom:none; }
 .expand-arrow { font-size:10px; color:var(--muted); transition:transform .2s; flex-shrink:0; display:inline-block; }
 .bar-item.open .expand-arrow { transform:rotate(90deg); }
 .pill { display:inline-block; border-radius:99px; font-size:10px; font-weight:700; padding:2px 7px; }
-.p-pend { background:#fef9c3; color:#854d0e; }
+.p-pend { background:#fef3c7; color:#b45309; }
 .p-inv  { background:#fee2e2; color:#991b1b; }
-.p-venc { background:#fde8d0; color:#7c2d12; }
-.p-rep  { background:#ffe4e6; color:#9f1239; }
+.p-venc { background:#fee2e2; color:#991b1b; }
+.p-rep  { background:#fee2e2; color:#991b1b; }
+.p-val  { background:#dbeafe; color:#1e40af; }
+.p-ok   { background:#dcfce7; color:#15803d; }
 
 /* ── Detail table inside expand-list ── */
 .detail-table { width:100%; border-collapse:collapse; font-size:12px; margin-top:2px; }
@@ -163,6 +165,48 @@ tr:last-child td { border-bottom:none; }
 .tag-venc-r   { background:#ffedd5; color:#c2410c; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
 .tag-venc-y   { background:#fef9c3; color:#854d0e; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
 .tag-venc-g   { background:#f1f5f9; color:#64748b; border-radius:4px; font-size:10px; font-weight:700; padding:2px 6px; display:inline-block; }
+
+/* ── Aba Documentos ── */
+.docs-filters {
+  background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding:14px 16px; margin-bottom:14px; display:flex; flex-wrap:wrap; gap:10px; align-items:flex-end;
+}
+.docs-filters input {
+  padding:7px 10px; border:1px solid var(--border); border-radius:6px; font-size:13px;
+  background:#f8fafc; outline:none; min-width:140px; flex:1 1 140px;
+}
+.docs-filters input:focus { border-color:var(--blue); background:#fff; }
+.docs-tag-row { display:flex; flex-wrap:wrap; gap:6px; width:100%; }
+.docs-tag-btn {
+  font-size:11px; font-weight:700; padding:4px 10px; border-radius:99px;
+  border:2px solid transparent; cursor:pointer; background:#f1f5f9; color:var(--muted);
+  transition:opacity .15s;
+}
+.docs-tag-btn.active { opacity:1; }
+.docs-tag-btn:not(.active) { opacity:.45; }
+.docs-tag-btn.dt-rep   { background:#fee2e2; color:#991b1b; border-color:#fca5a5; }
+.docs-tag-btn.dt-venc  { background:#fee2e2; color:#991b1b; border-color:#fca5a5; }
+.docs-tag-btn.dt-pend  { background:#fef3c7; color:#b45309; border-color:#fcd34d; }
+.docs-tag-btn.dt-val   { background:#dbeafe; color:#1e40af; border-color:#93c5fd; }
+.docs-tag-btn.dt-ok    { background:#dcfce7; color:#15803d; border-color:#86efac; }
+.docs-table-wrap { overflow-x:auto; border-radius:var(--radius); border:1px solid var(--border); }
+.docs-table { width:100%; border-collapse:collapse; font-size:13px; }
+.docs-table thead th {
+  position:sticky; top:0; z-index:5;
+  background:var(--navy); color:#fff;
+  font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em;
+  padding:9px 12px; text-align:left; white-space:nowrap;
+}
+.docs-table tbody td { padding:7px 12px; border-bottom:1px solid #f1f5f9; vertical-align:middle; }
+.docs-table tbody tr:last-child td { border-bottom:none; }
+.docs-table tbody tr:hover td { background:#f8fafc; }
+.docs-tag { display:inline-block; font-size:10px; font-weight:700; border-radius:99px; padding:2px 8px; white-space:nowrap; }
+.docs-tag.dt-rep  { background:#fee2e2; color:#991b1b; }
+.docs-tag.dt-venc { background:#fee2e2; color:#991b1b; }
+.docs-tag.dt-pend { background:#fef3c7; color:#b45309; }
+.docs-tag.dt-val  { background:#dbeafe; color:#1e40af; }
+.docs-tag.dt-ok   { background:#dcfce7; color:#15803d; }
+.docs-count { font-size:12px; color:var(--muted); margin-bottom:8px; }
 
 /* ── Aba Integração (CP/CI detalhe) ── */
 /* Band = métricas + CP/CI em card unificado */
@@ -236,9 +280,12 @@ tr:last-child td { border-bottom:none; }
 .ci-dot-val { background:var(--blue); }
 .ci-dname { font-size:12px; }
 .ci-dst { font-size:10px; font-weight:600; padding:2px 6px; border-radius:4px; white-space:nowrap; }
-.ci-dst-pen { background:#fef3c7; color:#b45309; }
-.ci-dst-rep { background:#fee2e2; color:#991b1b; }
-.ci-dst-val { background:#dbeafe; color:#1e40af; }
+.ci-dst-pen  { background:#fef3c7; color:#b45309; }
+.ci-dst-pend { background:#fef3c7; color:#b45309; }
+.ci-dst-rep  { background:#fee2e2; color:#991b1b; }
+.ci-dst-venc { background:#fee2e2; color:#991b1b; }
+.ci-dst-val  { background:#dbeafe; color:#1e40af; }
+.ci-dst-ok   { background:#dcfce7; color:#15803d; }
 .ci-nd-msg { color:var(--muted); font-size:12px; font-style:italic; }
 .ci-metric-sub { font-size:11px; color:var(--muted); margin-top:4px; line-height:1.5; }
 .ci-kpi-card { flex:1 1 200px; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:14px 20px; }
@@ -264,6 +311,7 @@ tr:last-child td { border-bottom:none; }
   <button class="tab-btn active" id="tab-dash" onclick="showTab('dashboard')">Dashboard</button>
   <button class="tab-btn" id="tab-evol" onclick="showTab('evolucao')">Evolução</button>
   <button class="tab-btn" id="tab-integ" onclick="showTab('integracao')">Colaboradores e Prestadores</button>
+  <button class="tab-btn" id="tab-docs" onclick="showTab('documentos')">Todos Documentos</button>
   <button class="tab-btn" id="tab-venc" onclick="showTab('vencimentos')">Vencimentos</button>
 </div>
 
@@ -278,6 +326,9 @@ tr:last-child td { border-bottom:none; }
   </div>
   <div id="tab-content-integracao" style="display:none">
     <div id="integ-content"></div>
+  </div>
+  <div id="tab-content-documentos" style="display:none">
+    <div id="docs-content"></div>
   </div>
   <div id="tab-content-vencimentos" style="display:none">
     <div id="venc-content"></div>
@@ -368,16 +419,19 @@ async function loadDate(date) {
 
 // ── Tabs ─────────────────────────────────────────────────────────────────────
 function showTab(tab) {
-  document.getElementById('tab-content-dashboard').style.display   = tab==='dashboard'  ? '' : 'none';
-  document.getElementById('tab-content-evolucao').style.display    = tab==='evolucao'   ? '' : 'none';
-  document.getElementById('tab-content-integracao').style.display  = tab==='integracao' ? '' : 'none';
-  document.getElementById('tab-content-vencimentos').style.display = tab==='vencimentos'? '' : 'none';
+  document.getElementById('tab-content-dashboard').style.display   = tab==='dashboard'   ? '' : 'none';
+  document.getElementById('tab-content-evolucao').style.display    = tab==='evolucao'    ? '' : 'none';
+  document.getElementById('tab-content-integracao').style.display  = tab==='integracao'  ? '' : 'none';
+  document.getElementById('tab-content-documentos').style.display  = tab==='documentos'  ? '' : 'none';
+  document.getElementById('tab-content-vencimentos').style.display = tab==='vencimentos' ? '' : 'none';
   document.getElementById('tab-dash').classList.toggle('active',  tab==='dashboard');
   document.getElementById('tab-evol').classList.toggle('active',  tab==='evolucao');
   document.getElementById('tab-integ').classList.toggle('active', tab==='integracao');
+  document.getElementById('tab-docs').classList.toggle('active',  tab==='documentos');
   document.getElementById('tab-venc').classList.toggle('active',  tab==='vencimentos');
   if (tab === 'evolucao'    && !evolBuilt)  loadEvolucao();
   if (tab === 'integracao'  && CURRENT_DATA) renderIntegracao(CURRENT_DATA);
+  if (tab === 'documentos'  && CURRENT_DATA) renderDocumentos(CURRENT_DATA);
   if (tab === 'vencimentos' && CURRENT_DATA) renderVencimentos(CURRENT_DATA);
 }
 
@@ -564,7 +618,7 @@ function renderDashboard(d) {
   let subsHtml = '<div class="bar-list">';
   subs.forEach((s, i) => {
     const rows = (s.entries || []).map(e => {
-      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
+      const pillCls = {pend:'p-pend',venc:'p-venc',rep:'p-rep',val:'p-val',ok:'p-ok'}[e.badge]||'p-pend';
       return `<tr><td>${e.func}</td><td>${e.doc_s}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
     }).join('') || `<tr><td colspan="3" style="color:var(--muted);font-size:12px">Sem pendências.</td></tr>`;
     const barPct = Math.min(parseFloat(s.taxa)||0, 100);
@@ -602,7 +656,7 @@ function renderDashboard(d) {
   let docsHtml = '<div class="bar-list">';
   docs.forEach(item => {
     const rows = item.entries.map(e => {
-      const pillCls = {pend:'p-pend',inv:'p-inv',venc:'p-venc',rep:'p-rep'}[e.badge]||'p-pend';
+      const pillCls = {pend:'p-pend',venc:'p-venc',rep:'p-rep',val:'p-val',ok:'p-ok'}[e.badge]||'p-pend';
       return `<tr><td>${e.empresa}</td><td>${e.func}</td><td><span class="pill ${pillCls}">${e.st_s}</span></td></tr>`;
     }).join('');
     docsHtml += `
@@ -790,6 +844,101 @@ function renderEvolucao(hist) {
   buildLine('ch-tot', slice.map(h => h.total),     '#64748b', null, true);
 }
 
+// ── Aba Todos Documentos ─────────────────────────────────────────────────────
+function renderDocumentos(d) {
+  var rows = d.all_docs || [];
+  var el   = document.getElementById('docs-content');
+  if (!rows.length) { el.innerHTML = '<div class="spinner">Sem dados de documentos.</div>'; return; }
+
+  // Grupos de filtro (clique aplica — sem filtro = exibe tudo)
+  var GROUPS = [
+    { id:'pendente',  label:'Pendente',          cls:'dt-pend', sts:['Pendente'] },
+    { id:'reprovado', label:'Reprovado',          cls:'dt-rep',  sts:['Isenção reprovada','Reprovado','Reprovado pelo cliente'] },
+    { id:'vencido',   label:'Vencido',            cls:'dt-venc', sts:['Vencido'] },
+    { id:'perto',     label:'Perto do vencimento',cls:'dt-pend', sts:['Perto do vencimento'] },
+    { id:'validacao', label:'Em validação',       cls:'dt-val',  sts:['Isenção em análise','Em validação'] },
+    { id:'aprovado',  label:'Aprovado',           cls:'dt-ok',   sts:['Isenção aprovada','Aprovado com ressalva','Aprovado pelo cliente','Aprovado'] },
+  ];
+
+  // Mapa st_s → grupo
+  var ST_GROUP = {};
+  GROUPS.forEach(function(g) { g.sts.forEach(function(s) { ST_GROUP[s] = g.id; }); });
+
+  // Estado: Set de grupos ativos (vazio = sem filtro = exibe tudo)
+  var activeGroups = new Set();
+
+  function doFilter() {
+    var qEmp  = (document.getElementById('docs-q-emp').value  || '').toLowerCase();
+    var qFunc = (document.getElementById('docs-q-func').value || '').toLowerCase();
+    var qDoc  = (document.getElementById('docs-q-doc').value  || '').toLowerCase();
+    var noGrp = activeGroups.size === 0;
+    var n = 0;
+    document.querySelectorAll('#docs-tbody tr').forEach(function(tr) {
+      var grpOk = noGrp || activeGroups.has(tr.dataset.grp);
+      var ok = grpOk
+        && (!qEmp  || tr.dataset.emp.indexOf(qEmp)   >= 0)
+        && (!qFunc || tr.dataset.func.indexOf(qFunc) >= 0)
+        && (!qDoc  || tr.dataset.doc.indexOf(qDoc)   >= 0);
+      tr.style.display = ok ? '' : 'none';
+      if (ok) n++;
+    });
+    document.getElementById('docs-count').textContent =
+      n.toLocaleString('pt-BR') + ' de ' + rows.length.toLocaleString('pt-BR') + ' documentos';
+  }
+
+  // Botões de grupo
+  var tagBtns = GROUPS.map(function(g) {
+    return '<button class="docs-tag-btn ' + g.cls + '" data-grp="' + g.id + '">' + g.label + '</button>';
+  }).join('');
+
+  // Linhas da tabela
+  var tbody = '';
+  rows.forEach(function(r) {
+    var grp = ST_GROUP[r.st_s] || 'aprovado';
+    tbody += '<tr data-grp="' + grp + '"'
+      + ' data-emp="'  + r.empresa.toLowerCase().replace(/"/g,'') + '"'
+      + ' data-func="' + r.func.toLowerCase().replace(/"/g,'') + '"'
+      + ' data-doc="'  + r.doc.toLowerCase().replace(/"/g,'') + '">'
+      + '<td style="white-space:nowrap">' + r.empresa + '</td>'
+      + '<td style="white-space:nowrap">' + r.func + '</td>'
+      + '<td>' + r.doc + '</td>'
+      + '<td style="white-space:nowrap"><span class="docs-tag dt-' + r.sev + '">' + r.st_s + '</span></td>'
+      + '</tr>';
+  });
+
+  el.innerHTML = ''
+    + '<div class="docs-filters">'
+    +   '<input id="docs-q-emp"  type="search" placeholder="Empresa…">'
+    +   '<input id="docs-q-func" type="search" placeholder="Funcionário…">'
+    +   '<input id="docs-q-doc"  type="search" placeholder="Documento…">'
+    +   '<div class="docs-tag-row">' + tagBtns + '</div>'
+    + '</div>'
+    + '<div class="docs-count" id="docs-count">' + rows.length.toLocaleString('pt-BR') + ' documentos</div>'
+    + '<div class="docs-table-wrap">'
+    +   '<table class="docs-table">'
+    +     '<thead><tr>'
+    +       '<th>Empresa</th><th>Funcionário</th><th>Documento</th><th>Status</th>'
+    +     '</tr></thead>'
+    +     '<tbody id="docs-tbody">' + tbody + '</tbody>'
+    +   '</table>'
+    + '</div>';
+
+  // Filtros de texto
+  ['docs-q-emp','docs-q-func','docs-q-doc'].forEach(function(id) {
+    document.getElementById(id).addEventListener('input', doFilter);
+  });
+
+  // Filtros de grupo (clique aplica; segundo clique remove)
+  document.querySelectorAll('.docs-tag-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var grp = btn.dataset.grp;
+      if (activeGroups.has(grp)) { activeGroups.delete(grp); btn.classList.remove('active'); }
+      else                        { activeGroups.add(grp);    btn.classList.add('active');    }
+      doFilter();
+    });
+  });
+}
+
 // ── Aba Vencimentos ───────────────────────────────────────────────────────────
 function renderVencimentos(d) {
   var vp  = d.vencimento_proximo || [];
@@ -975,7 +1124,7 @@ function renderIntegracao(d) {
   var ctrl = '<div class="ci-controls">'
     + '<div class="ci-search">'
     +   '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>'
-    +   '<input id="ci-q" type="search" placeholder="Buscar funcionário ou empresa…" autocomplete="off">'
+    +   '<input id="ci-q" type="search" placeholder="Buscar funcionário, empresa ou documento…" autocomplete="off">'
     + '</div>'
     + '<div class="ci-filters">'
     +   '<button class="ci-filter active" data-f="all">Todos</button>'
@@ -1003,7 +1152,8 @@ function renderIntegracao(d) {
     else if (w.alocacao === 'Demitido')      alocPill = '<span class="ci-pill ci-dim">Demitido</span>';
     else alocPill = '<span class="ci-pill ci-past">' + (w.alocacao || '—') + '</span>';
 
-    var searchTxt = (w.nome + ' ' + w.empresa + ' ' + (w.cargo||'') + ' ' + (w.regime||'')).toLowerCase();
+    var docNames = w.docs_pessoais.concat(w.docs_empresa).map(function(dd) { return dd.doc; }).join(' ');
+    var searchTxt = (w.nome + ' ' + w.empresa + ' ' + (w.cargo||'') + ' ' + (w.regime||'') + ' ' + docNames).toLowerCase();
 
     var pHtml = w.docs_pessoais.length > 0
       ? '<ul class="ci-doclist">' + w.docs_pessoais.map(function(dd) {
