@@ -29,13 +29,13 @@
     "n_ativos": 52
   },
   "variacao": {
-    "data_anterior": "2026-07-01",
-    "d_conf": 0.319,
-    "d_ader": 0.145,
-    "d_total": -1.087,
-    "d_subs": 0.0,
-    "d_cp": 1.362,
-    "d_ci": -0.333
+    "data_anterior": "2026-07-02",
+    "d_conf": 4.206,
+    "d_ader": 2.86,
+    "d_total": 3.631,
+    "d_subs": 3.704,
+    "d_cp": 4.919,
+    "d_ci": 2.25
   },
   "status_rows": [
     {
