@@ -1,14 +1,14 @@
 {
   "meta": {
     "projeto": "etemp",
-    "data": "2026-07-01",
+    "data": "2026-07-02",
     "total": 3803,
-    "nc": 247,
-    "na": 11,
-    "conf_pct": 93.50513,
-    "ader_pct": 99.71075,
+    "nc": 237,
+    "na": 10,
+    "conf_pct": 93.76808,
+    "ader_pct": 99.73705,
     "n_subs": 29,
-    "conf_fmt": "93,5%",
+    "conf_fmt": "93,8%",
     "ader_fmt": "99,7%",
     "conf_class": "kpi-yellow",
     "ader_class": "kpi-green",
@@ -29,30 +29,30 @@
     "n_ativos": 59
   },
   "variacao": {
-    "data_anterior": "2026-06-30",
-    "d_conf": 0.333,
-    "d_ader": 0.163,
-    "d_total": 1.09,
+    "data_anterior": "2026-07-01",
+    "d_conf": 0.281,
+    "d_ader": 0.026,
+    "d_total": 0.0,
     "d_subs": 0.0,
-    "d_cp": 25.0,
+    "d_cp": 0.0,
     "d_ci": 0.0
   },
   "status_rows": [
     {
       "label": "Isento",
-      "qty": 2477,
+      "qty": 2478,
       "color": "#059669",
       "is_nc": false,
       "is_na": false,
-      "pct": 65.1
+      "pct": 65.2
     },
     {
       "label": "OK",
-      "qty": 933,
+      "qty": 942,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
-      "pct": 24.5
+      "pct": 24.8
     },
     {
       "label": "Pend. — Isenção Ag. Aprovação",
@@ -80,11 +80,11 @@
     },
     {
       "label": "Em Validação",
-      "qty": 38,
+      "qty": 28,
       "color": "#2563a8",
       "is_nc": true,
       "is_na": false,
-      "pct": 1.0
+      "pct": 0.7
     },
     {
       "label": "Pend. — Isenção Reprovada",
@@ -103,19 +103,19 @@
       "pct": 0.4
     },
     {
-      "label": "Pendente",
-      "qty": 11,
-      "color": "#ca8a04",
-      "is_nc": true,
-      "is_na": true,
-      "pct": 0.3
-    },
-    {
       "label": "Inválido",
-      "qty": 10,
+      "qty": 11,
       "color": "#dc2626",
       "is_nc": true,
       "is_na": false,
+      "pct": 0.3
+    },
+    {
+      "label": "Pendente",
+      "qty": 10,
+      "color": "#ca8a04",
+      "is_nc": true,
+      "is_na": true,
       "pct": 0.3
     },
     {
@@ -137,17 +137,17 @@
       "Em Validação",
       "Pend. — Isenção Reprovada",
       "Perto do Vencimento",
-      "Pendente",
       "Inválido",
+      "Pendente",
       "Reprovado/Vencido"
     ],
     "data": [
-      2477,
-      933,
+      2478,
+      942,
       161,
       75,
       56,
-      38,
+      28,
       23,
       15,
       11,
@@ -163,8 +163,8 @@
       "#2563a8",
       "#be123c",
       "#f97316",
-      "#ca8a04",
       "#dc2626",
+      "#ca8a04",
       "#9f1239"
     ]
   },
@@ -189,32 +189,12 @@
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
-          "doc_s": "Folha de Pagamento"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -225,6 +205,26 @@
           "empresa": "Souza Soares — Locações e Serviços",
           "func": "—",
           "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "Folha de Pagamento"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         },
         {
           "empresa": "Marina Costa Lani Leal",
@@ -234,22 +234,17 @@
         {
           "empresa": "Erisvaldo Da Silva Santana",
           "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "Erisvaldo Da Silva Santana",
-          "func": "—",
           "doc_s": "Contrato Social / Reg. MEI"
         },
         {
-          "empresa": "MCA Soluções em Engenharia",
+          "empresa": "Erisvaldo Da Silva Santana",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "Erisvaldo Da Silva Santana",
+          "func": "—",
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "MCA Soluções em Engenharia",
@@ -262,7 +257,7 @@
           "doc_s": "CND Municipal"
         },
         {
-          "empresa": "Jeferson Da Silva Bonfim",
+          "empresa": "MCA Soluções em Engenharia",
           "func": "—",
           "doc_s": "CND FGTS — CRF"
         },
@@ -272,14 +267,14 @@
           "doc_s": "CND Municipal"
         },
         {
-          "empresa": "CEC Transportes e Locação",
+          "empresa": "Jeferson Da Silva Bonfim",
           "func": "—",
-          "doc_s": "CND Federal"
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "CEC Transportes e Locação",
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "CEC Transportes e Locação",
@@ -290,15 +285,84 @@
           "empresa": "CEC Transportes e Locação",
           "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
         }
       ]
     },
     {
       "id": "ns2",
-      "label": "Pendente",
-      "color": "#ca8a04",
+      "label": "Inválido",
+      "color": "#dc2626",
       "count": 11,
       "pct": 48,
+      "entries": [
+        {
+          "empresa": "Gabriela Cidrine de Sena",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "doc_s": "CND Federal"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
+        },
+        {
+          "empresa": "Shalom Terraplenagem Locações",
+          "func": "—",
+          "doc_s": "Contrato Social / Reg. MEI"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "Jose Ronaldo Da Costa",
+          "doc_s": "ASO"
+        },
+        {
+          "empresa": "Almir Godofredo Flores Cardoso",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
+        }
+      ]
+    },
+    {
+      "id": "ns3",
+      "label": "Pendente",
+      "color": "#ca8a04",
+      "count": 10,
+      "pct": 43,
       "entries": [
         {
           "empresa": "Valdir Rodrigues Topógrafo",
@@ -318,7 +382,7 @@
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "doc_s": "CND Federal"
+          "doc_s": "Contrato Social / Reg. MEI"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -328,12 +392,12 @@
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "doc_s": "CND FGTS — CRF"
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
+          "doc_s": "CND FGTS — CRF"
         },
         {
           "empresa": "Pejota Construções",
@@ -349,70 +413,6 @@
           "empresa": "Jeferson Da Silva Bonfim",
           "func": "—",
           "doc_s": "Evidências Prog. Saúde Mental"
-        },
-        {
-          "empresa": "Joclamar",
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
-        }
-      ]
-    },
-    {
-      "id": "ns3",
-      "label": "Inválido",
-      "color": "#dc2626",
-      "count": 10,
-      "pct": 43,
-      "entries": [
-        {
-          "empresa": "Gabriela Cidrine de Sena",
-          "func": "—",
-          "doc_s": "CND Federal"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Aleomar Soares Alves",
-          "doc_s": "Ficha de EPI"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Josemar Ferreira Lucena",
-          "doc_s": "Ficha de EPI"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "Ficha de EPI"
-        },
-        {
-          "empresa": "Pejota Construções",
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço"
-        },
-        {
-          "empresa": "Shalom Terraplenagem Locações",
-          "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "—",
-          "doc_s": "Apólice Seguro Garantia"
-        },
-        {
-          "empresa": "Consórcio KTL Mairiporã (próprio)",
-          "func": "Jose Ronaldo Da Costa",
-          "doc_s": "ASO"
-        },
-        {
-          "empresa": "Almir Godofredo Flores Cardoso",
-          "func": "—",
-          "doc_s": "CND FGTS — CRF"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "doc_s": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)"
         }
       ]
     },
@@ -450,7 +450,7 @@
     {
       "id": "d1",
       "name": "CND Federal",
-      "count": 6,
+      "count": 8,
       "color": "#0891b2",
       "pct": 100,
       "entries": [
@@ -465,6 +465,18 @@
           "func": "—",
           "badge": "pend",
           "st_s": "Pendente"
+        },
+        {
+          "empresa": "J F Lucena",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "Marina Costa Lani Leal",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
         },
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -497,7 +509,7 @@
       "name": "CND FGTS — CRF",
       "count": 6,
       "color": "#0891b2",
-      "pct": 100,
+      "pct": 75,
       "entries": [
         {
           "empresa": "Marina Costa Lani Leal",
@@ -539,49 +551,10 @@
     },
     {
       "id": "d3",
-      "name": "Evidências Prog. Saúde Mental",
-      "count": 5,
-      "color": "#64748b",
-      "pct": 83,
-      "entries": [
-        {
-          "empresa": "Engemar SP Engenharia e Construções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Pejota Construções",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "MCA Soluções em Engenharia",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Jeferson Da Silva Bonfim",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "empresa": "Joclamar",
-          "func": "—",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
-    },
-    {
-      "id": "d4",
       "name": "CND Municipal",
       "count": 4,
       "color": "#0891b2",
-      "pct": 67,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Valdir Rodrigues Topógrafo",
@@ -610,11 +583,77 @@
       ]
     },
     {
+      "id": "d4",
+      "name": "Evidências Prog. Saúde Mental",
+      "count": 4,
+      "color": "#64748b",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Engemar SP Engenharia e Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Pejota Construções",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "MCA Soluções em Engenharia",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "empresa": "Jeferson Da Silva Bonfim",
+          "func": "—",
+          "badge": "pend",
+          "st_s": "Pendente"
+        }
+      ]
+    },
+    {
       "id": "d5",
+      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+      "count": 4,
+      "color": "#7c3aed",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d6",
       "name": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
       "count": 4,
       "color": "#64748b",
-      "pct": 67,
+      "pct": 50,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -643,11 +682,44 @@
       ]
     },
     {
-      "id": "d6",
+      "id": "d7",
+      "name": "Comp. de Pagamento GPS/DARF",
+      "count": 4,
+      "color": "#64748b",
+      "pct": 50,
+      "entries": [
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Souza Soares — Locações e Serviços",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "empresa": "Consórcio KTL Mairiporã (próprio)",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "empresa": "CEC Transportes e Locação",
+          "func": "—",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "d8",
       "name": "Folha de Pagamento",
       "count": 3,
       "color": "#059669",
-      "pct": 50,
+      "pct": 38,
       "entries": [
         {
           "empresa": "Cedro Engenharia",
@@ -670,92 +742,11 @@
       ]
     },
     {
-      "id": "d7",
-      "name": "Ficha de EPI",
-      "count": 3,
-      "color": "#64748b",
-      "pct": 50,
-      "entries": [
-        {
-          "empresa": "J F Lucena",
-          "func": "Aleomar Soares Alves",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Josemar Ferreira Lucena",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "empresa": "J F Lucena",
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "d8",
-      "name": "Comp. de Pagamento GPS/DARF",
-      "count": 3,
-      "color": "#64748b",
-      "pct": 50,
-      "entries": [
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
       "id": "d9",
-      "name": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-      "count": 3,
-      "color": "#7c3aed",
-      "pct": 50,
-      "entries": [
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "Souza Soares — Locações e Serviços",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "empresa": "CEC Transportes e Locação",
-          "func": "—",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "d10",
       "name": "Contrato Social / Reg. MEI",
       "count": 3,
       "color": "#6366f1",
-      "pct": 50,
+      "pct": 38,
       "entries": [
         {
           "empresa": "Murilo Pinheiro de Carvalho Camilo",
@@ -778,11 +769,11 @@
       ]
     },
     {
-      "id": "d11",
+      "id": "d10",
       "name": "Contrato de Prestação de Serviço",
       "count": 2,
       "color": "#6366f1",
-      "pct": 33,
+      "pct": 25,
       "entries": [
         {
           "empresa": "Ronieli Mendes Bastos",
@@ -799,11 +790,11 @@
       ]
     },
     {
-      "id": "d12",
+      "id": "d11",
       "name": "PCMSO",
       "count": 1,
       "color": "#be123c",
-      "pct": 17,
+      "pct": 12,
       "entries": [
         {
           "empresa": "Tuca Pisos Construções",
@@ -814,11 +805,11 @@
       ]
     },
     {
-      "id": "d13",
+      "id": "d12",
       "name": "Inventário de Máquinas",
       "count": 1,
       "color": "#64748b",
-      "pct": 17,
+      "pct": 12,
       "entries": [
         {
           "empresa": "Souza Soares — Locações e Serviços",
@@ -829,11 +820,11 @@
       ]
     },
     {
-      "id": "d14",
+      "id": "d13",
       "name": "Apólice Seguro Garantia",
       "count": 1,
       "color": "#0f766e",
-      "pct": 17,
+      "pct": 12,
       "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -844,11 +835,11 @@
       ]
     },
     {
-      "id": "d15",
+      "id": "d14",
       "name": "Programa de Saúde Mental",
       "count": 1,
       "color": "#64748b",
-      "pct": 17,
+      "pct": 12,
       "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -859,11 +850,11 @@
       ]
     },
     {
-      "id": "d16",
+      "id": "d15",
       "name": "ASO",
       "count": 1,
       "color": "#dc2626",
-      "pct": 17,
+      "pct": 12,
       "entries": [
         {
           "empresa": "Consórcio KTL Mairiporã (próprio)",
@@ -874,11 +865,11 @@
       ]
     },
     {
-      "id": "d17",
+      "id": "d16",
       "name": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
       "count": 1,
       "color": "#64748b",
-      "pct": 17,
+      "pct": 12,
       "entries": [
         {
           "empresa": "CEC Transportes e Locação",
@@ -901,37 +892,13 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "Folha de Pagamento",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -944,6 +911,30 @@
         {
           "func": "—",
           "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "Folha de Pagamento",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -957,6 +948,47 @@
     },
     {
       "id": "s2",
+      "nome": "Consórcio KTL Mairiporã (próprio)",
+      "focus": 5,
+      "total": 980,
+      "taxa": 1,
+      "crit": 5,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "Apólice Seguro Garantia",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Programa de Saúde Mental",
+          "badge": "rep",
+          "st_s": "Reprovado"
+        },
+        {
+          "func": "Jose Ronaldo Da Costa",
+          "doc_s": "ASO",
+          "badge": "inv",
+          "st_s": "Inválido"
+        }
+      ]
+    },
+    {
+      "id": "s3",
       "nome": "CEC Transportes e Locação",
       "focus": 5,
       "total": 94,
@@ -978,12 +1010,6 @@
         },
         {
           "func": "—",
-          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "Comp. de Pagamento GPS/DARF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -993,11 +1019,17 @@
           "doc_s": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
+        },
+        {
+          "func": "—",
+          "doc_s": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
         }
       ]
     },
     {
-      "id": "s3",
+      "id": "s4",
       "nome": "Murilo Pinheiro de Carvalho Camilo",
       "focus": 4,
       "total": 105,
@@ -1007,7 +1039,7 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND Federal",
+          "doc_s": "Contrato Social / Reg. MEI",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -1019,20 +1051,20 @@
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "CND Federal",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
+          "doc_s": "CND FGTS — CRF",
           "badge": "pend",
           "st_s": "Pendente"
         }
       ]
     },
     {
-      "id": "s4",
+      "id": "s5",
       "nome": "MCA Soluções em Engenharia",
       "focus": 4,
       "total": 23,
@@ -1048,12 +1080,6 @@
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
-          "badge": "inv",
-          "st_s": "Isen. Reprovada"
-        },
-        {
-          "func": "—",
           "doc_s": "CND Federal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
@@ -1063,35 +1089,12 @@
           "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
-        }
-      ]
-    },
-    {
-      "id": "s5",
-      "nome": "J F Lucena",
-      "focus": 3,
-      "total": 105,
-      "taxa": 3,
-      "crit": 3,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "Aleomar Soares Alves",
-          "doc_s": "Ficha de EPI",
-          "badge": "inv",
-          "st_s": "Inválido"
         },
         {
-          "func": "Josemar Ferreira Lucena",
-          "doc_s": "Ficha de EPI",
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
           "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "Onilio Cardozo Cantuaria Filho",
-          "doc_s": "Ficha de EPI",
-          "badge": "inv",
-          "st_s": "Inválido"
+          "st_s": "Isen. Reprovada"
         }
       ]
     },
@@ -1106,7 +1109,7 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND Federal",
+          "doc_s": "Contrato Social / Reg. MEI",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
@@ -1118,7 +1121,7 @@
         },
         {
           "func": "—",
-          "doc_s": "Contrato Social / Reg. MEI",
+          "doc_s": "CND Federal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
@@ -1126,35 +1129,6 @@
     },
     {
       "id": "s7",
-      "nome": "Consórcio KTL Mairiporã (próprio)",
-      "focus": 3,
-      "total": 980,
-      "taxa": 0,
-      "crit": 3,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Apólice Seguro Garantia",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "Programa de Saúde Mental",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        },
-        {
-          "func": "Jose Ronaldo Da Costa",
-          "doc_s": "ASO",
-          "badge": "inv",
-          "st_s": "Inválido"
-        }
-      ]
-    },
-    {
-      "id": "s8",
       "nome": "Jeferson Da Silva Bonfim",
       "focus": 3,
       "total": 29,
@@ -1170,13 +1144,36 @@
         },
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "CND Municipal",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "CND Municipal",
+          "doc_s": "CND FGTS — CRF",
+          "badge": "inv",
+          "st_s": "Isen. Reprovada"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "nome": "Marina Costa Lani Leal",
+      "focus": 2,
+      "total": 22,
+      "taxa": 9,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "CND Federal",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "CND FGTS — CRF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
@@ -1309,18 +1306,18 @@
     },
     {
       "id": "s16",
-      "nome": "Marina Costa Lani Leal",
+      "nome": "J F Lucena",
       "focus": 1,
-      "total": 22,
-      "taxa": 5,
+      "total": 105,
+      "taxa": 1,
       "crit": 1,
       "pill_color": "#16a34a",
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND FGTS — CRF",
+          "doc_s": "CND Federal",
           "badge": "inv",
-          "st_s": "Isen. Reprovada"
+          "st_s": "Inválido"
         }
       ]
     },
@@ -1391,23 +1388,6 @@
           "st_s": "Inválido"
         }
       ]
-    },
-    {
-      "id": "s21",
-      "nome": "Joclamar",
-      "focus": 1,
-      "total": 106,
-      "taxa": 1,
-      "crit": 0,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        }
-      ]
     }
   ],
   "worker_docs": {
@@ -1420,7 +1400,7 @@
     "Aleomar Soares Alves": [
       {
         "doc": "Ficha de EPI",
-        "st_s": "Inválido"
+        "st_s": "Em Validação"
       }
     ],
     "Josemar Ferreira Lucena": [
@@ -1430,7 +1410,7 @@
       },
       {
         "doc": "Ficha de EPI",
-        "st_s": "Inválido"
+        "st_s": "Em Validação"
       }
     ],
     "Onilio Cardozo Cantuaria Filho": [
@@ -1440,7 +1420,7 @@
       },
       {
         "doc": "Ficha de EPI",
-        "st_s": "Inválido"
+        "st_s": "Em Validação"
       }
     ],
     "Gabriel De Lima Rodrigues Dos Reis": [
@@ -1462,7 +1442,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "05/07/2026",
-      "dias": 4,
+      "dias": 3,
       "tag": "vermelho"
     },
     {
@@ -1470,7 +1450,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "06/07/2026",
-      "dias": 5,
+      "dias": 4,
       "tag": "vermelho"
     },
     {
@@ -1478,7 +1458,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "06/07/2026",
-      "dias": 5,
+      "dias": 4,
       "tag": "vermelho"
     },
     {
@@ -1486,7 +1466,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "07/07/2026",
-      "dias": 6,
+      "dias": 5,
       "tag": "vermelho"
     },
     {
@@ -1494,7 +1474,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "08/07/2026",
-      "dias": 7,
+      "dias": 6,
       "tag": "vermelho"
     },
     {
@@ -1502,7 +1482,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "09/07/2026",
-      "dias": 8,
+      "dias": 7,
       "tag": "vermelho"
     },
     {
@@ -1510,7 +1490,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "09/07/2026",
-      "dias": 8,
+      "dias": 7,
       "tag": "vermelho"
     },
     {
@@ -1518,7 +1498,7 @@
       "func": "Alcindo Largueza",
       "doc": "ASO",
       "data_venc": "11/07/2026",
-      "dias": 10,
+      "dias": 9,
       "tag": "vermelho"
     },
     {
@@ -1526,7 +1506,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "13/07/2026",
-      "dias": 12,
+      "dias": 11,
       "tag": "amarelo"
     },
     {
@@ -1534,7 +1514,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "13/07/2026",
-      "dias": 12,
+      "dias": 11,
       "tag": "amarelo"
     },
     {
@@ -1542,7 +1522,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "13/07/2026",
-      "dias": 12,
+      "dias": 11,
       "tag": "amarelo"
     },
     {
@@ -1550,7 +1530,7 @@
       "func": "—",
       "doc": "LTCAT",
       "data_venc": "01/08/2026",
-      "dias": 31,
+      "dias": 30,
       "tag": "cinza"
     },
     {
@@ -1558,7 +1538,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "11/08/2026",
-      "dias": 41,
+      "dias": 40,
       "tag": "cinza"
     },
     {
@@ -1566,7 +1546,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "13/08/2026",
-      "dias": 43,
+      "dias": 42,
       "tag": "cinza"
     },
     {
@@ -1574,7 +1554,7 @@
       "func": "—",
       "doc": "PCMSO",
       "data_venc": "22/08/2026",
-      "dias": 52,
+      "dias": 51,
       "tag": "cinza"
     }
   ],
@@ -1725,8 +1705,8 @@
           },
           {
             "doc": "Ficha de EPI",
-            "st_s": "Inválido",
-            "sev": "rep"
+            "st_s": "Em Validação",
+            "sev": "val"
           }
         ],
         "docs_empresa": [
@@ -1737,11 +1717,11 @@
           },
           {
             "doc": "CND Federal",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
-            "doc": "Plano Trabalho em Altura",
+            "doc": "Programa de Saúde Mental",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1761,22 +1741,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1786,7 +1756,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -1811,8 +1791,8 @@
           },
           {
             "doc": "Ficha de EPI",
-            "st_s": "Inválido",
-            "sev": "rep"
+            "st_s": "Em Validação",
+            "sev": "val"
           }
         ],
         "docs_empresa": [
@@ -1823,11 +1803,11 @@
           },
           {
             "doc": "CND Federal",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
-            "doc": "Plano Trabalho em Altura",
+            "doc": "Programa de Saúde Mental",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1847,22 +1827,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1872,7 +1842,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -1892,8 +1872,8 @@
         "docs_pessoais": [
           {
             "doc": "Ficha de EPI",
-            "st_s": "Inválido",
-            "sev": "rep"
+            "st_s": "Em Validação",
+            "sev": "val"
           }
         ],
         "docs_empresa": [
@@ -1904,11 +1884,11 @@
           },
           {
             "doc": "CND Federal",
-            "st_s": "Em Validação",
-            "sev": "val"
+            "st_s": "Inválido",
+            "sev": "rep"
           },
           {
-            "doc": "Plano Trabalho em Altura",
+            "doc": "Programa de Saúde Mental",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1928,22 +1908,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Relação de veículos utilizados no contrato da Sabesp (Específico por Serviço)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1953,7 +1923,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -1969,7 +1949,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -2014,6 +1994,16 @@
             "sev": "rep"
           },
           {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
             "doc": "Programa de Saúde Mental",
             "st_s": "Reprovado",
             "sev": "rep"
@@ -2044,7 +2034,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2054,17 +2044,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PGR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2074,7 +2054,17 @@
             "sev": "pen"
           },
           {
-            "doc": "PCMSO",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2109,7 +2099,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PGR",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2119,17 +2109,17 @@
             "sev": "pen"
           },
           {
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2159,12 +2149,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2174,17 +2159,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2204,7 +2194,7 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2214,12 +2204,12 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2229,12 +2219,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PCMSO",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2259,12 +2249,12 @@
             "sev": "val"
           },
           {
-            "doc": "Apólice Seguro Garantia",
+            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Autorização de Subcontratação",
+            "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2274,12 +2264,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PGR",
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2304,12 +2294,7 @@
             "sev": "val"
           },
           {
-            "doc": "Autorização de Subcontratação",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
+            "doc": "Apólice Seguro Garantia",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2319,12 +2304,17 @@
             "sev": "pen"
           },
           {
+            "doc": "Autorização de Subcontratação",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Apólice Seguro Garantia",
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2380,14 +2370,9 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 2,
+        "n_emp": 1,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
           {
             "doc": "Contrato de Prestação de Serviço",
             "st_s": "Isenção Ag. Aprovação",
@@ -2405,14 +2390,9 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 2,
+        "n_emp": 1,
         "docs_pessoais": [],
         "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
           {
             "doc": "Contrato de Prestação de Serviço",
             "st_s": "Isenção Ag. Aprovação",
@@ -2430,7 +2410,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2465,6 +2445,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2485,7 +2475,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2520,6 +2510,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2540,7 +2540,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2575,6 +2575,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2595,7 +2605,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2630,6 +2640,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2650,7 +2670,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2685,6 +2705,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2705,7 +2735,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2740,6 +2770,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2760,7 +2800,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2795,6 +2835,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2815,7 +2865,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2850,6 +2900,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2870,7 +2930,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2905,6 +2965,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2925,7 +2995,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -2960,6 +3030,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -2980,7 +3060,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3015,6 +3095,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3035,7 +3125,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3070,6 +3160,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3090,7 +3190,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3125,6 +3225,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3145,7 +3255,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3180,6 +3290,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3200,7 +3320,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3235,6 +3355,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3255,7 +3385,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3290,6 +3420,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3310,7 +3450,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3345,6 +3485,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3365,7 +3515,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3400,6 +3550,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3420,7 +3580,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3459,6 +3619,16 @@
             "sev": "rep"
           },
           {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
             "doc": "Programa de Saúde Mental",
             "st_s": "Reprovado",
             "sev": "rep"
@@ -3475,7 +3645,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 8,
+        "n_emp": 10,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3510,6 +3680,16 @@
           },
           {
             "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Inválido",
             "sev": "rep"
           },
@@ -3549,22 +3729,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -3769,7 +3949,7 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3789,7 +3969,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4539,12 +4719,12 @@
             "sev": "pen"
           },
           {
-            "doc": "CND FGTS — CRF",
+            "doc": "CND Municipal",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "CND Municipal",
+            "doc": "CND FGTS — CRF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4644,22 +4824,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -4715,7 +4895,7 @@
         "docs_pessoais": [],
         "docs_empresa": [
           {
-            "doc": "CND Federal",
+            "doc": "Contrato Social / Reg. MEI",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -4725,22 +4905,17 @@
             "sev": "pen"
           },
           {
+            "doc": "CND Federal",
+            "st_s": "Pendente",
+            "sev": "pen"
+          },
+          {
             "doc": "CND FGTS — CRF",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
-            "doc": "Contrato Social / Reg. MEI",
-            "st_s": "Pendente",
-            "sev": "pen"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "doc": "13º Folha de Pagamento - Residual Dezembro",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4750,17 +4925,7 @@
             "sev": "pen"
           },
           {
-            "doc": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "13º Folha de Pagamento - Residual Dezembro",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4770,12 +4935,32 @@
             "sev": "pen"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "GFD — Guia FGTS Digital",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "13º parcela GPS/DARF - Documento de Arrecadação Fiscal / DCTFweb (Relatórios Gerais: Recibo de Entrega, Resumo de Débitos e Resumo de Créditos) e PER/DCOMP (quando houver), DAS-MEI ou DAE (Documento de Arrecadação do e-Social)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4786,11 +4971,6 @@
           },
           {
             "doc": "LTCAT",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -4815,16 +4995,6 @@
             "sev": "pen"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -4840,12 +5010,37 @@
             "sev": "pen"
           },
           {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "PPR",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4858,24 +5053,74 @@
             "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
           }
         ],
         "sev": "pen"
+      },
+      {
+        "nome": "Dario Fernandes",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Operador De Maquina",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
       },
       {
         "nome": "Diego Batista Da Silva",
@@ -4925,11 +5170,6 @@
             "sev": "rep"
           },
           {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
@@ -4937,6 +5177,791 @@
           {
             "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Adriano Conrado Veronezi",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Técnico Em Segurança Do Trabalho",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Adriano Da Silva Cardoso",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Douglas Francisco",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Operador De Maquina",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Erik Souza Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Auxiliar De Laboratório",
+        "regime": "Temporário",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Gilvan Carlos Dos Santos",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jaubânice Maria De Souza",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Ajudante",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Lais Silvestre Gardin",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Auxiliar Administrativo",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Marcos Grego",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Carpinteiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Paulo Henrique Mesquita De Sousa",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Phidius Bernardes Da Silva",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Técnico De Segurança Do Trabalho",
+        "regime": "Autônomo",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Sidnei Rosa De Oliveira",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Determinado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Welinton De Santana",
+        "empresa": "Consórcio KTL Mairiporã (próprio)",
+        "cargo": "Ajudante",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "N.D.",
+        "alocacao": "Demitido",
+        "alocacao_raw": "Demitidos",
+        "n_pess": 0,
+        "n_emp": 10,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
             "sev": "rep"
           }
         ],
@@ -4965,27 +5990,17 @@
             "sev": "rep"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Folha de Pagamento",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4996,6 +6011,16 @@
           },
           {
             "doc": "Plano de Segurança para atividades com escavações",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -5035,22 +6060,22 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5095,22 +6120,22 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5155,22 +6180,22 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5200,7 +6225,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5210,17 +6235,17 @@
             "sev": "pen"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5230,12 +6255,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PCMSO",
+            "doc": "PGR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "PGR",
+            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -5275,22 +6300,22 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5325,27 +6350,17 @@
             "sev": "rep"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Folha de Pagamento",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5356,6 +6371,16 @@
           },
           {
             "doc": "Plano de Segurança para atividades com escavações",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Autorização de Subcontratação",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -5395,22 +6420,22 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
             "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -5450,17 +6475,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -5470,172 +6485,17 @@
             "sev": "rep"
           },
           {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
             "doc": "Inventário de Máquinas",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Dario Fernandes",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Operador De Maquina",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "N.D.",
-        "alocacao": "Já participou",
-        "alocacao_raw": "Funcionários que já participaram",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Adriano Conrado Veronezi",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Técnico Em Segurança Do Trabalho",
-        "regime": "Autônomo",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Adriano Da Silva Cardoso",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Determinado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5670,17 +6530,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -5690,172 +6540,17 @@
             "sev": "rep"
           },
           {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
             "doc": "Inventário de Máquinas",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Douglas Francisco",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Operador De Maquina",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Erik Souza Da Silva",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Auxiliar De Laboratório",
-        "regime": "Temporário",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Gilvan Carlos Dos Santos",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Pedreiro",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5890,17 +6585,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -5910,117 +6595,17 @@
             "sev": "rep"
           },
           {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
             "doc": "Inventário de Máquinas",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jaubânice Maria De Souza",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Ajudante",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Lais Silvestre Gardin",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Auxiliar Administrativo",
-        "regime": "Autônomo",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -6055,17 +6640,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -6075,227 +6650,17 @@
             "sev": "rep"
           },
           {
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
             "doc": "Inventário de Máquinas",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Marcos Grego",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Carpinteiro",
-        "regime": "CLT - Tempo Determinado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Paulo Henrique Mesquita De Sousa",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Phidius Bernardes Da Silva",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Técnico De Segurança Do Trabalho",
-        "regime": "Autônomo",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Sidnei Rosa De Oliveira",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Pedreiro",
-        "regime": "CLT - Tempo Determinado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -6330,22 +6695,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -6385,22 +6750,22 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Relatórios do FGTS Digital: Detalhe da Guia Emitida - Relação de Trabalhadores e/ou Relação de Tomadores de Serviço",
+            "doc": "Comp. de Pagamento GPS/DARF",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -6440,17 +6805,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
             "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Isen. Reprovada",
-            "sev": "rep"
-          },
-          {
-            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
@@ -6460,62 +6815,17 @@
             "sev": "rep"
           },
           {
-            "doc": "Inventário de Máquinas",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Welinton De Santana",
-        "empresa": "Consórcio KTL Mairiporã (próprio)",
-        "cargo": "Ajudante",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "N.D.",
-        "alocacao": "Demitido",
-        "alocacao_raw": "Demitidos",
-        "n_pess": 0,
-        "n_emp": 8,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Programa de Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "Comp. de Pagamento GPS/DARF",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "GPS/DARF — DCTFweb (Doc. Arrecadação)",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
+            "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Folha de Pagamento",
+            "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          },
+          {
+            "doc": "Inventário de Máquinas",
             "st_s": "Reprovado",
             "sev": "rep"
           }

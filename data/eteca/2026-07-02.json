@@ -1,41 +1,41 @@
 {
   "meta": {
     "projeto": "eteca",
-    "data": "2026-07-01",
-    "total": 3405,
-    "nc": 161,
+    "data": "2026-07-02",
+    "total": 3406,
+    "nc": 160,
     "na": 10,
-    "conf_pct": 95.27166,
-    "ader_pct": 99.70631,
+    "conf_pct": 95.30241,
+    "ader_pct": 99.7064,
     "n_subs": 28,
     "conf_fmt": "95,3%",
     "ader_fmt": "99,7%",
     "conf_class": "kpi-green",
     "ader_class": "kpi-green",
-    "total_workers": 55,
-    "cp_ok": 48,
-    "cp_nc": 11,
-    "cp_pct": 87.27273,
-    "cp_fmt": "87,3%",
+    "total_workers": 54,
+    "cp_ok": 47,
+    "cp_nc": 10,
+    "cp_pct": 87.03704,
+    "cp_fmt": "87,0%",
     "cp_class": "kpi-yellow",
-    "ci_ok": 52,
+    "ci_ok": 51,
     "ci_nc": 3,
-    "ci_pct": 94.54545,
-    "ci_fmt": "94,5%",
+    "ci_pct": 94.44444,
+    "ci_fmt": "94,4%",
     "ci_class": "kpi-yellow",
     "ci_acesso": 44,
-    "ci_pend_int": 8,
+    "ci_pend_int": 7,
     "ci_falta": 1,
-    "n_ativos": 55
+    "n_ativos": 54
   },
   "variacao": {
-    "data_anterior": "2026-06-30",
-    "d_conf": -0.256,
-    "d_ader": -0.116,
-    "d_total": 1.099,
+    "data_anterior": "2026-07-01",
+    "d_conf": 0.032,
+    "d_ader": 0.0,
+    "d_total": 0.029,
     "d_subs": 0.0,
-    "d_cp": 8.052,
-    "d_ci": 0.334
+    "d_cp": -0.27,
+    "d_ci": -0.107
   },
   "status_rows": [
     {
@@ -48,7 +48,7 @@
     },
     {
       "label": "OK",
-      "qty": 955,
+      "qty": 954,
       "color": "#16a34a",
       "is_nc": false,
       "is_na": false,
@@ -80,11 +80,11 @@
     },
     {
       "label": "Perto do Vencimento",
-      "qty": 40,
+      "qty": 43,
       "color": "#f97316",
       "is_nc": false,
       "is_na": false,
-      "pct": 1.2
+      "pct": 1.3
     },
     {
       "label": "Em Validação",
@@ -120,11 +120,11 @@
     },
     {
       "label": "Reprovado/Vencido",
-      "qty": 6,
+      "qty": 5,
       "color": "#9f1239",
       "is_nc": true,
       "is_na": false,
-      "pct": 0.2
+      "pct": 0.1
     }
   ],
   "donut": {
@@ -143,16 +143,16 @@
     ],
     "data": [
       2050,
-      955,
+      954,
       146,
       109,
       53,
-      40,
+      43,
       17,
       11,
       10,
       8,
-      6
+      5
     ],
     "colors": [
       "#059669",
@@ -243,12 +243,12 @@
         {
           "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
-          "doc_s": "Campanha SST"
+          "doc_s": "Evidências Prog. Saúde Mental"
         },
         {
           "empresa": "Alufer Engenharia Ltda.",
           "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental"
+          "doc_s": "Campanha SST"
         },
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -273,12 +273,12 @@
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "doc_s": "CND Federal"
+          "doc_s": "CNDT"
         },
         {
           "empresa": "Lais Silvestre Gardin",
           "func": "—",
-          "doc_s": "CNDT"
+          "doc_s": "CND Federal"
         },
         {
           "empresa": "Lais Silvestre Gardin",
@@ -317,12 +317,12 @@
         {
           "empresa": "Ryfal Construções e Reformas",
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF"
+          "doc_s": "Folha de Pagamento"
         },
         {
           "empresa": "Ryfal Construções e Reformas",
           "func": "—",
-          "doc_s": "Folha de Pagamento"
+          "doc_s": "Comp. de Pagamento GPS/DARF"
         },
         {
           "empresa": "Pedro H. Vercosa Geraldes",
@@ -345,8 +345,8 @@
       "id": "ns4",
       "label": "Reprovado/Vencido",
       "color": "#9f1239",
-      "count": 6,
-      "pct": 55,
+      "count": 5,
+      "pct": 45,
       "entries": [
         {
           "empresa": "Alufer Engenharia Ltda.",
@@ -372,11 +372,6 @@
           "empresa": "Consórcio ETE Caieiras (próprio)",
           "func": "—",
           "doc_s": "Plano de Rigging (Içamento)"
-        },
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "doc_s": "Plano Resgate Altura"
         }
       ]
     }
@@ -669,9 +664,9 @@
     },
     {
       "id": "d14",
-      "name": "Comp. de Pagamento GPS/DARF",
+      "name": "Folha de Pagamento",
       "count": 1,
-      "color": "#64748b",
+      "color": "#059669",
       "pct": 25,
       "entries": [
         {
@@ -684,9 +679,9 @@
     },
     {
       "id": "d15",
-      "name": "Folha de Pagamento",
+      "name": "Comp. de Pagamento GPS/DARF",
       "count": 1,
-      "color": "#059669",
+      "color": "#64748b",
       "pct": 25,
       "entries": [
         {
@@ -714,21 +709,6 @@
     },
     {
       "id": "d17",
-      "name": "Plano Resgate Altura",
-      "count": 1,
-      "color": "#2563a8",
-      "pct": 25,
-      "entries": [
-        {
-          "empresa": "Consórcio ETE Caieiras (próprio)",
-          "func": "—",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        }
-      ]
-    },
-    {
-      "id": "d18",
       "name": "CNDT",
       "count": 1,
       "color": "#0891b2",
@@ -743,7 +723,7 @@
       ]
     },
     {
-      "id": "d19",
+      "id": "d18",
       "name": "Contrato Social / Reg. MEI",
       "count": 1,
       "color": "#6366f1",
@@ -758,7 +738,7 @@
       ]
     },
     {
-      "id": "d20",
+      "id": "d19",
       "name": "CND Municipal",
       "count": 1,
       "color": "#0891b2",
@@ -776,11 +756,52 @@
   "subs": [
     {
       "id": "s1",
+      "nome": "Alufer Engenharia Ltda.",
+      "focus": 5,
+      "total": 130,
+      "taxa": 4,
+      "crit": 2,
+      "pill_color": "#16a34a",
+      "entries": [
+        {
+          "func": "—",
+          "doc_s": "PGR",
+          "badge": "inv",
+          "st_s": "Inválido"
+        },
+        {
+          "func": "—",
+          "doc_s": "Evidências Prog. Saúde Mental",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "Campanha SST",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "DDS — Diálogo Diário de Seg.",
+          "badge": "pend",
+          "st_s": "Pendente"
+        },
+        {
+          "func": "—",
+          "doc_s": "LTCAT",
+          "badge": "venc",
+          "st_s": "Vencido"
+        }
+      ]
+    },
+    {
+      "id": "s2",
       "nome": "Consórcio ETE Caieiras (próprio)",
-      "focus": 6,
-      "total": 1367,
+      "focus": 5,
+      "total": 1368,
       "taxa": 0,
-      "crit": 6,
+      "crit": 5,
       "pill_color": "#16a34a",
       "entries": [
         {
@@ -802,12 +823,6 @@
           "st_s": "Reprovado"
         },
         {
-          "func": "—",
-          "doc_s": "Plano Resgate Altura",
-          "badge": "rep",
-          "st_s": "Reprovado"
-        },
-        {
           "func": "Júlio Sebastião De Oliveira",
           "doc_s": "TRCT - Cópia da Rescisão assinada  (Termo de Rescisão de Contrato de Trabalho e Termo de Quitação de Rescisão do contrato de Trabalho)",
           "badge": "inv",
@@ -822,47 +837,6 @@
       ]
     },
     {
-      "id": "s2",
-      "nome": "Alufer Engenharia Ltda.",
-      "focus": 5,
-      "total": 130,
-      "taxa": 4,
-      "crit": 2,
-      "pill_color": "#16a34a",
-      "entries": [
-        {
-          "func": "—",
-          "doc_s": "PGR",
-          "badge": "inv",
-          "st_s": "Inválido"
-        },
-        {
-          "func": "—",
-          "doc_s": "Campanha SST",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "Evidências Prog. Saúde Mental",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "DDS — Diálogo Diário de Seg.",
-          "badge": "pend",
-          "st_s": "Pendente"
-        },
-        {
-          "func": "—",
-          "doc_s": "LTCAT",
-          "badge": "venc",
-          "st_s": "Vencido"
-        }
-      ]
-    },
-    {
       "id": "s3",
       "nome": "Lais Silvestre Gardin",
       "focus": 5,
@@ -873,13 +847,13 @@
       "entries": [
         {
           "func": "—",
-          "doc_s": "CND Federal",
+          "doc_s": "CNDT",
           "badge": "pend",
           "st_s": "Pendente"
         },
         {
           "func": "—",
-          "doc_s": "CNDT",
+          "doc_s": "CND Federal",
           "badge": "pend",
           "st_s": "Pendente"
         },
@@ -926,13 +900,13 @@
         },
         {
           "func": "—",
-          "doc_s": "Comp. de Pagamento GPS/DARF",
+          "doc_s": "Folha de Pagamento",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         },
         {
           "func": "—",
-          "doc_s": "Folha de Pagamento",
+          "doc_s": "Comp. de Pagamento GPS/DARF",
           "badge": "inv",
           "st_s": "Isen. Reprovada"
         }
@@ -1198,19 +1172,7 @@
     ],
     "Júlio Sebastião De Oliveira": [
       {
-        "doc": "Carteira do Conselho Regional - Registro de Classe",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "Carteira Profissional",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
-        "st_s": "Isenção Ag. Aprovação"
-      },
-      {
-        "doc": "CNH",
+        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1218,7 +1180,19 @@
         "st_s": "Isenção Ag. Aprovação"
       },
       {
-        "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+        "doc": "Carteira Profissional",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "CNH",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+        "st_s": "Isenção Ag. Aprovação"
+      },
+      {
+        "doc": "Carteira do Conselho Regional - Registro de Classe",
         "st_s": "Isenção Ag. Aprovação"
       },
       {
@@ -1263,7 +1237,7 @@
       "func": "—",
       "doc": "LTCAT",
       "data_venc": "01/08/2024",
-      "dias": -699,
+      "dias": -700,
       "tag": "vencido"
     },
     {
@@ -1271,7 +1245,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "02/07/2026",
-      "dias": 1,
+      "dias": 0,
       "tag": "vermelho"
     },
     {
@@ -1279,7 +1253,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "06/07/2026",
-      "dias": 5,
+      "dias": 4,
       "tag": "vermelho"
     },
     {
@@ -1287,7 +1261,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "06/07/2026",
-      "dias": 5,
+      "dias": 4,
       "tag": "vermelho"
     },
     {
@@ -1295,7 +1269,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "06/07/2026",
-      "dias": 5,
+      "dias": 4,
       "tag": "vermelho"
     },
     {
@@ -1303,7 +1277,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "07/07/2026",
-      "dias": 6,
+      "dias": 5,
       "tag": "vermelho"
     },
     {
@@ -1311,7 +1285,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "08/07/2026",
-      "dias": 7,
+      "dias": 6,
       "tag": "vermelho"
     },
     {
@@ -1319,7 +1293,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "08/07/2026",
-      "dias": 7,
+      "dias": 6,
       "tag": "vermelho"
     },
     {
@@ -1327,7 +1301,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "08/07/2026",
-      "dias": 7,
+      "dias": 6,
       "tag": "vermelho"
     },
     {
@@ -1335,7 +1309,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "09/07/2026",
-      "dias": 8,
+      "dias": 7,
       "tag": "vermelho"
     },
     {
@@ -1343,7 +1317,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "09/07/2026",
-      "dias": 8,
+      "dias": 7,
       "tag": "vermelho"
     },
     {
@@ -1351,7 +1325,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "09/07/2026",
-      "dias": 8,
+      "dias": 7,
       "tag": "vermelho"
     },
     {
@@ -1359,7 +1333,7 @@
       "func": "Edmundo Dias De Oliveira",
       "doc": "NR-18 - Treinamento para uso/montagem de andaime",
       "data_venc": "11/07/2026",
-      "dias": 10,
+      "dias": 9,
       "tag": "vermelho"
     },
     {
@@ -1367,7 +1341,7 @@
       "func": "Edmundo Dias De Oliveira",
       "doc": "NR33 Trabalho em Espaços Confinados 16 Hrs Trabalhador autorizado",
       "data_venc": "11/07/2026",
-      "dias": 10,
+      "dias": 9,
       "tag": "vermelho"
     },
     {
@@ -1375,7 +1349,7 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "11/07/2026",
-      "dias": 10,
+      "dias": 9,
       "tag": "vermelho"
     },
     {
@@ -1383,7 +1357,7 @@
       "func": "Ediniz De Oliveira Santos",
       "doc": "ASO",
       "data_venc": "11/07/2026",
-      "dias": 10,
+      "dias": 9,
       "tag": "vermelho"
     },
     {
@@ -1391,7 +1365,7 @@
       "func": "Luis Aprígio Da Silva",
       "doc": "ASO",
       "data_venc": "11/07/2026",
-      "dias": 10,
+      "dias": 9,
       "tag": "vermelho"
     },
     {
@@ -1399,22 +1373,30 @@
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "12/07/2026",
-      "dias": 11,
-      "tag": "amarelo"
+      "dias": 10,
+      "tag": "vermelho"
     },
     {
       "empresa": "Roberto Carlos Rojo De Barros",
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "12/07/2026",
-      "dias": 11,
-      "tag": "amarelo"
+      "dias": 10,
+      "tag": "vermelho"
     },
     {
       "empresa": "Lomarco Engenharia",
       "func": "—",
       "doc": "CND FGTS — CRF",
       "data_venc": "15/07/2026",
+      "dias": 13,
+      "tag": "amarelo"
+    },
+    {
+      "empresa": "Alufer Engenharia Ltda.",
+      "func": "—",
+      "doc": "CND FGTS — CRF",
+      "data_venc": "16/07/2026",
       "dias": 14,
       "tag": "amarelo"
     },
@@ -1423,7 +1405,7 @@
       "func": "Allyson Rodrigo Da Silva De Araujo",
       "doc": "ASO",
       "data_venc": "21/07/2026",
-      "dias": 20,
+      "dias": 19,
       "tag": "amarelo"
     },
     {
@@ -1431,7 +1413,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "27/07/2026",
-      "dias": 26,
+      "dias": 25,
       "tag": "cinza"
     },
     {
@@ -1439,7 +1421,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "27/07/2026",
-      "dias": 26,
+      "dias": 25,
       "tag": "cinza"
     },
     {
@@ -1447,7 +1429,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "27/07/2026",
-      "dias": 26,
+      "dias": 25,
       "tag": "cinza"
     },
     {
@@ -1455,7 +1437,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1463,7 +1445,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1471,7 +1453,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1479,7 +1461,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1487,7 +1469,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1495,7 +1477,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1503,7 +1485,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1511,7 +1493,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1519,7 +1501,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1527,7 +1509,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1535,7 +1517,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1543,7 +1525,7 @@
       "func": "—",
       "doc": "Contrato de Prestação de Serviço",
       "data_venc": "31/07/2026",
-      "dias": 30,
+      "dias": 29,
       "tag": "cinza"
     },
     {
@@ -1551,7 +1533,7 @@
       "func": "Edmundo Dias De Oliveira",
       "doc": "NR20 - Curso de integração para trabalho com inflamáveis e combustíveis",
       "data_venc": "04/08/2026",
-      "dias": 34,
+      "dias": 33,
       "tag": "cinza"
     },
     {
@@ -1559,7 +1541,7 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "13/08/2026",
-      "dias": 43,
+      "dias": 42,
       "tag": "cinza"
     },
     {
@@ -1567,7 +1549,7 @@
       "func": "—",
       "doc": "PCMSO",
       "data_venc": "14/08/2026",
-      "dias": 44,
+      "dias": 43,
       "tag": "cinza"
     },
     {
@@ -1575,7 +1557,15 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "20/08/2026",
-      "dias": 50,
+      "dias": 49,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Alufer Engenharia Ltda.",
+      "func": "—",
+      "doc": "CND Federal",
+      "data_venc": "23/08/2026",
+      "dias": 52,
       "tag": "cinza"
     },
     {
@@ -1583,7 +1573,15 @@
       "func": "—",
       "doc": "CND Municipal",
       "data_venc": "26/08/2026",
-      "dias": 56,
+      "dias": 55,
+      "tag": "cinza"
+    },
+    {
+      "empresa": "Fluiter Engenharia e Soluções",
+      "func": "—",
+      "doc": "CND Federal",
+      "data_venc": "30/08/2026",
+      "dias": 59,
       "tag": "cinza"
     }
   ],
@@ -1629,11 +1627,6 @@
       "status": "Falta Integração"
     },
     {
-      "fornecedor": "Ronaldo Barbosa De Souza",
-      "funcionario": "Ronaldo Barbosa De Souza",
-      "status": "Pendências porém Integrado"
-    },
-    {
       "fornecedor": "Ronieli Mendes Bastos",
       "funcionario": "Ronieli Bastos",
       "status": "Pendências porém Integrado"
@@ -1649,18 +1642,18 @@
     "n_liberado": 44,
     "n_pend_pess": 14,
     "n_pend_emp": 88,
-    "n_nd": 33,
-    "n_alocados": 54,
-    "n_participaram": 10,
+    "n_nd": 34,
+    "n_alocados": 53,
+    "n_participaram": 11,
     "n_pend_falta_int": 2,
     "n_falta_int": 1,
-    "n_pend_integrado": 8,
-    "n_ativos": 55,
-    "n_ativos_doc_ok": 48,
+    "n_pend_integrado": 7,
+    "n_ativos": 54,
+    "n_ativos_doc_ok": 47,
     "n_ativos_doc_pend": 7,
-    "n_ativos_acesso_lib": 52,
+    "n_ativos_acesso_lib": 51,
     "n_ativos_int_pend": 3,
-    "n_ativos_pend_emp": 55,
+    "n_ativos_pend_emp": 54,
     "combos": [
       {
         "si": "Pendências e Falta Integração",
@@ -1684,7 +1677,7 @@
         "si": "Pendências porém Integrado",
         "sp": "Sem pendências",
         "se": "Com pendências",
-        "qty": 5
+        "qty": 4
       },
       {
         "si": "Acesso Liberado",
@@ -1708,7 +1701,7 @@
         "si": "N.D.",
         "sp": "Sem pendências",
         "se": "Com pendências",
-        "qty": 26
+        "qty": 27
       }
     ],
     "workers": [
@@ -1721,7 +1714,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 8,
+        "n_emp": 6,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -1731,27 +1724,17 @@
         ],
         "docs_empresa": [
           {
-            "doc": "CND Federal",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "CNDT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "PGR",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
+            "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
-            "doc": "Evidências Prog. Saúde Mental",
+            "doc": "Campanha SST",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -1782,7 +1765,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 1,
-        "n_emp": 8,
+        "n_emp": 6,
         "docs_pessoais": [
           {
             "doc": "NR26 - Treinamento em utilização de produtos químicos – admissional",
@@ -1792,27 +1775,17 @@
         ],
         "docs_empresa": [
           {
-            "doc": "CND Federal",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "CNDT",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
             "doc": "PGR",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
-            "doc": "Campanha SST",
+            "doc": "Evidências Prog. Saúde Mental",
             "st_s": "Pendente",
             "sev": "pen"
           },
           {
-            "doc": "Evidências Prog. Saúde Mental",
+            "doc": "Campanha SST",
             "st_s": "Pendente",
             "sev": "pen"
           },
@@ -1852,12 +1825,17 @@
             "sev": "val"
           },
           {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1868,11 +1846,6 @@
           },
           {
             "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1913,12 +1886,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1928,7 +1901,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -1969,12 +1942,12 @@
             "sev": "val"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2030,7 +2003,7 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Periculosidade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2040,7 +2013,12 @@
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2051,36 +2029,6 @@
           },
           {
             "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          }
-        ],
-        "sev": "pen"
-      },
-      {
-        "nome": "Ronaldo Barbosa De Souza",
-        "empresa": "RONALDO BARBOSA DE SOUZA",
-        "cargo": "Engenheiro De Segurança Do Trabalho",
-        "regime": "Sócio",
-        "status_int": "Pendências porém Integrado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 2,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCMSO",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2166,11 +2114,6 @@
         ],
         "docs_empresa": [
           {
-            "doc": "Campanha SST",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "DDS — Diálogo Diário de Seg.",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
@@ -2181,42 +2124,7 @@
             "sev": "pen"
           },
           {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Trabalho em Altura",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Periculosidade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de demolição, conforme NR-18",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano de ventilação dos espaços confinados",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Plano Resgate Altura",
+            "doc": "Campanha SST",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2226,17 +2134,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Insalubridade específico do serviço",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
+            "doc": "Proj. Escoramento de Vala",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2246,12 +2144,17 @@
             "sev": "pen"
           },
           {
-            "doc": "LTCAT",
+            "doc": "Plano de ventilação dos espaços confinados",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Plano de Rigging (Içamento)",
+            "doc": "Plano de atendimento a emergência (PAE) - Especifico por Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2266,7 +2169,27 @@
             "sev": "pen"
           },
           {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Insalubridade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "Projeto de Trabalho em Altura (Específico por Serviço)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Projeto de Trabalho em Altura - quando aplicável (local sem linha de vida/ ponto de ancoragem acima de 2m do piso; ex.: passagens de cabos em cima de containers) Assinado pelo projetista e sua respectiva ART",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2276,7 +2199,32 @@
             "sev": "pen"
           },
           {
-            "doc": "Proj. Escoramento de Vala",
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano Trabalho em Altura",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "LTCAT",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Alvará do bombeiro (AVCB) - Especifico por Serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Plano de demolição, conforme NR-18",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           }
@@ -2322,12 +2270,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2337,7 +2285,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2347,12 +2295,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2392,12 +2340,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2407,7 +2355,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2417,12 +2365,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2462,12 +2410,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2477,7 +2425,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2487,12 +2435,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2532,12 +2480,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2547,7 +2495,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2557,12 +2505,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2602,12 +2550,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2617,7 +2565,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2627,12 +2575,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2672,12 +2620,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2687,7 +2635,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2697,12 +2645,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2742,12 +2690,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2757,7 +2705,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2767,12 +2715,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2812,12 +2760,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2827,7 +2775,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2837,12 +2785,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2882,12 +2830,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2897,7 +2845,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2907,12 +2855,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -2952,12 +2900,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2967,7 +2915,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -2977,13 +2925,263 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Abel Dos Santos Germano",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Antonio Marcos Caitano Ramos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Cicero Lucas Da Silva",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Cleidiomarques Muniz Da Silva",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Daniel Pereira De Jesus Oliveira",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
             "sev": "rep"
           }
         ],
@@ -3007,12 +3205,17 @@
             "sev": "val"
           },
           {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3027,12 +3230,357 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Edmundo Dias De Oliveira",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Armador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
           },
           {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Emerson Rodrigo Dos Santos Oliveira",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Fernando Celestino",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Mecanico Montador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Francisco Da Luz",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Italo Numeriano De Sales",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Ivanildo Carneiro Da Ponte",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Marteleteiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jorge Ramos Lopes",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -3057,12 +3605,17 @@
             "sev": "val"
           },
           {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3073,11 +3626,6 @@
           },
           {
             "doc": "PPR",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3107,12 +3655,17 @@
             "sev": "val"
           },
           {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3127,12 +3680,57 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Jose Filho Lopes",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Meio Oficial/Ajudante Pratico",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
           },
           {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -3157,12 +3755,17 @@
             "sev": "val"
           },
           {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3177,12 +3780,157 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
+            "doc": "Programa de Saúde Mental",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "João Florentino De Matos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Pedreiro",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
           },
           {
-            "doc": "Programa de Saúde Mental",
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Lourival Jose Dos Santos",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Mecânico Montador",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Reprovado",
+            "sev": "rep"
+          }
+        ],
+        "sev": "rep"
+      },
+      {
+        "nome": "Nelito Santos Bonfim",
+        "empresa": "Consórcio ETE Caieiras (próprio)",
+        "cargo": "Servente",
+        "regime": "CLT - Tempo Indeterminado",
+        "status_int": "Acesso Liberado",
+        "alocacao": "Alocado",
+        "alocacao_raw": "Funcionários Alocados",
+        "n_pess": 0,
+        "n_emp": 7,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "DDS — Diálogo Diário de Seg.",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Campanha SST",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Evidências Prog. Saúde Mental",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Apólice Seguro Garantia",
+            "st_s": "Inválido",
+            "sev": "rep"
+          },
+          {
+            "doc": "Plano de Rigging (Içamento)",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -3207,12 +3955,17 @@
             "sev": "val"
           },
           {
+            "doc": "Periculosidade específico do serviço",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
             "doc": "LTCAT",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Periculosidade específico do serviço",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -3227,732 +3980,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
             "doc": "Programa de Saúde Mental",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Abel Dos Santos Germano",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Antonio Marcos Caitano Ramos",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Cicero Lucas Da Silva",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Cleidiomarques Muniz Da Silva",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Meio Oficial/Ajudante Pratico",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Daniel Pereira De Jesus Oliveira",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Edmundo Dias De Oliveira",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Armador",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Emerson Rodrigo Dos Santos Oliveira",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Ajudante Pratico",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Fernando Celestino",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Mecanico Montador",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Francisco Da Luz",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Italo Numeriano De Sales",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Meio Oficial/Ajudante Pratico",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Ivanildo Carneiro Da Ponte",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Marteleteiro",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jorge Ramos Lopes",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Meio Oficial/Ajudante Pratico",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Jose Filho Lopes",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Meio Oficial/Ajudante Pratico",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "João Florentino De Matos",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Pedreiro",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Lourival Jose Dos Santos",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Mecânico Montador",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          }
-        ],
-        "sev": "rep"
-      },
-      {
-        "nome": "Nelito Santos Bonfim",
-        "empresa": "Consórcio ETE Caieiras (próprio)",
-        "cargo": "Servente",
-        "regime": "CLT - Tempo Indeterminado",
-        "status_int": "Acesso Liberado",
-        "alocacao": "Alocado",
-        "alocacao_raw": "Funcionários Alocados",
-        "n_pess": 0,
-        "n_emp": 6,
-        "docs_pessoais": [],
-        "docs_empresa": [
-          {
-            "doc": "DDS — Diálogo Diário de Seg.",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Campanha SST",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Evidências Prog. Saúde Mental",
-            "st_s": "Em Validação",
-            "sev": "val"
-          },
-          {
-            "doc": "Apólice Seguro Garantia",
-            "st_s": "Inválido",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -3968,7 +3996,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -3987,17 +4015,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -4013,7 +4046,7 @@
         "alocacao": "Alocado",
         "alocacao_raw": "Funcionários Alocados",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4032,17 +4065,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -4067,12 +4105,12 @@
             "sev": "rep"
           },
           {
-            "doc": "GFD — Guia FGTS Digital",
+            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Comprovante de pagamento FGTS Digital (GFD) (antigo comprovante GRF)",
+            "doc": "GFD — Guia FGTS Digital",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4283,25 +4321,10 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 7,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [
           {
-            "doc": "Carteira do Conselho Regional - Registro de Classe",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Carteira Profissional",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
-            "st_s": "Isenção Ag. Aprovação",
-            "sev": "pen"
-          },
-          {
-            "doc": "CNH",
+            "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4311,7 +4334,22 @@
             "sev": "pen"
           },
           {
-            "doc": "GFD Multa rescisória (antiga GRRF) - Guia FGTS Digital e Relatório de trabalhadores (Detalhe da Guia Emitida)",
+            "doc": "Carteira Profissional",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "CNH",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Comprovante de pagamento FGTS (GFD) - Multa rescisória (antigo comprovante GRRF)",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "Carteira do Conselho Regional - Registro de Classe",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4338,17 +4376,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -4426,7 +4469,7 @@
         "alocacao": "Já participou",
         "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 1,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [
           {
             "doc": "ASO",
@@ -4451,17 +4494,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -4579,12 +4627,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4594,7 +4642,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4604,12 +4652,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4649,12 +4697,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4664,7 +4712,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4674,12 +4722,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4719,12 +4767,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4734,7 +4782,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4744,12 +4792,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4789,12 +4837,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4804,7 +4852,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4814,12 +4862,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4859,12 +4907,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4874,7 +4922,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4884,12 +4932,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4929,12 +4977,12 @@
             "sev": "pen"
           },
           {
-            "doc": "PPR",
+            "doc": "PCA",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
           {
-            "doc": "Insalubridade específico do serviço",
+            "doc": "PPR",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4944,7 +4992,7 @@
             "sev": "pen"
           },
           {
-            "doc": "PCA",
+            "doc": "Insalubridade específico do serviço",
             "st_s": "Isenção Ag. Aprovação",
             "sev": "pen"
           },
@@ -4954,12 +5002,12 @@
             "sev": "rep"
           },
           {
-            "doc": "Comp. de Pagamento GPS/DARF",
+            "doc": "Folha de Pagamento",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           },
           {
-            "doc": "Folha de Pagamento",
+            "doc": "Comp. de Pagamento GPS/DARF",
             "st_s": "Isen. Reprovada",
             "sev": "rep"
           }
@@ -4975,7 +5023,7 @@
         "alocacao": "Já participou",
         "alocacao_raw": "Funcionários que já participaram",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -4994,17 +5042,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5020,7 +5073,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5039,17 +5092,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5065,7 +5123,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5084,17 +5142,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5110,7 +5173,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5129,17 +5192,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5155,7 +5223,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5174,17 +5242,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5200,7 +5273,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5219,17 +5292,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5245,7 +5323,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5264,17 +5342,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5290,7 +5373,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5309,17 +5392,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5335,7 +5423,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5354,17 +5442,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5380,7 +5473,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5399,17 +5492,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5425,7 +5523,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5444,17 +5542,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5470,7 +5573,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5489,17 +5592,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5515,7 +5623,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5534,17 +5642,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5560,7 +5673,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5579,17 +5692,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5605,7 +5723,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5624,17 +5742,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5650,7 +5773,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5669,17 +5792,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5695,7 +5823,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5714,17 +5842,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5740,7 +5873,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5759,17 +5892,22 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
           },
           {
             "doc": "Plano de Rigging (Içamento)",
-            "st_s": "Reprovado",
-            "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
             "st_s": "Reprovado",
             "sev": "rep"
           }
@@ -5785,7 +5923,7 @@
         "alocacao": "Demitido",
         "alocacao_raw": "Demitidos",
         "n_pess": 0,
-        "n_emp": 6,
+        "n_emp": 7,
         "docs_pessoais": [],
         "docs_empresa": [
           {
@@ -5804,6 +5942,16 @@
             "sev": "val"
           },
           {
+            "doc": "Plano de Rigging (Içamento)",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
+            "doc": "Plano Resgate Altura",
+            "st_s": "Em Validação",
+            "sev": "val"
+          },
+          {
             "doc": "Apólice Seguro Garantia",
             "st_s": "Inválido",
             "sev": "rep"
@@ -5812,14 +5960,34 @@
             "doc": "Plano de Rigging (Içamento)",
             "st_s": "Reprovado",
             "sev": "rep"
-          },
-          {
-            "doc": "Plano Resgate Altura",
-            "st_s": "Reprovado",
-            "sev": "rep"
           }
         ],
         "sev": "rep"
+      },
+      {
+        "nome": "Ronaldo Barbosa De Souza",
+        "empresa": "RONALDO BARBOSA DE SOUZA",
+        "cargo": "Engenheiro De Segurança Do Trabalho",
+        "regime": "Sócio",
+        "status_int": "N.D.",
+        "alocacao": "Já participou",
+        "alocacao_raw": "Funcionários que já participaram",
+        "n_pess": 0,
+        "n_emp": 2,
+        "docs_pessoais": [],
+        "docs_empresa": [
+          {
+            "doc": "PCA",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          },
+          {
+            "doc": "PCMSO",
+            "st_s": "Isenção Ag. Aprovação",
+            "sev": "pen"
+          }
+        ],
+        "sev": "pen"
       },
       {
         "nome": "Edson Oliveira De Almeida",
